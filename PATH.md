@@ -68,11 +68,11 @@ Set Variables: `setvars.bat`
 
     -   C Sharp (C#): `csi.exe` 
 
-        C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn
+             C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn
 
     -   F Sharp (F#): `fsi.exe`
 
-        C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools
+            C :\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools
     
 2. Java
 
@@ -84,24 +84,24 @@ Set Variables: `setvars.bat`
 
     User Installation
 
-    - "C:\Users\TaiXeflar\AppData\Roaming\Python\Python39\Scripts"
-    - "C:\Users\TaiXeflar\AppData\Roaming\Python\Python39\"
+            "C:\Users\TaiXeflar\AppData\Roaming\Python\Python39\Scripts"
+            "C:\Users\TaiXeflar\AppData\Roaming\Python\Python39\"
 
     or: 
 
-    - "C:\Users\TaiXeflar\AppData\Local\Python\Python39\Scripts"
-    - "C:\Users\TaiXeflar\AppData\Local\Python\Python39\"
+            "C:\Users\TaiXeflar\AppData\Local\Python\Python39\Scripts"
+            "C:\Users\TaiXeflar\AppData\Local\Python\Python39\"
 
     System Installation
 
-    - "C:\Program Files\Python39"
-    - "C:\Program Files\Python39\Scripts"
+            "C:\Program Files\Python39"
+            "C:\Program Files\Python39\Scripts"
     
 4. Julia
 
     Julia
-    
-      - "C:\Program Files\Julia-1.8.2\bin"
+
+            "C:\Program Files\Julia-1.8.2\bin"
     
 
 
