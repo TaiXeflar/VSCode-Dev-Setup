@@ -4,13 +4,13 @@
 
 1. Microsoft Visual Studio
 
-    Microsoft Visual Studio Development CMD: `VsDevCmd.bat`
+Microsoft Visual Studio Development CMD: `VsDevCmd.bat`
     - "C:\Program Files\Microsoft Visual Studio\2022\CommunityCommon7\Tools"
 
 
 2. Intel oneAPI
 
-    Set Variables: `setvars.bat` 
+Set Variables: `setvars.bat` 
     -  "C:\Program Files (x86)\Intel\oneAPI\"
 
 ## Compile Language
