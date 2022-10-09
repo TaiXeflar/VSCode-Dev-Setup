@@ -101,4 +101,5 @@
   - Jupyter筆記本
 
     `Ctrl+Shift+P`鍵入Jupyter，找到"Create: New Jupyter Notebook"選項並點選，建立一個新的筆記本。
+    
     VSCode建立筆記本的優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心。
