@@ -5,13 +5,15 @@
 1. Microsoft Visual Studio
 
 Microsoft Visual Studio Development CMD: `VsDevCmd.bat`
-    - "C:\Program Files\Microsoft Visual Studio\2022\CommunityCommon7\Tools"
+
+            "C:\Program Files\Microsoft Visual Studio\2022\CommunityCommon7\Tools"
 
 
 2. Intel oneAPI
 
 Set Variables: `setvars.bat` 
-    -  "C:\Program Files (x86)\Intel\oneAPI\"
+
+            "C:\Program Files (x86)\Intel\oneAPI\"
 
 ## Compile Language
 
@@ -60,7 +62,7 @@ Set Variables: `setvars.bat`
 4. JAVA
 
   -   OpenJDK: `java.exe`
-  
+
             "C:\Program Files\Java\jdk-19\bin"
 
 ## Interactive Language
