@@ -57,7 +57,9 @@
 ## Python模組安裝
 
 依照你的Python安裝路徑不同，則需要不同等級權限執行pip安裝指令。
+
 若你的Python在Program Files資料夾底下(為所有使用者安裝)，則需要以系統管理員權限安裝。
+
 若你的Python在AppData資料夾底下，則不需要系統管理員權限即可安裝。
 
 底下列舉命令列範例。
@@ -101,5 +103,5 @@
   - Jupyter筆記本
 
     `Ctrl+Shift+P`鍵入Jupyter，找到"Create: New Jupyter Notebook"選項並點選，建立一個新的筆記本。
-    
+
     VSCode建立筆記本的優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心。
