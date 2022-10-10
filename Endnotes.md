@@ -39,7 +39,7 @@
  - Ian Chang. National Chiayi University Electrophysics Department Bachelor 3A
 
 ## Contributors.Workspace.Share - OST
-These BGM while we contributors playing background in workspace:
+We played these BGM while we contributors build this repository:
 
  - il vento d'oro - JoJo's Bizzare Adventure: Golden Wind OST vol.1 Overture
  - うまぴょい伝説 - Umamusume Pretty Derby (32 mix version)
