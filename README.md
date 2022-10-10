@@ -7,7 +7,9 @@ Share experimental build result.
 ## ZH-TW
 
 分享實驗性建置結果。
+
 C/C++說明請閱覽`C_C++ README_[zh_tw].md`。範例程式檔請至TaiXeflar/vscode_build_repos/ctest查看。
+
 Python說明請閱覽`PyReadme.md`。範例程式檔請至TaiXeflar/vscode_build_repos/pytest查看。
 
 以下是各程式語言對應副檔名:
