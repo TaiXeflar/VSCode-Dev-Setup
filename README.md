@@ -24,9 +24,18 @@ Python說明請閱覽`PyReadme.md`。範例程式檔請至TaiXeflar/vscode_build
   -  Python(jupyter notebook): .ipynb (.json)
   -  Julia: .jl
   -  Visual Basic: .vb
+  -  Visual Basic Script: .vbs
   -  Matlab: .m (objective-c)
+  -  HTML: .html
+  -  CSS: .css
   -  JavaScript: .js
   -  JavaScript Option Notation: .json
+
+以下是殼層直譯式命令列底稿:
+
+  -  CMD: .bat .cmd
+  -  PowerShell: .ps1
+  -  Linux Shell / BASH: .sh
 
 你可以使用熱鍵加速你的效率。
 
