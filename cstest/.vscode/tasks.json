@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "windows":{
+                "options": {
+                    "shell": {
+                        "executable": "cmd.exe",
+                        "args": ["/C", "VsDevCmd.bat", "&&"]
+                    }
+                }
+            },
+            "type": "shell",
+            "label": "chashtag.exe",
+            "command": "csc.exe",
+            "args": 
+            [
+                "${file}", 
+            ],
+            "problemMatcher": ["$msCompile"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
