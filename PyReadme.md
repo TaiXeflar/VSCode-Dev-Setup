@@ -111,3 +111,12 @@
     `Ctrl+Shift+P`鍵入Jupyter，找到"Create: New Jupyter Notebook"選項並點選，建立一個新的筆記本。
 
     VSCode建立筆記本的優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心。
+
+## Jupyter 注意事項
+
+ - Jupyter筆記本可以執行Python核心或Julia核心。請妥善選擇執行的本地端核心(Kernel)以避免出現程式執行錯誤。
+ - Jupyter筆記本可以選擇具有Conda環境的Python。若有選擇需求請改選base的Conda Python。
+ - 每一個可執行Python/Julia或是註記(Markdown)的儲存格被稱為cell。執行cell的熱鍵是`Shift + Enter`。
+ - 當遇到不可預期的錯誤時(例如程式報錯不符合預期內的錯誤)，請注意該筆記本內每一個cell的執行時間序。若有被刪除的cell影響到後續cell的執行，請重新啟動核心(kernel)並全部重新執行一次。
+ - 使用VSCode開啟的Jupyter不需要以終端機掛載ipykernel就能正常執行筆記本的Python互動式偵錯。
+ - ipynb是Jupyter筆記本的副檔名，內容為json格式。

@@ -137,6 +137,14 @@
       - ` "console"`: `"integratedTerminal"`或`externalTerminal`.取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
       - `"preLaunchTask"`: 你必須和tasks.json內的`label`名稱一致。
 
+## C/C++ 注意事項
+
+ - AMD Optimized C/C++ Compilers (AOCC) 僅限於Linux環境或WSL2底下使用。在Windows作業系統使用會被視為無法開啟的可執行檔。
+ - 使用MSVC編譯C語言底稿時，必須在`tasks.json`以`VsDevCmd.bat`初始化開發編譯環境，否則會出現"終止代碼為1"，並回報以下錯誤訊息之一:
+    - fatal error C1034: stdio.h: 沒有設定 Include 路徑
+    - fatal error LNK1104: 無法開啟檔案 'LIBCMT.lib'
+  - 使用ICL, ICX, DPCPP編譯C語言底稿時，必須在`tasks.json`以`setvars.bat`初始化開發編譯環境。
+
 ## 參考出處
 
   Configure MSVC on windows: https://code.visualstudio.com/docs/cpp/config-msvc

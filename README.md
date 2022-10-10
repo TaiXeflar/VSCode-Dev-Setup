@@ -41,3 +41,4 @@ Python說明請閱覽`PyRead.md`。範例程式檔請至TaiXeflar/vscode_build_r
   - `Ctrl + K` + `Ctrl + O`: 開啟資料夾。
   - `Ctrl + K` + `F`: 關閉資料夾。
   - `Shift + Enter`: 在Jupyter Notebook內執行單一個cell的直譯式偵錯或執行Markdown的編輯儲存。
+
