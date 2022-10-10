@@ -77,6 +77,13 @@
 - 安裝該模組的指定版本。
 - 解除安裝該模組。
 
+## 專案根目錄定義
+
+本範例定義在一個名為pytest的專案資料夾底下，有以下內容:
+ - .vscode (資料夾)
+ - test.py (Python底稿)
+ - example.ipynb (Jupyter筆記本)
+
 ## .vscode資料夾設定
 
   - JSON檔案: 你需要1個JSON檔案完成Python底稿偵錯設定。
