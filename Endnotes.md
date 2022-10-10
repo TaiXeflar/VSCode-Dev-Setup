@@ -33,7 +33,7 @@
 
 
 
-## Repository Contributors:
+## Repository Contributors: 
  - TaiXeflar. National Taiwan Ocean University MEI Bachelor 4A
  - Ian Chang. National Chiayi University Electrophysics Department Bachelor 3A
 
