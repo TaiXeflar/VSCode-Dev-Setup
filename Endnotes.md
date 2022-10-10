@@ -11,6 +11,7 @@
  - Operating System:
     - Windows 10 21H2
     - Feature Experience Pack: 120.2212.4180.0
+    - GPU Driver: NVIDIA GeForce Game Ready Driver 512.95 WHQL
     - WSL2: Ubuntu 20.04 LTS
 
  - Development Application:
