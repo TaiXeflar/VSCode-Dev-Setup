@@ -74,6 +74,11 @@
   - C/C++ Themes
   - C/C++ Extention
 
+## 專案根目錄定義
+
+本範例在ctest路徑下，定義在一個名為msvc的專案資料夾中有以下內容:
+ - .vscode (資料夾)
+ - test.c (C來源底稿)
 
 ## .vscode資料夾設定
 
