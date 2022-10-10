@@ -14,7 +14,7 @@
 
      - 如果你要使用Intel的編譯器, 專案內編譯環境需要以`setvars.bat`啟動.
 
-  3. NVCC (NVIDIA CUDA 編譯器) 需要程序。
+  3. NVCC (NVIDIA CUDA 編譯器) 需要NVIDIA CUDA Toolkit安裝程式。
 
      - 執行CUDA需要NVIDIA CUDA GPU， GeForce Game Ready / Studio 顯示驅動和NVIDIA CUDA Toolkit安裝。
      - 可能有額外的標頭檔(.h)、應用程式擴充檔(.dll)及lib檔需自行添加至CUDA套件路徑底下(例如NVIDIA cuDNN)。
@@ -34,7 +34,9 @@
 
         將`Version Number`換成你想要的編譯器版本號。
 
-        - VS2022: `14.33.31629`, VS2019: `14.29.30133`, VS2017: `14.16.27023`.
+        - VS2022: `14.33.31629`
+        - VS2019: `14.29.30133`
+        - VS2017: `14.16.27023`.
 
     - Intel DPC++/C++ and Intel classic C/C++ Compiler:
 
