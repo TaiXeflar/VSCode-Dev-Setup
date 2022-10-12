@@ -89,6 +89,7 @@ Remember, when you're type file's path/location, you have to type `/` or `\\` in
 
     Inside json object (`{}`) will have these key-pair values:
     - `name`: `Win32`. You can call whatever you like, but like `Win32`, `Linux`, `Mac` is special value based on your OS.
+    `includePath`: json object list (`[]`). If you wish include headers saved in your workspace root, then fill`"${workspaceFolder}/**"`。`/**` means do recursive search in target sub directory.
     - `defines`: json list object (`[]`) with these values: `_DEBUG`, `UNICODE`, `_UNICODE`.
     - `WindowsSDKVersion`: `10.0.22000.0`. You can select other version value you've installed.
     - `compilerPath`: Enter the compiler's `PATH`with `""`as string value. 
