@@ -35,9 +35,9 @@
 ## 設定PATH變數
 
   - 請把直譯器路徑所在路徑添加至使用者/系統環境變數中。可能需要重新開機。
-    若是在安裝Python時，請勾選`Add Python to PATH`這個選項。
+    若是在安裝Python時，請勾選`Add Python to PATH`這個選項即可。
     
-  - 添加`PATH`變數之後以終端機(Powershell/CMD)呼叫該直譯器。從以下指令選擇一個進行測試:
+  - 添加`PATH`變數之後，以終端機呼叫該直譯器。從以下指令選擇一個進行測試:
     - PS> py
     - PS> python
 

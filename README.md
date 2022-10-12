@@ -37,6 +37,14 @@ Python說明請閱覽`PyReadme.md`。範例程式檔請至TaiXeflar/vscode_build
   -  PowerShell: .ps1
   -  Linux Shell / BASH: .sh
 
+任意本機上可呼叫的殼層(shell)都可以透過自設定加入至VSCode內建終端機內。
+以下是Windows內可呼叫的殼層 (部分需自行安裝程式):
+
+ - PowerShell
+ - CMD
+ - Git 
+ - Cygwin
+
 你可以使用熱鍵加速你的效率。
 
   - `Ctrl + C`: 複製文字。
