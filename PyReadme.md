@@ -54,16 +54,17 @@
 
 上述列舉的延伸套件當中，有包含Jupyter的套件必須在本機安裝Jupyter模組後才能順利運行。
 
-## Python模組安裝
+## Python模組(Python Module)安裝
 
 依照你的Python安裝路徑不同，則需要不同等級權限執行pip安裝指令。
 
- - 若你的Python在Program Files資料夾底下(為所有使用者安裝)，則需要以系統管理員權限安裝。
+ - 若你的Python在Program Files資料夾底下(為所有使用者安裝)，則需要以系統管理員`Administrator`身份安裝。
  - 若你的Python在AppData資料夾底下，則不需要系統管理員權限即可安裝。
 
-底下列舉命令列範例。使用Windows終端機進入CLI殼層介面:
+底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
+若以系統管理員安裝則需要以系統管理員開啟Windows終端機。
 
-- PS>   pip install `Mod`                                   
+- PS>   pip install `Mod`
 - PS>   pip install `Mod1`, `Mod2`, `Mod3`    
 - PS>   pip install `Mod` --upgrade                 
 - PS>   pip install `Mod`==XX.XX.X                  
@@ -77,12 +78,31 @@
 - 安裝該模組的指定版本。
 - 解除安裝該模組。
 
+以下是常用於資料科學的模組:
+
+- Matplotlib
+- Pandas
+- NumPy
+
+以下是常用於機器學習/深度學習的模組:
+
+- Scikit-Learn
+- TensorFlow
+- Torch
+
+以下是常用於微網站架構的模組:
+
+- Flask
+- Bottle
+
 ## 專案根目錄定義
 
 本範例定義在一個名為pytest的專案資料夾底下，有以下內容:
+
  - .vscode (資料夾)
  - test.py (Python底稿)
  - example.ipynb (Jupyter筆記本)
+
 
 ## .vscode資料夾設定
 
@@ -97,7 +117,7 @@
       - `"type"`: `"python"`.
       - `"request"`: `"launch"`.
       - `"program"`: `"${file}"`.
-      - ` "console"`: `"integratedTerminal"`或`externalTerminal`.取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
+      - ` "console"`: `"integratedTerminal"`或`externalTerminal`。取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
       - `"justMyCode"`: `true`
 
 ## VSCode偵錯Python
@@ -108,11 +128,11 @@
 
   - Jupyter筆記本
 
-    `Ctrl+Shift+P`鍵入Jupyter，找到"Create: New Jupyter Notebook"選項並點選，建立一個新的筆記本。
+    `Ctrl + Shift + P`組合鍵開啟設定搜尋，鍵入Jupyter，找到`Create: New Jupyter Notebook`選項並點選，建立一個新的筆記本。
 
     VSCode建立筆記本的優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心。
 
-## Jupyter 注意事項
+## Jupyter Notebook 注意事項
 
  - Jupyter筆記本可以執行Python核心或Julia核心。請妥善選擇執行的本地端核心(Kernel)以避免出現程式執行錯誤。
  - Jupyter筆記本可以選擇具有Conda環境的Python。若有選擇需求請改選base的Conda Python。
