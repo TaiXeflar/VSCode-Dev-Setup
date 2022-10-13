@@ -63,14 +63,14 @@
 
 本範例在Desktop路徑下，定義在一個名為ftest的專案資料夾中有以下內容:
  - .vscode (資料夾)
- - test.f90 (C#來源底稿)
+ - test.f90 (Fortran 來源底稿)
 
 ## .vscode資料夾設定
 
   - 請注意，在VSCode中編輯路徑的時候，使用`/`或`\\`替代`\`.
   - JSON檔案: 你需要2個JSON檔案完成C#環境設定。
-    - `tasks.json`: C#/F#/VB底稿進行編譯的設定。
-    - `launch.json`: 偵錯C#/F#/VB已編譯的偵錯執行檔.
+    - `tasks.json`: Fortran底稿進行編譯的設定。
+    - `launch.json`: 偵錯Fortran已編譯的偵錯執行檔.
   
  1. tasks.json:
 
