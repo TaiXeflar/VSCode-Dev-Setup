@@ -114,42 +114,39 @@
 
  2. tasks.json:
 
-  - 以下是MSVC的build tasks示範:
-
-    ```
-    {
-      "version": "2.0.0",
-      "tasks": [
-          {
-              "windows":{
-                  "options": {
-                      "shell": {
-                          "executable": "cmd.exe",
-                          "args": ["/C", "VsDevCmd.bat", "&&"]
-                      }
-                  }
-              },
-              "type": "shell",
-              "label": "cl.exe",
-              "command": "cl.exe",
-              "args": 
-              [
-                  "/Fe:", 
-                  "${fileDirname}\\${fileBasenameNoExtension}.exe", 
-                  "${file}"
-              ],
-              "problemMatcher": ["$msCompile"],
-              "group": {
-                  "kind": "build",
-                  "isDefault": true
+ - 以下是MSVC的build tasks示範:
+  ```
+  {
+    "version": "2.0.0",
+    "tasks": 
+    [
+      {
+        "windows":{
+          "options": {
+            "shell": {
+              "executable": "cmd.exe",
+              "args": ["/C", "VsDevCmd.bat", "&&"]
               }
+            }
+          },
+          "type": "shell",
+          "label": "cl.exe",
+          "command": "cl.exe",
+          "args": [
+                    "/Fe:", 
+                    "${fileDirname}\\${fileBasenameNoExtension}.exe", 
+                    "${file}"
+          ],
+          "problemMatcher": ["$msCompile"],
+          "group": {
+            "kind": "build",
+            "isDefault": true
           }
-        ]
-    }
-    ```
-
+      }
+    ]
+  }
+  ```
   當中:
-
   - `version`:  值預設是`"2.0.0"`。
   - `tasks`: ，JSON清單物件，且包含一個或多個JSON物件。鍵值就像這樣: `"tasks": [{}]`
 
