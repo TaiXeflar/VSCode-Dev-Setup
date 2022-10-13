@@ -82,35 +82,36 @@
  1. tasks.json:
 
  - 以下是VC#的build tasks示範:
-  ```
-  {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "windows":{
-                "options": {
-                    "shell": {
-                        "executable": "cmd.exe",
-                        "args": ["/C", "VsDevCmd.bat", "&&"]
+    ```
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "windows":{
+                    "options": {
+                        "shell": {
+                            "executable": "cmd.exe",
+                            "args": ["/C", "VsDevCmd.bat", "&&"]
+                        }
                     }
+                },
+                "type": "shell",
+                "label": "csc.exe",
+                "command": "csc.exe",
+                "args": 
+                [
+                    "${file}", 
+                ],
+                "problemMatcher": ["$msCompile"],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
                 }
-            },
-            "type": "shell",
-            "label": "csc.exe",
-            "command": "csc.exe",
-            "args": 
-            [
-                "${file}", 
-            ],
-            "problemMatcher": ["$msCompile"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
             }
-        }
-    ]
-}
-```
+        ]
+    }
+    ```
+
   當中:
   - `version`:  值預設是`"2.0.0"`。
   - `tasks`: ，JSON清單物件，且包含一個或多個JSON物件。鍵值就像這樣: `"tasks": [{}]`
@@ -121,7 +122,7 @@
           - `args`: `["/C", "VsDevCmd.bat", "&&"]`.
       - `type`: `shell`.
       - `label`: 標籤。你可以叫一個喜歡的名字。
-      - `command`:編譯器的檔案名。舉例MSVC就是`cl.exe`.
+      - `command`:編譯器的檔案名。舉例VC#就是`csc.exe`.
       - `args`: 傳遞至編譯器內的引數。至少需要一個`"${file}"`。
       - `problemMatcher`: `["$msCompile"]`,
       - `"group"`: `{"kind": "build", "isDefault": true}`
@@ -154,24 +155,20 @@
   - `configuration`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
 
     - `"name"`: 偵錯設定情境的名稱。
-    - `"type"`: `"cppvsdbg"`.
+    - `"type"`: `"coreclr"`.
     - `"request"`: `"launch"`.
     - `"program"`: `"${fileDirname}/${fileBasenameNoExtension}.exe"`.
     - `"args"`: [],
     - `"stopAtEntry"`: `false`.
     - `"cwd"`: `"${workspaceFolder}"`
-    - `"environment"`: [],
     - ` "console"`: `"integratedTerminal"`或`externalTerminal`.取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
     - `"preLaunchTask"`: 你必須和tasks.json內的`label`名稱一致。
 
-## C/C++ 注意事項
+## C#/F#/VB 注意事項
 
- - AMD Optimized C/C++ Compilers (AOCC) 僅限於Linux環境或WSL2底下使用。在Windows作業系統使用會被視為無法開啟的可執行檔。
- - 使用MSVC編譯C語言底稿時，必須在`tasks.json`以`VsDevCmd.bat`初始化開發編譯環境，否則會出現"終止代碼為1"，並回報以下錯誤訊息之一:
-    - fatal error C1034: stdio.h: 沒有設定 Include 路徑
-    - fatal error LNK1104: 無法開啟檔案 'LIBCMT.lib'
-  - 使用ICL, ICX, DPCPP編譯C語言底稿時，必須在`tasks.json`以`setvars.bat`初始化開發編譯環境。
+ - 請注意C#，F#以及Visual Basic是編譯語言。
+ - 編譯C#/F#/VB語言底稿時，必須在`tasks.json`以`VsDevCmd.bat`初始化開發編譯環境。
 
 ## 後言
 
-- 本專案對Visual Studio/Intel oneAPI的建置方法是採建置時以殼層呼叫`VsDevCmd.bat`/`setvars.bat` 初始化環境後再以殼層呼叫編譯器本體。這其實是一種偷吃步的做法，能直接在VSCode內重新初始化環境並完成建置動作。
+- 本專案對Visual Studio的建置方法是採建置時以殼層呼叫`VsDevCmd.bat`/`setvars.bat` 初始化環境後再以殼層呼叫編譯器本體，與呼叫MSVC為同一種偷吃步的做法。
