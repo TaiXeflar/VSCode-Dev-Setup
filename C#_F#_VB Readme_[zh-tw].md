@@ -127,7 +127,7 @@
       - `problemMatcher`: `["$msCompile"]`,
       - `"group"`: `{"kind": "build", "isDefault": true}`
   
- 3. launch.json:
+ 2. launch.json:
 
   - 以下是VC#的launch tasks示範:
   ```
