@@ -65,6 +65,16 @@
 
   - 添加`PATH`變數之後以終端機呼叫該編譯器。以MSVC的cl.exe(VS2022 v143)為例: 
     - PS> cl
+
+    若成功的話會在終端機看到以下內容:
+    ```
+    PS C:\Users\TaiXeflar> cl
+    Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+    Copyright (C) Microsoft Corporation.  著作權所有，並保留一切權利。
+
+    使用方式: cl [ option... ] filename... [ /link linkoption... ]
+    PS C:\Users\TaiXeflar>
+    ```
     
 ## VSCode 延伸套件 
 
