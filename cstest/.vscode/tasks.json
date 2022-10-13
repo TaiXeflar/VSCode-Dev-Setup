@@ -11,7 +11,7 @@
                 }
             },
             "type": "shell",
-            "label": "chashtag.exe",
+            "label": "csc.exe",
             "command": "csc.exe",
             "args": 
             [
