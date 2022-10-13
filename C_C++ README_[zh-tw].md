@@ -99,7 +99,34 @@
     - `launch.json`: 偵錯C/C++已編譯的偵錯執行檔.
   
  1. c_cpp_properties.json : 
-  -  
+
+ - 以下是MSVC的C/C++ properties示範:
+
+  ```
+    {
+        "version": 4,
+        "configurations": [
+            {
+                "name": "Win32",
+                "includePath": [
+                    "${workspaceFolder}/**"
+                ],
+                "defines": 
+                [
+                    "_DEBUG",
+                    "UNICODE",
+                    "_UNICODE"
+                ],
+                "windowsSdkVersion": "10.0.22000.0",
+                "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/cl.exe",
+                "cStandard": "c17",
+                "cppStandard": "c++17",
+                "intelliSenseMode": "windows-msvc-x64"
+            }
+        ]
+    }
+  ```
+  當中:
     - `version`: 值預設是`4`。
     - `configurations`: JSON清單物件(`[]`)，且包含一個或多個JSON物件(`{}`)。鍵值就像這樣: `"configurations": [{}]`
 
@@ -114,7 +141,7 @@
 
  2. tasks.json:
 
-    以下是MSVC的build tasks示範:
+ - 以下是MSVC的build tasks示範:
   ```
   {
     "version": "2.0.0",
@@ -167,7 +194,28 @@
       - `"group"`: `{"kind": "build", "isDefault": true}`
   
  3. launch.json:
-  - 
+
+  - 以下是MSVC的launch tasks示範:
+  ```
+  {
+      "version": "0.2.0",
+      "configurations": [
+          {
+              "name": "cl.exe",
+              "type": "cppvsdbg",
+              "request": "launch",
+              "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+              "args": [],
+              "stopAtEntry": false,
+              "cwd": "${workspaceFolder}",
+              "environment": [],
+              "console": "integratedTerminal",
+              "preLaunchTask": "cl.exe"
+          }
+      ]
+  }
+  ```
+  當中:
     - `version`: 值預設是`0.2.0`.
     - `configuration`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
       - `"name"`: 偵錯設定情境的名稱。
