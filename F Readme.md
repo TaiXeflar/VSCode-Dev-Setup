@@ -1,4 +1,4 @@
-# 以VSCode建置C/C++專案 
+# 以VSCode建置Fortran專案 
 
 
 ## 編譯器確認:  
