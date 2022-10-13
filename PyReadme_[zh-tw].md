@@ -73,7 +73,7 @@
  - 若你的Python在AppData資料夾底下，則不需要系統管理員權限即可安裝。
 
 底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
-若以系統管理員安裝則需要以系統管理員開啟Windows終端機。
+若以系統管理員安裝則需要以系統管理員開啟Windows終端機。(若本機上有安裝gsudo套件則在pip前加上gsudo或sudo)
 
   ```
   PS>   pip install `Mod`
@@ -145,11 +145,16 @@
 
     VSCode建立筆記本的優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心。
 
+  - Julia語言
+
+    Julia核心是基於Python演變而來，因此可以套用前述方法執行Julia語言偵錯。
+
 ## Jupyter Notebook 注意事項
 
  - Jupyter筆記本可以執行Python核心或Julia核心。請妥善選擇執行的本地端核心(Kernel)以避免出現程式執行錯誤。
- - Jupyter筆記本可以選擇具有Conda環境的Python。若有選擇需求請改選base的Conda Python。
+ - Jupyter筆記本可以選擇具有Conda環境的Python。若有Conda環境選擇需求請改選base的Conda Python。
  - 每一個可執行Python/Julia或是註記(Markdown)的儲存格被稱為cell。執行cell的熱鍵是`Shift + Enter`。
- - 當遇到不可預期的錯誤時(例如程式報錯不符合預期內的錯誤)，請注意該筆記本內每一個cell的執行時間序。若有被刪除的cell影響到後續cell的執行，請重新啟動核心(kernel)並全部重新執行一次。
+ - 請注意該筆記本內每一個cell的執行時間序。若有被刪除的cell影響到後續cell的執行，請在該時間序之後的cell重新執行。
+ - 當遇到不可預期的錯誤時(例如程式報錯不符合預期內的錯誤)，試試看重新啟動核心(kernel)並全部重新執行一次。
  - 使用VSCode開啟的Jupyter不需要以終端機掛載ipykernel就能正常執行筆記本的Python互動式偵錯。
  - ipynb是Jupyter筆記本的副檔名，內容為json格式。
