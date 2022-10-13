@@ -246,7 +246,7 @@
 - 這裡示範一個原本基礎的做法。欲在桌面上以MSVC新建一個名為ctest的專案:
 
   - 先在 "開始>所有應用程式" 中找到`Developer Command Prompt for Visual Studio 2022`。
-  - 接著在該終端中輸入以下指令(請替換你的使用者名稱):
+  - 接著在該終端中輸入以下指令(請將TaiXeflar替換你的使用者名稱):
     ```
     cd C:\Users\TaiXeflar\Desktop
     mkdir ctest
@@ -261,7 +261,7 @@
     cd C:\Users\TaiXeflar\Desktop\ctest
     code .
     ``` 
-  - 因此，我們在tasks中呼叫`"windows"`中的`"options"`的`"shell"`項時，可以直接在VSCode內呼叫初始化，而不用必須手動開啟外部終端初始化後再呼叫VSCode。
+  - 因此，我們在tasks中呼叫`"windows"`中的`"options"`的`"shell"`項時，可以直接在VSCode內呼叫`VsDevCmd.bat`初始化，而不用必須手動開啟外部終端初始化後再呼叫VSCode。
 
 
 ## 參考出處
