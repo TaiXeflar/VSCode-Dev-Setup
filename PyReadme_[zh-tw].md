@@ -75,11 +75,13 @@
 底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
 若以系統管理員安裝則需要以系統管理員開啟Windows終端機。
 
-- PS>   pip install `Mod`
-- PS>   pip install `Mod1`, `Mod2`, `Mod3`    
-- PS>   pip install `Mod` --upgrade                 
-- PS>   pip install `Mod`==XX.XX.X                  
-- PS>   pip uninstall `Mod`                                 
+  ```
+  PS>   pip install `Mod`
+  PS>   pip install `Mod1`, `Mod2`, `Mod3`    
+  PS>   pip install `Mod` --upgrade                 
+  PS>   pip install `Mod`==XX.XX.X                  
+  PS>   pip uninstall `Mod`                                 
+  ```
 
 以上指令分別代表:
 
