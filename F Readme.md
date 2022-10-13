@@ -11,7 +11,7 @@
 
 ## PATH 路徑確認
 
-  - 範例提及的所有編譯器可在預設安裝的路徑下找到。請把列出的編譯器路徑的資料夾添加至環境變數中(PATH)。
+  - 範例提及的所有編譯器可在預設安裝的路徑下找到。請把列出的環境初始化執行檔/編譯器路徑的資料夾添加至環境變數中(PATH)。
 
   - Intel Fortran Compiler:
 
@@ -115,7 +115,7 @@
           - `args`: `["/C", "setvars.bat", "&&"]`.
       - `type`: `shell`.
       - `label`: 標籤。你可以叫一個喜歡的名字。
-      - `command`:編譯器的檔案名。舉例C#就是`csc.exe`，F#就是`fsc.exe`，VB就是`vbc.exe`。
+      - `command`:編譯器的檔案名。舉例Fortran就是`ifort.exe`。
       - `args`: 傳遞至編譯器內的引數。至少需要一個`"${file}"`。
       - `problemMatcher`: `["$msCompile"]`,
       - `"group"`: `{"kind": "build", "isDefault": true}`
