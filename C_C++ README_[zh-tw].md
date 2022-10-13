@@ -216,9 +216,10 @@
   }
   ```
   當中:
+  
     - `version`: 值預設是`0.2.0`.
     - `configuration`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
-    
+
       - `"name"`: 偵錯設定情境的名稱。
       - `"type"`: `"cppvsdbg"`.
       - `"request"`: `"launch"`.
