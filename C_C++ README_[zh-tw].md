@@ -127,17 +127,17 @@
     }
   ```
   當中:
-    - `version`: 值預設是`4`。
-    - `configurations`: JSON清單物件(`[]`)，且包含一個或多個JSON物件(`{}`)。鍵值就像這樣: `"configurations": [{}]`
+  - `version`: 值預設是`4`。
+  - `configurations`: JSON清單物件(`[]`)，且包含一個或多個JSON物件(`{}`)。鍵值就像這樣: `"configurations": [{}]`
 
-    在JSON物件(`{}`)有以下鍵值:
-    - `name`: `Win32`.你要叫甚麼都可以，但像`Win32`, `Linux`, `Mac`是特殊識別態，依照你的作業系統為準。
-    - `includePath`: JSON清單物件(`[]`)。若是有包含在專案根目錄底下的標頭檔(headers)則填入`"${workspaceFolder}/**"`。其中，`/**`代表對該路徑下的遞迴搜尋。
-    - `defines`:JSON清單物件(`[]`)。當中包含這些值: `"_DEBUG"`, `"UNICODE"`, `"_UNICODE"`.
-    - `WindowsSDKVersion`: `10.0.22000.0`. 你可以換成其他的版本號。
-    - `compilerPath`: 編譯器的`PATH`路徑。記得用雙引號`""`當成字串值. 
-    - `cStandard`: C編譯器的標準。若是不知道則以`${Default}`替代。
-    - `cppStandard`: C++編譯器的標準。若是不知道則以`${Default}`替代。這個鍵值可以部署在g++或是dpcpp上。
+  在JSON物件(`{}`)有以下鍵值:
+  - `name`: `Win32`.你要叫甚麼都可以，但像`Win32`, `Linux`, `Mac`是特殊識別態，依照你的作業系統為準。
+  - `includePath`: JSON清單物件(`[]`)。若是有包含在專案根目錄底下的標頭檔(headers)則填入`"${workspaceFolder}/**"`。其中，`/**`代表對該路徑下的遞迴搜尋。
+  - `defines`:JSON清單物件(`[]`)。當中包含這些值: `"_DEBUG"`, `"UNICODE"`, `"_UNICODE"`.
+  - `WindowsSDKVersion`: `10.0.22000.0`. 你可以換成其他的版本號。
+  - `compilerPath`: 編譯器的`PATH`路徑。記得用雙引號`""`當成字串值. 
+  - `cStandard`: C編譯器的標準。若是不知道則以`${Default}`替代。
+  - `cppStandard`: C++編譯器的標準。若是不知道則以`${Default}`替代。這個鍵值可以部署在g++或是dpcpp上。
 
  2. tasks.json:
 
