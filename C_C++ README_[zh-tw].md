@@ -114,39 +114,39 @@
 
  2. tasks.json:
 
-  以下是MSVC的build tasks示範:
+  - 以下是MSVC的build tasks示範:
 
-  ```
-  {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "windows":{
-                "options": {
-                    "shell": {
-                        "executable": "cmd.exe",
-                        "args": ["/C", "VsDevCmd.bat", "&&"]
-                    }
-                }
-            },
-            "type": "shell",
-            "label": "cl.exe",
-            "command": "cl.exe",
-            "args": 
-            [
-                "/Fe:", 
-                "${fileDirname}\\${fileBasenameNoExtension}.exe", 
-                "${file}"
-            ],
-            "problemMatcher": ["$msCompile"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        }
-      ]
-  }
-  ```
+    ```
+    {
+      "version": "2.0.0",
+      "tasks": [
+          {
+              "windows":{
+                  "options": {
+                      "shell": {
+                          "executable": "cmd.exe",
+                          "args": ["/C", "VsDevCmd.bat", "&&"]
+                      }
+                  }
+              },
+              "type": "shell",
+              "label": "cl.exe",
+              "command": "cl.exe",
+              "args": 
+              [
+                  "/Fe:", 
+                  "${fileDirname}\\${fileBasenameNoExtension}.exe", 
+                  "${file}"
+              ],
+              "problemMatcher": ["$msCompile"],
+              "group": {
+                  "kind": "build",
+                  "isDefault": true
+              }
+          }
+        ]
+    }
+    ```
 
   當中:
 
