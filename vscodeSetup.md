@@ -56,4 +56,23 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - `"workbench.colorTheme"`: 主題色彩。
  - `"files.associations"`: 設定檔案關聯性。可覆寫預設關聯設定。
 
-    以這段`"files.associations": {"*.json": "jsonc"}`為例，VSCode允許將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋(在json內撰寫註釋是違反語法的)。
+      以這段`"files.associations": {"*.json": "jsonc"}`為例，VSCode允許將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋(在json內撰寫註釋是違反語法的)。
+
+ - `"terminal.integrated.profiles.windows"`: 自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
+      預設會有`PowerShell`, `Command Prompt`兩個JSON物件。事實上，JSON物件可以是你隨意指定的內容。以建立Cygwin為例:
+
+      ```
+         "Cygwin": 
+         {            
+            "path": ["C:/cygwin64/Cygwin.bat"],
+            "args": []
+            "icon": "console"
+         }
+      ```
+
+      當中:
+      - `"source"`鍵值可以自動偵測殼層路徑的設定檔來源。因為Cygwin在不非標準可執行位置，因此以`"path"`取代。
+      - `"path"`為殼層可執行檔的檔案位置。你可以直接填入殼層可執行檔的檔案路徑，或是以JSON陣列填入多個可執行檔。
+      - `"icon"`為顯示於下拉式清單的圖示。
+
+   
