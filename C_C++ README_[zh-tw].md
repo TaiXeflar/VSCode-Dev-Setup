@@ -245,8 +245,8 @@
 
 - 這裡示範一個原本基礎的做法。欲在桌面上以MSVC新建一個名為ctest的專案:
 
- - 先在 "開始>所有應用程式" 中找到`Developer Command Prompt for Visual Studio 2022`。
- - 接著在該終端中輸入以下指令:
+  - 先在 "開始>所有應用程式" 中找到`Developer Command Prompt for Visual Studio 2022`。
+  - 接著在該終端中輸入以下指令(請替換你的使用者名稱):
     ```
     cd C:\Users\TaiXeflar\Desktop
     mkdir ctest
