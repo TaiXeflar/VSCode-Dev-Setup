@@ -32,8 +32,6 @@
    - Tested Done in Windows 11 22H2 enviroment at 2022/9/27.
    - Tested Done on various platform (ASUS TUF A15 2022) in Windows 11 21H1 enviroment at 2022/10/1.
 
-
-
 ## Repository Contributors: 
  - TaiXeflar. National Taiwan Ocean University MEI Bachelor 4A
  - Ian Chang. National Chiayi University Electrophysics Department Bachelor 3A
