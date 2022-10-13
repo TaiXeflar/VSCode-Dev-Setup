@@ -114,7 +114,7 @@
 
  2. tasks.json:
 
- - 以下是MSVC的build tasks示範:
+    以下是MSVC的build tasks示範:
   ```
   {
     "version": "2.0.0",
