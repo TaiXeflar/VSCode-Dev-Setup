@@ -216,20 +216,20 @@
   }
   ```
   當中:
-  
-    - `version`: 值預設是`0.2.0`.
-    - `configuration`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
 
-      - `"name"`: 偵錯設定情境的名稱。
-      - `"type"`: `"cppvsdbg"`.
-      - `"request"`: `"launch"`.
-      - `"program"`: `"${fileDirname}/${fileBasenameNoExtension}.exe"`.
-      - `"args"`: [],
-      - `"stopAtEntry"`: `false`.
-      - `"cwd"`: `"${workspaceFolder}"`
-      - `"environment"`: [],
-      - ` "console"`: `"integratedTerminal"`或`externalTerminal`.取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
-      - `"preLaunchTask"`: 你必須和tasks.json內的`label`名稱一致。
+  - `version`: 值預設是`0.2.0`.
+  - `configuration`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
+
+    - `"name"`: 偵錯設定情境的名稱。
+    - `"type"`: `"cppvsdbg"`.
+    - `"request"`: `"launch"`.
+    - `"program"`: `"${fileDirname}/${fileBasenameNoExtension}.exe"`.
+    - `"args"`: [],
+    - `"stopAtEntry"`: `false`.
+    - `"cwd"`: `"${workspaceFolder}"`
+    - `"environment"`: [],
+    - ` "console"`: `"integratedTerminal"`或`externalTerminal`.取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
+    - `"preLaunchTask"`: 你必須和tasks.json內的`label`名稱一致。
 
 ## C/C++ 注意事項
 
