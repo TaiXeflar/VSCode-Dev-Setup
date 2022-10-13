@@ -73,6 +73,7 @@
  - 若你的Python在AppData資料夾底下，則不需要系統管理員權限即可安裝。
 
 底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
+
 若以系統管理員安裝則需要以系統管理員開啟Windows終端機。(若本機上有安裝gsudo套件則在pip前加上gsudo或sudo)
 
   ```
