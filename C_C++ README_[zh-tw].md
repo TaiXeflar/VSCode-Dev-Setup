@@ -113,25 +113,61 @@
     - `cppStandard`: C++編譯器的標準。若是不知道則以`${Default}`替代。這個鍵值可以部署在g++或是dpcpp上。
 
  2. tasks.json:
-  - 
-    - `version`:  值預設是`"2.0.0"`。
-    - `tasks`: ，JSON清單物件，且包含一個或多個JSON物件。鍵值就像這樣: `"tasks": [{}]`
 
-        - `windows`: 這個鍵值可以在VSCode終端內呼叫環境設定Batch檔。如果你使用MSVC或Intel oneAPI的編譯器才需要呼叫這個鍵值。
-            複製`"options": {"shell": {}}`到`windows`鍵值內。有2個鍵值需要設定:
-            - `executable`: `cmd.exe`或`powershell.exe`兩個都可以。
-            - `args`: `["/C", "__DEV.bat__", "&&"]`. 將`__DEV.bat__`取代成`VsDevCmd.bat`(使用MSVC), `setvars.bat`(使用oneAPI)。 
-        - `type`: `shell`.
-        - `label`: 標籤。你可以叫一個喜歡的名字。
-        - `command`:編譯器的檔案名。舉例MSVC就是`cl.exe`.
-        - `args`: 傳遞至編譯器內的引數。不同編譯器在`args`JSON清單物件中有不同引數及排列順序:
-          - MSVC cl.exe: `["/Fe:", "${fileDirname}\\${fileBasenameNoExtension}.exe", "${file}"]`
-          -  dpcpp.exe: `["-o", "${fileDirname}\\${fileBasenameNoExtension}.exe","/Zi","/EHsc", "${file}"]`
-          - Intel icl.exe: `["-o", "${fileDirname}\\${fileBasenameNoExtension}.exe", "${file}"]`
-          - CUDA nvcc.exe: `["-g", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}"]`
-          - GCC gcc.exe: `["-g", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe", "${file}"]`
-        - `problemMatcher`: `["$msCompile"]`,
-        - `"group"`: `{"kind": "build", "isDefault": true}`
+  以下是MSVC的build tasks示範:
+
+  ```
+  {
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "windows":{
+                "options": {
+                    "shell": {
+                        "executable": "cmd.exe",
+                        "args": ["/C", "VsDevCmd.bat", "&&"]
+                    }
+                }
+            },
+            "type": "shell",
+            "label": "cl.exe",
+            "command": "cl.exe",
+            "args": 
+            [
+                "/Fe:", 
+                "${fileDirname}\\${fileBasenameNoExtension}.exe", 
+                "${file}"
+            ],
+            "problemMatcher": ["$msCompile"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+      ]
+  }
+  ```
+
+  當中:
+
+  - `version`:  值預設是`"2.0.0"`。
+  - `tasks`: ，JSON清單物件，且包含一個或多個JSON物件。鍵值就像這樣: `"tasks": [{}]`
+
+      - `windows`: 這個鍵值可以在VSCode終端內呼叫環境設定Batch檔。如果你使用MSVC或Intel oneAPI的編譯器才需要呼叫這個鍵值。
+          複製`"options": {"shell": {}}`到`windows`鍵值內。有2個鍵值需要設定:
+          - `executable`: `cmd.exe`或`powershell.exe`兩個都可以。
+          - `args`: `["/C", "__DEV.bat__", "&&"]`. 將`__DEV.bat__`取代成`VsDevCmd.bat`(使用MSVC), `setvars.bat`(使用oneAPI)。 
+      - `type`: `shell`.
+      - `label`: 標籤。你可以叫一個喜歡的名字。
+      - `command`:編譯器的檔案名。舉例MSVC就是`cl.exe`.
+      - `args`: 傳遞至編譯器內的引數。不同編譯器在`args`JSON清單物件中有不同引數及排列順序:
+        - MSVC cl.exe: `["/Fe:", "${fileDirname}\\${fileBasenameNoExtension}.exe", "${file}"]`
+        -  dpcpp.exe: `["-o", "${fileDirname}\\${fileBasenameNoExtension}.exe","/Zi","/EHsc", "${file}"]`
+        - Intel icl.exe: `["-o", "${fileDirname}\\${fileBasenameNoExtension}.exe", "${file}"]`
+        - CUDA nvcc.exe: `["-g", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}"]`
+        - GCC gcc.exe: `["-g", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe", "${file}"]`
+      - `problemMatcher`: `["$msCompile"]`,
+      - `"group"`: `{"kind": "build", "isDefault": true}`
   
  3. launch.json:
   - 
