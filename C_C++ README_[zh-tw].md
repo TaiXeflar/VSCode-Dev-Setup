@@ -73,7 +73,6 @@
     Copyright (C) Microsoft Corporation.  著作權所有，並保留一切權利。
 
     使用方式: cl [ option... ] filename... [ /link linkoption... ]
-    PS C:\Users\TaiXeflar>
     ```
     
 ## VSCode 延伸套件 
