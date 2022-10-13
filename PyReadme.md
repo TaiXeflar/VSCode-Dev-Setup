@@ -39,6 +39,12 @@
     
   - 添加`PATH`變數之後，以終端機呼叫該直譯器。
   - 你可以從任何殼層啟動，並從以下指令選擇一個進行測試。本範例以PowerShell啟動:
+
+  - PS> py
+  - PS> python
+
+  若出現以下結果代表有成功加入環境變數:
+
   ```
     PS C:\Users\TaiXeflar> py
     Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
