@@ -239,6 +239,31 @@
     - fatal error LNK1104: 無法開啟檔案 'LIBCMT.lib'
   - 使用ICL, ICX, DPCPP編譯C語言底稿時，必須在`tasks.json`以`setvars.bat`初始化開發編譯環境。
 
+## 後言
+
+- 本專案對Visual Studio/Intel oneAPI的建置方法是採建置時以殼層呼叫`VsDevCmd.bat`/`setvars.bat` 初始化環境後再以殼層呼叫編譯器本體。這其實是一種偷吃步的做法，能直接在VSCode內重新初始化環境並完成建置動作。
+
+- 這裡示範一個原本基礎的做法。欲在桌面上以MSVC新建一個名為ctest的專案:
+
+ - 先在 "開始>所有應用程式" 中找到`Developer Command Prompt for Visual Studio 2022`。
+ - 接著在該終端中輸入以下指令:
+    ```
+    cd C:\Users\TaiXeflar\Desktop
+    mkdir ctest
+    cd ctest
+    mkdir .vscode
+    code .
+    ```
+ - 每欲以`VsDevCmd.bat`環境開啟新專案時，必須依照此類指令建置新專案資料夾。
+ - 在VsDevCmd.bat環境底下開啟ctest時亦需要以`Developer Command Prompt for Visual Studio 2022`開啟。
+
+    ```
+    cd C:\Users\TaiXeflar\Desktop\ctest
+    code .
+    ``` 
+  - 因此，我們在tasks中呼叫`"windows"`中的`"options"`的`"shell"`項時，可以直接在VSCode內呼叫初始化，而不用必須手動開啟外部終端初始化後再呼叫VSCode。
+
+
 ## 參考出處
 
   Configure MSVC on windows: https://code.visualstudio.com/docs/cpp/config-msvc
