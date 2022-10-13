@@ -1,7 +1,7 @@
 # 以VSCode建置.NET專案 
 
 
-## 編譯器確認:  
+## 編譯器確認
 
   - 本存放庫以Windows執行3種不同的Visual .NET語言編譯器:  
 
@@ -57,10 +57,9 @@
 
     warning CS2008: 未指定任何原始程式檔。
     error CS1562: 沒有來源的輸出必須有指定的 /out 選項
-    PS C:\Users\TaiXeflar>
     ```
     
-## VSCode 延伸套件 
+## VSCode延伸套件 
 
 在可能的前提下，你可能需要安裝延伸套件:
 
@@ -75,7 +74,7 @@
 ## .vscode資料夾設定
 
   - 請注意，在VSCode中編輯路徑的時候，使用`/`或`\\`替代`\`.
-  - JSON檔案: 你需要2個JSON檔案完成C/C++環境設定。
+  - JSON檔案: 你需要2個JSON檔案完成C#環境設定。
     - `tasks.json`: C#/F#/VB底稿進行編譯的設定。
     - `launch.json`: 偵錯C#/F#/VB已編譯的偵錯執行檔.
   
@@ -122,7 +121,7 @@
           - `args`: `["/C", "VsDevCmd.bat", "&&"]`.
       - `type`: `shell`.
       - `label`: 標籤。你可以叫一個喜歡的名字。
-      - `command`:編譯器的檔案名。舉例VC#就是`csc.exe`.
+      - `command`:編譯器的檔案名。舉例C#就是`csc.exe`，F#就是`fsc.exe`，VB就是`vbc.exe`。
       - `args`: 傳遞至編譯器內的引數。至少需要一個`"${file}"`。
       - `problemMatcher`: `["$msCompile"]`,
       - `"group"`: `{"kind": "build", "isDefault": true}`
