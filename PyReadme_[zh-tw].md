@@ -43,7 +43,7 @@
     - PS> py
     - PS> python
 
-  若出現以下結果代表有成功加入環境變數:
+  若出現以下結果代表有成功加入環境變數，進入Python Shell:
 
   ```
     PS C:\Users\TaiXeflar> py
