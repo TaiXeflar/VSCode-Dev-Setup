@@ -85,32 +85,32 @@
   ```
   {
     "version": "2.0.0",
-    "tasks": 
-    [
-      {
-        "windows":{
-          "options": {
-            "shell": {
-              "executable": "cmd.exe",
-              "args": ["/C", "VsDevCmd.bat", "&&"]
-              }
+    "tasks": [
+        {
+            "windows":{
+                "options": {
+                    "shell": {
+                        "executable": "cmd.exe",
+                        "args": ["/C", "VsDevCmd.bat", "&&"]
+                    }
+                }
+            },
+            "type": "shell",
+            "label": "csc.exe",
+            "command": "csc.exe",
+            "args": 
+            [
+                "${file}", 
+            ],
+            "problemMatcher": ["$msCompile"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
-          },
-          "type": "shell",
-          "label": "csc.exe",
-          "command": "csc.exe",
-          "args": [
-                    "${file}"
-          ],
-          "problemMatcher": ["$msCompile"],
-          "group": {
-            "kind": "build",
-            "isDefault": true
-          }
-      }
+        }
     ]
-  }
-  ```
+}
+```
   當中:
   - `version`:  值預設是`"2.0.0"`。
   - `tasks`: ，JSON清單物件，且包含一個或多個JSON物件。鍵值就像這樣: `"tasks": [{}]`
@@ -130,23 +130,23 @@
 
   - 以下是VC#的launch tasks示範:
   ```
-  {
-      "version": "0.2.0",
-      "configurations": [
-          {
-              "name": "csc.exe",
-              "type": "cppvsdbg",
-              "request": "launch",
-              "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-              "args": [],
-              "stopAtEntry": false,
-              "cwd": "${workspaceFolder}",
-              "environment": [],
-              "console": "integratedTerminal",
-              "preLaunchTask": "cl.exe"
-          }
-      ]
-  }
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "chashtag",
+                "type": "coreclr",
+                "request": "launch",
+                "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "args": [],
+                "stopAtEntry": false,
+                "cwd": "${workspaceFolder}",
+                "console": "integratedTerminal",
+                "preLaunchTask": "csc.exe"
+            
+            }
+        ]
+    }
   ```
   當中:
 
