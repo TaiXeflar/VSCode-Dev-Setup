@@ -158,7 +158,7 @@
     - ` "console"`: `"integratedTerminal"`或`externalTerminal`.取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
     - `"preLaunchTask"`: 你必須和tasks.json內的`label`名稱一致。
 
-## C#/F#/VB 注意事項
+## Fortran 注意事項
 
  - 請注意，Fortran是編譯語言，且有多種副檔名(`.f`, `.f90` )。
  - 編譯Fortran語言底稿時，必須在`tasks.json`以`VsDevCmd.bat`初始化開發編譯環境。
