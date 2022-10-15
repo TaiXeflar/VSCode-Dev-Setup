@@ -52,6 +52,7 @@
  - Development Application:
     - VSCode for macOS
     - Python 3.9.7
+    - 
 
 
 
