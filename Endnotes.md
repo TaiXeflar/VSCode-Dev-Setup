@@ -1,6 +1,10 @@
 # Endnotes
 
-## Repository Tested Enviroment
+## Repository Contributors: 
+ - TaiXeflar. National Taiwan Ocean University MEI Bachelor 4A
+ - Ian Chang. National Chiayi University Electrophysics Department Bachelor 3A
+
+## Repository Test - Windows Enviroment
 
  - ROG Zephyrus S15 (2020)
     - CPU: Intel Core i7-10875H @2.3GHz 8C16T
@@ -28,13 +32,13 @@
     - NVIDIA CUDA 11.7
 
  - Test Logs:
-   - Tested Done in Windows 10 21H2 enviroment at 2022/9/25.
-   - Tested Done in Windows 11 22H2 enviroment at 2022/9/27.
-   - Tested Done on various platform (ASUS TUF A15 2022) in Windows 11 21H1 enviroment at 2022/10/1.
+   - Tested Done by TaiXeflar in Windows 10 21H2 enviroment at 2022/9/25.
+   - Tested Done by TaiXeflar in Windows 11 22H2 enviroment at 2022/9/27.
+   - Tested Done by TaiXeflar on various platform (ASUS TUF A15 2022) in Windows 11 21H1 enviroment at 2022/10/1.
 
-## Repository Contributors: 
- - TaiXeflar. National Taiwan Ocean University MEI Bachelor 4A
- - Ian Chang. National Chiayi University Electrophysics Department Bachelor 3A
+## Repository Test - macOS Enviroment
+
+ - (Hardware details still in confirm progress)
 
 ## Contributors.Workspace.Share - OST
 We played these BGM while we contributors build this repository:
@@ -42,7 +46,7 @@ We played these BGM while we contributors build this repository:
  - il vento d'oro - JoJo's Bizzare Adventure: Golden Wind OST vol.1 Overture
  - うまぴょい伝説 - Umamusume Pretty Derby (32 mix version)
  - Starfall - TIA, Honkai Impact 3rd OST.
- - Moon Halo - ft. 茶理理, TetraCalyx, Hanser, Honkai Impact 3rd "Everlasting Flames" Animation OST.
+ - Moon Halo - ft. 茶理理, TetraCalyx, Hanser, Honkai Impact 3rd, "Everlasting Flames" Animation OST.
  - ReOracle - Xioyun Huang, Honkai Impact 3rd, A Post-Honkai Odyssey 2 OST.
  - Mortals - Warrios ft.Laura Brehm, NCS Release.
  - Prelude - TheFatRat & JJD, VIP Remix.
@@ -68,7 +72,7 @@ We played these BGM while we contributors build this repository:
  - Drok - Red Alert 2 Yuri's Revenge OST.
  - Deceiver - Red Alert 2 Yuri's Revenge OST.
  - Tactics - Red Alert 2 Yuri's Revenge OST.
- - Constant Moderato - Mitsukiyo, Blue Archive OST.
  - Funky Road - Mitsukiyo, Blue Archive OST.
  - Unwelcome School - Mitsukiyo, Blue Archive OST.
+ - Battle of Christophsis - Kevin Kiner, Star Wars The Clone Wars OST.
  - Love Pledge and the Arena - John Williams, Star Wars Attack of the Clones OST.
