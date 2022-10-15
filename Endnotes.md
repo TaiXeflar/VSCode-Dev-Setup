@@ -20,6 +20,7 @@
 
  - Development Application:
     - Windows Terminal 1.15.2712.0
+    - Git 2.36.1
     - Microsoft Visual Studio Code 1.72
     - Microsoft Visual Studio 2022 Community
        - MSVC v143
@@ -50,11 +51,11 @@
     - macOS Monterey 12.6
 
  - Development Application:
-    - VSCode for macOS
+    - Microsoft Visual Studio Code for macOS
     - Python 3.9.7
-    - 
 
-
+ - Test Logs:
+    - Testing in progress by Ian Chang on macOS Monterey
 
 ## Contributors.Workspace.Share - OST
 We played these BGM while we contributors build this repository:
