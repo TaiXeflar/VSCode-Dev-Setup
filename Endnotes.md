@@ -22,8 +22,10 @@
     - Windows Terminal 1.15.2712.0
     - Microsoft Visual Studio Code 1.72
     - Microsoft Visual Studio 2022 Community
-    - MSVC v143
-    - .NET C#, VB, F#
+       - MSVC v143
+       - Clang for Windows
+       - CMake
+       - .NET C#, VB, F#
     - OpenJDK 1.19
     - Python 3.9.7
     - Julia 1.8.2
@@ -38,7 +40,20 @@
 
 ## Repository Test - macOS Enviroment
 
- - (Hardware details still in confirm progress)
+ - Apple Macbook Pro 16 (2019)
+    - CPU: Intel Core i7-9750H 6C12T
+    - GPU: AMD Radeon 5300M 4GB GDDR6
+    - DRAM: 16GB 2666MHz DDR4
+    - Storage: 512GB NVMe PCIe M.2 SSD
+
+ - Operating System:
+    - macOS Monterey 12.6
+
+ - Development Application:
+    - VSCode for macOS
+    - Python 3.9.7
+
+
 
 ## Contributors.Workspace.Share - OST
 We played these BGM while we contributors build this repository:
@@ -56,12 +71,13 @@ We played these BGM while we contributors build this repository:
  - Monody - TheFatRat.
  - Windfall - TheFatRat.
  - Siege Invitational theme - Danne Cocke, 2020 Siege Invitational Live Performance with Taiko Ensemble.
- - The Crucible - Danne Cocke, 2020 Siege Invitational Live Performance with Taiko Ensemble.
+ - The Crucible - Danne Cocke, 2020 Siege Invitational Live Performance.
  - Rainbow Six Invitational 2022 Music Video - Danne Cocke, 2022 Siege Invitational theme MV.
  - Siege Invitational theme - Danne Cocke, 2018 Siege Invitational theme.
  - Vector Glare - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Y7S2 Main theme.
  - Neon Dawn - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Y5S4 Main theme.
  - The Shepherd - Danny Cocke, Paul Haslinger, Rainbow Six Siege Y5S2 Main theme.
+ - The Crucible - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 4 OST.
  - Industry of Design - Kill Miami, Rainbow Six Siege POSTMATCH Lo-Fi music.
  - Hell March 3 - Frank Klepacki, Red Alert 3 OST.
  - Bring it! - Frank Klepacki, Red Alert 3 OST.
