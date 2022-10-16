@@ -91,6 +91,48 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
       - `"path"`為殼層可執行檔的檔案位置。你可以直接填入殼層可執行檔的檔案路徑，或是以JSON陣列填入多個可執行檔。
       - `"icon"`為顯示於下拉式清單的圖示。
 
-      
+筆者以自用的VSCode範例提供完整的settings.json參考:
+
+```
+{
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "Xolonium",
+    "editor.fontWeight": "normal",
+    "terminal.integrated.fontFamily": "Consolas",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "*.json": "jsonc"
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Cygwin": 
+        {            
+           "path": ["C:/cygwin64/Cygwin.bat"],
+           "args": [],
+           "icon": "console"
+        }
+    }
+}
+```
 
    
