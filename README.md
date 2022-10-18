@@ -10,6 +10,8 @@ Share experimental build result.
 
 C/C++說明請閱覽`C_C++ README_[zh-tw].md`。範例程式檔請至TaiXeflar/vscode_build_repos/ctest查看。
 
+C#/F#/VB說明請閱覽`C#/F#/VB README_[zh-tw].md`。範例程式檔請至cstest, fstest, vbtest查看。
+
 Python說明請閱覽`PyReadme_[zh-tw].md`。範例程式檔請至TaiXeflar/vscode_build_repos/pytest查看。
 
 所有的編譯器/直譯器/程式語言可執行檔請閱覽`PATH.md`。
@@ -40,12 +42,13 @@ Python說明請閱覽`PyReadme_[zh-tw].md`。範例程式檔請至TaiXeflar/vsco
   -  Linux Shell / BASH: .sh
 
 任意本機上可呼叫的殼層(shell)都可以透過自設定加入至VSCode內建終端機內。
-以下是Windows內可呼叫的殼層 (部分需自行安裝程式):
+以下是Windows內可呼叫的殼層:
 
  - PowerShell
  - CMD
- - Git 
- - Cygwin
+ - Git (需要自行安裝 Git for Windows)
+ - Cygwin (需要自行安裝 Cygwin setup x86_64)
+ - WSL (需要啟動WSL服務，需要安裝WSL2核心更新以及Linux子系統發行版)
 
 你可以使用熱鍵加速你的效率。
 
@@ -56,6 +59,7 @@ Python說明請閱覽`PyReadme_[zh-tw].md`。範例程式檔請至TaiXeflar/vsco
   - `Ctrl + Shift + S`: 另存新檔。
   - `Ctrl + Shift + P`: 尋找vscode設定。
   - `Ctrl + Shift + B`: 啟動專案建置工作。
+  - `Ctrl + Shift + ‵`: 新增一個終端。
   - `F5`: 啟動專案偵錯工作。
   - `Ctrl + F`: 尋找目標。
   - `Ctrl + H`: 尋找即取代目標。
