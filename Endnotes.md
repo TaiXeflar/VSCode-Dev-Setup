@@ -74,8 +74,6 @@ We played these BGM while we contributors build this repository:
  - ホシノキズナ - Battle Girl High School Animation OP OST.
  - 終わらない世界で - Daoko, Dragalia Lost OST.
  - ぼくらのネットワーク - Daoko, 中田ヤスタカ, Dragalia Lost OST.
-
-
  - Mortals - Warrios ft.Laura Brehm, NCS Release.
  - Prelude - TheFatRat & JJD, VIP Remix.
  - Monody - TheFatRat & Alexa.
@@ -84,7 +82,6 @@ We played these BGM while we contributors build this repository:
  - Monody - TheFatRat.
  - Windfall - TheFatRat.
  - Retro Funky - Perséphone, SUNDANCE Remix.
-
  - Siege Invitational theme - Danne Cocke, 2020 Siege Invitational Live Performance with Taiko Ensemble.
  - The Crucible - Danne Cocke, 2020 Siege Invitational Live Performance.
  - Rainbow Six Invitational 2022 Music Video - Danne Cocke, 2022 Siege Invitational theme MV.
