@@ -64,7 +64,18 @@ We played these BGM while we contributors build this repository:
  - うまぴょい伝説 - Umamusume Pretty Derby (32 mix version)
  - Starfall - TIA, Honkai Impact 3rd OST.
  - Moon Halo - ft. 茶理理, TetraCalyx, Hanser, Honkai Impact 3rd, "Everlasting Flames" Animation OST.
+ - Befall - 尚雯婕, 蔡進翰, 尹純青, 鄭宇界, Honkai Impact 3rd "Everlasting Flames", "Herrscher of Flamescion" Animation OST.
  - ReOracle - Xioyun Huang, Honkai Impact 3rd, A Post-Honkai Odyssey 2 OST.
+ - Decision - CV:本渡楓・下地紫野, Battle Girl High School OST.
+ - Desire Link - CV:本渡楓・下地紫野, Battle Girl High School OST.
+ - Deep-Connect - CV:本渡楓・下地紫野, Battle Girl High School OST.
+ - Departure - CV:本渡楓・下地紫野, Battle Girl High School OST.
+ - Cat-Cat Romance - CV:本渡楓・下地紫野, Battle Girl High School OST.
+ - ホシノキズナ - Battle Girl High School Animation OP OST.
+ - 終わらない世界で - Daoko, Dragalia Lost OST.
+ - ぼくらのネットワーク - Daoko, 中田ヤスタカ, Dragalia Lost OST.
+
+
  - Mortals - Warrios ft.Laura Brehm, NCS Release.
  - Prelude - TheFatRat & JJD, VIP Remix.
  - Monody - TheFatRat & Alexa.
@@ -72,6 +83,8 @@ We played these BGM while we contributors build this repository:
  - Unity - TheFatRat.
  - Monody - TheFatRat.
  - Windfall - TheFatRat.
+ - Retro Funky - Perséphone, SUNDANCE Remix.
+
  - Siege Invitational theme - Danne Cocke, 2020 Siege Invitational Live Performance with Taiko Ensemble.
  - The Crucible - Danne Cocke, 2020 Siege Invitational Live Performance.
  - Rainbow Six Invitational 2022 Music Video - Danne Cocke, 2022 Siege Invitational theme MV.
@@ -82,15 +95,16 @@ We played these BGM while we contributors build this repository:
  - The Crucible - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 4 OST.
  - Industry of Design - Kill Miami, Rainbow Six Siege POSTMATCH Lo-Fi music.
  - Hell March 3 - Frank Klepacki, Red Alert 3 OST.
- - Bring it! - Frank Klepacki, Red Alert 3 OST.
- - Rock and Awe - Frank Klepacki, Red Alert 3 OST.
  - Grinder - Frank Klepacki, Red Alert 2 OST.
  - Destory - Frank Klepacki, Red Alert 2 OST. 
  - Bully Kit - Red Alert 2 Yuri's Revenge OST.
  - Drok - Red Alert 2 Yuri's Revenge OST.
  - Deceiver - Red Alert 2 Yuri's Revenge OST.
- - Tactics - Red Alert 2 Yuri's Revenge OST.
  - Funky Road - Mitsukiyo, Blue Archive OST.
  - Unwelcome School - Mitsukiyo, Blue Archive OST.
+ - Train Rush - A Hat in Time OST, Qumu remix.
+ - Trainwreck Of Electro Swing - , A Hat in Time OST, Plasma3Music remix.
+ - Genos Fights - One Punch Man 2 OST.
  - Battle of Christophsis - Kevin Kiner, Star Wars The Clone Wars OST.
+ - Duel of Fates - L'Orchestra Cinématique, Star Wars: Duel of Fates Epic version.
  - Love Pledge and the Arena - John Williams, Star Wars Attack of the Clones OST.
