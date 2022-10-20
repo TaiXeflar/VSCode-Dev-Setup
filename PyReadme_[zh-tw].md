@@ -125,6 +125,26 @@
     - `launch.json`: 偵錯Python底稿.
   
   - launch.json: 
+
+    以下是建立一個Python底稿的執行偵錯設定範例:
+
+    ```
+      {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "justMyCode": true
+            }
+        ]
+      }
+    ```
+    當中:
+    
     - `version`: 值預設是`0.2.0`.
     - `configurations`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
       - `"name"`: `"Python: Current"`。
@@ -153,7 +173,7 @@
 ## Python Module 注意事項
 
   - 請注意，在某些特定的情況下，會有Module間不相容導致程式執行中出現不可預期的錯誤。
-  - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。
+  - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制在本機執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。
 
 ## Jupyter Notebook 注意事項
 
