@@ -14,8 +14,11 @@
 ## 編譯器安裝
 
  - Visual C#, F# 及Visual Basic為.NET環境下程式語言，限定由Visual Studio環境安裝。
+
  - 勾選 "**.NET桌面開發**"並選擇:
+
    - C# 與 Visual Basic
+   
    - F# 語言支援
 
 ## PATH 路徑確認
