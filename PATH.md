@@ -19,49 +19,49 @@ Set Variables: `setvars.bat`
 
 1. C/C++
 
-  -  Microsoft Visual C++ (MSVC): `cl.exe`
+    -  Microsoft Visual C++ (MSVC): `cl.exe`
 
             "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64"
 
-  -  Intel Classic C/C++ Compiler (ICL): `icl.exe`
+    -  Intel Classic C/C++ Compiler (ICL): `icl.exe`
 
             "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/intel64"
 
-  -   Intel DPCPP : `dpcpp.exe`
+    -   Intel DPCPP : `dpcpp.exe`
 
             "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin"
 
-  -   NVIDIA CUDA C/C++ (NVCC): `nvcc.exe`
+    -   NVIDIA CUDA C/C++ (NVCC): `nvcc.exe`
 
             "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.7/bin"
 
-  -   GNU C/C++ : `gcc.exe`, `g++.exe`
+    -   GNU C/C++ : `gcc.exe`, `g++.exe`
 
             "C:/Program Files (x86)/Dev-Cpp/MinGW64/bin"
 
 2. Fortran
 
-  -   Intel Fortran Compiler:
+    -   Intel Fortran Compiler:
 
             "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/intel64"
 
 3. dotNET(.NET)
 
-  -   Visual Basic (VB): `vbc.exe`
+    -   Visual Basic (VB): `vbc.exe`
 
             "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn"
 
-  -   C Sharp (C#): `csc.exe` 
+    -   C Sharp (C#): `csc.exe` 
 
             "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn"
 
-  -   F Sharp (F#): `fsc.exe`
+    -   F Sharp (F#): `fsc.exe`
 
             "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools"
 
 4. JAVA
 
-  -   OpenJDK: `java.exe`
+    -   OpenJDK: `java.exe`
 
             "C:/Program Files/Java/jdk-19/bin"
 
