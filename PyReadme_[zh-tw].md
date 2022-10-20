@@ -144,13 +144,13 @@
       }
     ```
     當中:
-    
+
     - `version`: 值預設是`0.2.0`.
     - `configurations`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
       - `"name"`: `"Python: Current"`。
       - `"type"`: `"python"`.
       - `"request"`: `"launch"`.
-      - `"program"`: `"${file}"`.
+      - `"program"`: `"${file}"`. 該鍵值`"${file}"`對應至欲偵錯的Python底稿(對應至本存放庫即為 **test.py** )。
       - ` "console"`: `"integratedTerminal"`或`externalTerminal`。取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
       - `"justMyCode"`: `true`
 
@@ -164,7 +164,7 @@
 
     `Ctrl + Shift + P`組合鍵開啟設定搜尋，鍵入Jupyter，找到`Create: New Jupyter Notebook`選項並點選，建立一個新的筆記本。
 
-    VSCode建立筆記本的優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心。
+    VSCode建立筆記本的優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心、以及在未存檔筆記本的情況下執行筆記本。
 
   - Julia語言
 
