@@ -65,11 +65,11 @@ Set Variables: `setvars.bat`
 
             "C:/Program Files/Java/jdk-19/bin"
 
-## Interactive Language
+## Interactive Shell
 
 1. dotNET (.NET)
 
-    -   C Sharp (C#): `csi.exe` 
+    -   C Sharp REPL (C#): `csi.exe` 
 
             "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn"
 
