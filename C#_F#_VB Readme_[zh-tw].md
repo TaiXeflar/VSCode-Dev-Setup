@@ -1,16 +1,22 @@
-# 以VSCode建置.NET專案 
+# 以VSCode建置C#/F#/VB專案 
 
 
 ## 編譯器確認
 
   - 本存放庫以Windows執行3種不同的Visual .NET語言編譯器:  
 
-  1. C# (Microsoft Visual C Sharp)。
+   1. C# (Microsoft Visual C Sharp)。
 
-  2. F# (Microsoft Visual F Sharp)。
+   2. F# (Microsoft Visual F Sharp)。
 
-  3. VB (Microsoft Visual Basic)。
+   3. VB (Microsoft Visual Basic)。
 
+## 編譯器安裝
+
+ - Visual C#, F# 及Visual Basic為.NET環境下程式語言，限定由Visual Studio環境安裝。
+ - 勾選 "**.NET桌面開發**"並選擇:
+   1. C# 與 Visual Basic
+   2. F# 語言支援
 
 ## PATH 路徑確認
 
