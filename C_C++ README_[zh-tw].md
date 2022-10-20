@@ -17,11 +17,13 @@
   3. NVCC (NVIDIA CUDA 編譯器) 需要NVIDIA CUDA Toolkit安裝程式。
 
      - 執行CUDA需要NVIDIA CUDA GPU， GeForce Game Ready / Studio 顯示驅動和NVIDIA CUDA Toolkit安裝。
-     - 可能有額外的標頭檔(.h)、應用程式擴充檔(.dll)及lib檔需自行添加至CUDA套件路徑底下(例如NVIDIA cuDNN)。
+     - 可能有額外的標頭檔(.h)、應用程式擴充檔(.dll)及程式庫(.lib)檔需自行添加至CUDA套件路徑底下(例如NVIDIA cuDNN)。
 
   4. GCC以Dev-CPP MinGW64 GCC/G++為編譯器。
 
 ## 編譯器安裝
+
+ - 本安裝範例以預設路徑為標準。
 
  - Visual C/C++限定由Visual Studio環境安裝。在Visual Studio Installer中，勾選 "**使用C++桌面開發**"並選擇:
 
@@ -38,13 +40,10 @@
  - NVIDIA CUDA需要由NVIDIA CUDA Toolkit Installer套件安裝，在NVIDIA安裝程式中，勾選"**CUDA**"並選擇:
 
    - Development
-
      - Compiler
-
      - Tools
 
    - Runtime
-
      - Libraries
 
    - Visual Studio Integration (若有VS2022整合需求請選擇)
@@ -61,8 +60,9 @@
 
       - VsDevCmd.bat : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/VsDevCmd.bat"
       - cl.exe : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/`Version Number`/bin/HostX64/x64/cl.exe"
+      - clang.exe : "C:/Program Files/Microsoft Visual Studio/2022/VC/Tools/Llvm/bin/clang.exe"
 
-        將`Version Number`換成你想要的編譯器版本號。
+        在 cl.exe 的路徑中，將`Version Number`換成你想要的編譯器版本號。
 
         - VS2022: `14.33.31629`
         - VS2019: `14.29.30133`
@@ -263,6 +263,10 @@
 ## C/C++ 注意事項
 
  - AMD Optimized C/C++ Compilers (AOCC) 僅限於Linux環境或WSL2底下使用。在Windows作業系統使用會被視為無法開啟的可執行檔。
+ - 若本機所搭載的中央處理器(CPU)為Intel Core處理器時，可以選擇MSVC、Intel C/C++或GCC編譯器。若為AMD Ryzen處理器，請避免安裝Intel C/C++編譯器，以避免處理器架構及優化不相容。
+ - 若本機所搭載的圖形處理器(GPU)為NVIDIA GeForce圖形晶片時，可以選擇使用CUDA開發。請注意CUDA套件相容性會隨NVIDIA GPU架構迭代而有支援差異性。
+ - 若本機所搭載的圖形處理器(GPU)為Intel Arc, Intel Iris Xe及Intel UHD Graphics圖形晶片時，可以選擇使用Intel DPCPP開發。
+ - 若本機所搭載的圖形處理器(GPU)為AMD Radeon Graphics圖形晶片時，不支援GPU的C/C++語言開發。
  - 使用MSVC編譯C語言底稿時，必須在`tasks.json`以`VsDevCmd.bat`初始化開發編譯環境，否則會出現"終止代碼為1"，並回報以下錯誤訊息之一:
     - fatal error C1034: stdio.h: 沒有設定 Include 路徑
     - fatal error LNK1104: 無法開啟檔案 'LIBCMT.lib'
@@ -275,7 +279,7 @@
 - 這裡示範一個原本基礎的做法。欲在桌面上以MSVC新建一個名為ctest的專案:
 
   - 先在 "開始>所有應用程式" 中找到`Developer Command Prompt for Visual Studio 2022`。
-  - 接著在該終端中輸入以下指令:
+  - 接著在該終端中輸入以下指令 (請將TaiXeflar替換你的使用者名稱):
     ```
     cd C:\Users\TaiXeflar\Desktop
     mkdir ctest
