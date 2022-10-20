@@ -4,14 +4,14 @@
 
 1. Microsoft Visual Studio
 
-Microsoft Visual Studio Development CMD: `VsDevCmd.bat`
+        Microsoft Visual Studio Development Command Prompt : `VsDevCmd.bat`
 
             "C:/Program Files/Microsoft Visual Studio/2022/CommunityCommon7/Tools"
 
 
 2. Intel oneAPI
 
-Set Variables: `setvars.bat` 
+        Set Variables: `setvars.bat` 
 
             "C:/Program Files (x86)/Intel/oneAPI/"
 
@@ -22,6 +22,10 @@ Set Variables: `setvars.bat`
     -  Microsoft Visual C++ (MSVC): `cl.exe`
 
             "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64"
+
+    - Microsoft Visual C++ Clang for Windows: `clang.exe`
+
+            "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/bin"
 
     -  Intel Classic C/C++ Compiler (ICL): `icl.exe`
 
