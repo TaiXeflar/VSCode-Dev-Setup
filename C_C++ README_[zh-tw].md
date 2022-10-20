@@ -8,7 +8,7 @@
   1. MSVC (Microsoft Visual C++). 
 
      - 如果你要使用微軟的編譯器， 專案內編譯環境需要以`VsDevCmd.bat`啟動。
-     - 至少一個Visual C++編譯器套件需要安裝。 (e.g. MSVC v143 - VS2022 C++ x86-64 建置工具)。
+     - 至少一個Visual C++編譯器套件需要安裝。 (e.g. MSVC v143 - VS2022 C++ x64/x86 建置工具)。
 
   2. Intel ICL和Intel DPCPP需要以Intel oneAPI套件安裝。(Intel DPC++/C++ and Intel Classic C/C++ Compilers).
 
@@ -20,6 +20,36 @@
      - 可能有額外的標頭檔(.h)、應用程式擴充檔(.dll)及lib檔需自行添加至CUDA套件路徑底下(例如NVIDIA cuDNN)。
 
   4. GCC以Dev-CPP MinGW64 GCC/G++為編譯器。
+
+## 編譯器安裝
+
+ - Visual C/C++限定由Visual Studio環境安裝。在Visual Studio Installer中，勾選 "**使用C++桌面開發**"並選擇:
+
+   - MSVC v143 - VS 2022 C++ x64/x86 建置工具 (Windows MSVC編譯器)
+
+   - Windows 10 SDK (適用於MSVC建置Windows應用程式的程式庫及標頭檔。例如 stdio.h)
+
+   - 適用於Windows的C++ CMAKE工具 (若有CMake需求請選擇)
+
+   - 適用於Windows的C++ Clang工具 (若有Clang編譯環境專案需求請選擇)
+
+ - Intel Classic C/C++ Compiler及 DPC++/C++ Compiler需要由Intel oneAPI套件安裝，可選擇Standalone版本單獨下載。
+
+ - NVIDIA CUDA需要由NVIDIA CUDA Toolkit Installer套件安裝，在NVIDIA安裝程式中，勾選"**CUDA**"並選擇:
+
+   - Development
+
+     - Compiler
+
+     - Tools
+
+   - Runtime
+
+     - Libraries
+
+   - Visual Studio Integration (若有VS2022整合需求請選擇)
+
+ - Dev C++會自帶GCC編譯器，在安裝選擇時選擇"**Minimum**"選項即可 (至少要有GCC)。
 
 ## PATH 路徑確認
 
