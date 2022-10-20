@@ -85,17 +85,17 @@ Set Variables: `setvars.bat`
     
 3. Python
 
-    User Installation
+    -   User Installation
 
             "C:/Users/TaiXeflar/AppData/Roaming/Python/Python39/Scripts"
             "C:/Users/TaiXeflar/AppData/Roaming/Python/Python39/"
 
-    or: 
+        or: 
 
             "C:/Users/TaiXeflar/AppData/Local/Python/Python39/Scripts"
             "C:/Users/TaiXeflar/AppData/Local/Python/Python39/"
 
-    System Installation
+    -   System Installation
 
             "C:/Program Files/Python39"
             "C:/Program Files/Python39/Scripts"
