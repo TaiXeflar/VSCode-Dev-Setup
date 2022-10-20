@@ -150,6 +150,11 @@
 
     Julia核心是基於Python演變而來，因此可以套用前述方法執行Julia語言偵錯。
 
+## Python Module 注意事項
+
+  - 請注意，在某些特定的情況下，會有Module間不相容導致程式執行中出現不可預期的錯誤。
+  - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。
+
 ## Jupyter Notebook 注意事項
 
  - Jupyter筆記本可以執行Python核心或Julia核心。請妥善選擇執行的本地端核心(Kernel)以避免出現程式執行錯誤。
@@ -159,3 +164,4 @@
  - 當遇到不可預期的錯誤時(例如程式報錯不符合預期內的錯誤)，試試看重新啟動核心(kernel)並全部重新執行一次。
  - 使用VSCode開啟的Jupyter不需要以終端機掛載ipykernel就能正常執行筆記本的Python互動式偵錯。
  - ipynb是Jupyter筆記本的副檔名，內容為json格式。
+ - 請注意，在VSCode內以SSH連線執行遠端Google Colabatory的Python偵錯有可能會被視為違反Google Colabatory使用條款。
