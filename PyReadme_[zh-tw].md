@@ -109,6 +109,36 @@
 - Flask
 - Bottle
 
+這裡舉例一個使用終端機安裝Py2exe套件的實際過程:
+
+ ```
+  PS C:\Users\TaiXeflar> pip install py2exe
+  Collecting py2exe
+    Downloading py2exe-0.12.0.1-cp39-cp39-win_amd64.whl (151 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.8/151.8 kB 828.1 kB/s eta 0:00:00
+  Requirement already satisfied: cachetools in c:\program files\python39\lib\site-packages (from py2exe) (5.2.0)
+  Collecting pefile
+    Downloading pefile-2022.5.30.tar.gz (72 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.9/72.9 kB 994.4 kB/s eta 0:00:00
+    Preparing metadata (setup.py) ... done
+  Collecting future
+    Downloading future-0.18.2.tar.gz (829 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 829.2/829.2 kB 1.4 MB/s eta 0:00:00
+    Preparing metadata (setup.py) ... done
+  Building wheels for collected packages: pefile, future
+    Building wheel for pefile (setup.py) ... done
+    Created wheel for pefile: filename=pefile-2022.5.30-py3-none-any.whl size=69376 sha256=78db4239ea79fdc5fba7fc1f3602af4af6f2a6de1c290f3f0bfe922b0a67bbc1
+    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\37\01\46\42ba844d09aad7cf28e9be9cc8f28a071e2fef8f1bfe51edac
+    Building wheel for future (setup.py) ... done
+    Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491070 sha256=aedb150ed1b6ec00ee040ace8e5b108083da8d591d2bd7c2a6bc604e917543ed
+    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\96\66\19\2de75120f5d0bc185e9d16cf0fd223d8471ed025de08e45867
+  Successfully built pefile future
+  Installing collected packages: future, pefile, py2exe
+  Successfully installed future-0.18.2 pefile-2022.5.30 py2exe-0.12.0.1
+  PS C:\Users\TaiXeflar>
+ ```
+
+
 ## 專案根目錄定義
 
 本範例定義在一個名為pytest的專案資料夾底下，有以下內容:
