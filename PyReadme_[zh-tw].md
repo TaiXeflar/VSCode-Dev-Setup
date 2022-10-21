@@ -109,384 +109,34 @@
 - Flask
 - Bottle
 
-這裡舉例一個使用終端機安裝多個套件的實際過程:
+這裡舉例一個使用終端機安裝py2exe套件的實際過程:
 
  ```
-PS C:\Users\TaiXeflar> pip install Numpy, Matplotlib, pandas, numba, bs4, flask, discord, scikit-learn, tensorflow-gpu, torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116, jupyter
-Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cu116
-Collecting Numpy
-  Downloading numpy-1.23.4-cp39-cp39-win_amd64.whl (14.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.7/14.7 MB 11.3 MB/s eta 0:00:00
-Collecting Matplotlib
-  Downloading matplotlib-3.6.1-cp39-cp39-win_amd64.whl (7.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.2/7.2 MB 11.5 MB/s eta 0:00:00
-Collecting pandas
-  Downloading pandas-1.5.1-cp39-cp39-win_amd64.whl (10.9 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 11.5 MB/s eta 0:00:00
-Collecting numba
-  Downloading numba-0.56.3-cp39-cp39-win_amd64.whl (2.5 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 12.1 MB/s eta 0:00:00
-Collecting bs4
-  Downloading bs4-0.0.1.tar.gz (1.1 kB)
-  Preparing metadata (setup.py) ... done
-Collecting flask
-  Downloading Flask-2.2.2-py3-none-any.whl (101 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.5/101.5 kB ? eta 0:00:00
-Collecting discord
-  Downloading discord-2.0.0-py3-none-any.whl (1.1 kB)
-Collecting scikit-learn
-  Downloading scikit_learn-1.1.2-cp39-cp39-win_amd64.whl (7.4 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.4/7.4 MB 11.6 MB/s eta 0:00:00
-Collecting tensorflow-gpu
-  Downloading tensorflow_gpu-2.10.0-cp39-cp39-win_amd64.whl (455.9 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 455.9/455.9 MB 5.3 MB/s eta 0:00:00
-Collecting torch
-  Downloading https://download.pytorch.org/whl/cu116/torch-1.12.1%2Bcu116-cp39-cp39-win_amd64.whl (2388.0 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 GB 1.7 MB/s eta 0:00:00
-Collecting torchvision
-  Downloading https://download.pytorch.org/whl/cu116/torchvision-0.13.1%2Bcu116-cp39-cp39-win_amd64.whl (2.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 8.2 MB/s eta 0:00:00
-Collecting torchaudio
-  Downloading https://download.pytorch.org/whl/cu116/torchaudio-0.12.1%2Bcu116-cp39-cp39-win_amd64.whl (1.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 5.4 MB/s eta 0:00:00
-Collecting jupyter
-  Downloading jupyter-1.0.0-py2.py3-none-any.whl (2.7 kB)
-Collecting python-dateutil>=2.7
-  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 2.6 MB/s eta 0:00:00
-Collecting pillow>=6.2.0
-  Downloading Pillow-9.2.0-cp39-cp39-win_amd64.whl (3.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 11.6 MB/s eta 0:00:00
-Collecting kiwisolver>=1.0.1
-  Downloading kiwisolver-1.4.4-cp39-cp39-win_amd64.whl (55 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.4/55.4 kB 2.8 MB/s eta 0:00:00
-Collecting fonttools>=4.22.0
-  Downloading fonttools-4.37.4-py3-none-any.whl (960 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 960.8/960.8 kB 12.2 MB/s eta 0:00:00
-Collecting cycler>=0.10
-  Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
-Collecting contourpy>=1.0.1
-  Downloading contourpy-1.0.5-cp39-cp39-win_amd64.whl (161 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.0/162.0 kB 10.1 MB/s eta 0:00:00
-Collecting packaging>=20.0
-  Downloading packaging-21.3-py3-none-any.whl (40 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.8/40.8 kB 1.9 MB/s eta 0:00:00
-Collecting pyparsing>=2.2.1
-  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 kB 5.9 MB/s eta 0:00:00
-Collecting pytz>=2020.1
-  Downloading pytz-2022.5-py2.py3-none-any.whl (500 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 500.7/500.7 kB 15.3 MB/s eta 0:00:00
-Requirement already satisfied: setuptools in c:\program files\python39\lib\site-packages (from numba) (57.4.0)
-Collecting llvmlite<0.40,>=0.39.0dev0
-  Downloading llvmlite-0.39.1-cp39-cp39-win_amd64.whl (23.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.2/23.2 MB 11.3 MB/s eta 0:00:00
-Collecting beautifulsoup4
-  Downloading beautifulsoup4-4.11.1-py3-none-any.whl (128 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.2/128.2 kB 7.4 MB/s eta 0:00:00
-Collecting Jinja2>=3.0
-  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 7.7 MB/s eta 0:00:00
-Collecting itsdangerous>=2.0
-  Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
-Collecting click>=8.0
-  Downloading click-8.1.3-py3-none-any.whl (96 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 kB ? eta 0:00:00
-Collecting importlib-metadata>=3.6.0
-  Downloading importlib_metadata-5.0.0-py3-none-any.whl (21 kB)
-Collecting Werkzeug>=2.2.2
-  Downloading Werkzeug-2.2.2-py3-none-any.whl (232 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.7/232.7 kB 13.9 MB/s eta 0:00:00
-Collecting discord.py>=2.0.0
-  Downloading discord.py-2.0.1-py3-none-any.whl (1.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 11.2 MB/s eta 0:00:00
-Collecting threadpoolctl>=2.0.0
-  Downloading threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
-Collecting scipy>=1.3.2
-  Downloading scipy-1.9.3-cp39-cp39-win_amd64.whl (40.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.2/40.2 MB 10.7 MB/s eta 0:00:00
-Collecting joblib>=1.0.0
-  Downloading joblib-1.2.0-py3-none-any.whl (297 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 298.0/298.0 kB 9.3 MB/s eta 0:00:00
-Collecting tensorboard<2.11,>=2.10
-  Downloading tensorboard-2.10.1-py3-none-any.whl (5.9 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.9/5.9 MB 11.0 MB/s eta 0:00:00
-Collecting tensorflow-io-gcs-filesystem>=0.23.1
-  Downloading tensorflow_io_gcs_filesystem-0.27.0-cp39-cp39-win_amd64.whl (1.5 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 10.5 MB/s eta 0:00:00
-Collecting typing-extensions>=3.6.6
-  Downloading typing_extensions-4.4.0-py3-none-any.whl (26 kB)
-Collecting libclang>=13.0.0
-  Downloading libclang-14.0.6-py2.py3-none-win_amd64.whl (14.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 11.5 MB/s eta 0:00:00
-Collecting astunparse>=1.6.0
-  Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
-Collecting gast<=0.4.0,>=0.2.1
-  Downloading gast-0.4.0-py3-none-any.whl (9.8 kB)
-Collecting tensorflow-estimator<2.11,>=2.10.0
-  Downloading tensorflow_estimator-2.10.0-py2.py3-none-any.whl (438 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 438.7/438.7 kB 13.8 MB/s eta 0:00:00
-Collecting six>=1.12.0
-  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
-Collecting protobuf<3.20,>=3.9.2
-  Downloading protobuf-3.19.6-cp39-cp39-win_amd64.whl (895 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 895.9/895.9 kB 11.4 MB/s eta 0:00:00
-Collecting google-pasta>=0.1.1
-  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 3.1 MB/s eta 0:00:00
-Collecting h5py>=2.9.0
-  Downloading h5py-3.7.0-cp39-cp39-win_amd64.whl (2.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 11.2 MB/s eta 0:00:00
-Collecting termcolor>=1.1.0
-  Downloading termcolor-2.0.1-py3-none-any.whl (5.4 kB)
-Collecting keras<2.11,>=2.10.0
-  Downloading keras-2.10.0-py2.py3-none-any.whl (1.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 12.0 MB/s eta 0:00:00
-Collecting flatbuffers>=2.0
-  Downloading flatbuffers-22.9.24-py2.py3-none-any.whl (26 kB)
-Collecting wrapt>=1.11.0
-  Downloading wrapt-1.14.1-cp39-cp39-win_amd64.whl (35 kB)
-Collecting absl-py>=1.0.0
-  Downloading absl_py-1.3.0-py3-none-any.whl (124 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.6/124.6 kB 7.1 MB/s eta 0:00:00
-Collecting keras-preprocessing>=1.1.1
-  Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.6/42.6 kB ? eta 0:00:00
-Collecting grpcio<2.0,>=1.24.3
-  Downloading grpcio-1.50.0-cp39-cp39-win_amd64.whl (3.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 11.6 MB/s eta 0:00:00
-Collecting opt-einsum>=2.3.2
-  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 3.7 MB/s eta 0:00:00
-Collecting requests
-  Downloading requests-2.28.1-py3-none-any.whl (62 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB ? eta 0:00:00
-Collecting notebook
-  Downloading notebook-6.5.1-py3-none-any.whl (439 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 439.1/439.1 kB 13.4 MB/s eta 0:00:00
-Collecting ipykernel
-  Downloading ipykernel-6.16.1-py3-none-any.whl (138 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.5/138.5 kB 8.6 MB/s eta 0:00:00
-Collecting ipywidgets
-  Downloading ipywidgets-8.0.2-py3-none-any.whl (134 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.4/134.4 kB 7.8 MB/s eta 0:00:00
-Collecting jupyter-console
-  Downloading jupyter_console-6.4.4-py3-none-any.whl (22 kB)
-Collecting nbconvert
-  Downloading nbconvert-7.2.2-py3-none-any.whl (271 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 271.6/271.6 kB 17.4 MB/s eta 0:00:00
-Collecting qtconsole
-  Downloading qtconsole-5.3.2-py3-none-any.whl (120 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 120.8/120.8 kB ? eta 0:00:00
-Collecting wheel<1.0,>=0.23.0
-  Downloading wheel-0.37.1-py2.py3-none-any.whl (35 kB)
-Collecting colorama
-  Downloading colorama-0.4.5-py2.py3-none-any.whl (16 kB)
-Collecting aiohttp<4,>=3.7.4
-  Downloading aiohttp-3.8.3-cp39-cp39-win_amd64.whl (323 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 323.5/323.5 kB 9.8 MB/s eta 0:00:00
-Collecting zipp>=0.5
-  Downloading zipp-3.9.0-py3-none-any.whl (5.8 kB)
-Collecting MarkupSafe>=2.0
-  Downloading MarkupSafe-2.1.1-cp39-cp39-win_amd64.whl (17 kB)
-Collecting markdown>=2.6.8
-  Downloading Markdown-3.4.1-py3-none-any.whl (93 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.3/93.3 kB ? eta 0:00:00
-Collecting tensorboard-data-server<0.7.0,>=0.6.0
-  Downloading tensorboard_data_server-0.6.1-py3-none-any.whl (2.4 kB)
-Collecting google-auth-oauthlib<0.5,>=0.4.1
-  Downloading google_auth_oauthlib-0.4.6-py2.py3-none-any.whl (18 kB)
-Collecting tensorboard-plugin-wit>=1.6.0
-  Downloading tensorboard_plugin_wit-1.8.1-py3-none-any.whl (781 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 781.3/781.3 kB 12.4 MB/s eta 0:00:00
-Collecting google-auth<3,>=1.6.3
-  Downloading google_auth-2.13.0-py2.py3-none-any.whl (174 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 174.5/174.5 kB 10.3 MB/s eta 0:00:00
-Collecting certifi>=2017.4.17
-  Downloading certifi-2022.9.24-py3-none-any.whl (161 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.1/161.1 kB ? eta 0:00:00
-Collecting idna<4,>=2.5
-  Downloading idna-3.4-py3-none-any.whl (61 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 kB 3.4 MB/s eta 0:00:00
-Collecting urllib3<1.27,>=1.21.1
-  Downloading urllib3-1.26.12-py2.py3-none-any.whl (140 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.4/140.4 kB ? eta 0:00:00
-Collecting charset-normalizer<3,>=2
-  Downloading charset_normalizer-2.1.1-py3-none-any.whl (39 kB)
-Collecting soupsieve>1.2
-  Downloading soupsieve-2.3.2.post1-py3-none-any.whl (37 kB)
-Collecting ipython>=7.23.1
-  Downloading ipython-8.5.0-py3-none-any.whl (752 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 752.0/752.0 kB 11.8 MB/s eta 0:00:00
-Collecting nest-asyncio
-  Downloading nest_asyncio-1.5.6-py3-none-any.whl (5.2 kB)
-Collecting psutil
-  Downloading psutil-5.9.3-cp39-cp39-win_amd64.whl (247 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.1/247.1 kB 15.8 MB/s eta 0:00:00
-Collecting matplotlib-inline>=0.1
-  Downloading matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
-Collecting pyzmq>=17
-  Downloading pyzmq-24.0.1-cp39-cp39-win_amd64.whl (999 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 999.5/999.5 kB 10.5 MB/s eta 0:00:00
-Collecting tornado>=6.1
-  Downloading tornado-6.2-cp37-abi3-win_amd64.whl (425 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 425.3/425.3 kB 13.0 MB/s eta 0:00:00
-Collecting jupyter-client>=6.1.12
-  Downloading jupyter_client-7.4.3-py3-none-any.whl (132 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 8.1 MB/s eta 0:00:00
-Collecting traitlets>=5.1.0
-  Downloading traitlets-5.5.0-py3-none-any.whl (107 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.4/107.4 kB 2.1 MB/s eta 0:00:00
-Collecting debugpy>=1.0
-  Downloading debugpy-1.6.3-cp39-cp39-win_amd64.whl (4.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 10.9 MB/s eta 0:00:00
-Collecting widgetsnbextension~=4.0
-  Downloading widgetsnbextension-4.0.3-py3-none-any.whl (2.0 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 10.0 MB/s eta 0:00:00
-Collecting jupyterlab-widgets~=3.0
-  Downloading jupyterlab_widgets-3.0.3-py3-none-any.whl (384 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 384.1/384.1 kB 12.1 MB/s eta 0:00:00
-Collecting pygments
-  Downloading Pygments-2.13.0-py3-none-any.whl (1.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 11.6 MB/s eta 0:00:00
-Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
-  Downloading prompt_toolkit-3.0.31-py3-none-any.whl (382 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 382.3/382.3 kB 12.0 MB/s eta 0:00:00
-Collecting tinycss2
-  Downloading tinycss2-1.2.1-py3-none-any.whl (21 kB)
-Collecting jupyterlab-pygments
-  Downloading jupyterlab_pygments-0.2.2-py2.py3-none-any.whl (21 kB)
-Collecting mistune<3,>=2.0.3
-  Downloading mistune-2.0.4-py2.py3-none-any.whl (24 kB)
-Collecting nbformat>=5.1
-  Downloading nbformat-5.7.0-py3-none-any.whl (77 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.1/77.1 kB ? eta 0:00:00
-Collecting nbclient>=0.5.0
-  Downloading nbclient-0.7.0-py3-none-any.whl (71 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.9/71.9 kB 3.9 MB/s eta 0:00:00
-Collecting jupyter-core>=4.7
-  Downloading jupyter_core-4.11.2-py3-none-any.whl (88 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.5/88.5 kB ? eta 0:00:00
-Collecting pandocfilters>=1.4.1
-  Downloading pandocfilters-1.5.0-py2.py3-none-any.whl (8.7 kB)
-Collecting defusedxml
-  Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
-Collecting bleach
-  Downloading bleach-5.0.1-py3-none-any.whl (160 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.9/160.9 kB 9.4 MB/s eta 0:00:00
-Collecting prometheus-client
-  Downloading prometheus_client-0.15.0-py3-none-any.whl (60 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.1/60.1 kB 3.3 MB/s eta 0:00:00
-Collecting terminado>=0.8.3
-  Downloading terminado-0.16.0-py3-none-any.whl (16 kB)
-Collecting argon2-cffi
-  Downloading argon2_cffi-21.3.0-py3-none-any.whl (14 kB)
-Collecting Send2Trash>=1.8.0
-  Downloading Send2Trash-1.8.0-py3-none-any.whl (18 kB)
-Collecting ipython-genutils
-  Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
-Collecting nbclassic==0.4.5
-  Downloading nbclassic-0.4.5-py3-none-any.whl (9.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.8/9.8 MB 11.6 MB/s eta 0:00:00
-Collecting jupyter-server>=1.8
-  Downloading jupyter_server-1.21.0-py3-none-any.whl (346 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 346.5/346.5 kB 10.8 MB/s eta 0:00:00
-Collecting notebook-shim>=0.1.0
-  Downloading notebook_shim-0.2.0-py3-none-any.whl (13 kB)
-Collecting qtpy>=2.0.1
-  Downloading QtPy-2.2.1-py3-none-any.whl (82 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.6/82.6 kB ? eta 0:00:00
-Collecting attrs>=17.3.0
-  Downloading attrs-22.1.0-py2.py3-none-any.whl (58 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 kB ? eta 0:00:00
-Collecting async-timeout<5.0,>=4.0.0a3
-  Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
-Collecting aiosignal>=1.1.2
-  Downloading aiosignal-1.2.0-py3-none-any.whl (8.2 kB)
-Collecting yarl<2.0,>=1.0
-  Downloading yarl-1.8.1-cp39-cp39-win_amd64.whl (56 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.7/56.7 kB ? eta 0:00:00
-Collecting frozenlist>=1.1.1
-  Downloading frozenlist-1.3.1-cp39-cp39-win_amd64.whl (34 kB)
-Collecting multidict<7.0,>=4.5
-  Downloading multidict-6.0.2-cp39-cp39-win_amd64.whl (28 kB)
-Collecting cachetools<6.0,>=2.0.0
-  Downloading cachetools-5.2.0-py3-none-any.whl (9.3 kB)
-Collecting pyasn1-modules>=0.2.1
-  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 kB 9.1 MB/s eta 0:00:00
-Collecting rsa<5,>=3.1.4
-  Downloading rsa-4.9-py3-none-any.whl (34 kB)
-Collecting requests-oauthlib>=0.7.0
-  Downloading requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
-Collecting jedi>=0.16
-  Downloading jedi-0.18.1-py2.py3-none-any.whl (1.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 11.0 MB/s eta 0:00:00
-Collecting backcall
-  Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
-Collecting pickleshare
-  Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
-Collecting decorator
-  Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
-Collecting stack-data
-  Downloading stack_data-0.5.1-py3-none-any.whl (24 kB)
-Collecting entrypoints
-  Downloading entrypoints-0.4-py3-none-any.whl (5.3 kB)
-Collecting pywin32>=1.0
-  Downloading pywin32-304-cp39-cp39-win_amd64.whl (12.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 11.5 MB/s eta 0:00:00
-Collecting jsonschema>=2.6
-  Downloading jsonschema-4.16.0-py3-none-any.whl (83 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.1/83.1 kB 4.6 MB/s eta 0:00:00
-Collecting fastjsonschema
-  Downloading fastjsonschema-2.16.2-py3-none-any.whl (22 kB)
-Collecting wcwidth
-  Downloading wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
-Collecting pywinpty>=1.1.0
-  Downloading pywinpty-2.0.8-cp39-none-win_amd64.whl (1.4 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 11.2 MB/s eta 0:00:00
-Collecting argon2-cffi-bindings
-  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-win_amd64.whl (30 kB)
-Collecting webencodings
-  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
-Collecting parso<0.9.0,>=0.8.0
-  Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB ? eta 0:00:00
-Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
-  Downloading pyrsistent-0.18.1-cp39-cp39-win_amd64.whl (61 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.6/61.6 kB ? eta 0:00:00
-Collecting anyio<4,>=3.1.0
-  Downloading anyio-3.6.2-py3-none-any.whl (80 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.6/80.6 kB 4.7 MB/s eta 0:00:00
-Collecting websocket-client
-  Downloading websocket_client-1.4.1-py3-none-any.whl (55 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.0/55.0 kB ? eta 0:00:00
-Collecting pyasn1<0.5.0,>=0.4.6
-  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.1/77.1 kB 4.2 MB/s eta 0:00:00
-Collecting oauthlib>=3.0.0
-  Downloading oauthlib-3.2.2-py3-none-any.whl (151 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.7/151.7 kB 9.4 MB/s eta 0:00:00
-Collecting cffi>=1.0.1
-  Downloading cffi-1.15.1-cp39-cp39-win_amd64.whl (179 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 179.1/179.1 kB 10.6 MB/s eta 0:00:00
-Collecting pure-eval
-  Downloading pure_eval-0.2.2-py3-none-any.whl (11 kB)
-Collecting asttokens
-  Downloading asttokens-2.0.8-py2.py3-none-any.whl (23 kB)
-Collecting executing
-  Downloading executing-1.1.1-py2.py3-none-any.whl (22 kB)
-Collecting sniffio>=1.1
-  Downloading sniffio-1.3.0-py3-none-any.whl (10 kB)
-Collecting pycparser
-  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB ? eta 0:00:00
-Installing collected packages: webencodings, wcwidth, tensorboard-plugin-wit, Send2Trash, pywin32, pytz, pyasn1, pure-eval, pickleshare, mistune, libclang, keras, ipython-genutils, flatbuffers, fastjsonschema, executing, backcall, zipp, wrapt, widgetsnbextension, wheel, websocket-client, urllib3, typing-extensions, traitlets, tornado, tinycss2, threadpoolctl, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, soupsieve, sniffio, six, rsa, pyzmq, pywinpty, pyrsistent, pyparsing, pygments, pycparser, pyasn1-modules, psutil, protobuf, prompt-toolkit, prometheus-client, pillow, parso, pandocfilters, oauthlib, Numpy, nest-asyncio, multidict, MarkupSafe, llvmlite, kiwisolver, jupyterlab-widgets, jupyterlab-pygments, joblib, itsdangerous, idna, gast, frozenlist, fonttools, entrypoints, defusedxml, decorator, debugpy, cycler, colorama, charset-normalizer, certifi, cachetools, attrs, async-timeout, absl-py, yarl, Werkzeug, torch, terminado, scipy, requests, python-dateutil, packaging, opt-einsum, numba, matplotlib-inline, keras-preprocessing, jupyter-core, jsonschema, Jinja2, jedi, importlib-metadata, h5py, grpcio, google-pasta, google-auth, contourpy, click, cffi, bleach, beautifulsoup4, astunparse, asttokens, anyio, aiosignal, torchvision, torchaudio, stack-data, scikit-learn, requests-oauthlib, qtpy, pandas, nbformat, Matplotlib, markdown, jupyter-client, flask, bs4, argon2-cffi-bindings, aiohttp, nbclient, ipython, google-auth-oauthlib, discord.py, argon2-cffi, tensorboard, nbconvert, ipykernel, discord, tensorflow-gpu, qtconsole, jupyter-server, jupyter-console, ipywidgets, notebook-shim, nbclassic, notebook, jupyter
-  DEPRECATION: bs4 is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
-  Running setup.py install for bs4 ... done
-Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 Matplotlib-3.6.1 Numpy-1.23.4 Send2Trash-1.8.0 Werkzeug-2.2.2 absl-py-1.3.0 aiohttp-3.8.3 aiosignal-1.2.0 anyio-3.6.2 argon2-cffi-21.3.0 argon2-cffi-bindings-21.2.0 asttokens-2.0.8 astunparse-1.6.3 async-timeout-4.0.2 attrs-22.1.0 backcall-0.2.0 beautifulsoup4-4.11.1 bleach-5.0.1 bs4-0.0.1 cachetools-5.2.0 certifi-2022.9.24 cffi-1.15.1 charset-normalizer-2.1.1 click-8.1.3 colorama-0.4.5 contourpy-1.0.5 cycler-0.11.0 debugpy-1.6.3 decorator-5.1.1 defusedxml-0.7.1 discord-2.0.0 discord.py-2.0.1 entrypoints-0.4 executing-1.1.1 fastjsonschema-2.16.2 flask-2.2.2 flatbuffers-22.9.24 fonttools-4.37.4 frozenlist-1.3.1 gast-0.4.0 google-auth-2.13.0 google-auth-oauthlib-0.4.6 google-pasta-0.2.0 grpcio-1.50.0 h5py-3.7.0 idna-3.4 importlib-metadata-5.0.0 ipykernel-6.16.1 ipython-8.5.0 ipython-genutils-0.2.0 ipywidgets-8.0.2 itsdangerous-2.1.2 jedi-0.18.1 joblib-1.2.0 jsonschema-4.16.0 jupyter-1.0.0 jupyter-client-7.4.3 jupyter-console-6.4.4 jupyter-core-4.11.2 jupyter-server-1.21.0 jupyterlab-pygments-0.2.2 jupyterlab-widgets-3.0.3 keras-2.10.0 keras-preprocessing-1.1.2 kiwisolver-1.4.4 libclang-14.0.6 llvmlite-0.39.1 markdown-3.4.1 matplotlib-inline-0.1.6 mistune-2.0.4 multidict-6.0.2 nbclassic-0.4.5 nbclient-0.7.0 nbconvert-7.2.2 nbformat-5.7.0 nest-asyncio-1.5.6 notebook-6.5.1 notebook-shim-0.2.0 numba-0.56.3 oauthlib-3.2.2 opt-einsum-3.3.0 packaging-21.3 pandas-1.5.1 pandocfilters-1.5.0 parso-0.8.3 pickleshare-0.7.5 pillow-9.2.0 prometheus-client-0.15.0 prompt-toolkit-3.0.31 protobuf-3.19.6 psutil-5.9.3 pure-eval-0.2.2 pyasn1-0.4.8 pyasn1-modules-0.2.8 pycparser-2.21 pygments-2.13.0 pyparsing-3.0.9 pyrsistent-0.18.1 python-dateutil-2.8.2 pytz-2022.5 pywin32-304 pywinpty-2.0.8 pyzmq-24.0.1 qtconsole-5.3.2 qtpy-2.2.1 requests-2.28.1 requests-oauthlib-1.3.1 rsa-4.9 scikit-learn-1.1.2 scipy-1.9.3 six-1.16.0 sniffio-1.3.0 soupsieve-2.3.2.post1 stack-data-0.5.1 tensorboard-2.10.1 tensorboard-data-server-0.6.1 tensorboard-plugin-wit-1.8.1 tensorflow-estimator-2.10.0 tensorflow-gpu-2.10.0 tensorflow-io-gcs-filesystem-0.27.0 termcolor-2.0.1 terminado-0.16.0 threadpoolctl-3.1.0 tinycss2-1.2.1 torch-1.12.1+cu116 torchaudio-0.12.1+cu116 torchvision-0.13.1+cu116 tornado-6.2 traitlets-5.5.0 typing-extensions-4.4.0 urllib3-1.26.12 wcwidth-0.2.5 webencodings-0.5.1 websocket-client-1.4.1 wheel-0.37.1 widgetsnbextension-4.0.3 wrapt-1.14.1 yarl-1.8.1 zipp-3.9.0
-PS C:\Users\TaiXeflar>
-```
+  PS C:\Users\TaiXeflar> pip install py2exe
+  Collecting py2exe
+    Downloading py2exe-0.12.0.1-cp39-cp39-win_amd64.whl (151 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.8/151.8 kB 3.0 MB/s eta 0:00:00
+  Requirement already satisfied: cachetools in c:\program files\python39\lib\site-packages (from py2exe) (5.2.0)
+  Collecting pefile
+    Downloading pefile-2022.5.30.tar.gz (72 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.9/72.9 kB ? eta 0:00:00
+    Preparing metadata (setup.py) ... done
+  Collecting future
+    Downloading future-0.18.2.tar.gz (829 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 829.2/829.2 kB 6.6 MB/s eta 0:00:00
+    Preparing metadata (setup.py) ... done
+  Building wheels for collected packages: pefile, future
+    Building wheel for pefile (setup.py) ... done
+    Created wheel for pefile: filename=pefile-2022.5.30-py3-none-any.whl size=69376 sha256=b1e373fb8e3622402e8b6b78916fe1841571421b8b8597e821ff0fb8ce1241f4
+    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\37\01\46\42ba844d09aad7cf28e9be9cc8f28a071e2fef8f1bfe51edac
+    Building wheel for future (setup.py) ... done
+    Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491070 sha256=8071dbb391b557ab5036d5c541e295d9e6c40a2adb3f96917e04f3877b6757bd
+    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\96\66\19\2de75120f5d0bc185e9d16cf0fd223d8471ed025de08e45867
+  Successfully built pefile future
+  Installing collected packages: future, pefile, py2exe
+  Successfully installed future-0.18.2 pefile-2022.5.30 py2exe-0.12.0.1
+  PS C:\Users\TaiXeflar> 
+  ```
 
 
 ## 專案根目錄定義
@@ -553,7 +203,2080 @@ PS C:\Users\TaiXeflar>
 ## Python Module 注意事項
 
   - 請注意，在某些特定的情況下，會有Module間不相容導致程式執行中出現不可預期的錯誤。
-  - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制在本機執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。
+  - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制在本機執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。這個錯誤會看起來非常的長:
+  ```
+  PS C:\Users\TaiXeflar> pip install google.colab
+  Collecting google.colab
+    Downloading google-colab-1.0.0.tar.gz (72 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.9/72.9 kB 1.3 MB/s eta 0:00:00
+    Preparing metadata (setup.py) ... done
+  Collecting google-auth~=1.4.0
+    Downloading google_auth-1.4.2-py2.py3-none-any.whl (64 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.2/64.2 kB ? eta 0:00:00
+  Collecting ipykernel~=4.6.0
+    Downloading ipykernel-4.6.1-py3-none-any.whl (104 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.5/104.5 kB ? eta 0:00:00
+  Collecting ipython~=5.5.0
+    Downloading ipython-5.5.0-py3-none-any.whl (758 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 758.9/758.9 kB 9.6 MB/s eta 0:00:00
+  Collecting notebook~=5.2.0
+    Downloading notebook-5.2.2-py2.py3-none-any.whl (8.0 MB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 11.2 MB/s eta 0:00:00
+  Collecting six~=1.12.0
+    Downloading six-1.12.0-py2.py3-none-any.whl (10 kB)
+  Collecting pandas~=0.24.0
+    Downloading pandas-0.24.2.tar.gz (11.8 MB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.8/11.8 MB 11.5 MB/s eta 0:00:00
+    Preparing metadata (setup.py) ... done
+  Collecting portpicker~=1.2.0
+    Downloading portpicker-1.2.0.tar.gz (17 kB)
+    Preparing metadata (setup.py) ... done
+  Collecting requests~=2.21.0
+    Downloading requests-2.21.0-py2.py3-none-any.whl (57 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.0/58.0 kB 3.0 MB/s eta 0:00:00
+  Collecting tornado~=4.5.0
+    Downloading tornado-4.5.3.tar.gz (484 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 484.2/484.2 kB 14.8 MB/s eta 0:00:00
+    Preparing metadata (setup.py) ... done
+  Requirement already satisfied: rsa>=3.1.4 in c:\program files\python39\lib\site-packages (from google-auth~=1.4.0->google.colab) (4.9)
+  Requirement already satisfied: cachetools>=2.0.0 in c:\program files\python39\lib\site-packages (from google-auth~=1.4.0->google.colab) (5.2.0)
+  Requirement already satisfied: pyasn1-modules>=0.2.1 in c:\program files\python39\lib\site-packages (from google-auth~=1.4.0->google.colab) (0.2.8)
+  Requirement already satisfied: jupyter-client in c:\program files\python39\lib\site-packages (from ipykernel~=4.6.0->google.colab) (7.4.3)
+  Requirement already satisfied: traitlets>=4.1.0 in c:\program files\python39\lib\site-packages (from ipykernel~=4.6.0->google.colab) (5.5.0)
+  Requirement already satisfied: pygments in c:\program files\python39\lib\site-packages (from ipython~=5.5.0->google.colab) (2.13.0)
+  Requirement already satisfied: setuptools>=18.5 in c:\program files\python39\lib\site-packages (from ipython~=5.5.0->google.colab) (57.4.0)
+  Requirement already satisfied: colorama in c:\program files\python39\lib\site-packages (from ipython~=5.5.0->google.colab) (0.4.5)
+  Requirement already satisfied: decorator in c:\program files\python39\lib\site-packages (from ipython~=5.5.0->google.colab) (5.1.1)
+  Collecting simplegeneric>0.8
+    Downloading simplegeneric-0.8.1.zip (12 kB)
+    Preparing metadata (setup.py) ... done
+  Requirement already satisfied: pickleshare in c:\program files\python39\lib\site-packages (from ipython~=5.5.0->google.colab) (0.7.5)
+  Collecting prompt-toolkit<2.0.0,>=1.0.4
+    Downloading prompt_toolkit-1.0.18-py3-none-any.whl (245 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 245.4/245.4 kB 14.7 MB/s eta 0:00:00
+  Requirement already satisfied: jupyter-core in c:\program files\python39\lib\site-packages (from notebook~=5.2.0->google.colab) (4.11.2)
+  Requirement already satisfied: jinja2 in c:\program files\python39\lib\site-packages (from notebook~=5.2.0->google.colab) (3.1.2)
+  Requirement already satisfied: ipython-genutils in c:\program files\python39\lib\site-packages (from notebook~=5.2.0->google.colab) (0.2.0)
+  Requirement already satisfied: nbconvert in c:\program files\python39\lib\site-packages (from notebook~=5.2.0->google.colab) (7.2.2)
+  Requirement already satisfied: nbformat in c:\program files\python39\lib\site-packages (from notebook~=5.2.0->google.colab) (5.7.0)
+  Requirement already satisfied: python-dateutil>=2.5.0 in c:\program files\python39\lib\site-packages (from pandas~=0.24.0->google.colab) (2.8.2)
+  Requirement already satisfied: pytz>=2011k in c:\program files\python39\lib\site-packages (from pandas~=0.24.0->google.colab) (2022.5)
+  Requirement already satisfied: numpy>=1.12.0 in c:\program files\python39\lib\site-packages (from pandas~=0.24.0->google.colab) (1.23.4)
+  Collecting chardet<3.1.0,>=3.0.2
+    Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.4/133.4 kB 7.7 MB/s eta 0:00:00
+  Collecting idna<2.9,>=2.5
+    Downloading idna-2.8-py2.py3-none-any.whl (58 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.6/58.6 kB 3.0 MB/s eta 0:00:00
+  Requirement already satisfied: certifi>=2017.4.17 in c:\program files\python39\lib\site-packages (from requests~=2.21.0->google.colab) (2022.9.24)
+  Collecting urllib3<1.25,>=1.21.1
+    Downloading urllib3-1.24.3-py2.py3-none-any.whl (118 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.8/118.8 kB 6.8 MB/s eta 0:00:00
+  Requirement already satisfied: wcwidth in c:\program files\python39\lib\site-packages (from prompt-toolkit<2.0.0,>=1.0.4->ipython~=5.5.0->google.colab) (0.2.5)
+  Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in c:\program files\python39\lib\site-packages (from pyasn1-modules>=0.2.1->google-auth~=1.4.0->google.colab) (0.4.8)
+  Requirement already satisfied: MarkupSafe>=2.0 in c:\program files\python39\lib\site-packages (from jinja2->notebook~=5.2.0->google.colab) (2.1.1)
+  Requirement already satisfied: entrypoints in c:\program files\python39\lib\site-packages (from jupyter-client->ipykernel~=4.6.0->google.colab) (0.4)
+  Requirement already satisfied: pyzmq>=23.0 in c:\program files\python39\lib\site-packages (from jupyter-client->ipykernel~=4.6.0->google.colab) (24.0.1)
+  Collecting jupyter-client
+    Downloading jupyter_client-7.4.2-py3-none-any.whl (132 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 8.1 MB/s eta 0:00:00
+    Downloading jupyter_client-7.4.1-py3-none-any.whl (132 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB ? eta 0:00:00
+    Downloading jupyter_client-7.4.0-py3-none-any.whl (132 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 7.6 MB/s eta 0:00:00
+    Downloading jupyter_client-7.3.5-py3-none-any.whl (132 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB ? eta 0:00:00
+    Downloading jupyter_client-7.3.4-py3-none-any.whl (132 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 7.6 MB/s eta 0:00:00
+    Downloading jupyter_client-7.3.3-py3-none-any.whl (131 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.0/132.0 kB 7.6 MB/s eta 0:00:00
+    Downloading jupyter_client-7.3.2-py3-none-any.whl (131 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.9/131.9 kB 8.1 MB/s eta 0:00:00
+    Downloading jupyter_client-7.3.1-py3-none-any.whl (130 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.0/131.0 kB 7.5 MB/s eta 0:00:00
+    Downloading jupyter_client-7.3.0-py3-none-any.whl (130 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.9/130.9 kB 8.0 MB/s eta 0:00:00
+    Downloading jupyter_client-7.2.2-py3-none-any.whl (130 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.6/130.6 kB 7.5 MB/s eta 0:00:00
+    Downloading jupyter_client-7.2.1-py3-none-any.whl (130 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.4/130.4 kB 8.0 MB/s eta 0:00:00
+    Downloading jupyter_client-7.2.0-py3-none-any.whl (130 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.5/130.5 kB 7.5 MB/s eta 0:00:00
+  Requirement already satisfied: nest-asyncio>=1.5.1 in c:\program files\python39\lib\site-packages (from jupyter-client->ipykernel~=4.6.0->google.colab) (1.5.6)
+    Downloading jupyter_client-7.1.2-py3-none-any.whl (130 kB)
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.3/130.3 kB 8.0 MB/s eta 0:00:00
+  Requirement already satisfied: pywin32>=1.0 in c:\program files\python39\lib\site-packages (from jupyter-core->notebook~=5.2.0->google.colab) (304)
+  Requirement already satisfied: defusedxml in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (0.7.1)
+  Requirement already satisfied: jupyterlab-pygments in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (0.2.2)
+  Requirement already satisfied: nbclient>=0.5.0 in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (0.7.0)
+  Requirement already satisfied: pandocfilters>=1.4.1 in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (1.5.0)
+  Requirement already satisfied: tinycss2 in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (1.2.1)
+  Requirement already satisfied: bleach in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (5.0.1)
+  Requirement already satisfied: beautifulsoup4 in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (4.11.1)
+  Requirement already satisfied: packaging in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (21.3)
+  Requirement already satisfied: mistune<3,>=2.0.3 in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (2.0.4)
+  Requirement already satisfied: importlib-metadata>=3.6 in c:\program files\python39\lib\site-packages (from nbconvert->notebook~=5.2.0->google.colab) (5.0.0)
+  Requirement already satisfied: jsonschema>=2.6 in c:\program files\python39\lib\site-packages (from nbformat->notebook~=5.2.0->google.colab) (4.16.0)
+  Requirement already satisfied: fastjsonschema in c:\program files\python39\lib\site-packages (from nbformat->notebook~=5.2.0->google.colab) (2.16.2)
+  Requirement already satisfied: zipp>=0.5 in c:\program files\python39\lib\site-packages (from importlib-metadata>=3.6->nbconvert->notebook~=5.2.0->google.colab) (3.9.0)
+  Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in c:\program files\python39\lib\site-packages (from jsonschema>=2.6->nbformat->notebook~=5.2.0->google.colab) (0.18.1)
+  Requirement already satisfied: attrs>=17.4.0 in c:\program files\python39\lib\site-packages (from jsonschema>=2.6->nbformat->notebook~=5.2.0->google.colab) (22.1.0)
+  Requirement already satisfied: soupsieve>1.2 in c:\program files\python39\lib\site-packages (from beautifulsoup4->nbconvert->notebook~=5.2.0->google.colab) (2.3.2.post1)
+  Requirement already satisfied: webencodings in c:\program files\python39\lib\site-packages (from bleach->nbconvert->notebook~=5.2.0->google.colab) (0.5.1)
+  Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\program files\python39\lib\site-packages (from packaging->nbconvert->notebook~=5.2.0->google.colab) (3.0.9)
+  Building wheels for collected packages: google.colab, pandas, portpicker, tornado, simplegeneric
+    Building wheel for google.colab (setup.py) ... done
+    Created wheel for google.colab: filename=google_colab-1.0.0-py2.py3-none-any.whl size=102294 sha256=416ccb8a9b5e48612c7809c74cf9cb0609d5c16e3e3e7eebef004d325ed9b1ad
+    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\cf\81\3b\a50a90282756a5257b8885aeb7d22de09c3bfbf31d66ff455e
+    Building wheel for pandas (setup.py) ... error
+    error: subprocess-exited-with-error
+
+    × python setup.py bdist_wheel did not run successfully.
+    │ exit code: 1
+    ╰─> [995 lines of output]
+        running bdist_wheel
+        running build
+        running build_py
+        creating build
+        creating build\lib.win-amd64-3.9
+        creating build\lib.win-amd64-3.9\pandas
+        copying pandas\conftest.py -> build\lib.win-amd64-3.9\pandas
+        copying pandas\testing.py -> build\lib.win-amd64-3.9\pandas
+        copying pandas\_version.py -> build\lib.win-amd64-3.9\pandas
+        copying pandas\__init__.py -> build\lib.win-amd64-3.9\pandas
+        creating build\lib.win-amd64-3.9\pandas\api
+        copying pandas\api\__init__.py -> build\lib.win-amd64-3.9\pandas\api
+        creating build\lib.win-amd64-3.9\pandas\arrays
+        copying pandas\arrays\__init__.py -> build\lib.win-amd64-3.9\pandas\arrays
+        creating build\lib.win-amd64-3.9\pandas\compat
+        copying pandas\compat\chainmap.py -> build\lib.win-amd64-3.9\pandas\compat
+        copying pandas\compat\chainmap_impl.py -> build\lib.win-amd64-3.9\pandas\compat
+        copying pandas\compat\pickle_compat.py -> build\lib.win-amd64-3.9\pandas\compat
+        copying pandas\compat\__init__.py -> build\lib.win-amd64-3.9\pandas\compat
+        creating build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\accessor.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\algorithms.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\api.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\apply.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\base.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\categorical.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\common.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\config.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\config_init.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\frame.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\generic.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\index.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\indexing.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\missing.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\nanops.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\ops.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\panel.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\resample.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\series.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\sorting.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\strings.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\window.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\__init__.py -> build\lib.win-amd64-3.9\pandas\core
+        creating build\lib.win-amd64-3.9\pandas\errors
+        copying pandas\errors\__init__.py -> build\lib.win-amd64-3.9\pandas\errors
+        creating build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\api.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\clipboards.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\common.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\date_converters.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\excel.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\feather_format.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\gbq.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\gcs.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\html.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\packers.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\parquet.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\parsers.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\pickle.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\pytables.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\s3.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\sql.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\stata.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\__init__.py -> build\lib.win-amd64-3.9\pandas\io
+        creating build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_compat.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_converter.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_core.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_misc.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_style.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_timeseries.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_tools.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\__init__.py -> build\lib.win-amd64-3.9\pandas\plotting
+        creating build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_algos.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_base.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_common.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_compat.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_config.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_downstream.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_errors.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_expressions.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_join.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_lib.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_multilevel.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_nanops.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_panel.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_register_accessor.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_strings.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_take.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_window.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\__init__.py -> build\lib.win-amd64-3.9\pandas\tests
+        creating build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\api.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\converter.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\frequencies.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\holiday.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\offsets.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\plotting.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\__init__.py -> build\lib.win-amd64-3.9\pandas\tseries
+        creating build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\testing.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_decorators.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_depr_module.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_doctools.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_exceptions.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_print_versions.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_tester.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_test_decorators.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_validators.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\__init__.py -> build\lib.win-amd64-3.9\pandas\util
+        creating build\lib.win-amd64-3.9\pandas\_libs
+        copying pandas\_libs\__init__.py -> build\lib.win-amd64-3.9\pandas\_libs
+        creating build\lib.win-amd64-3.9\pandas\api\extensions
+        copying pandas\api\extensions\__init__.py -> build\lib.win-amd64-3.9\pandas\api\extensions
+        creating build\lib.win-amd64-3.9\pandas\api\types
+        copying pandas\api\types\__init__.py -> build\lib.win-amd64-3.9\pandas\api\types
+        creating build\lib.win-amd64-3.9\pandas\compat\numpy
+        copying pandas\compat\numpy\function.py -> build\lib.win-amd64-3.9\pandas\compat\numpy
+        copying pandas\compat\numpy\__init__.py -> build\lib.win-amd64-3.9\pandas\compat\numpy
+        creating build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\array_.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\base.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\categorical.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\datetimelike.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\datetimes.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\integer.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\interval.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\numpy_.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\period.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\sparse.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\timedeltas.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\_ranges.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\__init__.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        creating build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\align.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\api.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\check.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\common.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\engines.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\eval.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\expr.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\expressions.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\ops.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\pytables.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\scope.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\__init__.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        creating build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\api.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\base.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\cast.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\common.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\concat.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\dtypes.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\generic.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\inference.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\missing.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\__init__.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        creating build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\base.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\categorical.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\generic.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\groupby.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\grouper.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\ops.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\__init__.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        creating build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\accessors.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\api.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\base.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\category.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\datetimelike.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\datetimes.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\frozen.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\interval.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\multi.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\numeric.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\period.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\range.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\timedeltas.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\__init__.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        creating build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\arrays.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\blocks.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\concat.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\construction.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\managers.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\__init__.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        creating build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\api.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\concat.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\melt.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\merge.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\pivot.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\reshape.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\tile.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\util.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\__init__.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        creating build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\api.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\frame.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\scipy_sparse.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\series.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\__init__.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        creating build\lib.win-amd64-3.9\pandas\core\tools
+        copying pandas\core\tools\datetimes.py -> build\lib.win-amd64-3.9\pandas\core\tools
+        copying pandas\core\tools\numeric.py -> build\lib.win-amd64-3.9\pandas\core\tools
+        copying pandas\core\tools\timedeltas.py -> build\lib.win-amd64-3.9\pandas\core\tools
+        copying pandas\core\tools\__init__.py -> build\lib.win-amd64-3.9\pandas\core\tools
+        creating build\lib.win-amd64-3.9\pandas\core\util
+        copying pandas\core\util\hashing.py -> build\lib.win-amd64-3.9\pandas\core\util
+        copying pandas\core\util\__init__.py -> build\lib.win-amd64-3.9\pandas\core\util
+        creating build\lib.win-amd64-3.9\pandas\io\clipboard
+        copying pandas\io\clipboard\clipboards.py -> build\lib.win-amd64-3.9\pandas\io\clipboard
+        copying pandas\io\clipboard\exceptions.py -> build\lib.win-amd64-3.9\pandas\io\clipboard
+        copying pandas\io\clipboard\windows.py -> build\lib.win-amd64-3.9\pandas\io\clipboard
+        copying pandas\io\clipboard\__init__.py -> build\lib.win-amd64-3.9\pandas\io\clipboard
+        creating build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\console.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\css.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\csvs.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\excel.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\format.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\html.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\latex.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\printing.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\style.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\terminal.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\__init__.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        creating build\lib.win-amd64-3.9\pandas\io\json
+        copying pandas\io\json\json.py -> build\lib.win-amd64-3.9\pandas\io\json
+        copying pandas\io\json\normalize.py -> build\lib.win-amd64-3.9\pandas\io\json
+        copying pandas\io\json\table_schema.py -> build\lib.win-amd64-3.9\pandas\io\json
+        copying pandas\io\json\__init__.py -> build\lib.win-amd64-3.9\pandas\io\json
+        creating build\lib.win-amd64-3.9\pandas\io\msgpack
+        copying pandas\io\msgpack\exceptions.py -> build\lib.win-amd64-3.9\pandas\io\msgpack
+        copying pandas\io\msgpack\_version.py -> build\lib.win-amd64-3.9\pandas\io\msgpack
+        copying pandas\io\msgpack\__init__.py -> build\lib.win-amd64-3.9\pandas\io\msgpack
+        creating build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\sas7bdat.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\sasreader.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\sas_constants.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\sas_xport.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\__init__.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        creating build\lib.win-amd64-3.9\pandas\tests\api
+        copying pandas\tests\api\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\api
+        copying pandas\tests\api\test_types.py -> build\lib.win-amd64-3.9\pandas\tests\api
+        copying pandas\tests\api\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\api
+        creating build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_datetime64.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_numeric.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_object.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_timedelta64.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        creating build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_array.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_datetimes.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_integer.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_numpy.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_timedeltas.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        creating build\lib.win-amd64-3.9\pandas\tests\computation
+        copying pandas\tests\computation\test_compat.py -> build\lib.win-amd64-3.9\pandas\tests\computation
+        copying pandas\tests\computation\test_eval.py -> build\lib.win-amd64-3.9\pandas\tests\computation
+        copying pandas\tests\computation\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\computation
+        creating build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_concat.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_generic.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_inference.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        creating build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_categorical.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_external_block.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_integer.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_sparse.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        creating build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\common.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_alter_axes.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_apply.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_asof.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_axis_select_reindex.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_block_internals.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_combine_concat.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_constructors.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_convert_to.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_duplicates.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_join.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_mutate_columns.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_nonunique_indexes.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_operators.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_quantile.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_query_eval.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_rank.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_replace.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_repr_info.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_reshape.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_sort_values_level_as_str.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_subclass.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_timeseries.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_to_csv.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_validate.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        creating build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_frame.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_generic.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_label_or_level_utils.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_panel.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_series.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        creating build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_apply.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_bin_groupby.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_categorical.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_counting.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_filters.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_function.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_groupby.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_grouping.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_index_as_string.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_nth.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_rank.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_timegrouper.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_transform.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_value_counts.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_whitelist.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\common.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_base.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_category.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_frozen.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_numeric.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        creating build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\common.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_callable.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_categorical.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_chaining_and_caching.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_coercion.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_floats.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_iloc.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_indexing_engines.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_indexing_slow.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_ix.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_loc.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_panel.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_partial.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_scalar.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_timedelta.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        creating build\lib.win-amd64-3.9\pandas\tests\internals
+        copying pandas\tests\internals\test_internals.py -> build\lib.win-amd64-3.9\pandas\tests\internals
+        copying pandas\tests\internals\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\internals
+        creating build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\generate_legacy_storage_files.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_clipboard.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_compression.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_date_converters.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_excel.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_feather.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_gbq.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_gcs.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_html.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_packers.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_parquet.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_pickle.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_pytables.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_s3.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_sql.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_stata.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        creating build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\common.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_boxplot_method.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_converter.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_frame.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_groupby.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_hist_method.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_misc.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_series.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        creating build\lib.win-amd64-3.9\pandas\tests\reductions
+        copying pandas\tests\reductions\test_reductions.py -> build\lib.win-amd64-3.9\pandas\tests\reductions
+        copying pandas\tests\reductions\test_stat_reductions.py -> build\lib.win-amd64-3.9\pandas\tests\reductions
+        copying pandas\tests\reductions\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\reductions
+        creating build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_base.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_datetime_index.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_period_index.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_resampler_grouper.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_resample_api.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_timedelta.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_time_grouper.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        creating build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_concat.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_cut.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_melt.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_pivot.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_qcut.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_reshape.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_union_categoricals.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_util.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar
+        copying pandas\tests\scalar\test_nat.py -> build\lib.win-amd64-3.9\pandas\tests\scalar
+        copying pandas\tests\scalar\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar
+        creating build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\common.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_alter_axes.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_apply.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_asof.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_block_internals.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_combine_concat.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_constructors.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_datetime_values.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_duplicates.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_internals.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_io.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_operators.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_quantile.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_rank.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_replace.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_repr.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_subclass.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_timeseries.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_validate.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        creating build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\common.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_combine_concat.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_format.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_groupby.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_pivot.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_reshape.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        creating build\lib.win-amd64-3.9\pandas\tests\tools
+        copying pandas\tests\tools\test_numeric.py -> build\lib.win-amd64-3.9\pandas\tests\tools
+        copying pandas\tests\tools\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\tools
+        creating build\lib.win-amd64-3.9\pandas\tests\tseries
+        copying pandas\tests\tseries\test_frequencies.py -> build\lib.win-amd64-3.9\pandas\tests\tseries
+        copying pandas\tests\tseries\test_holiday.py -> build\lib.win-amd64-3.9\pandas\tests\tseries
+        copying pandas\tests\tseries\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\tseries
+        creating build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_array_to_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_ccalendar.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_conversion.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_libfrequencies.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_liboffsets.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_normalize_date.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_parse_iso8601.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_parsing.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_period_asfreq.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_timedeltas.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        creating build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_almost_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_categorical_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_extension_array_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_frame_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_index_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_interval_array_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_numpy_array_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_series_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_deprecate.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_deprecate_kwarg.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_hashing.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_locale.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_move.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_safe_import.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_util.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_validate_args.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_validate_args_and_kwargs.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_validate_kwargs.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        creating build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\common.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_algos.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_constructors.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_operators.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_repr.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_subclass.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_warnings.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        creating build\lib.win-amd64-3.9\pandas\tests\arrays\interval
+        copying pandas\tests\arrays\interval\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\interval
+        copying pandas\tests\arrays\interval\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\interval
+        copying pandas\tests\arrays\interval\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\interval
+        creating build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\test_arithmetics.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\test_array.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\test_dtype.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\test_libsparse.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        creating build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_construct_from_scalar.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_construct_ndarray.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_construct_object_arr.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_convert_objects.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_downcast.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_find_common_type.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_infer_datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_infer_dtype.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\arrow
+        copying pandas\tests\extension\arrow\bool.py -> build\lib.win-amd64-3.9\pandas\tests\extension\arrow
+        copying pandas\tests\extension\arrow\test_bool.py -> build\lib.win-amd64-3.9\pandas\tests\extension\arrow
+        copying pandas\tests\extension\arrow\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\arrow
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\base.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\casting.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\constructors.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\dtype.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\getitem.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\groupby.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\interface.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\io.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\methods.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\missing.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\ops.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\printing.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\reduce.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\reshaping.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\setitem.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\decimal
+        copying pandas\tests\extension\decimal\array.py -> build\lib.win-amd64-3.9\pandas\tests\extension\decimal
+        copying pandas\tests\extension\decimal\test_decimal.py -> build\lib.win-amd64-3.9\pandas\tests\extension\decimal
+        copying pandas\tests\extension\decimal\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\decimal
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\json
+        copying pandas\tests\extension\json\array.py -> build\lib.win-amd64-3.9\pandas\tests\extension\json
+        copying pandas\tests\extension\json\test_json.py -> build\lib.win-amd64-3.9\pandas\tests\extension\json
+        copying pandas\tests\extension\json\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\json
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        copying pandas\tests\extension\numpy_\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        copying pandas\tests\extension\numpy_\test_numpy.py -> build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        copying pandas\tests\extension\numpy_\test_numpy_nested.py -> build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        copying pandas\tests\extension\numpy_\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        creating build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        copying pandas\tests\groupby\aggregate\test_aggregate.py -> build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        copying pandas\tests\groupby\aggregate\test_cython.py -> build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        copying pandas\tests\groupby\aggregate\test_other.py -> build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        copying pandas\tests\groupby\aggregate\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_date_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_formats.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_misc.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_partial_slicing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_scalar_compat.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_setops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_tools.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_interval_new.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_interval_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_interval_tree.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_compat.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_constructor.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_contains.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_conversion.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_copy.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_drop.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_duplicates.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_equivalence.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_format.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_get_set.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_integrity.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_join.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_monotonic.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_names.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_partial_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_reindex.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_reshape.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_set_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_asfreq.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_formats.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_partial_slicing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_period_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_scalar_compat.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_setops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_tools.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_formats.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_partial_slicing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_scalar_compat.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_setops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_timedelta.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_timedelta_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_tools.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        creating build\lib.win-amd64-3.9\pandas\tests\indexing\interval
+        copying pandas\tests\indexing\interval\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\interval
+        copying pandas\tests\indexing\interval\test_interval_new.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\interval
+        copying pandas\tests\indexing\interval\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\interval
+        creating build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_chaining_and_caching.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_getitem.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_iloc.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_indexing_slow.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_ix.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_loc.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_multiindex.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_panel.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_partial.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_setitem.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_set_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_slice.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_sorted.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_xs.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        creating build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_console.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_css.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_eng_formatting.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_format.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_printing.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_style.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_to_csv.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_to_excel.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_to_html.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_to_latex.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        creating build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_compression.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_json_table_schema.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_normalize.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_pandas.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_readlines.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_ujson.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        creating build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\common.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_buffer.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_case.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_except.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_extension.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_format.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_limits.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_newspec.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_obj.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_pack.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_read_size.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_seq.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_sequnpack.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_subtype.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_unpack.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_unpack_raw.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        creating build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_comment.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_compression.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_converters.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_c_parser_only.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_dialect.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_header.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_index_col.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_mangle_dupes.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_multi_thread.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_na_values.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_network.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_parse_dates.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_python_parser_only.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_quoting.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_read_fwf.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_skiprows.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_textreader.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_unsupported.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_usecols.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        creating build\lib.win-amd64-3.9\pandas\tests\io\sas
+        copying pandas\tests\io\sas\test_sas.py -> build\lib.win-amd64-3.9\pandas\tests\io\sas
+        copying pandas\tests\io\sas\test_sas7bdat.py -> build\lib.win-amd64-3.9\pandas\tests\io\sas
+        copying pandas\tests\io\sas\test_xport.py -> build\lib.win-amd64-3.9\pandas\tests\io\sas
+        copying pandas\tests\io\sas\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\sas
+        creating build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_join.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_merge.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_merge_asof.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_merge_index_as_string.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_merge_ordered.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_multi.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar\interval
+        copying pandas\tests\scalar\interval\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\interval
+        copying pandas\tests\scalar\interval\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\interval
+        copying pandas\tests\scalar\interval\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\interval
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar\period
+        copying pandas\tests\scalar\period\test_asfreq.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\period
+        copying pandas\tests\scalar\period\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\period
+        copying pandas\tests\scalar\period\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\period
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\test_formats.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\test_timedelta.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_comparisons.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_rendering.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_timestamp.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_unary_ops.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        creating build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_alter_index.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_boolean.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_callable.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_iloc.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_loc.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_numeric.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        creating build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_apply.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_frame.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_to_csv.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_to_from_scipy.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        creating build\lib.win-amd64-3.9\pandas\tests\sparse\series
+        copying pandas\tests\sparse\series\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\series
+        copying pandas\tests\sparse\series\test_series.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\series
+        copying pandas\tests\sparse\series\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\series
+        creating build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\common.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_fiscal.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_offsets.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_offsets_properties.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_ticks.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_yqm_offsets.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        creating build\lib.win-amd64-3.9\pandas\_libs\tslibs
+        copying pandas\_libs\tslibs\__init__.py -> build\lib.win-amd64-3.9\pandas\_libs\tslibs
+        creating build\lib.win-amd64-3.9\pandas\io\formats\templates
+        copying pandas\io\formats\templates\html.tpl -> build\lib.win-amd64-3.9\pandas\io\formats\templates
+        UPDATING build\lib.win-amd64-3.9\pandas/_version.py
+        set build\lib.win-amd64-3.9\pandas/_version.py to '0.24.2'
+        running build_ext
+        building 'pandas._libs.algos' extension
+        creating build\temp.win-amd64-3.9
+        creating build\temp.win-amd64-3.9\Release
+        creating build\temp.win-amd64-3.9\Release\pandas
+        creating build\temp.win-amd64-3.9\Release\pandas\_libs
+        C:\Program Files\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.33.31629\bin\HostX86\x64\cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MD -Ipandas/_libs/src/klib -Ipandas/_libs/src -IC:\Program Files\Python39\lib\site-packages\numpy\core\include -IC:\Program Files\Python39\include -IC:\Program Files\Python39\include -IC:\Program Files\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.33.31629\include -IC:\Program Files\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.33.31629\ATLMFC\include -IC:\Program Files\Microsoft Visual Studio\2022\VC\Auxiliary\VS\include -IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt -IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um -IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared -IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt -IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt -IC:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um /Tcpandas\_libs/algos.c /Fobuild\temp.win-amd64-3.9\Release\pandas\_libs/algos.obj
+        algos.c
+        C:\Program Files\Python39\lib\site-packages\numpy\core\include\numpy\npy_1_7_deprecated_api.h(14) : Warning Msg: Using deprecated NumPy API, disable it with #define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
+        pandas/_libs/src/klib\khash_python.h(75): warning C4244: '=': 將 'Py_hash_t' 轉換為 'khint_t'，由於類型不同，可能導致資料遺失
+        pandas/_libs/src/klib\khash_python.h(81): warning C4244: '=': 將 'Py_hash_t' 轉換為 'khint_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(8770): warning C4244: '=': 將 'long' 轉換為 'char'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(14959): warning C4244: '=': 將 'long' 轉換為 'char'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(15891): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(16739): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(17585): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(18474): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(19322): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(20170): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(21018): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(21866): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(22714): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(23562): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(24410): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(25257): warning C4244: '=': 將 'long' 轉換為 'char'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(26117): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(26584): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(27052): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(27530): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(27997): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(28464): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(28931): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(29398): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(29865): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(30332): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(30799): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(31337): warning C4244: '=': 將 'long' 轉換為 'char'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(32262): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(32823): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(33385): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(33957): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(34518): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(35079): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(35640): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(36201): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(36762): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(37323): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(37884): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(38451): warning C4244: '=': 將 'long' 轉換為 'char'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(39384): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(40250): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(41114): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(42026): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(42892): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(43758): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(44624): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(45490): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(46356): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(47222): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(48088): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(48952): warning C4244: '=': 將 'long' 轉換為 'char'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(49810): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(50273): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(50737): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(51211): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(51674): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(52137): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(52600): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(53063): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(53526): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(53989): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(54452): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(54988): warning C4244: '=': 將 'long' 轉換為 'char'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(55911): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(56468): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(57026): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(57594): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(58151): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(58708): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(59265): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(59822): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(60379): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(60936): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(61493): warning C4244: '=': 將 'Py_ssize_t' 轉換為 'int'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(62057): warning C4244: '=': 將 'long' 轉換為 'char'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(66332): warning C4244: '=': 將 'long' 轉換為 'char'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(76282): warning C4244: '=': 將 'int' 轉換為 '__pyx_t_5numpy_float32_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(76381): warning C4244: '=': 將 'int' 轉換為 '__pyx_t_5numpy_float32_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(76492): warning C4244: '=': 將 'int' 轉換為 '__pyx_t_5numpy_float32_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(76591): warning C4244: '=': 將 'int' 轉換為 '__pyx_t_5numpy_float32_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(76973): warning C4244: '=': 將 'int' 轉換為 '__pyx_t_5numpy_float32_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(77072): warning C4244: '=': 將 'int' 轉換為 '__pyx_t_5numpy_float32_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(77183): warning C4244: '=': 將 'int' 轉換為 '__pyx_t_5numpy_float32_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(77282): warning C4244: '=': 將 'int' 轉換為 '__pyx_t_5numpy_float32_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(78355): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(78454): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(78565): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(78664): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(82508): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(82542): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(82599): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(82642): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(84410): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(84472): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(84557): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(84628): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(86065): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(86099): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(86133): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(86167): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(86210): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(87751): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(87813): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(87875): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(87937): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(88008): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(89208): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(89242): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(89276): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(89310): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(89353): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(90651): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(90713): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(90775): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(90837): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(90908): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(92432): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(92466): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(92500): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(92534): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(92577): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(94146): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(94208): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(94270): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(94332): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(94403): warning C4244: '=': 將 'Py_ssize_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(126307): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(126643): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(126862): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(127227): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(127456): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(127848): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(128261): warning C4244: '=': 將 '__pyx_t_5numpy_int64_t' 轉換為 '__pyx_t_5numpy_float64_t'，由於類型不同，可能導致資料遺失
+        pandas\_libs/algos.c(158842): error C2039: 'tp_print': 並非 '_typeobject' 的成員
+        C:\Program Files\Python39\include\cpython/object.h(193): note: 請參閱 '_typeobject' 的宣告
+        pandas\_libs/algos.c(158850): error C2039: 'tp_print': 並非 '_typeobject' 的成員
+        C:\Program Files\Python39\include\cpython/object.h(193): note: 請參閱 '_typeobject' 的宣告
+        pandas\_libs/algos.c(158855): error C2039: 'tp_print': 並非 '_typeobject' 的成員
+        C:\Program Files\Python39\include\cpython/object.h(193): note: 請參閱 '_typeobject' 的宣告
+        pandas\_libs/algos.c(158870): error C2039: 'tp_print': 並非 '_typeobject' 的成員
+        C:\Program Files\Python39\include\cpython/object.h(193): note: 請參閱 '_typeobject' 的宣告
+        pandas\_libs/algos.c(158883): error C2039: 'tp_print': 並非 '_typeobject' 的成員
+        C:\Program Files\Python39\include\cpython/object.h(193): note: 請參閱 '_typeobject' 的宣告
+        pandas\_libs/algos.c(164747): warning C4996: '_PyUnicode_get_wstr_length': deprecated in 3.3
+        pandas\_libs/algos.c(164763): warning C4996: '_PyUnicode_get_wstr_length': deprecated in 3.3
+        pandas\_libs/algos.c(167625): warning C4996: 'PyUnicode_FromUnicode': deprecated in 3.3
+        error: command 'C:\\Program Files\\Microsoft Visual Studio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX86\\x64\\cl.exe' failed with exit code 2
+        [end of output]
+
+    note: This error originates from a subprocess, and is likely not a problem with pip.
+    ERROR: Failed building wheel for pandas
+    Running setup.py clean for pandas
+    Building wheel for portpicker (setup.py) ... done
+    Created wheel for portpicker: filename=portpicker-1.2.0-py3-none-any.whl size=13384 sha256=c16ca4d342ffbdbc4bcde3a2f048b0b0b1f92ba1f2b59407861b65a8a4da058b
+    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\d3\dc\cc\bace7ffe874129f722f8eee56e162461907e1976cf1102d84c
+    Building wheel for tornado (setup.py) ... done
+    Created wheel for tornado: filename=tornado-4.5.3-cp39-cp39-win_amd64.whl size=425807 sha256=ae5d29b7c92b83f272357a8017cd396b50d1332a80670abbac2b95a5e44cc2e9
+    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\ae\3b\7c\05b9d47da5eba9d22cbba0207676ef11072f119db2ff797352
+    Building wheel for simplegeneric (setup.py) ... done
+    Created wheel for simplegeneric: filename=simplegeneric-0.8.1-py3-none-any.whl size=5078 sha256=8b34e76a77d2ca1277308fda1fe62f42b4eb3f47fd42d9da0ca3990710eae411
+    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\57\40\23\f22872052dd8633ca3672b2cc424fd116564dcee8a187710a1
+  Successfully built google.colab portpicker tornado simplegeneric
+  Failed to build pandas
+  Installing collected packages: tornado, simplegeneric, portpicker, chardet, urllib3, six, idna, requests, prompt-toolkit, google-auth, pandas, jupyter-client, ipython, ipykernel, notebook, google.colab
+    Attempting uninstall: tornado
+      Found existing installation: tornado 6.2
+      Uninstalling tornado-6.2:
+        Successfully uninstalled tornado-6.2
+    Attempting uninstall: urllib3
+      Found existing installation: urllib3 1.26.12
+      Uninstalling urllib3-1.26.12:
+        Successfully uninstalled urllib3-1.26.12
+    Attempting uninstall: six
+      Found existing installation: six 1.16.0
+      Uninstalling six-1.16.0:
+        Successfully uninstalled six-1.16.0
+    Attempting uninstall: idna
+      Found existing installation: idna 3.4
+      Uninstalling idna-3.4:
+        Successfully uninstalled idna-3.4
+    Attempting uninstall: requests
+      Found existing installation: requests 2.28.1
+      Uninstalling requests-2.28.1:
+        Successfully uninstalled requests-2.28.1
+    Attempting uninstall: prompt-toolkit
+      Found existing installation: prompt-toolkit 3.0.31
+      Uninstalling prompt-toolkit-3.0.31:
+        Successfully uninstalled prompt-toolkit-3.0.31
+    Attempting uninstall: google-auth
+      Found existing installation: google-auth 2.13.0
+      Uninstalling google-auth-2.13.0:
+        Successfully uninstalled google-auth-2.13.0
+    Attempting uninstall: pandas
+      Found existing installation: pandas 1.5.1
+      Uninstalling pandas-1.5.1:
+        Successfully uninstalled pandas-1.5.1
+    Running setup.py install for pandas ... error
+    error: subprocess-exited-with-error
+
+    × Running setup.py install for pandas did not run successfully.
+    │ exit code: 1
+    ╰─> [877 lines of output]
+        running install
+        running build
+        running build_py
+        creating build
+        creating build\lib.win-amd64-3.9
+        creating build\lib.win-amd64-3.9\pandas
+        copying pandas\conftest.py -> build\lib.win-amd64-3.9\pandas
+        copying pandas\testing.py -> build\lib.win-amd64-3.9\pandas
+        copying pandas\_version.py -> build\lib.win-amd64-3.9\pandas
+        copying pandas\__init__.py -> build\lib.win-amd64-3.9\pandas
+        creating build\lib.win-amd64-3.9\pandas\api
+        copying pandas\api\__init__.py -> build\lib.win-amd64-3.9\pandas\api
+        creating build\lib.win-amd64-3.9\pandas\arrays
+        copying pandas\arrays\__init__.py -> build\lib.win-amd64-3.9\pandas\arrays
+        creating build\lib.win-amd64-3.9\pandas\compat
+        copying pandas\compat\chainmap.py -> build\lib.win-amd64-3.9\pandas\compat
+        copying pandas\compat\chainmap_impl.py -> build\lib.win-amd64-3.9\pandas\compat
+        copying pandas\compat\pickle_compat.py -> build\lib.win-amd64-3.9\pandas\compat
+        copying pandas\compat\__init__.py -> build\lib.win-amd64-3.9\pandas\compat
+        creating build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\accessor.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\algorithms.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\api.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\apply.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\base.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\categorical.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\common.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\config.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\config_init.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\frame.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\generic.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\index.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\indexing.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\missing.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\nanops.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\ops.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\panel.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\resample.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\series.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\sorting.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\strings.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\window.py -> build\lib.win-amd64-3.9\pandas\core
+        copying pandas\core\__init__.py -> build\lib.win-amd64-3.9\pandas\core
+        creating build\lib.win-amd64-3.9\pandas\errors
+        copying pandas\errors\__init__.py -> build\lib.win-amd64-3.9\pandas\errors
+        creating build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\api.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\clipboards.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\common.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\date_converters.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\excel.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\feather_format.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\gbq.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\gcs.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\html.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\packers.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\parquet.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\parsers.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\pickle.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\pytables.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\s3.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\sql.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\stata.py -> build\lib.win-amd64-3.9\pandas\io
+        copying pandas\io\__init__.py -> build\lib.win-amd64-3.9\pandas\io
+        creating build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_compat.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_converter.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_core.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_misc.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_style.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_timeseries.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\_tools.py -> build\lib.win-amd64-3.9\pandas\plotting
+        copying pandas\plotting\__init__.py -> build\lib.win-amd64-3.9\pandas\plotting
+        creating build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_algos.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_base.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_common.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_compat.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_config.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_downstream.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_errors.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_expressions.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_join.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_lib.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_multilevel.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_nanops.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_panel.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_register_accessor.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_strings.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_take.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\test_window.py -> build\lib.win-amd64-3.9\pandas\tests
+        copying pandas\tests\__init__.py -> build\lib.win-amd64-3.9\pandas\tests
+        creating build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\api.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\converter.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\frequencies.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\holiday.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\offsets.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\plotting.py -> build\lib.win-amd64-3.9\pandas\tseries
+        copying pandas\tseries\__init__.py -> build\lib.win-amd64-3.9\pandas\tseries
+        creating build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\testing.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_decorators.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_depr_module.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_doctools.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_exceptions.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_print_versions.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_tester.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_test_decorators.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\_validators.py -> build\lib.win-amd64-3.9\pandas\util
+        copying pandas\util\__init__.py -> build\lib.win-amd64-3.9\pandas\util
+        creating build\lib.win-amd64-3.9\pandas\_libs
+        copying pandas\_libs\__init__.py -> build\lib.win-amd64-3.9\pandas\_libs
+        creating build\lib.win-amd64-3.9\pandas\api\extensions
+        copying pandas\api\extensions\__init__.py -> build\lib.win-amd64-3.9\pandas\api\extensions
+        creating build\lib.win-amd64-3.9\pandas\api\types
+        copying pandas\api\types\__init__.py -> build\lib.win-amd64-3.9\pandas\api\types
+        creating build\lib.win-amd64-3.9\pandas\compat\numpy
+        copying pandas\compat\numpy\function.py -> build\lib.win-amd64-3.9\pandas\compat\numpy
+        copying pandas\compat\numpy\__init__.py -> build\lib.win-amd64-3.9\pandas\compat\numpy
+        creating build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\array_.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\base.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\categorical.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\datetimelike.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\datetimes.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\integer.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\interval.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\numpy_.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\period.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\sparse.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\timedeltas.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\_ranges.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        copying pandas\core\arrays\__init__.py -> build\lib.win-amd64-3.9\pandas\core\arrays
+        creating build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\align.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\api.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\check.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\common.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\engines.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\eval.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\expr.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\expressions.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\ops.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\pytables.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\scope.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        copying pandas\core\computation\__init__.py -> build\lib.win-amd64-3.9\pandas\core\computation
+        creating build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\api.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\base.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\cast.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\common.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\concat.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\dtypes.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\generic.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\inference.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\missing.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        copying pandas\core\dtypes\__init__.py -> build\lib.win-amd64-3.9\pandas\core\dtypes
+        creating build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\base.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\categorical.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\generic.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\groupby.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\grouper.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\ops.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        copying pandas\core\groupby\__init__.py -> build\lib.win-amd64-3.9\pandas\core\groupby
+        creating build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\accessors.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\api.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\base.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\category.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\datetimelike.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\datetimes.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\frozen.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\interval.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\multi.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\numeric.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\period.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\range.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\timedeltas.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        copying pandas\core\indexes\__init__.py -> build\lib.win-amd64-3.9\pandas\core\indexes
+        creating build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\arrays.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\blocks.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\concat.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\construction.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\managers.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        copying pandas\core\internals\__init__.py -> build\lib.win-amd64-3.9\pandas\core\internals
+        creating build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\api.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\concat.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\melt.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\merge.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\pivot.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\reshape.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\tile.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\util.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        copying pandas\core\reshape\__init__.py -> build\lib.win-amd64-3.9\pandas\core\reshape
+        creating build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\api.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\frame.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\scipy_sparse.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\series.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        copying pandas\core\sparse\__init__.py -> build\lib.win-amd64-3.9\pandas\core\sparse
+        creating build\lib.win-amd64-3.9\pandas\core\tools
+        copying pandas\core\tools\datetimes.py -> build\lib.win-amd64-3.9\pandas\core\tools
+        copying pandas\core\tools\numeric.py -> build\lib.win-amd64-3.9\pandas\core\tools
+        copying pandas\core\tools\timedeltas.py -> build\lib.win-amd64-3.9\pandas\core\tools
+        copying pandas\core\tools\__init__.py -> build\lib.win-amd64-3.9\pandas\core\tools
+        creating build\lib.win-amd64-3.9\pandas\core\util
+        copying pandas\core\util\hashing.py -> build\lib.win-amd64-3.9\pandas\core\util
+        copying pandas\core\util\__init__.py -> build\lib.win-amd64-3.9\pandas\core\util
+        creating build\lib.win-amd64-3.9\pandas\io\clipboard
+        copying pandas\io\clipboard\clipboards.py -> build\lib.win-amd64-3.9\pandas\io\clipboard
+        copying pandas\io\clipboard\exceptions.py -> build\lib.win-amd64-3.9\pandas\io\clipboard
+        copying pandas\io\clipboard\windows.py -> build\lib.win-amd64-3.9\pandas\io\clipboard
+        copying pandas\io\clipboard\__init__.py -> build\lib.win-amd64-3.9\pandas\io\clipboard
+        creating build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\console.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\css.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\csvs.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\excel.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\format.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\html.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\latex.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\printing.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\style.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\terminal.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        copying pandas\io\formats\__init__.py -> build\lib.win-amd64-3.9\pandas\io\formats
+        creating build\lib.win-amd64-3.9\pandas\io\json
+        copying pandas\io\json\json.py -> build\lib.win-amd64-3.9\pandas\io\json
+        copying pandas\io\json\normalize.py -> build\lib.win-amd64-3.9\pandas\io\json
+        copying pandas\io\json\table_schema.py -> build\lib.win-amd64-3.9\pandas\io\json
+        copying pandas\io\json\__init__.py -> build\lib.win-amd64-3.9\pandas\io\json
+        creating build\lib.win-amd64-3.9\pandas\io\msgpack
+        copying pandas\io\msgpack\exceptions.py -> build\lib.win-amd64-3.9\pandas\io\msgpack
+        copying pandas\io\msgpack\_version.py -> build\lib.win-amd64-3.9\pandas\io\msgpack
+        copying pandas\io\msgpack\__init__.py -> build\lib.win-amd64-3.9\pandas\io\msgpack
+        creating build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\sas7bdat.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\sasreader.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\sas_constants.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\sas_xport.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        copying pandas\io\sas\__init__.py -> build\lib.win-amd64-3.9\pandas\io\sas
+        creating build\lib.win-amd64-3.9\pandas\tests\api
+        copying pandas\tests\api\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\api
+        copying pandas\tests\api\test_types.py -> build\lib.win-amd64-3.9\pandas\tests\api
+        copying pandas\tests\api\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\api
+        creating build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_datetime64.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_numeric.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_object.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\test_timedelta64.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        copying pandas\tests\arithmetic\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arithmetic
+        creating build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_array.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_datetimes.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_integer.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_numpy.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\test_timedeltas.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        copying pandas\tests\arrays\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arrays
+        creating build\lib.win-amd64-3.9\pandas\tests\computation
+        copying pandas\tests\computation\test_compat.py -> build\lib.win-amd64-3.9\pandas\tests\computation
+        copying pandas\tests\computation\test_eval.py -> build\lib.win-amd64-3.9\pandas\tests\computation
+        copying pandas\tests\computation\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\computation
+        creating build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_concat.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_generic.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_inference.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        copying pandas\tests\dtypes\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes
+        creating build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_categorical.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_external_block.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_integer.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\test_sparse.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        copying pandas\tests\extension\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension
+        creating build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\common.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_alter_axes.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_apply.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_asof.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_axis_select_reindex.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_block_internals.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_combine_concat.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_constructors.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_convert_to.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_duplicates.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_join.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_mutate_columns.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_nonunique_indexes.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_operators.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_quantile.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_query_eval.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_rank.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_replace.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_repr_info.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_reshape.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_sort_values_level_as_str.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_subclass.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_timeseries.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_to_csv.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\test_validate.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        copying pandas\tests\frame\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\frame
+        creating build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_frame.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_generic.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_label_or_level_utils.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_panel.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\test_series.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        copying pandas\tests\generic\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\generic
+        creating build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_apply.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_bin_groupby.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_categorical.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_counting.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_filters.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_function.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_groupby.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_grouping.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_index_as_string.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_nth.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_rank.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_timegrouper.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_transform.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_value_counts.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\test_whitelist.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        copying pandas\tests\groupby\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\groupby
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\common.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_base.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_category.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_frozen.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_numeric.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\test_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        copying pandas\tests\indexes\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes
+        creating build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\common.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_callable.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_categorical.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_chaining_and_caching.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_coercion.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_floats.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_iloc.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_indexing_engines.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_indexing_slow.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_ix.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_loc.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_panel.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_partial.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_scalar.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\test_timedelta.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        copying pandas\tests\indexing\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexing
+        creating build\lib.win-amd64-3.9\pandas\tests\internals
+        copying pandas\tests\internals\test_internals.py -> build\lib.win-amd64-3.9\pandas\tests\internals
+        copying pandas\tests\internals\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\internals
+        creating build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\generate_legacy_storage_files.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_clipboard.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_compression.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_date_converters.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_excel.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_feather.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_gbq.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_gcs.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_html.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_packers.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_parquet.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_pickle.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_pytables.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_s3.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_sql.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\test_stata.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        copying pandas\tests\io\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io
+        creating build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\common.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_boxplot_method.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_converter.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_frame.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_groupby.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_hist_method.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_misc.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\test_series.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        copying pandas\tests\plotting\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\plotting
+        creating build\lib.win-amd64-3.9\pandas\tests\reductions
+        copying pandas\tests\reductions\test_reductions.py -> build\lib.win-amd64-3.9\pandas\tests\reductions
+        copying pandas\tests\reductions\test_stat_reductions.py -> build\lib.win-amd64-3.9\pandas\tests\reductions
+        copying pandas\tests\reductions\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\reductions
+        creating build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_base.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_datetime_index.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_period_index.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_resampler_grouper.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_resample_api.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_timedelta.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\test_time_grouper.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        copying pandas\tests\resample\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\resample
+        creating build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_concat.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_cut.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_melt.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_pivot.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_qcut.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_reshape.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_union_categoricals.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\test_util.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        copying pandas\tests\reshape\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\reshape
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar
+        copying pandas\tests\scalar\test_nat.py -> build\lib.win-amd64-3.9\pandas\tests\scalar
+        copying pandas\tests\scalar\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar
+        creating build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\common.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_alter_axes.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_apply.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_asof.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_block_internals.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_combine_concat.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_constructors.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_datetime_values.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_duplicates.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_internals.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_io.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_operators.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_quantile.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_rank.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_replace.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_repr.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_subclass.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_timeseries.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\test_validate.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        copying pandas\tests\series\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\series
+        creating build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\common.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_combine_concat.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_format.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_groupby.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_pivot.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\test_reshape.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        copying pandas\tests\sparse\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\sparse
+        creating build\lib.win-amd64-3.9\pandas\tests\tools
+        copying pandas\tests\tools\test_numeric.py -> build\lib.win-amd64-3.9\pandas\tests\tools
+        copying pandas\tests\tools\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\tools
+        creating build\lib.win-amd64-3.9\pandas\tests\tseries
+        copying pandas\tests\tseries\test_frequencies.py -> build\lib.win-amd64-3.9\pandas\tests\tseries
+        copying pandas\tests\tseries\test_holiday.py -> build\lib.win-amd64-3.9\pandas\tests\tseries
+        copying pandas\tests\tseries\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\tseries
+        creating build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_array_to_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_ccalendar.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_conversion.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_libfrequencies.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_liboffsets.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_normalize_date.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_parse_iso8601.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_parsing.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_period_asfreq.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_timedeltas.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        copying pandas\tests\tslibs\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\tslibs
+        creating build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_almost_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_categorical_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_extension_array_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_frame_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_index_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_interval_array_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_numpy_array_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_assert_series_equal.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_deprecate.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_deprecate_kwarg.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_hashing.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_locale.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_move.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_safe_import.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_util.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_validate_args.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_validate_args_and_kwargs.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\test_validate_kwargs.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        copying pandas\tests\util\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\util
+        creating build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\common.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_algos.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_api.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_constructors.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_operators.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_repr.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_subclass.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\test_warnings.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        copying pandas\tests\arrays\categorical\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\categorical
+        creating build\lib.win-amd64-3.9\pandas\tests\arrays\interval
+        copying pandas\tests\arrays\interval\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\interval
+        copying pandas\tests\arrays\interval\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\interval
+        copying pandas\tests\arrays\interval\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\interval
+        creating build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\test_arithmetics.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\test_array.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\test_dtype.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\test_libsparse.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        copying pandas\tests\arrays\sparse\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\arrays\sparse
+        creating build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_construct_from_scalar.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_construct_ndarray.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_construct_object_arr.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_convert_objects.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_downcast.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_find_common_type.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_infer_datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\test_infer_dtype.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        copying pandas\tests\dtypes\cast\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\dtypes\cast
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\arrow
+        copying pandas\tests\extension\arrow\bool.py -> build\lib.win-amd64-3.9\pandas\tests\extension\arrow
+        copying pandas\tests\extension\arrow\test_bool.py -> build\lib.win-amd64-3.9\pandas\tests\extension\arrow
+        copying pandas\tests\extension\arrow\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\arrow
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\base.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\casting.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\constructors.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\dtype.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\getitem.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\groupby.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\interface.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\io.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\methods.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\missing.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\ops.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\printing.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\reduce.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\reshaping.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\setitem.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        copying pandas\tests\extension\base\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\base
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\decimal
+        copying pandas\tests\extension\decimal\array.py -> build\lib.win-amd64-3.9\pandas\tests\extension\decimal
+        copying pandas\tests\extension\decimal\test_decimal.py -> build\lib.win-amd64-3.9\pandas\tests\extension\decimal
+        copying pandas\tests\extension\decimal\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\decimal
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\json
+        copying pandas\tests\extension\json\array.py -> build\lib.win-amd64-3.9\pandas\tests\extension\json
+        copying pandas\tests\extension\json\test_json.py -> build\lib.win-amd64-3.9\pandas\tests\extension\json
+        copying pandas\tests\extension\json\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\json
+        creating build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        copying pandas\tests\extension\numpy_\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        copying pandas\tests\extension\numpy_\test_numpy.py -> build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        copying pandas\tests\extension\numpy_\test_numpy_nested.py -> build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        copying pandas\tests\extension\numpy_\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\extension\numpy_
+        creating build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        copying pandas\tests\groupby\aggregate\test_aggregate.py -> build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        copying pandas\tests\groupby\aggregate\test_cython.py -> build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        copying pandas\tests\groupby\aggregate\test_other.py -> build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        copying pandas\tests\groupby\aggregate\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\groupby\aggregate
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_datetimelike.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_date_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_formats.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_misc.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_partial_slicing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_scalar_compat.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_setops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\test_tools.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        copying pandas\tests\indexes\datetimes\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\datetimes
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_interval_new.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_interval_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\test_interval_tree.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        copying pandas\tests\indexes\interval\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\interval
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_compat.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_constructor.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_contains.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_conversion.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_copy.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_drop.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_duplicates.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_equivalence.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_format.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_get_set.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_integrity.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_join.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_missing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_monotonic.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_names.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_partial_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_reindex.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_reshape.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_set_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\test_sorting.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        copying pandas\tests\indexes\multi\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\multi
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_asfreq.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_formats.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_partial_slicing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_period_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_scalar_compat.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_setops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\test_tools.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        copying pandas\tests\indexes\period\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\period
+        creating build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_astype.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_formats.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_partial_slicing.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_scalar_compat.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_setops.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_timedelta.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_timedelta_range.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\test_tools.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        copying pandas\tests\indexes\timedeltas\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexes\timedeltas
+        creating build\lib.win-amd64-3.9\pandas\tests\indexing\interval
+        copying pandas\tests\indexing\interval\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\interval
+        copying pandas\tests\indexing\interval\test_interval_new.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\interval
+        copying pandas\tests\indexing\interval\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\interval
+        creating build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_chaining_and_caching.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_getitem.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_iloc.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_indexing_slow.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_ix.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_loc.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_multiindex.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_panel.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_partial.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_setitem.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_set_ops.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_slice.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_sorted.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\test_xs.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        copying pandas\tests\indexing\multiindex\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\indexing\multiindex
+        creating build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_console.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_css.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_eng_formatting.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_format.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_printing.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_style.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_to_csv.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_to_excel.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_to_html.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\test_to_latex.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        copying pandas\tests\io\formats\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\formats
+        creating build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_compression.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_json_table_schema.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_normalize.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_pandas.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_readlines.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\test_ujson.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        copying pandas\tests\io\json\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\json
+        creating build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\common.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_buffer.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_case.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_except.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_extension.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_format.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_limits.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_newspec.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_obj.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_pack.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_read_size.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_seq.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_sequnpack.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_subtype.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_unpack.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\test_unpack_raw.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        copying pandas\tests\io\msgpack\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\msgpack
+        creating build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_comment.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_common.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_compression.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_converters.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_c_parser_only.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_dialect.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_dtypes.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_header.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_index_col.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_mangle_dupes.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_multi_thread.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_na_values.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_network.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_parse_dates.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_python_parser_only.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_quoting.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_read_fwf.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_skiprows.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_textreader.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_unsupported.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\test_usecols.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        copying pandas\tests\io\parser\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\parser
+        creating build\lib.win-amd64-3.9\pandas\tests\io\sas
+        copying pandas\tests\io\sas\test_sas.py -> build\lib.win-amd64-3.9\pandas\tests\io\sas
+        copying pandas\tests\io\sas\test_sas7bdat.py -> build\lib.win-amd64-3.9\pandas\tests\io\sas
+        copying pandas\tests\io\sas\test_xport.py -> build\lib.win-amd64-3.9\pandas\tests\io\sas
+        copying pandas\tests\io\sas\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\io\sas
+        creating build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_join.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_merge.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_merge_asof.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_merge_index_as_string.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_merge_ordered.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\test_multi.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        copying pandas\tests\reshape\merge\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\reshape\merge
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar\interval
+        copying pandas\tests\scalar\interval\test_interval.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\interval
+        copying pandas\tests\scalar\interval\test_ops.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\interval
+        copying pandas\tests\scalar\interval\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\interval
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar\period
+        copying pandas\tests\scalar\period\test_asfreq.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\period
+        copying pandas\tests\scalar\period\test_period.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\period
+        copying pandas\tests\scalar\period\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\period
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\test_construction.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\test_formats.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\test_timedelta.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        copying pandas\tests\scalar\timedelta\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timedelta
+        creating build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_arithmetic.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_comparisons.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_rendering.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_timestamp.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_timezones.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\test_unary_ops.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        copying pandas\tests\scalar\timestamp\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\scalar\timestamp
+        creating build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_alter_index.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_boolean.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_callable.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_datetime.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_iloc.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_loc.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\test_numeric.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        copying pandas\tests\series\indexing\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\series\indexing
+        creating build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_analytics.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_apply.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_frame.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_to_csv.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\test_to_from_scipy.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        copying pandas\tests\sparse\frame\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\frame
+        creating build\lib.win-amd64-3.9\pandas\tests\sparse\series
+        copying pandas\tests\sparse\series\test_indexing.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\series
+        copying pandas\tests\sparse\series\test_series.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\series
+        copying pandas\tests\sparse\series\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\sparse\series
+        creating build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\common.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\conftest.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_fiscal.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_offsets.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_offsets_properties.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_ticks.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\test_yqm_offsets.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        copying pandas\tests\tseries\offsets\__init__.py -> build\lib.win-amd64-3.9\pandas\tests\tseries\offsets
+        creating build\lib.win-amd64-3.9\pandas\_libs\tslibs
+        copying pandas\_libs\tslibs\__init__.py -> build\lib.win-amd64-3.9\pandas\_libs\tslibs
+        creating build\lib.win-amd64-3.9\pandas\io\formats\templates
+        copying pandas\io\formats\templates\html.tpl -> build\lib.win-amd64-3.9\pandas\io\formats\templates
+        UPDATING build\lib.win-amd64-3.9\pandas/_version.py
+        set build\lib.win-amd64-3.9\pandas/_version.py to '0.24.2'
+        running build_ext
+        Traceback (most recent call last):
+          File "<string>", line 2, in <module>
+          File "<pip-setuptools-caller>", line 34, in <module>
+          File "C:\Users\TaiXeflar\AppData\Local\Temp\pip-install-9kom5cz8\pandas_37ef1188460242d6a9d51efe37e10ee5\setup.py", line 730, in <module>
+            setup(name=DISTNAME,
+          File "C:\Program Files\Python39\lib\site-packages\setuptools\__init__.py", line 153, in setup
+            return distutils.core.setup(**attrs)
+          File "C:\Program Files\Python39\lib\distutils\core.py", line 148, in setup
+            dist.run_commands()
+          File "C:\Program Files\Python39\lib\distutils\dist.py", line 966, in run_commands
+            self.run_command(cmd)
+          File "C:\Program Files\Python39\lib\distutils\dist.py", line 985, in run_command
+            cmd_obj.run()
+          File "C:\Program Files\Python39\lib\site-packages\setuptools\command\install.py", line 61, in run
+            return orig.install.run(self)
+          File "C:\Program Files\Python39\lib\distutils\command\install.py", line 546, in run
+            self.run_command('build')
+          File "C:\Program Files\Python39\lib\distutils\cmd.py", line 313, in run_command
+            self.distribution.run_command(command)
+          File "C:\Program Files\Python39\lib\distutils\dist.py", line 985, in run_command
+            cmd_obj.run()
+          File "C:\Program Files\Python39\lib\distutils\command\build.py", line 135, in run
+            self.run_command(cmd_name)
+          File "C:\Program Files\Python39\lib\distutils\cmd.py", line 313, in run_command
+            self.distribution.run_command(command)
+          File "C:\Program Files\Python39\lib\distutils\dist.py", line 985, in run_command
+            cmd_obj.run()
+          File "C:\Program Files\Python39\lib\distutils\command\build_ext.py", line 340, in run
+            self.build_extensions()
+          File "C:\Users\TaiXeflar\AppData\Local\Temp\pip-install-9kom5cz8\pandas_37ef1188460242d6a9d51efe37e10ee5\setup.py", line 372, in build_extensions
+            self.check_cython_extensions(self.extensions)
+          File "C:\Users\TaiXeflar\AppData\Local\Temp\pip-install-9kom5cz8\pandas_37ef1188460242d6a9d51efe37e10ee5\setup.py", line 366, in check_cython_extensions
+            raise Exception("""Cython-generated file '{src}' not found.
+        Exception: Cython-generated file 'pandas\_libs/algos.c' not found.
+                        Cython is required to compile pandas from a development branch.
+                        Please install Cython or download a release package of pandas.
+
+        pandas._libs.algos: -> [['pandas\\_libs/algos.c']]
+        [end of output]
+
+    note: This error originates from a subprocess, and is likely not a problem with pip.
+    Rolling back uninstall of pandas
+    Moving to c:\program files\python39\lib\site-packages\pandas-1.5.1.dist-info\
+    from C:\Program Files\Python39\Lib\site-packages\~andas-1.5.1.dist-info
+    Moving to c:\program files\python39\lib\site-packages\pandas\
+    from C:\Program Files\Python39\Lib\site-packages\~andas
+  error: legacy-install-failure
+
+  × Encountered error while trying to install package.
+  ╰─> pandas
+
+  note: This is an issue with the package mentioned above, not pip.
+  hint: See above for output from the failure.
+  ```
 
 ## Jupyter Notebook 注意事項
 
