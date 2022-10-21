@@ -203,7 +203,10 @@
 ## Python Module 注意事項
 
   - 請注意，在某些特定的情況下，會有Module間不相容導致程式執行中出現不可預期的錯誤。
-  - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制在本機執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。這個錯誤會看起來非常的長:
+  - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制在本機執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。
+  
+  這個錯誤會看起來非常的長:
+  
     ```
     PS C:\Users\TaiXeflar> pip install google.colab
     Collecting google.colab
