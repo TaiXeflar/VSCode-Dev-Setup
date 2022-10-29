@@ -2,13 +2,16 @@
 
 ## 專案執行環境
 
- - 我們建議在以下硬體配置中，執行基於Windows 10/11環境的Python專案:
+我們建議在以下硬體配置中，執行基於Windows 10/11環境的Python專案:
 
-    |  配置等級  |  CPU  |  GPU  |  RAM  |  SSD  |
-    |  ----  |  ----  |  ----  |  ----  |  ----  |
-    |  基本配置  |  2C4T  |  iGPU  |  8GB  |  128GB  |
-    |  建議配置  |  4C8T  |  iGPU  |  8GB  |  128GB  |
-    |  建議配置  |  6C12T  |  dGPU, 2GB  |  16GB  |  256GB  |
+  |  配置等級  |  CPU  |  GPU  |  RAM  |  SSD  |  OS  |
+  |  :----:  |  :----:  |  :----:  |  :----:  |  :----:  |  :----:  |
+  |  基本配置  |  2C4T  |  iGPU  |  8GB  |  128GB  |  Windows 10/11  |
+  |  建議配置  |  4C8T  |  iGPU  |  8GB  |  128GB  |  Windows 10/11  |
+  |  進階配置  |  6C12T  |  dGPU, 2GB  |  16GB  |  256GB  |  Windows 10/11  |
+  |  高階配置  |  6C12T  |  dGPU, 6GB  |  32GB  |  512GB  |  Windows 10/11  |
+
+當中，
 
 ## 直譯器確認:  
 
