@@ -1,4 +1,4 @@
-# VSCode C/C++ build_repository_test README
+# VSCode build_repository_test README
 
 ## EN-US
 
