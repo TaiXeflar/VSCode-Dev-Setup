@@ -12,7 +12,7 @@
 
   - CPU配置建議應支援超執行緒(Hyper-Threading)。
   - 請注意，Intel第12代處理器(Intel Core 12th Gen)後採用大小核設計，其中效能核心(P-Core)支援超執行緒，效率核心(E-Core)不支援超執行緒，因此可能出現執行緒數量不等於原雙倍核心數量的結果。
-   - 例如: Intel Core i7-12700H中，核心分配為 6P8E, 執行緒數量 = 6x2 + 8x1 = 12+8 = 20。
+      例如在 Intel Core i7-12700H中，核心分配為 6P8E， 執行緒數量 = 6x2 + 8x1 = 12+8 = 20。
   - 請注意，在Windows上支援GPU運算的套件僅限適用於CUDA架構。因此，dGPU建議配置為支援CUDA的NVIDIA GPU。在消費級平台上所支援的CUDA GPU包含NVIDIA GeForce MX, GTX, RTX顯示卡。
   - 請注意，適用於Windows的AMD顯示卡(包含iGPU及dGPU)不支援CUDA GPU。
 
