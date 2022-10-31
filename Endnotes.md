@@ -66,7 +66,7 @@ We played these BGM while we contributors build this repository:
  - Moon Halo - ft. 茶理理, TetraCalyx, Hanser, Honkai Impact 3rd "Everlasting Flames" - "Herrscher of Flamescion" Animation OST.
  - Befall - 尚雯婕, 蔡進翰, 尹純青, 鄭宇界, Honkai Impact 3rd "Herrscher of Void" Animation OST.
  - Rubia - 蔡進翰, TetraCalyx, 宮奇, 楊啟翔, 徐威, Honkai Impact 3rd "Shattered Samsara" Animation OST.
- - 崩壊世界の歌姫 - 小林未郁 · Zoe · Sya · YuTA P , Honkai Impact 3rd "Lament of the fallen"- "Herrscher of Thunder" Animation OST.
+ - 崩壊世界の歌姫 - 小林未郁 · Zoe · Sya · YuTA P, Honkai Impact 3rd "Lament of the fallen"- "Herrscher of Thunder" Animation OST.
  - CyberAngel - HANSER, 蔡進翰, 尹純青, 宮奇, 李昀昇, Honkai Impact 3rd "ZERO Exception" - "Herrscher of Reason" Animation OST.
  - ReOracle - Xioyun Huang, Honkai Impact 3rd, A Post-Honkai Odyssey 2 OST.
  - Believe - 星月美紀 CV: 洲崎綾, Battle Girl High School OST.
