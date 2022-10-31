@@ -13,8 +13,8 @@
     - Storage: Samsung 970 EVO Plus 2TB x2
 
  - Operating System:
-    - Windows 10 21H2
-    - Feature Experience Pack: 120.2212.4180.0
+    - Windows 11 Pro Workstation
+    - Feature Experience Pack: 1000.22636.1000.0
     - GPU Driver: NVIDIA GeForce Game Ready Driver 512.95 WHQL
     - WSL2: Ubuntu 20.04 LTS
 
@@ -43,7 +43,7 @@
 
  - Apple Macbook Pro 16 (2019)
     - CPU: Intel Core i7-9750H 6C12T
-    - GPU: AMD Radeon 5300M 4GB GDDR6
+    - GPU: AMD Radeon RX 5300M 4GB GDDR6
     - DRAM: 16GB 2666MHz DDR4
     - Storage: 512GB NVMe PCIe M.2 SSD
 
@@ -62,9 +62,12 @@ We played these BGM while we contributors build this repository:
 
  - il vento d'oro - JoJo's Bizzare Adventure: Golden Wind OST vol.1 Overture
  - うまぴょい伝説 - Umamusume Pretty Derby (32 mix version)
- - Starfall - TIA, Honkai Impact 3rd OST.
- - Moon Halo - ft. 茶理理, TetraCalyx, Hanser, Honkai Impact 3rd, "Everlasting Flames" Animation OST.
- - Befall - 尚雯婕, 蔡進翰, 尹純青, 鄭宇界, Honkai Impact 3rd "Everlasting Flames", "Herrscher of Flamescion" Animation OST.
+ - Starfall - TIA, Honkai Impact 3rd "Metroric Salvation" OST.
+ - Moon Halo - ft. 茶理理, TetraCalyx, Hanser, Honkai Impact 3rd "Everlasting Flames" - "Herrscher of Flamescion" Animation OST.
+ - Befall - 尚雯婕, 蔡進翰, 尹純青, 鄭宇界, Honkai Impact 3rd "Herrscher of Void" Animation OST.
+ - Rubia - 蔡進翰, TetraCalyx, 宮奇, 楊啟翔, 徐威, Honkai Impact 3rd "Shattered Samsara" Animation OST.
+ - 崩壊世界の歌姫 - 小林未郁 · Zoe · Sya · YuTA P · YuTA P, Honkai Impact 3rd "Lament of the fallen"- "Herrscher of Thunder" Animation OST.
+ - CyberAngel - HANSER, 蔡進翰, 尹純青, 宮奇, 李昀昇, Honkai Impact 3rd "ZERO Exception" - "Herrscher of Reason" Animation OST.
  - ReOracle - Xioyun Huang, Honkai Impact 3rd, A Post-Honkai Odyssey 2 OST.
  - Decision - CV:本渡楓・下地紫野, Battle Girl High School OST.
  - Desire Link - CV:本渡楓・下地紫野, Battle Girl High School OST.
