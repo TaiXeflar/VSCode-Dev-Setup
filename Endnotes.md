@@ -69,12 +69,13 @@ We played these BGM while we contributors build this repository:
  - 崩壊世界の歌姫 - 小林未郁 · Zoe · Sya · YuTA P · YuTA P, Honkai Impact 3rd "Lament of the fallen"- "Herrscher of Thunder" Animation OST.
  - CyberAngel - HANSER, 蔡進翰, 尹純青, 宮奇, 李昀昇, Honkai Impact 3rd "ZERO Exception" - "Herrscher of Reason" Animation OST.
  - ReOracle - Xioyun Huang, Honkai Impact 3rd, A Post-Honkai Odyssey 2 OST.
- - Decision - CV:本渡楓・下地紫野, Battle Girl High School OST.
- - Desire Link - CV:本渡楓・下地紫野, Battle Girl High School OST.
- - Deep-Connect - CV:本渡楓・下地紫野, Battle Girl High School OST.
- - Departure - CV:本渡楓・下地紫野, Battle Girl High School OST.
- - Cat-Cat Romance - CV:本渡楓・下地紫野, Battle Girl High School OST.
- - ホシノキズナ - Battle Girl High School Animation OP OST.
+ - Believe - 星月美紀 CV: 洲崎綾, Battle Girl High School OST.
+ - Decision - 煌上花音&國枝詩穗 CV: 本渡楓・下地紫野, Battle Girl High School OST.
+ - Desire Link - 煌上花音&國枝詩穗 CV: 本渡楓・下地紫野, Battle Girl High School OST.
+ - Deep-Connect - 煌上花音&國枝詩穗 CV: 本渡楓・下地紫野, Battle Girl High School OST.
+ - Departure - 煌上花音&國枝詩穗 CV: 本渡楓・下地紫野, Battle Girl High School OST.
+ - Cat-Cat Romance - 煌上花音&國枝詩穗 CV: 本渡楓・下地紫野, Battle Girl High School OST.
+ - ホシノキズナ - 神樹ヶ峰女学園星守部, Battle Girl High School Animation OP OST.
  - 終わらない世界で - Daoko, Dragalia Lost OST.
  - ぼくらのネットワーク - Daoko, 中田ヤスタカ, Dragalia Lost OST.
  - Mortals - Warrios ft.Laura Brehm, NCS Release.
