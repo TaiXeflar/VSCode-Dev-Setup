@@ -87,9 +87,18 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
       ```
 
       當中:
-      - `"source"`鍵值可以自動偵測殼層路徑的設定檔來源。因為Cygwin在不非標準可執行位置，因此以`"path"`取代。
+      - `"source"`鍵值可以自動偵測殼層路徑的設定檔來源。因為Cygwin在非標準可執行位置，因此以`"path"`取代。
       - `"path"`為殼層可執行檔的檔案位置。你可以直接填入殼層可執行檔的檔案路徑，或是以JSON陣列填入多個可執行檔。
       - `"icon"`為顯示於下拉式清單的圖示。
+
+ - `"files.autoSave"`: 設定自動存檔的觸發時機，共有4個選項可以選擇。
+  
+     - `"off"`: 關閉自動存檔的功能。若`"files.autoSave"`選項不存在則亦視為不自動存檔。
+     - `"afterDelay"`: 設定自動存檔的延遲時間。若`"files.autoSaveDelay"`設定鍵值不存在時，預設是1000毫秒(即1秒)。
+     - `"onFocusChange"`: 設定成該編輯檔案若失去焦點(當你在VSCode內切換其他已開啟的檔案標籤)時自動儲存。
+     - `"onWindowsChange"`: 設定成該VSCode視窗若失去焦點(當你切換其他應用程式視窗)時自動儲存。
+
+ - `"files.autoSaveDelay"`: 設定自動存檔的延遲時間，以毫秒為單位。預設是1000。
 
 筆者以自用的VSCode範例提供完整的settings.json參考:
 
@@ -105,6 +114,8 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100,
     "files.associations": {
         "*.json": "jsonc"
     },
@@ -124,14 +135,12 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
         },
         "Git Bash": {
             "source": "Git Bash"
-        },
-        "Cygwin": 
-        {            
-           "path": ["C:/cygwin64/Cygwin.bat"],
-           "args": [],
-           "icon": "console"
         }
-    }
+    },
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true
 }
 ```
 
