@@ -54,8 +54,8 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
       請注意這個JSON鍵值不具有Intellisense自動選字，因此需自行手動確認該字體名稱是否輸入正確。
  - `"editor.fontWeight"`: 字體粗細程度，允許**一般**及**粗體**字體，不允許**斜體**。
  - `"terminal.integrated.fontFamily"`: VSCode內鍵終端機的字體。請注意僅能使用等寬字體。
- 
-      若使用非等寬字體則會讓終端機看起來像被撇開(海馬: 人生就是要看開點.jpg)的bug出現。
+
+      若使用非等寬字體則會讓終端機看起來像被撇開的bug(海馬: 人生就是要看開點.jpg)出現。
  - `"workbench.startupEditor"`: 控制在啟動時顯示哪個編輯器，若沒有(`"none"`)，則從上個工作階段還原。這意味著VSCode會開啟你上次最後一個工作狀態。
  - `"workbench.colorTheme"`: 主題色彩。
  - `"files.associations"`: 設定檔案關聯性。可覆寫預設關聯設定。
