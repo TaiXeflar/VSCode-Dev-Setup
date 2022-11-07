@@ -2,7 +2,7 @@
 
 ## VSCode安裝
 
-VSCode有兩種安裝版本:
+VSCode有兩種安裝版本: (請將TaiXeflar換成你/妳自己的使用者名稱)
  - User安裝版本。安裝路徑會在: `C:\Users\TaiXeflar\AppData\Local\Programs\Microsoft VS Code`
  - System安裝版本。安裝路徑會在: `C:\Program Files\Microsoft VS Code`
 
