@@ -59,6 +59,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
       以這段`"files.associations": {"*.json": "jsonc"}`為例，VSCode允許將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋(在json內撰寫註釋是違反語法的)。
 
  - `"terminal.integrated.profiles.windows"`: 自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
+ 
       預設會有`PowerShell`, `Command Prompt`兩個JSON物件。事實上，JSON物件可以是你隨意指定的內容。若是在VSCode安裝後再安裝Git，則會自動建立可呼叫Git的終端設定檔。
 
       下列均以**手動建立**設定檔為範例。
