@@ -37,7 +37,7 @@ Python說明請閱覽`PyReadme_[zh-tw].md`。範例程式檔請至TaiXeflar/vsco
 
 以下是殼層直譯式命令列底稿:
 
-  -  CMD: .bat .cmd
+  -  CMD: .bat(Windows批次檔案), .cmd(Windows命令指令碼)
   -  PowerShell: .ps1
   -  Linux Shell / BASH: .sh
 
