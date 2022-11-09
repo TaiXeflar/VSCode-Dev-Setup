@@ -14,6 +14,10 @@ C#/F#/VB說明請閱覽`C#/F#/VB README_[zh-tw].md`。範例程式檔請至cstes
 
 Python說明請閱覽`PyReadme_[zh-tw].md`。範例程式檔請至TaiXeflar/vscode_build_repos/pytest查看。
 
+Fortran說明請閱覽`F Readme.md`。範例程式檔請至TaiXeflar/vscode_build_repos/ftest查看。
+
+Git套件說明更新中，敬請期待。
+
 所有的編譯器/直譯器/程式語言可執行檔請閱覽`PATH.md`。
 
 以下是各程式語言對應副檔名:
