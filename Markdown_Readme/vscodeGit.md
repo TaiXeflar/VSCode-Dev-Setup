@@ -29,7 +29,7 @@ $
 
     首先，你需要具備一個GitHub帳號。你設定的名稱(Name)即為你的User Name，你登錄的電子信箱即為Email.
 
-    在創建完GitHub帳號後，在本機上或在VSCode上開啟終端機(任何殼層都可以)，並輸入git命令列:
+    在創建完GitHub帳號後，在本VSCode上開啟終端機(任何殼層都可以)，並輸入git命令列:
     ```
     git config --global user.name __USERNAME__
     git config --global user.email __USEREMAIL__
@@ -63,5 +63,15 @@ $
     Resolving deltas: 100% (331/331), done.
     PS C:\Users\TaiXeflar\Desktop>
     ```
+    桌面上將會出現一個vscode_build_sample_repos的資料夾。其中，該存放庫的所有檔案都在該資料夾內，並有一個隱藏的.git資料夾存放該存放庫的基本訊息。
 
-    
+- 初始化推送你的專案
+
+    1. 首先以檔案總管開啟專案資料夾，選擇以VSCode開啟。
+    2. 開啟VSCode後，在原始檔控制功能標籤中選擇"將存放庫初始化"。請注意，這相當於在專案資料夾底下執行`git init`指令。
+    3. 初始化完成後，你可以提交推送版本信息，VSCode會跳出一個名為"**COMMIT_EDITMSG**"的視窗，請在開頭不含#字號的字行上輸入你的提交信息。
+     - 每執行更新存檔/刪檔/更改/改名而存檔進行提交時，不能提交空白的信息。
+    4. 因為你尚未發佈Branch在GitHub上，在推送同步處理之後會跳出提示視窗，選擇你要Private或Public推送至GitHub上。
+     - 你發布的Branch是main的主要版本。
+    5. 你可以在專案資料夾的根目錄下新增一個名為 **`LICENSE`** 且**不含副檔名**的文字內容，並在該檔案中加入授權條款的信息。
+     - 授權條款可以從GitHub提供的參考網頁選擇你想要發佈的的授權條款: https://choosealicense.com/
