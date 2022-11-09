@@ -106,7 +106,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
 
  - `"files.autoSaveDelay"`: 設定自動存檔的延遲時間，以毫秒為單位。預設是1000。
 
-筆者以自用的VSCode範例提供完整的settings.json參考 :
+筆者以自用的VSCode範例提供完整的settings.json參考:
 
 ```
 {
