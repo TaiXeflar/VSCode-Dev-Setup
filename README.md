@@ -18,7 +18,7 @@ Python說明請閱覽`PyReadme_[zh-tw].md`。範例程式檔請至TaiXeflar/vsco
 
 Fortran說明請閱覽`F Readme.md`。範例程式檔請至TaiXeflar/vscode_build_repos/ftest查看。
 
-Git套件說明更新中，敬請期待。
+Git套件說明請閱覽`vscodeGit.md`。範例程式檔請至TaiXeflar/vscode_build_repos/Markdown_Readme查看。
 
 所有的編譯器/直譯器/程式語言可執行檔請閱覽`PATH.md`。
 
