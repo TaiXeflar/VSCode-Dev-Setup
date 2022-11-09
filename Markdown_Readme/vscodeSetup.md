@@ -142,11 +142,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
         "Git Bash": {
             "source": "Git Bash"
         }
-    },
-    "terminal.integrated.commandsToSkipShell": [
-        "language-julia.interrupt"
-    ],
-    "julia.symbolCacheDownload": true
+    }
 }
 ```
 
