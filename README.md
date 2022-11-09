@@ -8,7 +8,7 @@ Share experimental build result.
 
 分享實驗性建置結果。
 
-C/C++說明請閱覽`C_C++ README_[zh-tw].md`。範例程式檔請至TaiXeflar/vscode_build_repos/ctest查看。
+C/C++說明請閱覽`C_C++ README_[zh-tw].md`。範例程式檔請至TaiXeflar/vscode_build_repos/Markdown_Readme/ctest查看。
 
 C#/F#/VB說明請閱覽`C#/F#/VB README_[zh-tw].md`。範例程式檔請至cstest, fstest, vbtest查看。
 
