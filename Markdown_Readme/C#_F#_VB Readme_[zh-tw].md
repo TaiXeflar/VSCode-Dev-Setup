@@ -193,3 +193,4 @@
 ## 後言
 
 - 本專案對Visual Studio的建置方法是採建置時以殼層呼叫`VsDevCmd.bat`/`setvars.bat` 初始化環境後再以殼層呼叫編譯器本體，與呼叫MSVC為同一種偷吃步的做法。
+- `#`符號的英文是hashtag，但在C#、F#的念法是C Sharp及F Sharp。請不要念成C Hashtag。(笑)
