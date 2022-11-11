@@ -10,7 +10,7 @@
      - If you want to use msvc, you have to build enviroment via `VsDevCmd.bat`.
      - At least C++ Build tools must be installed (e.g. MSVC v143 - VS2022 C++ x86-64 Build tools).
 
-  2. ICL and Intel DPCPP requires Intel oneAPI toolkit (Intel DPC++/C++ and Intel Classic C/C++ Compilers).
+  2. ICL and Intel DPCPP requires Intel oneAPI toolkit (Intel DPC++/C++ and Intel Classic C/C++ Compilers). 
 
      - If you attempting use Intel Compilers, you have to build enviroment via `setvars.bat`.
 
