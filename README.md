@@ -122,6 +122,9 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
 
  - `"files.autoSaveDelay"`: 設定自動存檔的延遲時間，以毫秒為單位。預設是1000。
 
+ - `"explorer.confirmDelete"`: 在左側的檔案總管中刪除檔案時，是否跳出互動視窗確認刪除該檔案。
+ - 
+
 筆者以自用的VSCode範例提供完整的settings.json參考 :
 
 ```
@@ -135,7 +138,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
     "git.enableSmartCommit": true,
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
-    "explorer.confirmDelete": false,
+    "explorer.confirmDelete": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 100,
     "files.associations": {
@@ -166,17 +169,17 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
 
 你可以使用熱鍵加速你的效率。
 
+  - `Ctrl + K` + `Ctrl + O`: 開啟資料夾。
+  - `Ctrl + K` + `F`: 關閉資料夾。
   - `Ctrl + C`: 複製文字。
   - `Ctrl + V`: 貼上複製內容。
   - `Ctrl + X`: 剪取文字。
   - `Ctrl + S`: 存檔。 你可以快速存檔，以及將`COMMIT_EDITMSG`存檔以提交至GitHub存放庫。
   - `Ctrl + Shift + S`: 另存新檔。
   - `Ctrl + Shift + P`: 尋找vscode設定。
-  - `Ctrl + Shift + B`: 啟動專案建置工作。
+  - `Ctrl + Shift + B`: 啟動專案建置工作(Build Task)。
   - `Ctrl + Shift + ‵`: 新增一個終端。
-  - `F5`: 啟動專案偵錯工作。
+  - `F5`: 啟動專案偵錯工作(Run Debug)。
   - `Ctrl + F`: 尋找目標。
-  - `Ctrl + H`: 尋找即取代目標。
-  - `Ctrl + K` + `Ctrl + O`: 開啟資料夾。
-  - `Ctrl + K` + `F`: 關閉資料夾。
+  - `Ctrl + H`: 尋找及取代目標。
   - `Shift + Enter`: 在Jupyter Notebook內執行單一個cell的直譯式偵錯或執行Markdown的編輯儲存。
