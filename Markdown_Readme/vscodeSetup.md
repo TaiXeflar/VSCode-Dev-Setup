@@ -58,9 +58,12 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
       若使用非等寬字體則會讓終端機看起來像被撇開的bug(海馬: 人生就是要看開點.jpg)出現。
  - `"workbench.startupEditor"`: 控制在啟動時顯示哪個編輯器，若沒有(`"none"`)，則從上個工作階段還原。這意味著VSCode會開啟你上次最後一個工作狀態。
  - `"workbench.colorTheme"`: 主題色彩。
- - `"files.associations"`: 設定檔案關聯性。可覆寫預設關聯設定。
+ - `"files.associations"`: 設定檔案關聯性。可覆寫預設關聯設定。以下提供一段範例:
 
-      以這段`"files.associations": {"*.json": "jsonc"}`為例，VSCode允許將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋(在json內撰寫註釋是違反語法的)。
+      ```
+      "files.associations": {"*.json": "jsonc"}
+      ```
+      VSCode允許將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋(在json內撰寫註釋是違反語法的)。
 
  - `"terminal.integrated.profiles.windows"`: 自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
 
