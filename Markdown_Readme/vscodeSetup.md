@@ -63,7 +63,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
       ```
       "files.associations": {"*.json": "jsonc"}
       ```
-      VSCode允許將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋(在json內撰寫註釋是違反語法的)。
+      這段程式碼的含意是，允許VSCode將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋(在json內撰寫註釋是違反語法的)。
 
  - `"terminal.integrated.profiles.windows"`: 自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
 
