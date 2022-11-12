@@ -14,7 +14,7 @@
 
  - Operating System:
     - Windows 11 Pro Workstation
-    - Feature Experience Pack: 1000.22636.1000.0
+    - Feature Experience Pack: 1000.22636.1000.0 - Moment 1
     - GPU Driver: NVIDIA GeForce Game Ready Driver 512.95 WHQL
     - WSL2: Ubuntu 20.04 LTS
 
