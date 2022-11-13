@@ -105,7 +105,3 @@ We played these BGM while we contributors build this repository:
  - Unwelcome School - Mitsukiyo, Blue Archive OST.
  - Train Rush - A Hat in Time OST, Qumu remix.
  - Trainwreck Of Electro Swing - , A Hat in Time OST, Plasma3Music remix.
- - Genos Fights - One Punch Man 2 OST.
- - Battle of Christophsis - Kevin Kiner, Star Wars The Clone Wars OST.
- - Duel of Fates - L'Orchestra Cinématique, Star Wars: Duel of Fates Epic version.
- - Love Pledge and the Arena - John Williams, Star Wars Attack of the Clones OST.
