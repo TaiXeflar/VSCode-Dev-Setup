@@ -20,7 +20,7 @@ VSCode有兩種安裝版本: (請將TaiXeflar換成你/妳自己的使用者名�
  - System安裝版本。安裝路徑會在: `C:\Program Files\Microsoft VS Code`
 
 VSCode的下載地址: https://code.visualstudio.com/#alt-downloads
- - 請依照上述安裝路徑(User/System)版本選擇Windows **x64** 版本。
+ - 請依照上述安裝路徑(User/System)版本選擇Windows **`x64`** 版本。
  - 請注意VSCode要求Window 10以上，因此不支援以下作業系統:
      - Windows XP
      - Windows 7(Service Pack 1, 2, 3)
