@@ -38,7 +38,7 @@
 
 ## 編譯器安裝
 
- - 本安裝範例以預設路徑為標準。
+本安裝範例以預設路徑為標準。
 
  - Visual C/C++限定由Visual Studio環境安裝。在Visual Studio Installer中，勾選 "**使用C++桌面開發**"並選擇:
 
@@ -67,41 +67,41 @@
 
 ## PATH 路徑確認
 
-  - 範例提及的所有編譯器可在預設安裝的路徑下找到。請把列出的編譯器路徑的資料夾添加至環境變數中(PATH)。
+範例提及的所有編譯器可在預設安裝的路徑下找到。請把列出的編譯器路徑的資料夾添加至環境變數中(PATH)。
 
-    - Microsoft Visual C/C++ compiler:
+  - Microsoft Visual C/C++ compiler:
 
-      `PATH`:
+    `PATH`:
 
-      - VsDevCmd.bat : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/VsDevCmd.bat"
-      - cl.exe : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/`Version Number`/bin/HostX64/x64/cl.exe"
-      - clang.exe : "C:/Program Files/Microsoft Visual Studio/2022/VC/Tools/Llvm/bin/clang.exe"
+    - VsDevCmd.bat : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/VsDevCmd.bat"
+    - cl.exe : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/`Version Number`/bin/HostX64/x64/cl.exe"
+    - clang.exe : "C:/Program Files/Microsoft Visual Studio/2022/VC/Tools/Llvm/bin/clang.exe"
 
-        在 cl.exe 的路徑中，將`Version Number`換成你想要的編譯器版本號。
+      在 cl.exe 的路徑中，將`Version Number`換成你想要的編譯器版本號。
 
-        - VS2022: `14.33.31629`
-        - VS2019: `14.29.30133`
-        - VS2017: `14.16.27023`.
+      - VS2022: `14.33.31629`
+      - VS2019: `14.29.30133`
+      - VS2017: `14.16.27023`.
 
-    - Intel DPC++/C++ and Intel classic C/C++ Compiler:
+  - Intel DPC++/C++ and Intel classic C/C++ Compiler:
 
-      `PATH`:
+    `PATH`:
 
-      - setvars.bat: "C:/Program Files (x86)/Intel/oneAPI/setvars.bat"
-      - dpcpp.exe: "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/dpcpp.exe"
-      - icl.exe: "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/intel64/icl.exe"
+    - setvars.bat: "C:/Program Files (x86)/Intel/oneAPI/setvars.bat"
+    - dpcpp.exe: "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/dpcpp.exe"
+    - icl.exe: "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/intel64/icl.exe"
 
-    - NVIDIA CUDA C/C++ compiler:
+  - NVIDIA CUDA C/C++ compiler:
 
-      `PATH`:
+    `PATH`:
 
-      - nvcc.exe: "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.7/bin/nvcc.exe"
+    - nvcc.exe: "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.7/bin/nvcc.exe"
 
-    - GNU C/C++ compiler (from Dev-C++):
+  - GNU C/C++ compiler (from Dev-C++):
 
-      `PATH`:
+    `PATH`:
 
-      - gcc.exe: "C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/gcc.exe"
+    - gcc.exe: "C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/gcc.exe"
 
 ## 設定PATH變數
 
