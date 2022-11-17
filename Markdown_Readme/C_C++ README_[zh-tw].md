@@ -22,7 +22,7 @@
 
   1. MSVC (Microsoft Visual C++). 
 
-     - 如果你要使用微軟的編譯器， 專案內編譯環境需要以`VsDevCmd.bat`啟動。
+     - 如果你要使用微軟的編譯器， 專案內編譯環境需要以`VsDevCmd.bat`啟動。`VsDevCmd.bat`會自動呼叫`vcvarsall.bat`設定變數。
      - 至少一個Visual C++編譯器套件需要安裝。 (e.g. MSVC v143 - VS2022 C++ x64/x86 建置工具)。
 
   2. Intel ICL和Intel DPCPP需要以Intel oneAPI套件安裝。(Intel DPC++/C++ and Intel Classic C/C++ Compilers).
