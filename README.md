@@ -92,7 +92,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
 
       下列均以**手動建立**設定檔為範例。
       
-      以建立Cygwin為例:
+      以建立Cygwin，並啟動目錄位置在/home/_USER/為例: (`_USER`是你的使用者名稱，底下2個範例)
 
       ```
          "Cygwin": 
@@ -102,7 +102,14 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
             "icon": "console"
          }
       ```
-
+      ```
+         "Cygwin": 
+         {            
+            "path": ["C:/cygwin64//bin/bash.exe"],
+            "args": ["--login", "-i"]
+            "icon": "console"
+         }
+      ```
       
       以建立Git為例:
 
@@ -168,6 +175,12 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
         },
         "Git Bash": {
             "source": "Git Bash"
+        },
+        "Cygwin": 
+        {            
+            "path": ["C:/cygwin64//bin/bash.exe"],
+            "args": ["--login", "-i"]
+            "icon": "console"
         }
     }
 }
