@@ -28,24 +28,36 @@
 
   - Python直譯器可在預設安裝的路徑下找到。請把列出的編譯器路徑的資料夾添加至環境變數中(PATH)。
 
-    - 若安裝限安裝在使用者路徑:
+    - 若安裝在使用者路徑:
 
       `PATH`:
 
-            "C:\Users\YOUR_NAME\AppData\Roaming\Python\Python39\Scripts"
-            "C:\Users\YOUR_NAME\AppData\Roaming\Python\Python39\"
+        ```
+        "C:\Users\YOUR_NAME\AppData\Roaming\Python\Python39\Scripts"
+        "C:\Users\YOUR_NAME\AppData\Roaming\Python\Python39\"
+        ```
 
         或
 
-            "C:\Users\YOUR_NAME\AppData\Local\Python\Python39\Scripts"
-            "C:\Users\YOUR_NAME\AppData\Local\Python\Python39\"
+        ```
+        "C:\Users\YOUR_NAME\AppData\Local\Python\Python39\Scripts"
+        "C:\Users\YOUR_NAME\AppData\Local\Python\Python39\"
+        ```
 
     - 若安裝在系統路徑(為所有使用者安裝):
 
       `PATH`:
+      ```
+      "C:\Program Files\Python39"
+      "C:\Program Files\Python39\Scripts"
+      ```
 
-            "C:\Program Files\Python39"
-            "C:\Program Files\Python39\Scripts"
+    - 若你的運行環境是macOS:
+
+      `PATH`:
+      ```
+      /usr/bin
+      ```
 
 
 ## 設定PATH變數
@@ -90,7 +102,7 @@
 
 底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
 
-若以系統管理員安裝則需要以系統管理員開啟Windows終端機。(若本機上有安裝gsudo套件則在pip前加上gsudo或sudo)
+若以系統管理員安裝則需要以系統管理員開啟Windows終端機。(若本機有安裝gsudo套件則在pip前加上gsudo或sudo)
 
   ```
   PS>   pip install `Mod`
