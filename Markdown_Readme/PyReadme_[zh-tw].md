@@ -52,13 +52,6 @@
       "C:\Program Files\Python39\Scripts"
       ```
 
-    - 若你的運行環境是macOS:
-
-      `PATH`:
-      ```
-      /usr/bin
-      ```
-
 
 ## 設定PATH變數
 
@@ -141,7 +134,7 @@
 
 - Jupyter
 
-這裡舉例一個使用終端機安裝py2exe套件的實際過程:
+這裡舉例一個使用終端機安裝py2exe套件的實際過程(pip 22.3.1):
 
  ```
   PS C:\Users\TaiXeflar> pip install py2exe
