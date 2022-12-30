@@ -83,7 +83,7 @@
 ## .vscode資料夾設定
 
   - 請注意，在VSCode中編輯路徑的時候，使用`/`或`\\`替代`\`.
-  - JSON檔案: 你需要2個JSON檔案完成C#環境設定。
+  - JSON檔案: 你需要2個JSON檔案完成Fortran的編譯環境設定。
     - `tasks.json`: Fortran底稿進行編譯的設定。
     - `launch.json`: 偵錯Fortran已編譯的偵錯執行檔.
   
