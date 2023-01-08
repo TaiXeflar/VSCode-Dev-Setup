@@ -1,8 +1,8 @@
 # Endnotes
 
 ## Repository Contributors: 
- - TaiXeflar. National Taiwan Ocean University MEI Bachelor 4A
- - Ian Chang. National Chiayi University Electrophysics Department Bachelor 3A
+ - TaiXeflar.  National Taiwan Ocean University MEI Bachelor 4A
+ - Ian Chang.  National Chiayi University Electrophysics Department Bachelor 3A
 
 ## Repository Test - Windows Enviroment
 
@@ -61,6 +61,7 @@
 We played these BGM while we contributors build this repository:
 
  - il vento d'oro - JoJo's Bizzare Adventure: Golden Wind OST vol.1 Overture
+ - 祝福 - YOASOBI, Ayase & Ikura(vocal), Mobile Suit Gundam: The Witch from Mercury OP.
  - うまぴょい伝説 - Umamusume Pretty Derby (32 mix version)
  - Starfall - TIA, Honkai Impact 3rd "Metroric Salvation" OST.
  - Moon Halo - ft. 茶理理, TetraCalyx, Hanser, Honkai Impact 3rd "Everlasting Flames" - "Herrscher of Flamescion" Animation OST.
