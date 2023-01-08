@@ -11,9 +11,9 @@
 
 ## Git Bash套件使用
 
-Git可以做為GitHub控制套件，也可以做為UNIX Shell的替代品執行bash檔。
+Git可以做為GitHub控制套件，並有自帶BASH做為UNIX Like Shell執行bash檔。
 
-若在終端機內執行`git`則會出現git的說明檔。要呼叫類UNIX的Shell請在添加環境變數後以命令列`bash`(可以加附帶引數`-i`,  `-l`)呼叫bash。成功畫面如下:
+若在終端機內執行`git`則會出現git的說明檔。要調用或呼叫Bash請在添加環境變數後以命令列`bash`(可以加附帶引數`-i`,  `-l`)呼叫bash。成功畫面如下:
 
 ```
 PS C:\Users\TaiXeflar> bash -i -l
