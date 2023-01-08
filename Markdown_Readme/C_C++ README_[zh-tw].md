@@ -278,7 +278,7 @@
 ## C/C++ 注意事項
 
  - AMD Optimized C/C++ Compilers (AOCC) 僅限於Linux環境或WSL2底下使用。在Windows作業系統使用會被視為無法開啟的可執行檔。
- - 若本機所搭載的中央處理器(CPU)為Intel Core處理器時，可以選擇MSVC、Intel C/C++或GCC編譯器。若為AMD Ryzen處理器，請避免安裝Intel C/C++編譯器，以避免處理器架構及優化不相容。
+
  - 若本機所搭載的圖形處理器(GPU)為NVIDIA GeForce圖形晶片時，可以選擇使用CUDA開發。請注意CUDA套件相容性會隨NVIDIA GPU架構迭代而有支援差異性。
  - 若本機所搭載的圖形處理器(GPU)為Intel Arc, Intel Iris Xe及Intel UHD Graphics圖形晶片時，可以選擇使用Intel DPCPP開發。
  - 若本機所搭載的圖形處理器(GPU)為AMD Radeon Graphics圖形晶片時，不支援GPU的C/C++語言開發。
