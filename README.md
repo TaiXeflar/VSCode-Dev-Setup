@@ -30,6 +30,7 @@ VSCode的下載地址: https://code.visualstudio.com/#alt-downloads
 ## VSCode延伸套件
 
 VSCode在未擴充功能的情況下只是單純的文字編輯器(Text Editor)。
+
 VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)實現功能擴充或改變。
 
 以下是改變VSCode系統內語言延伸套件:
