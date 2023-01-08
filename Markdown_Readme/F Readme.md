@@ -176,7 +176,7 @@
 ## Fortran 注意事項
 
  - 請注意，Fortran是編譯語言，且有多種副檔名(`.f`, `.f90`,`.f77`等)。
- - 編譯Fortran語言底稿時，必須在`tasks.json`以`VsDevCmd.bat`初始化開發編譯環境。
+ - 編譯Fortran語言底稿時，必須在`tasks.json`以`setvars.bat`初始化開發編譯環境。
 
 ## 後言
 
