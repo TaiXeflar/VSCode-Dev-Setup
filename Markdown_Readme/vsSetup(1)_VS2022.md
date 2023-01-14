@@ -45,11 +45,5 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInst4.png)
 
-
-
-
-
-
-
-
 ## Visual Studio 2022製作離線安裝檔
+### 內容施工中
