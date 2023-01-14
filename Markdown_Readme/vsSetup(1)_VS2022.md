@@ -31,19 +31,19 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
  - https://visualstudio.microsoft.com/zh-hant/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false
 接著點擊安裝檔，初始化Visual Studio安裝程式後會進入安裝版本的修改頁面。你應該可以看到Visual Studio的版本選擇:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/tree/main/Markdown_Readme/Fetch_Pics/vsInst1.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInst1.png)
 
 選擇你要的工作負載，預設有選取的內容項是Visual Studio的建議安裝選項。右邊可以選擇提供建議的安裝元件選擇。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/tree/main/Markdown_Readme/Fetch_Pics/vsInst2.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInst2.png)
 
 若有特殊程式庫跟工具的需求，有可自由選擇可擴充的個別元件:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/tree/main/Markdown_Readme/Fetch_Pics/vsInst3.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInst3.png)
 
 你可以自定義Visual Studio的安裝位置。預設是在`C:\Program Files\Microsoft Visual Studio\2022`底下。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/tree/main/Markdown_Readme/Fetch_Pics/vsInst4.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInst4.png)
 
 
 
