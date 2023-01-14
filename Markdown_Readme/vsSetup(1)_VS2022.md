@@ -28,7 +28,8 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
 
 首先，需要下載Visual Studio的安裝檔。個人使用只需要Community授權版本即可免費下載安裝。 
 
- - https://visualstudio.microsoft.com/zh-hant/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false
+ - 下載網址: https://visualstudio.microsoft.com/zh-hant/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false
+
 接著點擊安裝檔，初始化Visual Studio安裝程式後會進入安裝版本的修改頁面。你應該可以看到Visual Studio的版本選擇:
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInst1.png)
