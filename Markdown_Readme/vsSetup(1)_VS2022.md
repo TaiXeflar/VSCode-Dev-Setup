@@ -53,5 +53,6 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
 Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取的下載及安裝檔的生成。
 我們需要下載Visual Studio啟動載入器，至微軟官方線上文件下載:
  - https://learn.microsoft.com/zh-tw/visualstudio/install/create-an-offline-installation-of-visual-studio?view=vs-2022
+ 
 找到啟動載入器，下載Community版本:
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInstOff_1.png)
