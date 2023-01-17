@@ -63,22 +63,23 @@ Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取�
 
 建立一個啟動載入器的安裝包資料夾，命名為vsBuild並設定在桌面。此處範例路徑為: `C:\Users\TaiXeflar\Desktop\vsBuild`
 
-啟動一個終端機(PowerShell/CMD/BASH都可以)，更改目錄至該安裝包資料夾中。
+啟動一個終端機(殼層選擇PowerShell/CMD/BASH都可以)，更改目錄至該安裝包資料夾中。
 ```
 $> cd "C:\Users\TaiXeflar\Desktop\vsBuild"
 ```
  - 建議使用字串的方式呼叫整個路徑，可以避免路徑中有空格的問題。
 
-該資料夾內需要有我們剛剛下載的啟動載入器(`vs_community.exe`)。
+該資料夾內需要有我們剛剛下載的啟動載入器(`vs_Community.exe`)。
 
 接著以命令列的方式呼叫啟動載入器。這裡我們的安裝包有以下設定:
+ - 安裝包的資料夾是 `C:\Users\TaiXeflar\Desktop\vsBuild`。
  - 安裝包語言是繁體中文。
  - 安裝包有包含所有工作負載。
  - 執行安裝包生成時輸出監控顯示畫面。
 
 因此，我們要執行的命令列是:
 ```
-$> .\vs_community.exe --layout --lang zh-TW
+$> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild --lang zh-TW
 ```
 
 你的操作介面看起來會像這樣:
@@ -91,6 +92,6 @@ $> .\vs_community.exe --layout --lang zh-TW
 
 將這個包含元件資料夾及啟動載入器的安裝包資料夾部署至任何一台欲離線安裝的電腦上，使用終端機執行指令:
 ```
-$> .\vs_community.exe --noweb
+$> .\vs_Community.exe --noweb
 ```
-
+接著會出現安裝Visual Studio的圖形操作頁面(與網路安裝版一樣)，直接進行前述工作負載與元件的選擇後進行安裝。
