@@ -6,10 +6,10 @@
 
 說明檔以Markdown語法編寫，在TaiXeflar/vscode_build_sample_repos/Markdown_Readme內。
 
- - C/C++說明請閱覽`C_C++ README_[zh-tw].md`。範例程式檔請至TaiXeflar/vscode_build_repos/ctest查看。
+ - C/C++說明請閱覽`C_C++ README_[zh-tw].md`。範例程式檔請至ctest查看。
  - C#/F#/VB說明請閱覽`C#/F#/VB README_[zh-tw].md`。範例程式檔請至cstest, fstest, vbtest查看。
- - Python說明請閱覽`PyReadme_[zh-tw].md`。範例程式檔請至TaiXeflar/vscode_build_repos/pytest查看。
- - Fortran說明請閱覽`F Readme.md`。範例程式檔請至TaiXeflar/vscode_build_repos/ftest查看。
+ - Python說明請閱覽`PyReadme_[zh-tw].md`。範例程式檔請至pytest查看。
+ - Fortran說明請閱覽`F Readme.md`。範例程式檔請至ftest查看。
  - Java目前測試中，敬請期待。
  - Git套件說明請閱覽`vscodeGit.md`。
 
