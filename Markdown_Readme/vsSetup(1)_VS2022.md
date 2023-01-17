@@ -94,4 +94,4 @@ $> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild --lang zh-TW
 ```
 $> .\vs_Community.exe --noweb
 ```
-接著會出現安裝Visual Studio的圖形操作頁面(與網路安裝版一樣)，直接進行前述工作負載與元件的選擇後進行安裝 。
+接著會出現安裝Visual Studio的圖形操作頁面(與網路安裝版一樣)，直接進行前述工作負載與元件的選擇後進行安裝。
