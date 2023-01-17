@@ -90,7 +90,7 @@ $> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild --lang zh-TW
 下載完之後會出現一個`packages`的資料夾，所有元件和工具都會以安裝檔(.msi)和封包檔(.cab)整合在裡面。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInstOff_3.png)
 
-將這個包含元件資料夾及啟動載入器的安裝包資料夾部署至任何一台欲離線安裝的電腦上，使用終端機執行指令:
+將這個包含元件資料夾及啟動載入器的安裝包資料夾部署至任何一台欲離線安裝的電腦上，開啟終端機並切換至用安裝包位置後執行該指令:
 ```
 $> .\vs_Community.exe --noweb
 ```
