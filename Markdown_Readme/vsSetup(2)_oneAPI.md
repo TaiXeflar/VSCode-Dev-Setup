@@ -22,6 +22,7 @@ Intel有提供以下開發工具:
  - Intel oneTBB
  - Intel oneVPL
  - e.t.c.
+
 ※ 請注意，各套件皆有提供在線/離線安裝版本。請依照您是否需要連線至網路選擇部署模式。
 
 這裡以執行Intel oneAPI Math Kernel Library的Standalone Installer為例。
