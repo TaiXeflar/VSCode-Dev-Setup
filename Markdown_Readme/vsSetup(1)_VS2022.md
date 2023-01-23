@@ -26,7 +26,7 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
  - Intel oneAPI套件 (所有Intel oneAPI)
  - NVIDIA CUDA套件
 
-首先，需要下載Visual Studio的安裝檔。個人使用只需要Community授權版本即可免費下載安裝。 
+首先，需要下載Visual Studio的安裝檔(Visual Studio Installer)。個人使用只需要Community授權版本即可免費下載安裝。 
 
  - 下載網址: https://visualstudio.microsoft.com/zh-hant/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false
 
@@ -47,6 +47,8 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInst4.png)
 
 接著進行在線下載及安裝。
+
+Visual Studio Installer可同時管理不同版本的Visual Studio安裝，以及不同工作負載及元件的安裝管理。
 
 ## Visual Studio 2022製作離線安裝檔
 ### 內容施工中
@@ -72,26 +74,30 @@ $> cd "C:\Users\TaiXeflar\Desktop\vsBuild"
 該資料夾內需要有我們剛剛下載的啟動載入器(`vs_Community.exe`)。
 
 接著以命令列的方式呼叫啟動載入器。這裡我們的安裝包有以下設定:
- - 安裝包的資料夾是 `C:\Users\TaiXeflar\Desktop\vsBuild`。
+ - 安裝包的資料夾是 `C:\Users\TaiXeflar\Desktop\vsBuild\packages` (`vsBuild`資料夾內有一個`packages`資料夾)。
  - 安裝包語言是繁體中文。
- - 安裝包有包含所有工作負載。
+ - 安裝包內有包含所有工作負載。
  - 執行安裝包生成時輸出監控顯示畫面。
 
 因此，我們要執行的命令列是:
 ```
-$> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild --lang zh-TW
+$> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild\packages --lang zh-TW
 ```
+當中，命令列有傳遞的分別是:
+ 
+ - `--layout` 引數。這是初始部署時必須指定的值，後面傳遞一個資料夾路徑。範例中是 `C:\Users\TaiXeflar\Desktop\vsBuild`。
+ - `--lang` 引數。這是部署VS2022時安裝的語言套件版本指定。範例中是指定繁體中文。
 
 你的操作介面看起來會像這樣:
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInstOff_2.png)
 
-之後靜待元件下載安裝，時長約30分鐘至1小時(等待時間真的很久，你可以打一場5v5的LOL)。
+之後靜待元件下載安裝，時長約30分鐘至1小時(等待時間真的很久，你可以打一場5v5的LOL或是一場R6排位)。
 
-下載完之後會出現一個`packages`的資料夾，所有元件和工具都會以安裝檔(.msi)和封包檔(.cab)整合在裡面。
+下載完之後會出現一個`packages`的資料夾，所有元件和工具都會以安裝檔(.msi)、封包檔(.cab)、確認信息(.json)，延伸套件(.vsix)整合在裡面。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vsInstOff_3.png)
 
-將這個包含元件資料夾及啟動載入器的安裝包資料夾部署至任何一台欲離線安裝的電腦上，開啟終端機並切換至用安裝包位置後執行該指令:
+將這個包含元件資料夾及啟動載入器的安裝包資料夾部署至任何一台欲離線安裝的電腦上，開啟終端機並切換至用安裝包位置(`packages`)後執行該指令:
 ```
 $> .\vs_Community.exe --noweb
 ```
-接著會出現安裝Visual Studio的圖形操作頁面(與網路安裝版一樣)，直接進行前述工作負載與元件的選擇後進行安裝。
+接著會出現安裝Visual Studio的圖形操作頁面(與網路安裝版一樣)，依照進行前述工作負載與元件的自動選擇配置後**直接**進行安裝。
