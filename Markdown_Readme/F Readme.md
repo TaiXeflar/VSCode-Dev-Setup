@@ -104,8 +104,8 @@
                     }
                 },
                 "type": "shell",
-                "label": "csc.exe",
-                "command": "csc.exe",
+                "label": "ifort.exe",
+                "command": "ifort.exe",
                 "args": 
                 [
                     "${file}", 
