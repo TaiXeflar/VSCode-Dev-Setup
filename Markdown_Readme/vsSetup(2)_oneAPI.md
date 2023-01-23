@@ -37,9 +37,14 @@ Intel oneAPI預設會安裝在以下路徑: `C:\Program Files (x86)\Intel\oneAPI
 接著是確認整合至Visual Studio版本的選擇。這裡我們選擇VS2022:
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_oneAPI_2.png)
 
-下一步，確認使用條款後進行安裝，安裝時須注意**在安裝完全結束前勿隨意結束安裝程式**。
+下一步，確認是否加入開發人員回饋計劃(Software Improvement Program)後進行安裝，安裝時須注意**在安裝完全結束前勿隨意結束安裝程式**。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_oneAPI_4.png)
 
 你可以查看Intel oneAPI的安裝產品信息。執行Intel oneAPI Installer以查看已安裝的Intel oneAPI套件清單:
  - Intel oneAPI Installer: `C:\Program Files (x86)\Intel\oneAPI\Installer\installer.exe`
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_oneAPI_tools.png)
+
+
+這是有成功安裝Intel Visual Fortran以及Intel DPCPP/CPP看起來的樣子:
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_oneAPI_ifort.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_oneAPI_dpcpp.png)
