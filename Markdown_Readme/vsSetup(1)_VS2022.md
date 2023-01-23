@@ -51,7 +51,7 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
 Visual Studio Installer可同時管理不同版本的Visual Studio安裝，以及不同工作負載及元件的安裝管理。
 
 ## Visual Studio 2022製作離線安裝檔
-### 內容施工中
+
 Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取的下載及安裝檔的生成。
 
 這種離線安裝包的方式可以自定義Visual Studio的大量部署作業。
