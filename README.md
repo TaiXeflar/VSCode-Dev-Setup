@@ -93,41 +93,22 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
 
       下列均以**手動建立**設定檔為範例。
       
-      以建立Cygwin，並啟動目錄位置在/home/_USER/為例: (`_USER`是你的使用者名稱，底下2個範例)
+      - 建立Cygwin環境，並啟動目錄位置在/home/_USER/為例: (`_USER`是你的使用者名稱，底下2個範例)
 
-      ```
-         "Cygwin": 
-         {            
-            "path": ["C:/cygwin64/Cygwin.bat"],
-            "args": []
-            "icon": "console"
-         }
-      ```
-      ```
-         "Cygwin": 
-         {            
-            "path": ["C:/cygwin64//bin/bash.exe"],
-            "args": ["--login", "-i"]
-            "icon": "console"
-         }
-      ```
-      
-      以建立Git為例:
-
-      ```
-         "Git":
-         {
-            "path": ["C:/Program Files/Git/bin/bash.exe"],
-            "args": ["-i", "-l"],
-            "icon: "console"
-         }
-      ```
-
-      當中:
-      - `"source"`鍵值可以自動偵測殼層路徑的設定檔來源。因為Cygwin在非標準可執行位置，因此以`"path"`取代。
-      - `"path"`為殼層可執行檔的檔案位置。你可以直接填入殼層可執行檔的檔案路徑，或是以JSON陣列填入多個可執行檔。
-      - `"args"` 為要傳遞到該殼層內的參數或引數(flags)，使用JSON清單包含所有要被傳遞的引數。
-      - `"icon"`為顯示於下拉式清單的圖示。
+        ```
+            "Cygwin": 
+            {            
+                "path": ["C:/cygwin64/bin/bash.exe"],
+                "args": ["--login", "-i"]
+                "icon": "console"
+            }
+        ```
+        
+        當中:
+        - `"source"`鍵值可以自動偵測殼層路徑的設定檔來源。因為Cygwin在非標準可執行位置，因此以`"path"`取代。
+        - `"path"`為殼層可執行檔的檔案位置。你可以直接填入殼層可執行檔的檔案路徑，或是以JSON陣列填入多個可執行檔。
+        - `"args"` 為要傳遞到該殼層內的參數或引數(flags)，使用JSON清單包含所有要被傳遞的引數。
+        - `"icon"`為顯示於下拉式清單的圖示。
 
  - `"files.autoSave"`: 設定自動存檔的觸發時機，共有4個選項可以選擇。
   
