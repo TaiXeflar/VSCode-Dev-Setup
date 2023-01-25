@@ -75,12 +75,15 @@ NVIDIA CUDA會安裝在以下路徑: `C:\Program Files\NVIDIA GPU Computing Tool
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_cuda_1.png)
 
 再來可以選擇預設或自訂選擇元件安裝:
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_cuda_2.png)
 
 我們選擇CUDA套件:
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_cuda_3.png)
 
 安裝的Nsight會自動偵測並整合至Visual Studio。
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_cuda_4.png)
 
 這是可以建立NVIDIA CUDA Runtime看起來的樣子:
