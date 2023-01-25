@@ -21,23 +21,25 @@
  - Development Application:
     - Windows Terminal 1.15.2712.0
     - Git 2.36.1
-    - Microsoft Visual Studio Code 1.72
+    - Microsoft Visual Studio Code 1.74
     - Microsoft Visual Studio 2022 Community
        - MSVC v143
        - Clang for Windows
        - CMake
        - .NET C#, VB, F#
     - OpenJDK 1.19
-    - Python 3.9.7
+    - Python 3.9.7，Intel Distrubution for Python* 3.9.15
     - Julia 1.8.2
-    - Intel oneAPI DPCPP/CPP and Intel C/C++
-    - Intel oneAPI Fortran
-    - NVIDIA CUDA 11.7
+    - Intel oneAPI DPCPP/CPP and Intel C/C++ 2023.0
+    - Intel oneAPI Fortran 2023.0
+    - NVIDIA CUDA 11.7, 12.0
+    - MatLab R2022b
 
  - Test Logs:
    - Tested Done by TaiXeflar in Windows 10 21H2 enviroment at 2022/9/25.
    - Tested Done by TaiXeflar in Windows 11 22H2 enviroment at 2022/9/27.
    - Tested Done by TaiXeflar on various platform (ASUS TUF A15 2022) in Windows 11 21H1 enviroment at 2022/10/1.
+   - Tested Done by TaiXeflar in Windows 11 22H2 enviroment at 2023/1/18 (Visual Studio pffline deployment).
 
 ## Repository Test - macOS Enviroment
 
