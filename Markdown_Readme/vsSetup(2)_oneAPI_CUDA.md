@@ -1,4 +1,4 @@
-# Visual Studio 協力廠商 Intel oneAPI套件
+# Visual Studio 協力廠商套件
 ## Intel oneAPI 安裝
 本章節將會教學如何部署Intel oneAPI套件。
 
@@ -23,7 +23,7 @@ Intel有提供以下開發工具:
  - Intel oneVPL
  - e.t.c.
 
-※ 請注意，各套件皆有提供在線/離線安裝版本。請依照您是否需要連線至網路選擇部署模式。
+※ 請注意，Intel oneAPI各套件皆有提供在線/離線安裝版本。請依照您是否需要連線至網路選擇部署模式。
 
 這裡以執行Intel oneAPI Math Kernel Library的Standalone Installer為例。
 
@@ -48,3 +48,40 @@ Intel oneAPI預設會安裝在以下路徑: `C:\Program Files (x86)\Intel\oneAPI
 這是有成功安裝Intel Visual Fortran以及Intel DPCPP/CPP看起來的樣子:
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_oneAPI_ifort.png)
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_oneAPI_dpcpp.png)
+
+## NVIDIA CUDA安裝
+本章節將會教學如何部署NVIDIA CUDA套件。
+
+NVIDIA現在已公開CUDA Runtime供開發者免費下載(不需要NVIDIA帳號)，直接前往NVIDIA開發者網站即可下載。
+ - https://developer.nvidia.com/cuda-zone
+
+NVIDIA CUDA安裝程式包含以下內容:
+ - CUDA Runtime
+ - CUDA Libraries
+ - CUDA C/C++ Compiler
+ - Nsight System
+ - GeForce Experience
+ - Visual Studio integration
+
+請注意，NVIDIA Developer安裝程式有分在線/離線安裝版本。請依照您是否需要連線至網路選擇部署模式。
+
+請注意，NVIDIA CUDA套件運行時，需要有支援CUDA的NVIDIA圖形處理器(GPU)及NVIDIA顯示驅動程式(顯卡驅動)。
+
+首先，會有快取解壓縮的路徑確認，直接預設就好並執行安裝程式。安裝快取在安裝完成後會自動清除。
+
+NVIDIA CUDA會安裝在以下路徑: `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA`
+
+安裝第一步，需要同意軟體授權協議同意書:
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_cuda_1.png)
+
+再來可以選擇預設或自訂選擇元件安裝:
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_cuda_2.png)
+
+我們選擇CUDA套件:
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_cuda_3.png)
+
+安裝的Nsight會自動偵測並整合至Visual Studio。
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_cuda_4.png)
+
+這是可以建立NVIDIA CUDA Runtime看起來的樣子:
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vs_cuda_VS2022.png)
