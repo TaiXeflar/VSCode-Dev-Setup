@@ -14,13 +14,13 @@
 Git可以做為GitHub控制套件，並有自帶BASH做為UNIX Like Shell執行bash檔。
 
 若在終端機內執行`git`則會出現git的說明檔。要調用或呼叫Bash請在添加環境變數後以命令列`bash`(可以加附帶引數`-i`,  `-l`)呼叫bash。成功畫面如下:
+ - PowerShell
+    ```
+    PS C:\Users\TaiXeflar> bash -i -l
 
-```
-PS C:\Users\TaiXeflar> bash -i -l
-
-TaiXeflar@TaiXeflar MINGW64 ~
-$ 
-```
+    TaiXeflar@TaiXeflar MINGW64 ~
+    $ 
+    ```
 進入bash以後，請以UNIX語法/Linux語法與BASH互動。(e.g: `cd`, `ls`等。)
 
 ## Git 控制套件使用
