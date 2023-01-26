@@ -102,7 +102,7 @@ UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell
     ```
 欲切換至實際的硬碟位置，皆在Cygwin根目錄(/)底下的`cygdrive`，接續實際的Windows絕對位置。
 
-### VSCode Invoke Cygwin BASH
+### VSCode 調用 Cygwin BASH
 在VSCode中，BASH不一定要執行WSL呼叫BASH，可以直接調用Cygwin的BASH。
 
 以熱鍵 "`Ctrl`+`Shift`+`P`" 啟動命令選擇區，找到 `喜好設定: 開啟使用者設定(JSON)` 並按 `Enter` 確認進入`settings.json`。
