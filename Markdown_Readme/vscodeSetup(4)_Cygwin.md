@@ -55,12 +55,8 @@ UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_cygwin_8.png)
 
-
-
-
-
-
-
 ## Cygwin 安裝套件及VSCode調用
-### 內容施工中
+
 本章節將詳細說明Cygwin部署套件的調用(Invoke)至VSCode。
+
+### 內容施工中
