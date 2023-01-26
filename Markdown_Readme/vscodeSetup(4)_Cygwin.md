@@ -60,6 +60,7 @@ UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell
 
 首先，Cygwin的可執行檔路徑必須加入至環境變數中。本範例的安裝路徑是`C:\Program Files\Cygwin\`，則:
  - 可執行程式路徑: `C:\Program Files\Cygwin\bin\`
+
 在該路徑中，包含`bash`，`gcc`/`g++`，`gfortran`/`f77`，`gawk`，`clang`，`nano`，`vi`，`zsh`等套件的可執行檔都在這個路徑底下。
 
 若你的安裝路徑為預設路徑`C:\cygwin`，則:
