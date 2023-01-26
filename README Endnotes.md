@@ -39,7 +39,7 @@
    - Tested Done by TaiXeflar in Windows 10 21H2 enviroment at 2022/9/25.
    - Tested Done by TaiXeflar in Windows 11 22H2 enviroment at 2022/9/27.
    - Tested Done by TaiXeflar on various platform (ASUS TUF A15 2022) in Windows 11 21H1 enviroment at 2022/10/1.
-   - Tested Done by TaiXeflar in Windows 11 22H2 enviroment at 2023/1/18 (Visual Studio pffline deployment).
+   - Tested Done by TaiXeflar in Windows 11 22H2 enviroment at 2023/1/18 (Visual Studio offline deployment).
 
 ## Repository Test - macOS Enviroment
 
@@ -76,6 +76,8 @@ We played these BGM while we contributors build this repository:
      - CyberAngel - HANSER, 蔡進翰, 尹純青, 宮奇, 李昀昇, Honkai Impact 3rd "ZERO Exception" - "Herrscher of Reason" Animation OST.
      - TruE - 黃齡 · 文驰 · TetraCalyx, Honkai Impact 3rd "Because of You" - "Elysia" Animation OST.
      - ReOracle - Xioyun Huang, Honkai Impact 3rd, A Post-Honkai Odyssey 2 OST.
+     - Nihilism - HOYO-MiX, A Post-Honkai Odyssey OST.
+     - Arnb Car - HOYO-MiX, A Post-Honkai Odyssey OST.
 
 - Battle Girl High School
      - Believe - 星月美紀 CV: 洲崎綾, Battle Girl High School OST.
@@ -100,6 +102,9 @@ We played these BGM while we contributors build this repository:
     - The Shepherd - Danny Cocke, Paul Haslinger, Rainbow Six Siege Y5S2 Main theme.
     - The Crucible - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 4 OST.
     - The Program - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 4 OST.
+    - Measures of Time (Medley) - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 6 OST.
+    - 1v5 - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 3 OST.
+    - Focused Force - Paul Haslinger, Rainbow Six Siege OST.
     - Industry of Design - Kill Miami, Rainbow Six Siege POSTMATCH Lo-Fi music.
  
  - Red Alert 2/3
@@ -115,13 +120,8 @@ We played these BGM while we contributors build this repository:
     - Funky Road - Mitsukiyo, Blue Archive OST.
     - Unwelcome School - Mitsukiyo, Blue Archive OST.
 
- - A Hat in time
-    - Train Rush - Pascal Michael Stiefel, A Hat in Time OST.
-    - The Battle of Award 42 - Pascal Michael Stiefel, A Hat in Time OST.
-    - Train Rush - A Hat in Time OST, Qumu remix.
-    - Trainwreck Of Electro Swing - A Hat in Time OST, Plasma3Music remix.
-
  - Original/Remix and other Music
+    - Remember the Name - Fort Miner. 
     - Mortals - Warrios ft.Laura Brehm, NCS Release.
     - Prelude - TheFatRat & JJD, VIP Remix.
     - Monody - TheFatRat & Alexa.
@@ -132,6 +132,21 @@ We played these BGM while we contributors build this repository:
     - Retro Funky - Perséphone, SUNDANCE Remix.
     - M.O.O.N. - 'Paris' - S G.
     - Hotline Miami 2: Wrong Number Soundtrack - Divide
+    - Ice Cream - OMFG.
+    - OK - OMFG.
+    - Wonderful - OMFG.
+    - Pizza - OMFG
+    - Bob - OMFG.
+    - I love You - OMFG.
+    - Train Rush - Pascal Michael Stiefel, A Hat in Time OST.
+    - The Battle of Award 42 - Pascal Michael Stiefel, A Hat in Time OST.
+    - Trainwreck Of Electro Swing - A Hat in Time OST, Plasma3Music remix.
+    - Train Rush - A Hat in Time OST, Qumu remix.
+    - Mario Kart Wii - Toad's Factory, Qumu remix.
+    - Cuphead - Die House, Qumu remix.
+    - King Dedede's Theme, Qumu remix.
+    - Luigi's Mansion, Qumu remix.
+    - Super Mario 3D World - World Bowser, Qumu remix.
 
 
 ## Contributors.Workspace.Share - Game
