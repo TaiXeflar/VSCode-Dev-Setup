@@ -55,8 +55,65 @@ UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_cygwin_8.png)
 
-## Cygwin 安裝套件及VSCode調用
-
+## Cygwin 套件及VSCode調用
+### 內容施工中
 本章節將詳細說明Cygwin部署套件的調用(Invoke)至VSCode。
 
-### 內容施工中
+首先，Cygwin的可執行檔路徑必須加入至環境變數中。本範例的安裝路徑是`C:\Program Files\Cygwin\`，則:
+ - 可執行程式路徑: `C:\Program Files\Cygwin\bin\`
+在該路徑中，包含`bash`，`gcc`/`g++`，`gfortran`/`f77`，`gawk`，`clang`，`nano`，`vi`，`zsh`等套件的可執行檔都在這個路徑底下。
+
+若你的安裝路徑為預設路徑`C:\cygwin`，則:
+ - Cygwin可執行檔路徑: `C:\cygwin\bin\`
+
+加入環境變數後，使用終端機確認是否成功加入。我們以調用Cygwin環境的BASH為示範:
+ - PowerShell
+    ```
+    PS> & "C:\Program Files\Cygwin\bin\bash.exe" --login -i
+    ```
+
+若終端機的PowerShell的命令列消失，換成這個樣子代表調用BASH成功:
+ - Bash
+    ```
+    TaiXeflar@TaiXeflar ~
+    $
+    ```
+
+### Cygwin BASH
+在Cygwin的Shell中，會有一個類UNIX的資料樹系統:
+ - Bash
+    ```
+    TaiXeflar@TaiXeflar ~
+    $ cd ../..
+
+    TaiXeflar@TaiXeflar /
+    $ ls
+    bin  cygdrive  Cygwin.bat  Cygwin.ico  Cygwin-Terminal.ico  dev  etc  home  lib  proc  sbin  tmp  usr  var
+    ```
+當中，`cygdrive`即是實際當前Windows所擁有的硬碟槽。
+ - Bash
+    ```
+    TaiXeflar@TaiXeflar /
+    $ cd cygdrive
+
+    TaiXeflar@TaiXeflar /cygdrive
+    $ ls
+    c  d  e
+    ```
+欲切換至實際的硬碟位置，皆在Cygwin根目錄(/)底下的`cygdrive`，接續實際的Windows絕對位置。
+
+### VSCode Invoke Cygwin BASH
+在VSCode中，BASH不一定要執行WSL呼叫BASH，可以直接調用Cygwin的BASH。
+
+以熱鍵 "`Ctrl`+`Shift`+`P`" 啟動命令選擇區，找到 `喜好設定: 開啟使用者設定(JSON)` 並按 `Enter` 確認進入`settings.json`。
+
+找到`"terminal.integrated.profiles.windows"`這個鍵值(如果沒有就新增)，在底下建立鍵值:
+ - JSON
+    ```
+    "Cygwin": 
+            {            
+                "path": ["C:/Program Files/Cygwin/bin/bash.exe"],
+                "args": [],
+                "icon": "console"
+            }
+    ```
