@@ -16,7 +16,7 @@
   - 請注意，在Windows上支援GPU運算的套件僅限適用於CUDA架構。因此，dGPU建議配置為支援CUDA的NVIDIA GPU。在消費級平台上所支援的CUDA GPU包含NVIDIA GeForce MX, GTX, RTX顯示卡。
   - 請注意，適用於Windows的AMD Radeon顯示卡(包含iGPU及dGPU)不支援CUDA GPU。
 
-## 編譯器確認:  
+## 編譯器確認
 
   - 本存放庫以Windows執行5種不同的C/C++編譯器:  
 
@@ -34,7 +34,7 @@
      - 執行CUDA需要NVIDIA CUDA GPU， GeForce Game Ready / Studio 顯示驅動和NVIDIA CUDA Toolkit安裝。
      - 可能有額外的標頭檔(.h)、應用程式擴充檔(.dll)及程式庫(.lib)檔需自行添加至CUDA套件路徑底下(例如NVIDIA cuDNN)。
 
-  4. GCC以Dev-CPP MinGW64 GCC/G++為編譯器。
+  4. GCC以MinGW64 GCC/G++為編譯器。
 
 ## 編譯器安裝
 
@@ -97,11 +97,11 @@
 
     - nvcc.exe: "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.7/bin/nvcc.exe"
 
-  - GNU C/C++ compiler (from Dev-C++):
+  - GNU C/C++ compiler (from Cygwin):
 
     `PATH`:
 
-    - gcc.exe: "C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/gcc.exe"
+    - gcc.exe: "C:/Program Files/Cygwin/bin/gcc.exe"
 
 ## 設定PATH變數
 
