@@ -39,7 +39,7 @@ Cygwin並沒有一個官方代表的鏡像下載網站，而是由志願託管�
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_cygwin_7(0_nano).png)
 
 UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell)或ZSH(Z Shell): (可選可不選)
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_cygwin_7(1_nano).png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_cygwin_7(1_shell).png)
 
 部署MinGW的GNU C compiler(gcc/g++)套件: (可選可不選)
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_cygwin_7(2_gcc).png)
