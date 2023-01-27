@@ -90,33 +90,23 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
 
     - JSON
        ```
-            {
-                "version": "2.0.0",
-                "tasks": [
-                    {
-                        "windows":{
-                            "options": {
-                                "shell": {
-                                    "executable": "powershell.exe",
-                                    "args": []
-                                }
-                            }
-                        },
-                        "type": "shell",
-                        "label": "matlab.exe",
-                        "command": "matlab.exe",
-                        "args": 
-                        [
-                            "-batch", 
-                            "${fileBasenameNoExtension};exit"
-                        ],
-                        "problemMatcher": ["$msCompile"],
-                        "group": {
-                            "kind": "build",
-                            "isDefault": true
+        {
+            "version": "2.0.0",
+            "tasks": [
+                {
+                    "windows":{
+                        "options": {
+                            "shell": { "executable": "powershell.exe", "args": [] }
                         }
-                    }
-                ]
-            }
+                    },
+                    "type": "shell",
+                    "label": "matlab.exe",
+                    "command": "matlab.exe",
+                    "args": [ "-batch", "${fileBasenameNoExtension};exit" ],
+                        "problemMatcher": ["$msCompile"],
+                        "group": { "kind": "build", "isDefault": true }
+                }
+            ]
+        }
        ```
     完成後，以建置工作(熱鍵: `Ctrl`+`Shift`+`B`)執行MATLAB建置。
