@@ -59,3 +59,63 @@ MatLab調用至VSCode的互動式命令列需要以Python的MatLab Engine API完
 
 接著回到VSCode中開啟終端機，應該會出現MatLab選項。這是成功呼叫命令列的樣子:
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_matlab_extention_terminal.png)
+
+## VSCode建置Matlab手稿偵錯
+
+偵錯方式有兩種:
+ - 第一種，需要額外的2個延伸模組:
+     - Code Runner (Jun Han)
+     - Matlab (Xavier Hahn)
+
+    以熱鍵 "`Ctrl`+`Shift`+`P`" 啟動命令選擇區，找到 `喜好設定: 開啟使用者設定(JSON)` 並按 `Enter` 確認進入`settings.json`。
+
+    加入以下鍵值:
+     - JSON
+         ```
+            "code-runner.executorMap": {
+                "matlab": "cd $dir && matlab.exe -batch $fileNameWithoutExt"
+            },
+            "matlab.matlabpath": "C:/Program Files/MATLAB/R2022a/bin/matlab.exe",
+            "matlab.mlintpath": "C:/Program Files/MATLAB/R2022a/bin/win64/mlint.exe",
+            "matlab.linterEncoding": "gb2312"
+         ```
+
+    接著回到欲偵錯的Matlab底稿，以熱鍵 "`Ctrl`+`Alt`+`N`"偵錯，此時會出現輸出視窗，由Code Runner執行matlab底稿內全部程式。
+
+ - 第二種，需要以建置工作(Build Tasks)的方式實現執行MatLab底稿:
+    
+    在該底稿同路徑下建立`.vscode`資料夾後，在內部建立一個`tasks.json`檔案。
+
+    接著對`tasks.json`加入建置的命令配置:
+
+    - JSON
+       ```
+            {
+                "version": "2.0.0",
+                "tasks": [
+                    {
+                        "windows":{
+                            "options": {
+                                "shell": {
+                                    "executable": "powershell.exe",
+                                    "args": []
+                                }
+                            }
+                        },
+                        "type": "shell",
+                        "label": "matlab.exe",
+                        "command": "matlab.exe",
+                        "args": 
+                        [
+                            "-batch", 
+                            "${fileBasenameNoExtension};exit"
+                        ],
+                        "problemMatcher": ["$msCompile"],
+                        "group": {
+                            "kind": "build",
+                            "isDefault": true
+                        }
+                    }
+                ]
+            }
+       ```
