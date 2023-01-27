@@ -50,9 +50,10 @@ MatLab調用至VSCode的互動式命令列需要以Python的MatLab Engine API完
  - pip執行安裝的matlabengine版本。
  - Visual Studio 2022是否正確安裝桌面開發C++套件。
  - MatLab是否正確安裝。
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_matlab_engineAPI_py_debug.png)
 
-若是執行失敗，則會顯示成功畫面:
+若是執行成功，則會顯示成功畫面:
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_matlab_engineAPI_py_0.png)
 
