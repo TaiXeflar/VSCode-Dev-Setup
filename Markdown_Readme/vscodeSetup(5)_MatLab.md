@@ -119,4 +119,4 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
                 ]
             }
        ```
-        完成後，以建置工作(熱鍵: `Ctrl`+`Shift`+`B`)執行MATLAB建置。
+    完成後，以建置工作(熱鍵: `Ctrl`+`Shift`+`B`)執行MATLAB建置。
