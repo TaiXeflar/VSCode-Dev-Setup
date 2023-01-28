@@ -9,7 +9,7 @@ VSCode的下載地址: https://code.visualstudio.com/#alt-downloads
      - Windows 7(Service Pack 1, 2, 3)
      - 比Windows XP更早的Windows x86 (32-bit)作業系統
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_download_select.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscode_download_select.png)
 
 首先，安裝檔案會是這個檔名: 
  - User: `VSCodeUserSetup-x64-1.74.3.exe`
@@ -17,35 +17,35 @@ VSCode的下載地址: https://code.visualstudio.com/#alt-downloads
 
 開始安裝VSCode。首先，需要同意使用條款:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscodeInst1.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscodeInst1.png)
 
 接著是安裝位置: (請將TaiXeflar換成你/妳自己的使用者名稱)
  - User安裝版本。安裝路徑會在: `C:\Users\TaiXeflar\AppData\Local\Programs\Microsoft VS Code`
  - System安裝版本。安裝路徑會在: `C:\Program Files\Microsoft VS Code`
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscodeInst2.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscodeInst2.png)
 
 接著設定加入VSCode捷徑至開始功能表的資料夾位置:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscodeInst3.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscodeInst3.png)
 
 接著是附加工作，例如加入至右鍵選單或加入PATH變數(這個強烈建議添加)。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscodeInst4.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscodeInst4.png)
 
 最後是產品安裝的確認信息。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscodeInst5.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscodeInst5.png)
 
 ## 終端機呼叫VSCode
 
 VSCode可以作為文字編輯器開啟，並且可以系統管理員身分運行(這可以做到使用VSCode修改系統文件等)。
 
  - 在終端中以一般使用者身分(User)呼叫VSCode的樣子:
-     ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_invoke_user.png)
+     ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscode_invoke_user.png)
 
  - 在終端中以系統管理員身分(Administrator)呼叫VSCode的樣子: (此處透過gsudo套件實現權限提升)
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_invoke_sudo.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscode_invoke_sudo.png)
 
 ## VSCode延伸套件
 
@@ -53,7 +53,7 @@ VSCode在未擴充功能的情況下只是單純的文字編輯器(Text Editor)�
 
 VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)實現功能擴充或改變。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscodeExt_search.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscodeExt_search.png)
 
 以下是改變VSCode系統內語言延伸套件:
  - Chinese (Traditional) Language Pack for Visual Studio Code (繁體中文套件)
@@ -114,8 +114,8 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - `"terminal.integrated.fontFamily"`: VSCode內鍵終端機的字體。請注意僅能使用等寬字體。
 
       若使用非等寬字體則會讓終端機看起來像被撇開的bug出現。(海馬: 人生就是要看開點.jpg)
-         ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_integratedTerminal_Fonts_cracked1.png)
-         ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Fetch_Pics/vscode_integratedTerminal_Fonts_cracked.png)
+         ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscode_integratedTerminal_Fonts_cracked1.png)
+         ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Readme/Markdown_Image/vscode_integratedTerminal_Fonts_cracked.png)
 
  - `"workbench.startupEditor"`: 控制在啟動時顯示哪個編輯器，若沒有(`"none"`)，則從上個工作階段還原。這意味著VSCode會開啟你上次最後一個工作狀態。
  - `"workbench.colorTheme"`: 主題色彩。
