@@ -107,7 +107,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
 
 以下是較常見的設定項:
  - `"editor.mouseWheelZoom"`: 布林值(`true` / `false`)。允許透過滑鼠滾輪放大/縮小工作區字體大小。
- - `"editor.fontFamily"`: 工作區的字體家族。
+ - `"editor.fontFamily"`: 工作區的字體家族。此處範例為"Xolonium"字體(ROG官方字體)。
       ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_Fonts.png)
 
       你可以使用`銀河標準字母`惡整別人的電腦成 **"被附魔台附魔過"** 的樣子:
@@ -117,7 +117,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - `"editor.fontWeight"`: 字體粗細程度，允許**一般**及**粗體**字體，不允許**斜體**。
  - `"terminal.integrated.fontFamily"`: VSCode內鍵終端機的字體。請注意僅能使用等寬字體。
 
-      若使用非等寬字體則會讓終端機看起來像被撇開的bug出現。(海馬: 人生就是要看開點.jpg)
+      若使用非等寬字體則會讓終端機看起來像被撇開的bug出現。
          ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_integratedTerminal_Fonts_cracked1.png)![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_integratedTerminal_Fonts_cracked.png)
 
  - `"workbench.startupEditor"`: 控制在啟動時顯示哪個編輯器，若沒有(`"none"`)，則從上個工作階段還原。這意味著VSCode會開啟你上次最後一個工作狀態。
