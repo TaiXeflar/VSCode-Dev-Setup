@@ -107,7 +107,11 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
 
 以下是較常見的設定項:
  - `"editor.mouseWheelZoom"`: 布林值(`true` / `false`)。允許透過滑鼠滾輪放大/縮小工作區字體大小。
- - `"editor.fontFamily"`: 工作區的字體家族。你可以使用**銀河標準字母**惡整別人的電腦成 **"被附魔台附魔過"** 的樣子。
+ - `"editor.fontFamily"`: 工作區的字體家族。
+      ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_Fonts.png)
+
+      你可以使用**銀河標準字母**惡整別人的電腦成 **"被附魔台附魔過"** 的樣子:
+      ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_Fonts_Enchanted.png)
 
       請注意這個JSON鍵值不具有Intellisense自動選字，因此需自行手動確認該字體名稱是否輸入正確。
  - `"editor.fontWeight"`: 字體粗細程度，允許**一般**及**粗體**字體，不允許**斜體**。
