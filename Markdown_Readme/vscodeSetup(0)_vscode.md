@@ -114,7 +114,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - `"terminal.integrated.fontFamily"`: VSCode內鍵終端機的字體。請注意僅能使用等寬字體。
 
       若使用非等寬字體則會讓終端機看起來像被撇開的bug出現。(海馬: 人生就是要看開點.jpg)
-         ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_integratedTerminal_Fonts_cracked1 .png)![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_integratedTerminal_Fonts_cracked.png)
+         ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_integratedTerminal_Fonts_cracked1.png)![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_integratedTerminal_Fonts_cracked.png)
 
  - `"workbench.startupEditor"`: 控制在啟動時顯示哪個編輯器，若沒有(`"none"`)，則從上個工作階段還原。這意味著VSCode會開啟你上次最後一個工作狀態。
  - `"workbench.colorTheme"`: 主題色彩。
