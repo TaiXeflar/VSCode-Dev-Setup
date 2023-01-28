@@ -162,7 +162,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - `"security.workspace.trust.untrustedFiles"`: 是否信任工作區內未受信任的檔案。
 
 筆者以自用的VSCode範例提供完整的settings.json參考 :
-
+ 
 ```
 {
     "editor.mouseWheelZoom": true,
