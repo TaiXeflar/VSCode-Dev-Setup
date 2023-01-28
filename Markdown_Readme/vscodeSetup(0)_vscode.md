@@ -110,7 +110,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - `"editor.fontFamily"`: 工作區的字體家族。
       ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_Fonts.png)
 
-      你可以使用**銀河標準字母**惡整別人的電腦成 **"被附魔台附魔過"** 的樣子:
+      你可以使用`銀河標準字母`惡整別人的電腦成 **"被附魔台附魔過"** 的樣子:
       ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_Fonts_Enchanted.png)
 
       請注意這個JSON鍵值不具有Intellisense自動選字，因此需自行手動確認該字體名稱是否輸入正確。
