@@ -23,19 +23,23 @@
     - Git 2.36.1
     - Microsoft Visual Studio Code 1.74
     - Microsoft Visual Studio 2022 Community
+    - Microsoft Visual Studio 2022 Build Tools
        - MSVC v143
        - Clang for Windows
        - CMake
        - .NET C#, VB, F#
     - OpenJDK 1.19
-    - Python 3.9.7，Intel Distrubution for Python* 3.9.15
+    - Python 3.9.7
     - Julia 1.8.2
     - Intel oneAPI DPCPP/CPP and Intel C/C++ 2023.0
     - Intel oneAPI Fortran 2023.0
+    - Intel oneAPI Distrubution for Python* 3.9.15
     - NVIDIA CUDA 11.7, 12.0
-    - MatLab R2022b
+    - MatLab R2022a
+    - GMT 6.4.0 (Generic Mapping Tools)
 
     - Gsudo (by gerardog)
+    - Everything 1.4.1.1020 (by voidtools)
 
  - Test Logs:
    - Tested Done by TaiXeflar in Windows 10 21H2 enviroment at 2022/9/25.
