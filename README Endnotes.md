@@ -35,6 +35,8 @@
     - NVIDIA CUDA 11.7, 12.0
     - MatLab R2022b
 
+    - Gsudo (by gerardog)
+
  - Test Logs:
    - Tested Done by TaiXeflar in Windows 10 21H2 enviroment at 2022/9/25.
    - Tested Done by TaiXeflar in Windows 11 22H2 enviroment at 2022/9/27.
