@@ -36,11 +36,11 @@
   接著，在進階選項中，請依照你的Python安裝需求選擇安裝在使用者路徑或系統路徑下。
    - 使用者路徑(即使用者安裝):
     
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_inst3_user.png)
+   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_inst3_user.png)
 
    - 系統路徑(即系統管理員安裝):
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_inst3_sudo.png)
+   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_inst3_sudo.png)
 
   最後即安裝完成。若有`Disable PATH Limit`選項則請選擇。  
     
