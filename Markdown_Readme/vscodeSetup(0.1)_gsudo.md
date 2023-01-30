@@ -4,16 +4,16 @@
 
 安裝gsudo，至GitHub官網上搜尋 **gerardog/gsudo** ，找到Release後尋找msi檔案的安裝檔下載。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_gsudo_inst0_1.png)
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_gsudo_inst0_2.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst0_1.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst0_2.png)
 
 打開安裝檔會長這個樣子:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_gsudo_inst1.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst1.png)
 
 接著確認安裝檔位置，預設會是`C:\Program Files (x86)\gsudo\`:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vscode_gsudo_inst2.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst2.png)
 
 ## Gsudo介紹
 
