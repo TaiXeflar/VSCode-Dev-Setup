@@ -66,10 +66,11 @@ Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取�
 建立一個啟動載入器的安裝包資料夾，命名為vsBuild並設定在桌面。此處範例路徑為: `C:\Users\TaiXeflar\Desktop\vsBuild`
 
 啟動一個終端機(殼層選擇PowerShell/CMD/BASH都可以)，更改目錄至該安裝包資料夾中。
-```
-$> cd "C:\Users\TaiXeflar\Desktop\vsBuild"
-```
- - 建議使用字串的方式呼叫整個路徑，可以避免路徑中有空格的問題。
+ - Shell
+    ```
+    cd "C:\Users\TaiXeflar\Desktop\vsBuild"
+    ```
+     - 建議使用字串的方式呼叫整個路徑，可以避免路徑中有空格的問題。
 
 該資料夾內需要有我們剛剛下載的啟動載入器(`vs_Community.exe`)。
 
@@ -80,9 +81,10 @@ $> cd "C:\Users\TaiXeflar\Desktop\vsBuild"
  - 執行安裝包生成時輸出監控顯示畫面。
 
 因此，我們要執行的命令列是:
-```
-$> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild\packages --lang zh-TW
-```
+ - Shell
+    ```
+    $> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild\packages --lang zh-TW
+    ```
 當中，命令列有傳遞的分別是:
  
  - `--layout` 引數。這是初始部署時必須指定的值，後面傳遞一個資料夾路徑。範例中是 `C:\Users\TaiXeflar\Desktop\vsBuild`。
@@ -96,9 +98,10 @@ $> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild\packages --lan
 下載完之後會出現一個`packages`的資料夾，所有元件和工具都會以安裝檔(.msi)、封包檔(.cab)、確認信息(.json)，延伸套件(.vsix)整合在裡面。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInstOff_3.png)
 
-將這個包含元件資料夾及啟動載入器的安裝包資料夾部署至任何一台欲離線安裝的電腦上，開啟終端機並切換至用安裝包位置(`packages`)後執行該指令:
-```
-$> .\vs_Community.exe --noweb
-```
+將這個包含元件資料夾及啟動載入器的安裝包資料夾部署至任何一台欲離線安裝的電腦上，開啟終端機並切換至安裝包位置(`packages`)後執行該指令:
+ - Shell
+    ```
+    .\vs_Community.exe --noweb
+    ```
 接著會出現安裝Visual Studio的圖形操作頁面(與網路安裝版一樣)，依照進行前述工作負載與元件的自動選擇配置後**直接**進行安裝。
 
