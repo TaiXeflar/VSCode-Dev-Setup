@@ -83,7 +83,7 @@ Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取�
 因此，我們要執行的命令列是:
  - Shell
     ```
-    $> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild\packages --lang zh-TW
+    .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild\packages --lang zh-TW
     ```
 當中，命令列有傳遞的分別是:
  
