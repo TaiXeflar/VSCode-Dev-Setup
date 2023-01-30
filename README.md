@@ -1,9 +1,11 @@
 # VSCode 建置及作業應用 v2.0
 
 
-歡迎使用VSCode。VSCode全名是Microsoft Visual Studio Code，為微軟開發且開源，由Chronium核心、HTML、CSS以及JavaScript實現。
+## 歡迎使用VSCode !
 
-VSCode一種輕量化架構的文字編輯器。藉由延伸套件(Extentions)，VSCode可以藉由使用者的自訂配置，讓VSCode成為史上最強的IDE。
+VSCode全名是Microsoft Visual Studio Code，為微軟開發且開源，由Chronium核心、HTML、CSS以及JavaScript實現。
+
+VSCode一種輕量化架構(約352MB)的文字編輯器。藉由延伸套件(Extentions)，VSCode可以藉由使用者的自訂配置，讓VSCode成為史上最強的IDE。
 
 使用VSCode，讓你的程式編輯更輕鬆快速，自定義使用者環境，還能與Git控制套件互動。
 
