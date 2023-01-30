@@ -67,7 +67,7 @@ UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell
  - Cygwin可執行檔路徑: `C:\cygwin\bin\`
 
 加入環境變數後，使用終端機確認是否成功加入。我們以調用Cygwin環境的BASH為示範:
- - PowerShell
+ - Shell
     ```
     PS> & "C:\Program Files\Cygwin\bin\bash.exe" --login -i
     ```
