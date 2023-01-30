@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "windows":{
+                "options": {
+                    "shell": {
+                        "executable": "powershell.exe",
+                        "args": []
+                    }
+                }
+            },
+            "type": "shell",
+            "label": "matlab.exe",
+            "command": "matlab.exe",
+            "args": 
+            [
+                "-batch", 
+                "${fileBasenameNoExtension};exit"
+            ],
+            "problemMatcher": ["$msCompile"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
