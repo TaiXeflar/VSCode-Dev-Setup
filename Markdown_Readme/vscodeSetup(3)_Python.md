@@ -69,18 +69,18 @@
 若你的Python安裝在`C:/Program Files/Python39`，則需要以系統管理員`Administrator`身份安裝。(可使用gsudo套件提升權限)
  - Shell
     ```
-    PS>  sudo pip install `Mod`
+    sudo pip install `Mod`
     ```
 
 底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
-
-  ```
-  PS>   pip install `Mod`                                                   # 安裝名為Mod的模組。
-  PS>   pip install `Mod1`, `Mod2`, `Mod3`                    # 安裝多個模組。
-  PS>   pip install `Mod` --upgrade                                  # 安裝該指定模組的新版。
-  PS>   pip install `Mod`==XX.XX.X                                 # 安裝該模組的指定版本。
-  PS>   pip uninstall `Mod`                                               # 解除安裝該模組。
-  ```
+ - Shell
+    ```
+    pip install `Mod`                                                   # 安裝名為Mod的模組。
+    pip install `Mod1`, `Mod2`, `Mod3`                    # 安裝多個模組。
+    pip install `Mod` --upgrade                                  # 安裝該指定模組的新版。
+    pip install `Mod`==XX.XX.X                                 # 安裝該模組的指定版本。
+    pip uninstall `Mod`                                               # 解除安裝該模組。
+    ```
 
 以下是常用於資料科學的模組:
 
