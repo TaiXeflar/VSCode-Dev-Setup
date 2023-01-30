@@ -80,7 +80,7 @@ Gsudo的立即提升權限可以直接提供獲取權限的命令執行。例如
   
      - Shell
         ```
-            sudo code "C:\Windows\System32\"
+        sudo code "C:\Windows\System32\"
         ```
 
 
