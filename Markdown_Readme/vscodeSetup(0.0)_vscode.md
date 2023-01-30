@@ -134,9 +134,9 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
 
       預設會有`PowerShell`, `Command Prompt`兩個JSON物件。事實上，JSON物件可以是你隨意指定的內容。若是在VSCode安裝後再安裝Git，則會自動建立可呼叫Git的終端設定檔。
 
-      下列均以**手動建立**設定檔為範例。
+      下列以**手動建立**設定檔為範例。
       
-      - 建立Cygwin環境Bash，並啟動目錄位置在`/home/_USER/`為例: (`_USER`是你的使用者名稱，底下2個範例)
+      - 建立Cygwin環境Bash，並啟動目錄位置在`/home/USER/`為例: (`USER`是你的使用者名稱)
 
         ```
             "Cygwin Bash": 
