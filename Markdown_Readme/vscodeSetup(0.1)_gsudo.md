@@ -69,14 +69,14 @@ Gsudo的命令列參數提升至不同權限 (是的，你沒看錯，這玩意�
 
 Gsudo的立即提升權限可以直接提供獲取權限的命令執行。例如:
 
- - 將pip通道的Python模組安裝在`C:\Program Files\Python39\scripts\`底下:
+ - 以系統管理員權限，將pip通道的Python模組安裝在`C:\Program Files\Python39\scripts\`底下:
   
      - Shell
       ```
       sudo pip install __pythonModule__
       ```
 
- - 在`C:\Windows\System32\`路徑下開啟VSCode編輯器修改系統文件:
+ - 以系統管理員權限，在`C:\Windows\System32\`路徑下開啟VSCode編輯器修改系統文件:
   
      - Shell
         ```
