@@ -40,9 +40,9 @@ MATLAB在線安裝需要你登入已註冊的Mathworks帳號，並同意你的�
      - Matlab Interactive Terminal (Aurélien Pommel)
 
 MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完成實現。因此，我們需要執行PyPl的pip指令:
- - PowerShell
+ - Shell
      ```
-     PS> pip install matlabengine
+     pip install matlabengine
      ```
 
 若是執行失敗，則會顯示子程序出現問題，而不是pip指令的問題。此時，你有多個除錯方向:
