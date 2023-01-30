@@ -21,9 +21,9 @@
 
   - 本存放庫範例以Windows執行Python 3.9.7直譯器:  Python Software Foundation. Python 3.9.7
 
-    請選擇64位元的安裝檔:
+  請選擇64位元的安裝檔:
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_inst0.png)
+   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_inst0.png)
   
   我們開始進行Python安裝。請務必把PATH選項打勾:
    
