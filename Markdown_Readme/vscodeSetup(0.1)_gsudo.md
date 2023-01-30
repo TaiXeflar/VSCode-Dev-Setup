@@ -72,23 +72,23 @@ Gsudo的立即提升權限可以直接提供獲取權限的命令執行。例如
  - 以系統管理員權限，將pip通道的Python模組安裝在`C:\Program Files\Python39\scripts\`底下:
   
      - Shell
-      ```
-      sudo pip install __pythonModule__
-      ```
+       ```
+       sudo pip install __pythonModule__
+       ```
 
  - 以系統管理員權限，在`C:\Windows\System32\`路徑下開啟VSCode編輯器修改系統文件:
   
      - Shell
-        ```
-        sudo code "C:\Windows\System32\"
-        ```
+       ```
+       sudo code "C:\Windows\System32\"
+       ```
 
 
 ## <警語>
 
 Gsudo為一種無須重新開啟終端機而能立即提升權限的工具，對系統管理或需要執行權限而言較為方便。
 
-Gsudo工具固然好用，但請特別注意，握有越高的權限其風險越高。若考量無法負擔其風險者，**`請勿安裝/使用gsudo套件。`**
+Gsudo工具固然好用，但請特別注意，握有越高的權限其風險越高。
 
 這裡引用Linux作業系統提示sudo指令的提醒:
 
@@ -96,4 +96,4 @@ Gsudo工具固然好用，但請特別注意，握有越高的權限其風險越
 2. Think Before you type. (請三思而後行。)
 3. With great power comes great responsibility. (權力越高，責任越高。)
 
-
+若考量無法負擔其風險者，**`請勿安裝/使用gsudo套件。`**
