@@ -1,5 +1,19 @@
 # Gsudo套件及使用
 
+## <Gsudo 警語>
+
+Gsudo為一種無須重新開啟終端機而能立即提升權限的工具，對系統管理或需要執行權限而言較為方便。
+
+Gsudo工具固然好用，但請特別注意，握有越高的權限其風險越高。
+
+這裡引用Linux作業系統提示sudo指令的提醒:
+
+1. Respect the privacy of others. (尊重他人隱私。)
+2. Think Before you type. (請三思而後行。)
+3. With great power comes great responsibility. (權力越高，責任越高。)
+
+若考量無法負擔其風險者，**`請勿安裝/使用gsudo套件。`**
+
 ## Gsudo安裝
 
 安裝gsudo，至GitHub官網上搜尋 **gerardog/gsudo** ，找到Release後尋找msi檔案的安裝檔下載。
@@ -84,16 +98,4 @@ Gsudo的立即提升權限可以直接提供獲取權限的命令執行。例如
        ```
 
 
-## <警語>
 
-Gsudo為一種無須重新開啟終端機而能立即提升權限的工具，對系統管理或需要執行權限而言較為方便。
-
-Gsudo工具固然好用，但請特別注意，握有越高的權限其風險越高。
-
-這裡引用Linux作業系統提示sudo指令的提醒:
-
-1. Respect the privacy of others. (尊重他人隱私。)
-2. Think Before you type. (請三思而後行。)
-3. With great power comes great responsibility. (權力越高，責任越高。)
-
-若考量無法負擔其風險者，**`請勿安裝/使用gsudo套件。`**
