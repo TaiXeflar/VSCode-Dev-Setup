@@ -32,19 +32,19 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
 
 接著點擊安裝檔，初始化Visual Studio安裝程式後會進入安裝版本的修改頁面。你應該可以看到Visual Studio的版本選擇:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vsInst1.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst1.png)
 
 選擇你要的工作負載，預設有選取的內容項是Visual Studio的建議安裝選項。右邊可以選擇提供建議的安裝元件選擇。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vsInst2.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2.png)
 
 若有特殊程式庫跟工具的需求，有可自由選擇可擴充的個別元件:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vsInst3.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst3.png)
 
 你可以自定義Visual Studio的安裝位置。預設是在`C:\Program Files\Microsoft Visual Studio\2022`底下。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vsInst4.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst4.png)
 
 接著進行在線下載及安裝。
 
@@ -61,7 +61,7 @@ Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取�
 
 找到啟動載入器，下載Community版本:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vsInstOff_1.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInstOff_1.png)
 
 建立一個啟動載入器的安裝包資料夾，命名為vsBuild並設定在桌面。此處範例路徑為: `C:\Users\TaiXeflar\Desktop\vsBuild`
 
@@ -89,12 +89,12 @@ $> .\vs_Community.exe --layout C:\Users\TaiXeflar\Desktop\vsBuild\packages --lan
  - `--lang` 引數。這是部署VS2022時安裝的語言套件版本指定。範例中是指定繁體中文。
 
 你的操作介面看起來會像這樣:
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vsInstOff_2.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInstOff_2.png)
 
 之後靜待元件下載安裝，時長約30分鐘至1小時(等待時間真的很久，你可以打一場5v5的LOL或是一場R6排位)。
 
 下載完之後會出現一個`packages`的資料夾，所有元件和工具都會以安裝檔(.msi)、封包檔(.cab)、確認信息(.json)，延伸套件(.vsix)整合在裡面。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown_Image/vsInstOff_3.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInstOff_3.png)
 
 將這個包含元件資料夾及啟動載入器的安裝包資料夾部署至任何一台欲離線安裝的電腦上，開啟終端機並切換至用安裝包位置(`packages`)後執行該指令:
 ```
