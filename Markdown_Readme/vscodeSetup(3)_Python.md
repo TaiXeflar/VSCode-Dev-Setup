@@ -60,12 +60,14 @@
 
 依照你的Python安裝路徑不同，則需要不同等級權限執行pip安裝指令。
 
- - 若你的Python安裝在`C:/Users/USER/AppData/Local/Python/Python39/`，則可以直接安裝。
+若你的Python安裝在`C:/Users/USER/AppData/Local/Python/Python39/`，則可以直接安裝。
+ - Shell
     ```
-    PS>  pip install `Mod`
+    pip install `Mod`
     ```
     
- - 若你的Python安裝在`C:/Program Files/Python39`，則需要以系統管理員`Administrator`身份安裝。(可使用gsudo套件提升權限)
+若你的Python安裝在`C:/Program Files/Python39`，則需要以系統管理員`Administrator`身份安裝。(可使用gsudo套件提升權限)
+ - Shell
     ```
     PS>  sudo pip install `Mod`
     ```
