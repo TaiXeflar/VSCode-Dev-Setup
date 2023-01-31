@@ -38,6 +38,22 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2.png)
 
+ - Visual C/C++ : 請選擇C++桌面開發選項，並必須有以下個別元件:
+     - MSVC
+     - MSVC C++ ALT
+     - Windows SDK
+     - JIT (Just-In-Time)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(1)_VC++.png)
+
+ - Visual Basic, C#, F# : 請選擇.NET桌面開發選項。
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(2)_dotNET.png)
+
+ - Python桌面開發: 若您選擇Visual Studio的Python環境，請選擇(VS2022已移除Miniconda):
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(2)_dotNET.png)
+
+ - JavaScript開發: Visual Studio提供Node.js環境以執行非同步事件的JavaScript驅動:
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(2)_dotNET.png)
+
 若有特殊程式庫跟工具的需求，有可自由選擇可擴充的個別元件:
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst3.png)
@@ -53,8 +69,32 @@ Visual Studio Installer可同時管理不同版本的Visual Studio安裝，以�
 ## Visual Studio 2022製作離線安裝檔
 
 Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取的下載及安裝檔的生成。
+這種離線安裝的方式可以自定義Visual Studio的大量部署作業。
 
-這種離線安裝包的方式可以自定義Visual Studio的大量部署作業。
+以下是Visual Studio啟動載入器的各版本工作負載差異:
+
+| Visual Studio 版本 | Community | Professional | Enterprise | Build Tools |
+|  :----:  |  :----:  |  :----:  |  :----:  |  :----:  |
+| Visual Studio IDE | V | V | V |  |
+| C/C++ 桌面開發 | V | V | V | V |
+| .NET 桌面開發 | V | V | V | V |
+| .NET MAUI | V | V | V | V |
+| 通用Windows開發 | V | V | V | V |
+| C++ 行動開發 | V | V | V |  |
+| Python | V | V | V |  |
+| Node.js | V | V | V | V |
+| ASP .NET | V | V | V | |
+| WEB | V | V | V | V |
+| Azure | V | V | V | V |
+| VS 擴充功能 | V | V | V | V |
+| Office/SharePoint | V | V | V | V |
+| 資料庫 | V | V | V | V |
+| 資料科學 | V | V | V |  |
+| Unity | V | V | V |  |
+| Unreal Engine | V | V | V |  |
+| C/C++ Linux | V | V | V |  |
+
+### Visual Studio Community的離線安裝製作及部署
 
 我們需要下載Visual Studio啟動載入器，至微軟官方線上文件下載:
  - https://learn.microsoft.com/zh-tw/visualstudio/install/create-an-offline-installation-of-visual-studio?view=vs-2022
@@ -89,6 +129,7 @@ Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取�
  
  - `--layout` 引數。這是初始部署時必須指定的值，後面傳遞一個資料夾路徑。範例中是 `C:\Users\TaiXeflar\Desktop\vsBuild`。
  - `--lang` 引數。這是部署VS2022時安裝的語言套件版本指定。範例中是指定繁體中文。
+ - `--add` 引數。由於此次安裝包有包含所有的工作負載選擇，因此不添加該引數。
 
 你的操作介面看起來會像這樣:
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInstOff_2.png)
@@ -105,3 +146,29 @@ Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取�
     ```
 接著會出現安裝Visual Studio的圖形操作頁面(與網路安裝版一樣)，依照進行前述工作負載與元件的自動選擇配置後**直接**進行安裝。
 
+### Visual Studio Build Tools的離線安裝製作及部署
+
+若欲製作只包含Visual Studio開發工具且不含IDE的Visual Studio環境，可以選擇安裝Build Tools版本。該Visual Studio內所有工具接只能透過**開發人員命令提示字元**或**開發人員PowerShell**呼叫。
+
+我們需要下載Visual Studio啟動載入器，下載BuildTools版本。
+
+建立一個啟動載入器的安裝包資料夾，命名為vsTools並設定在桌面。此處範例路徑為: `C:\Users\TaiXeflar\Desktop\vsTools\`
+
+啟動一個終端機(殼層選擇PowerShell/CMD/BASH都可以)，更改目錄至該安裝包資料夾中。
+ - Shell
+    ```
+    cd "C:\Users\TaiXeflar\Desktop\vsTools\"
+    ```
+該路徑中必須包含`vs_BuildTools.exe`。接著執行工作負載、語言套件的選擇及下載安裝製作。
+
+此處範例為安裝包設定在安裝檔案與`vs_BuildTools.exe`同一路徑下，包括所有工作負載。
+ - Shell
+    ```
+    .\vs_BuildTools.exe --layout "C:\Users\TaiXeflar\Desktop\vsTools\" --lang zh-TW 
+    ```
+
+下載製作完成後，所有的安裝檔案會和`vs_BuildTools.exe`在一起。將這個安裝包資料夾部署到其他電腦上並執行離線安裝:
+ - Shell
+    ```
+    .\vs_BuildTools.exe --noweb
+    ```
