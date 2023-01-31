@@ -39,22 +39,49 @@ Gsudo為一透過命令列立即提升權限的套件。透過該套件，可以
 | Linux | User | sudo | Root |
 | Windows | User | gsudo | Administrator |
 
-由於Gsudo會建立`gsudo.exe`的連結符號`sudo.exe`，因此，在終端機內的`sudo`的呼叫會啟動`gsudo.exe`。
+由於Gsudo會自動建立`gsudo.exe`的連結符號`sudo.exe`，因此，在終端機內的`sudo`的呼叫會啟動`gsudo.exe`。
 
-該符號連結的手動建立命令如下:
+該符號連結在CMD的手動建立命令如下:
  - CMD
      ```
-     mklink /c sudo.exe gsudo.exe
+     mklink sudo.exe gsudo.exe
      ```
 
+若是在Linux系統底下習慣使用`su`指令的話，切換致gsudo的根目錄底下:
+ - CMD
+      ```
+      cd "C:\Program Files (x86)\gsudo\"
+      sudo mklink su.exe gsudo.exe
+      ```
+
+使用`dir`指令，可以看到`su`與`sudo`對應至`gsudo.exe`的符號連結關係(`.symlink`):
+
+```
+C:\Program Files (x86)\Gsudo 的目錄
+
+2023/01/31  下午 01:56    <DIR>          .
+2023/01/30  上午 01:32    <DIR>          ..
+2022/11/21  下午 03:39               695 gsudo
+2022/11/21  下午 03:39         5,842,896 gsudo.exe
+2022/11/21  下午 03:39            20,105 gsudoModule.psd1
+2022/11/21  下午 03:39            16,975 gsudoModule.psm1
+2022/11/21  下午 03:39            22,814 invoke-gsudo.ps1
+2023/01/31  下午 01:47    <SYMLINK>      su.exe [gsudo.exe]
+2023/01/31  下午 01:56    <SYMLINK>      sudo.exe [gsudo.exe]
+```
+
 由於Gsudo會加入至PATH變數，因此提升至系統管理員權限只需要這一段命令:
- - PowerShell / CMD / Bash / Zsh
+ - Shell
      ```
      gsudo
      ``` 
      或
      ```
      sudo
+     ```
+     或
+     ```
+     su
      ```
 
 這是Gsudo的命令列說明:
