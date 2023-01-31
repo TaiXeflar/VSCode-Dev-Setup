@@ -190,13 +190,24 @@
 
   - Jupyter筆記本
 
-    `Ctrl + Shift + P`組合鍵開啟設定搜尋，鍵入Jupyter，找到`Create: New Jupyter Notebook`選項並點選，建立一個新的筆記本。
-
     VSCode建立筆記本的優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心、以及在未存檔筆記本的情況下執行筆記本。
+
+    `Ctrl + Shift + P`組合鍵開啟設定搜尋，鍵入Jupyter，找到`Create: New Jupyter Notebook`選項並點選，建立一個新的筆記本。
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note1.png)
+
+    開啟新的筆記本後，會自動轉化成Web模擬的筆記本格式，並預設開啟第一個執行格(cell)為Python程式碼。
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note2.png)
+
+    你可以選擇不同的核心。VSCode會依據電腦上實際存在的Python核心選擇哪一種Python環境。可以看到有出現多個不同且包含Conda環境的核心。
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note3.png)
+
+    在鍵入程式碼的時候，會依照`IntelliCode`延伸模組而給予自動智慧選字。出現下拉式選單時，使用方向鍵`←`, `→`, `↑`, `↓`進行選擇，以`Tab`鍵選字。
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note3.png)
 
   - Julia語言
 
     Julia核心是基於Python演變而來，因此可以套用前述方法執行Julia語言偵錯。
+    同樣的，Julia核心可以被筆記本視為可執行核心，在選擇核心的地方選擇指定的Julia核心即可。
 
 ## Python Module 注意事項
 
