@@ -43,6 +43,7 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
      - MSVC C++ ALT
      - Windows SDK
      - JIT (Just-In-Time)
+
    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(1)_VC++.png)
 
  - Visual Basic, C#, F# : 請選擇.NET桌面開發選項。
