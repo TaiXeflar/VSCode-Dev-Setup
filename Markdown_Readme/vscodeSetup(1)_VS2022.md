@@ -43,13 +43,13 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
          - MSVC C++ ALT
          - Windows SDK
          - JIT (Just-In-Time)
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(1)_VC++.png)
+   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(1)_VC++.png)
 
  - Visual Basic, C#, F# : 請選擇.NET桌面開發選項。
     ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(2)_dotNET.png)
 
  - Python桌面開發: 若您選擇Visual Studio的Python環境，請選擇(VS2022已移除Miniconda):
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(2)_dotNET.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(3)_py.png)
 
  - JavaScript開發: Visual Studio提供Node.js環境以執行非同步事件的JavaScript驅動:
     ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(2)_dotNET.png)
