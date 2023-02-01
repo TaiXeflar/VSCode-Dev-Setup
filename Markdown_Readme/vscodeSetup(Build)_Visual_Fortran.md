@@ -20,7 +20,7 @@
 
   - 本存放庫以Windows執行Intel oneAPI Fortran編譯器:  
 
-     - Intel Fortran需要以Intel oneAPI套件安裝。
+     - Intel Fortran需要以Intel oneAPI套件安裝，該套件需要Visual C++的工具(VS2022 C++桌面開發)。
 
      - 如果你要使用Intel的編譯器, 專案內編譯環境需要以`setvars.bat`啟動.
 
@@ -80,7 +80,7 @@
 
 ## 專案根目錄定義
 
-本範例在Desktop路徑下，定義在一個名為ftest的專案資料夾中有以下內容:
+本範例在Desktop路徑下，定義在一個名為ifort/gfort的專案資料夾中有以下內容:
  - .vscode (資料夾)
  - test.f90 (Fortran 來源底稿)
 
