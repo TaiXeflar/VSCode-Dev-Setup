@@ -247,7 +247,7 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
 整體而言，該`tasks.json`呼叫的殼層建置命令為:
  - Shell
     ```
-    cmd.exe /E:ON /C VsDevCmd.bat && cl.exe test.exe test.c
+    cmd.exe /E:ON /C VsDevCmd.bat && cl.exe /Fe: test.exe test.c
     ```
 
 ## 以JSON自定義VSCode的執行工作(Launch Task)
@@ -299,7 +299,7 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
 整體而言，執行對`test.c`偵錯的流程如下:
  - Shell
     ```
-    cmd.exe /E:ON /C VsDevCmd.bat && cl.exe test.exe test.c 
+    cmd.exe /E:ON /C VsDevCmd.bat && cl.exe /Fe: test.exe test.c
     .\test.exe                                                                                      
     ```
     當中，第一列是`test.c`建置的命令列，由`preLaunchTask`呼叫並執行。第二列才是執行建置後目標執行檔(test.exe)的偵錯。
