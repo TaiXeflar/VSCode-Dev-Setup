@@ -49,6 +49,7 @@ Intel oneAPI預設會安裝在以下路徑: `C:\Program Files (x86)\Intel\oneAPI
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vs_oneAPI_ifort.png)
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vs_oneAPI_dpcpp.png)
 
+
 ## NVIDIA CUDA安裝
 本章節將會教學如何部署NVIDIA CUDA套件。
 
