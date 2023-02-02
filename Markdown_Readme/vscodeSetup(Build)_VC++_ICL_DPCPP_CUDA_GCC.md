@@ -209,25 +209,25 @@
  3. launch.json:
 
   - 以下是MSVC的launch tasks示範:
-  ```
-  {
-      "version": "0.2.0",
-      "configurations": [
-          {
-              "name": "cl.exe",
-              "type": "cppvsdbg",
-              "request": "launch",
-              "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-              "args": [],
-              "stopAtEntry": false,
-              "cwd": "${workspaceFolder}",
-              "environment": [],
-              "console": "integratedTerminal",
-              "preLaunchTask": "cl.exe"
-          }
-      ]
-  }
-  ```
+    ```
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "cl.exe",
+                "type": "cppvsdbg",
+                "request": "launch",
+                "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "args": [],
+                "stopAtEntry": false,
+                "cwd": "${workspaceFolder}",
+                "environment": [],
+                "console": "integratedTerminal",
+                "preLaunchTask": "cl.exe"
+            }
+        ]
+    }
+    ```
 
 ## C/C++ 注意事項
 
