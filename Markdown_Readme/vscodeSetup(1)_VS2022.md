@@ -41,7 +41,7 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
  - Visual C/C++ : 請選擇C++桌面開發選項，並必須有以下個別元件: (請注意某些Python模組安裝需要用到這個工作負載的工具。)
      - MSVC
      - MSVC C++ ALT
-     - Windows SDK
+     - Windows 11 SDK (Intel oneAPI Fortran額外要求全部3個Windows 10 SDK)
      - JIT (Just-In-Time)
 
    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(1)_VC++.png)
