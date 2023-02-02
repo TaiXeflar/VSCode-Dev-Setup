@@ -124,21 +124,6 @@
     }
     ```
 
-  當中:
-  - `version`:  值預設是`"2.0.0"`。
-  - `tasks`: ，JSON清單物件，且包含一個或多個JSON物件。鍵值就像這樣: `"tasks": [{}]`
-
-      - `windows`: 這個鍵值可以在VSCode終端內呼叫環境設定Batch檔。如果你使用MSVC或Intel oneAPI的編譯器才需要呼叫這個鍵值。
-          複製`"options": {"shell": {}}`到`windows`鍵值內。有2個鍵值需要設定:
-          - `executable`: `cmd.exe`或`powershell.exe`兩個都可以。
-          - `args`: `["/C", "setvars.bat", "&&"]`.
-      - `type`: `shell`.
-      - `label`: 標籤。你可以叫一個喜歡的名字。
-      - `command`:編譯器的檔案名。舉例Fortran就是`ifort.exe`。
-      - `args`: 傳遞至編譯器內的引數。至少需要一個`"${file}"`。
-      - `problemMatcher`: `["$msCompile"]`,
-      - `"group"`: `{"kind": "build", "isDefault": true}`
-
  - 以下是gfortran的build tasks示範:
     ```
     {
@@ -187,21 +172,6 @@
         ]
     }
   ```
-  當中:
-
-  - `version`: 值預設是`0.2.0`.
-  - `configuration`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
-
-    - `"name"`: 偵錯設定情境的名稱。
-    - `"type"`: `"cppvsdbg"`。該適用於C++組態值不影響。
-    - `"request"`: `"launch"`.
-    - `"program"`: `"${fileDirname}/${fileBasenameNoExtension}.exe"`.
-    - `"args"`: [],
-    - `"stopAtEntry"`: `false`.
-    - `"cwd"`: `"${workspaceFolder}"`
-    - `"environment"`: []
-    - ` "console"`: `"integratedTerminal"`或`externalTerminal`.取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
-    - `"preLaunchTask"`: 你必須和tasks.json內的`label`名稱一致。
 
   - 以下是GFortran的launch tasks示範:
     ```
