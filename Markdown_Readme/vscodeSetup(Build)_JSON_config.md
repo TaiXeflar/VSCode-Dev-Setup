@@ -66,7 +66,7 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
 在settings.json中，僅有一個空的JSON物件。我們會逐步添加下列解說的鍵值。
 
 常見的設定項:
- - `"editor.mouseWheelZoom"`: 布林值(`true` / `false`)。允許透過滑鼠滾輪放大/縮小工作區字體大小。
+ - `"editor.mouseWheelZoom"`: 布林值(`true` / `false`)。允許透過`Ctrl+滑鼠滾輪`放大/縮小工作區字體大小。
  - `"editor.fontFamily"`: 工作區的字體家族。此處範例為"Xolonium"字體(ROG官方字體)。
       ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_Fonts.png)
 
@@ -75,7 +75,7 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
 
       請注意這個JSON鍵值不具有Intellisense自動選字，因此需自行手動確認該字體名稱是否輸入正確。
  - `"editor.fontWeight"`: 字體粗細程度，允許**一般**及**粗體**字體，不允許**斜體**。
- - `"terminal.integrated.fontFamily"`: VSCode內鍵終端機的字體。請注意僅能使用等寬字體。
+ - `"terminal.integrated.fontFamily"`: VSCode內鍵終端機的字體。請注意**僅能使用等寬字體**。
 
       若使用非等寬字體則會讓終端機看起來像被撇開的bug出現。
          ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_integratedTerminal_Fonts_cracked1.png)
