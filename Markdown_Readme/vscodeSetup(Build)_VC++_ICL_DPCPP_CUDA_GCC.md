@@ -172,19 +172,7 @@
         ]
     }
   ```
-  當中:
-  - `version`: 值預設是`4`。
-  - `configurations`: JSON清單物件(`[]`)，且包含一個或多個JSON物件(`{}`)。鍵值就像這樣: `"configurations": [{}]`
-
-  在JSON物件(`{}`)有以下鍵值:
-  - `name`: `Win32`.你要叫甚麼都可以，但像`Win32`, `Linux`, `Mac`是特殊識別態，依照你的作業系統為準。
-  - `includePath`: JSON清單物件(`[]`)。若是有包含在專案根目錄底下的標頭檔(headers)則填入`"${workspaceFolder}/**"`。其中，`/**`代表對該路徑下的遞迴搜尋。
-  - `defines`:JSON清單物件(`[]`)。當中包含這些值: `"_DEBUG"`, `"UNICODE"`, `"_UNICODE"`.
-  - `WindowsSDKVersion`: `10.0.22000.0`. 你可以換成其他的版本號。
-  - `compilerPath`: 編譯器的`PATH`路徑。記得用雙引號`""`當成字串值. 
-  - `cStandard`: C編譯器的標準。若是不知道則以`${Default}`替代。
-  - `cppStandard`: C++編譯器的標準。若是不知道則以`${Default}`替代。這個鍵值可以部署在g++或是dpcpp上。
-
+  
  2. tasks.json:
 
  - 以下是MSVC的build tasks示範:
@@ -218,27 +206,6 @@
       }
     ]
   }
-  ```
-  當中:
-  - `version`:  值預設是`"2.0.0"`。
-  - `tasks`: ，JSON清單物件，且包含一個或多個JSON物件。鍵值就像這樣: `"tasks": [{}]`
-
-      - `windows`: 這個鍵值可以在VSCode終端內呼叫環境設定Batch檔。如果你使用MSVC或Intel oneAPI的編譯器才需要呼叫這個鍵值。
-          複製`"options": {"shell": {}}`到`windows`鍵值內。有2個鍵值需要設定:
-          - `executable`: `cmd.exe`或`powershell.exe`兩個都可以。
-          - `args`: `["/C", "__DEV.bat__", "&&"]`. 將`__DEV.bat__`取代成`VsDevCmd.bat`(使用MSVC), `setvars.bat`(使用oneAPI)。 
-      - `type`: `shell`.
-      - `label`: 標籤。你可以叫一個喜歡的名字。
-      - `command`:編譯器的檔案名。舉例MSVC就是`cl.exe`.
-      - `args`: 傳遞至編譯器內的引數。不同編譯器在`args`JSON清單物件中有不同引數及排列順序:
-        - MSVC cl.exe: `["/Fe:", "${fileDirname}\\${fileBasenameNoExtension}.exe", "${file}"]`
-        -  dpcpp.exe: `["-o", "${fileDirname}\\${fileBasenameNoExtension}.exe","/Zi","/EHsc", "${file}"]`
-        - Intel icl.exe: `["-o", "${fileDirname}\\${fileBasenameNoExtension}.exe", "${file}"]`
-        - CUDA nvcc.exe: `["-g", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}"]`
-        - GCC gcc.exe: `["-g", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe", "${file}"]`
-      - `problemMatcher`: `["$msCompile"]`,
-      - `"group"`: `{"kind": "build", "isDefault": true}`
-  
  3. launch.json:
 
   - 以下是MSVC的launch tasks示範:
@@ -260,22 +227,6 @@
           }
       ]
   }
-  ```
-  當中:
-
-  - `version`: 值預設是`0.2.0`.
-  - `configuration`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
-
-    - `"name"`: 偵錯設定情境的名稱。
-    - `"type"`: `"cppvsdbg"`.
-    - `"request"`: `"launch"`.
-    - `"program"`: `"${fileDirname}/${fileBasenameNoExtension}.exe"`.
-    - `"args"`: [],
-    - `"stopAtEntry"`: `false`.
-    - `"cwd"`: `"${workspaceFolder}"`
-    - `"environment"`: [],
-    - ` "console"`: `"integratedTerminal"`或`externalTerminal`.取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。
-    - `"preLaunchTask"`: 你必須和tasks.json內的`label`名稱一致。
 
 ## C/C++ 注意事項
 
