@@ -18,13 +18,13 @@ Happy Coding!
 有關程式開發的說明讀我檔均以Markdown寫成，並有圖片以及全中譯編寫。本存放庫內有提供以下工具的建置:
  - Microsoft Visual Studio Code (VSCode)
  - Microsoft Visual Studio 2022 (VS2022)
- - Intel oneAPI
- - NVIDIA CUDA
- - MATLAB
- - Python 3.9.7
+ - Intel oneAPI (2023.0)
+ - NVIDIA CUDA (CUDA 11.7/12.0)
+ - MATLAB (R2022a)
+ - Python (Python 3.9.7)
  - Cygwin
- - Generic Mapping Tools
- - Git for Windows
+ - Generic Mapping Tools (6.4.0)
+ - Git for Windows (2.36.1)
  - Gsudo (Administrator Privilege Tools)
 
 有關本範例建置的程式語言支援包含:
@@ -34,6 +34,7 @@ Happy Coding!
  - Python 3 (Python 3.9.7)
  - MATLAB
  - GMT
+ - JSON (JavaScript Option Notation)
 
 未來可能會加入以下程式語言/開發套件支援:
  - Julia
