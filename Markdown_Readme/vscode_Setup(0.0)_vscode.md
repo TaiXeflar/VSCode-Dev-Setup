@@ -101,7 +101,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
 
 我們以修改`settings.json`內部JSON鍵值的形式來改變VSCode設定。
 
-為配合JSON語法的教學，請參閱`vscodeSetup(Build)_JSON_config.md`。
+為配合JSON語法的教學，請參閱`vscodeBuild(0)_JSON_config.md`。
 
 ## VSCode 熱鍵
 
