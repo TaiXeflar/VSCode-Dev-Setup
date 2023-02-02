@@ -32,6 +32,9 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
      - 布林值 `true`, `false`
      - 空物件 `null`
 
+ - JSON註解: 該註解形式限在`.jsonc`上才能以`//`標記註解。在`.json`中加入註解是違法的。
+     - 參考 **VSCode的個人化設定** 以設定將json關聯至jsonc的方法。
+
 無論任何被包含在內物件，均需以逗號分隔(最後一個物件不能有逗號)，鍵值的鍵或是字串需要以雙引號`""`為合法。
 
 以下是一個JSON檔案範例:
@@ -85,7 +88,7 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
       ```
       "files.associations": {"*.json": "jsonc"}
       ```
-      這段程式碼的含意是，允許VSCode將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋(在json內撰寫註釋是違反語法的)。
+      這段程式碼的含意是，允許VSCode將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋。
 
  - `"terminal.integrated.profiles.windows"`: 自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
 
