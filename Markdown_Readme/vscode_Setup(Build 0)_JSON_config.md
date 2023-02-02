@@ -214,7 +214,7 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
              - `"/E:ON"`: `cmd.exe`啟用延伸模組。
              - `"/C"`:  執行該殼層所有命令後關閉該`cmd.exe`殼層。
              - `"VsDevCmd.bat"`: 呼叫Visual Studio環境初始化。
-             - `"&&"`: 傳遞一個人後接的命令。
+             - `"&&"`: 傳遞一個後接的命令。
 
             該殼層的起動命令是:
              - Shell
@@ -380,8 +380,8 @@ C/C++的特性設定由`c_cpp_properties.json`配置完成自定義的程式庫�
   - `defines`:JSON清單物件(`[]`)。當中包含: `"_DEBUG"`, `"UNICODE"`, `"_UNICODE"`.
   - `WindowsSDKVersion`: `10.0.22000.0`. 你可以換成其他的版本號。
   - `compilerPath`: 編譯器的絕對路徑。 
-  - `cStandard`: C編譯器的標準。若是不知道則以`${Default}`替代。該設定值可依據該編譯器的標準提供更準確的Intellisense。
-  - `cppStandard`: 編譯器的標準。若是不知道則以`${Default}`替代。該設定值可依據該編譯器的標準提供更準確的Intellisense。
+  - `cStandard`: 編譯器的C標準。若是不知道則以`${Default}`替代。該設定值可依據該編譯器的標準提供更準確的Intellisense。
+  - `cppStandard`: 編譯器的C++標準。若是不知道則以`${Default}`替代。該設定值可依據該編譯器的標準提供更準確的Intellisense。
   - `"intelliSenseMode"`: 依照你的編譯器選擇Intellisensea模式。該範例為Windows x64下執行MSVC。
       - 作業系統: 例如`Windows`/`macOS`/`Linux`。
       - 編譯器: 例如`msvc`/`clang`/`gcc`。
