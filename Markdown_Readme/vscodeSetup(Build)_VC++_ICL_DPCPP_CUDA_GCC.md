@@ -235,7 +235,7 @@
  - 若本機所搭載的圖形處理器(GPU)為NVIDIA GeForce圖形晶片時，可以選擇使用CUDA開發。請注意CUDA套件相容性會隨NVIDIA GPU架構迭代而有支援差異性。
  - 若本機所搭載的圖形處理器(GPU)為Intel Arc, Intel Iris Xe及Intel UHD Graphics圖形晶片時，可以選擇使用Intel DPCPP開發。
  - 若本機所搭載的圖形處理器(GPU)為AMD Radeon Graphics圖形晶片時，不支援GPU的C/C++語言開發。
- - 使用MSVC編譯C語言底稿時，必須在`tasks.json`以`VsDevCmd.bat`初始化開發編譯環境，否則會出現"終止代碼為1"，並回報以下錯誤訊息之一:
+ - 使用MSVC編譯C/C++語言底稿時，必須在`tasks.json`以`VsDevCmd.bat`初始化開發編譯環境，否則會出現"終止代碼為1"，並回報以下錯誤訊息之一:
     - fatal error C1034: stdio.h: 沒有設定 Include 路徑
     - fatal error LNK1104: 無法開啟檔案 'LIBCMT.lib'
   - 使用ICL, ICX, DPCPP編譯C語言底稿時，必須在`tasks.json`以`setvars.bat`初始化開發編譯環境。
@@ -248,6 +248,7 @@
 
   - 先在 "開始>所有應用程式" 中找到`Developer Command Prompt for Visual Studio 2022`。
   - 接著在該終端中輸入以下指令 (請將TaiXeflar替換你的使用者名稱):
+  - CMD
     ```
     cd C:\Users\TaiXeflar\Desktop
     mkdir ctest
@@ -257,7 +258,7 @@
     ```
  - 每欲以`VsDevCmd.bat`環境開啟新專案時，必須依照此類指令建置新專案資料夾。
  - 在VsDevCmd.bat環境底下開啟ctest時亦需要以`Developer Command Prompt for Visual Studio 2022`開啟 (請將TaiXeflar替換你的使用者名稱):
-
+  - CMD
     ```
     cd C:\Users\TaiXeflar\Desktop\ctest
     code .
