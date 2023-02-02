@@ -175,7 +175,7 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
 
 執行程式的建置由`tasks.json`內的訊息配置完成自定義的建置流程。該`tasks.json`路徑在專案資料夾底下的`.vscode`資料夾內。
 
-本範例執行MSVC的建置偵錯:
+本範例執行MSVC的建置`test.c`偵錯:
 ```
 {
     "version": "2.0.0",
@@ -214,9 +214,10 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
              - `"&&"`: 傳遞一個人後接的命令。
 
             該殼層的起動命令是:
-            ```
-            cmd.exe /E:ON /C VsDevCmd.bat && cl.exe ...........
-            ```
+             - Shell
+                ```
+                cmd.exe /E:ON /C VsDevCmd.bat && ...........
+                ```
 
       - `type`: `shell`(因為該C/C++編譯命令從cmd.exe殼層啟動)。
       - `label`: 標籤。你可以叫一個喜歡的名字。
@@ -231,5 +232,154 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
         GNU gcc.exe: ["-g", "-o", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
         ```
 
-      - `problemMatcher`: `["$msCompile"]`,
-      - `"group"`: `{"kind": "build", "isDefault": true}`
+        調用MSVC的命令列為:
+         - Shell
+            ```
+            cl.exe /Fe: test.exe test.c
+            ```
+
+      - `problemMatcher`: 問題對比器選項。這裡選擇`["$msCompile"]`。
+      - `"group"`: 群組定義工作為建置或測試及預設選項。`{"kind": "build", "isDefault": true}`
+
+整體而言，該`tasks.json`呼叫的殼層建置命令為:
+ - Shell
+    ```
+    cmd.exe /E:ON /C VsDevCmd.bat && cl.exe test.exe test.c
+    ```
+
+## 以JSON自定義VSCode的執行工作(Launch Task)
+
+執行程式的偵錯由`launch.json`內的訊息配置完成自定義的偵錯測試。該`launch.json`路徑在專案資料夾底下的`.vscode`資料夾內。
+
+執行程式即為對程式執行偵錯。編譯程式可額外設定透過建置後執行偵錯，直譯程式則直接執行。
+
+本範例執行MSVC的偵錯設定:
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "cl.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "cl.exe"
+        }
+    ]
+}
+```
+
+當中:
+
+  - `version`: 值預設是`0.2.0`.
+  - `configuration`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
+
+    - `"name"`: 偵錯設定情境的名稱。
+    - `"type"`: 因為是MSVC的C/C++偵錯，所以選擇`"cppvsdbg"`。
+    - `"request"`: 因為是執行，選擇`"launch"`。
+    - `"program"`: 偵錯建置的檔案。由`"${fileDirname}/${fileBasenameNoExtension}.exe"`關聯的檔案是經建置出來的目標執行檔(`test.exe`)。
+    - `"args"`: 傳遞至該欲偵錯可執行檔的引數。由於沒有引數要傳遞所以為JSON空陣列(`[]`)。
+    - `"stopAtEntry"`: 偵錯工具在目標的進入點停止的動作。這裡選擇`false`.
+    - `"cwd"`: `"${workspaceFolder}"`
+    - `"environment"`: 開啟偵錯時的環境變數設定，例如臨時附加的變數等。由於沒有引數要傳遞所以為JSON空陣列(`[]`)。
+    - `"console"`: 取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。有以下的值:
+          - `"integratedTerminal"`: 整合式終端機。偵錯結果將在vscode內的終端列印。
+          - `externalTerminal`: 外部的終端機。該偵錯透過Windows終端機或Windows傳統主控台輸出偵錯。
+    - `"preLaunchTask"`: 執行該目標執行檔的偵錯前建置作業。該值必須和tasks.json內的`label`名稱一致或其中一個相符。
+          - 若有這項設定，則該目標底稿(此處為`test.c`)會在執行偵錯時，自動先進行建置(依照`tasks.json`)作業。
+
+整體而言，執行對`test.c`偵錯的流程如下:
+ - Shell
+    ```
+    cmd.exe /E:ON /C VsDevCmd.bat && cl.exe test.exe test.c 
+    .\test.exe                                                                                      
+    ```
+    當中，第一列是`test.c`建置的命令列，由`preLaunchTask`呼叫並執行。第二列才是執行建置後目標執行檔(test.exe)的偵錯。
+
+本範例再執行一個Python的偵錯設定(執行`test.py`):
+
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
+```
+當中:
+
+- `version`: 值預設是`0.2.0`.
+- `configurations`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
+      - `"name"`: `"Python: Current"`。
+      - `"type"`: 偵錯類型。這裡選擇`"python"`。
+      - `"request"`: 因為是執行，所以選擇`"launch"`。
+      - `"program"`: `"${file}"`. 該鍵值`"${file}"`對應至欲偵錯的Python底稿(對應至本存放庫即為`test.py`)。
+      - ` "console"`: `"integratedTerminal"`或`externalTerminal`。
+      - `"justMyCode"`: 限偵錯由vscode使用者所寫的程式碼。這裡選擇`true`。
+
+
+## 以JSON自定義VSCode的C/C++特性設定(Properties)
+
+C/C++的特性設定由`c_cpp_properties.json`配置完成自定義的程式庫訊息。該`c_cpp_properties.json`路徑在專案資料夾底下的`.vscode`資料夾內。
+
+執行程式即為對程式執行偵錯。編譯程式可額外設定透過建置後執行偵錯，直譯程式則直接執行。
+
+本範例執行MSVC的C++特性設定。
+
+以下是MSVC的C/C++ properties示範:
+
+  ```
+    {
+        "version": 4,
+        "configurations": [
+            {
+                "name": "Win32",
+                "includePath": [
+                    "${workspaceFolder}/**"
+                ],
+                "defines": 
+                [
+                    "_DEBUG",
+                    "UNICODE",
+                    "_UNICODE"
+                ],
+                "windowsSdkVersion": "10.0.22000.0",
+                "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/cl.exe",
+                "cStandard": "c17",
+                "cppStandard": "c++17",
+                "intelliSenseMode": "windows-msvc-x64"
+            }
+        ]
+    }
+  ```
+
+當中:
+  - `version`: 值預設是`4`。
+  - `configurations`: C/C++的確認信息，由JSON清單物件(`[]`)組成，且包含一個或多個JSON物件(`{}`)。
+
+  在`configurations`的JSON物件下(`{}`)有以下鍵值:
+
+  - `name`: `Win32`.你要叫甚麼都可以，但像`Win32`, `Linux`, `Mac`是特殊識別態，依照你的作業系統為準。
+  - `includePath`: 你的程式庫的包含路徑，例如`stdio.h`等標頭檔路徑位置等，由JSON清單物件(`[]`)傳遞。
+      - 若是有包含在專案根目錄底下的標頭檔(headers)則填入`"${workspaceFolder}/**"`。其中`/**`代表對該路徑下的遞迴搜尋。
+  - `defines`:JSON清單物件(`[]`)。當中包含: `"_DEBUG"`, `"UNICODE"`, `"_UNICODE"`.
+  - `WindowsSDKVersion`: `10.0.22000.0`. 你可以換成其他的版本號。
+  - `compilerPath`: 編譯器的絕對路徑。 
+  - `cStandard`: C編譯器的標準。若是不知道則以`${Default}`替代。該設定值可依據該編譯器的標準提供更準確的Intellisense。
+  - `cppStandard`: 編譯器的標準。若是不知道則以`${Default}`替代。該設定值可依據該編譯器的標準提供更準確的Intellisense。
+  - `"intelliSenseMode"`: 依照你的編譯器選擇Intellisensea模式。該範例為Windows x64下執行MSVC。
+      - 作業系統: 例如`Windows`/`macOS`/`Linux`。
+      - 編譯器: 例如`msvc`/`clang`/`gcc`。
+      - 處理器架構: 例如 `x86`(32位元x86)/`x64`(64位元x86，AMD64或Intel 64)/`ARM64`(ARM架構64位元處理器)。
