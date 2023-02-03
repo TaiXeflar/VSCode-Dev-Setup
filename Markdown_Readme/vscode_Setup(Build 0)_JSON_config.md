@@ -90,7 +90,8 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
       ```
       這段程式碼的含意是，允許VSCode將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋。
 
- - `"terminal.integrated.profiles.windows"`: 自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
+ - `"terminal.integrated.profiles.windows"`: 在Windows底下自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
+ - `"terminal.integrated.profiles.osx"`: 在macOS底下自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
 
       預設會有`PowerShell`, `Command Prompt`兩個JSON物件。事實上，JSON物件可以是你隨意指定的內容。若是在VSCode安裝後再安裝Git，則會自動建立可呼叫Git的終端設定檔。
 
@@ -130,9 +131,10 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
 ```
 {
     "editor.mouseWheelZoom": true,
-    "editor.fontFamily": "Xolonium",
+    "editor.fontFamily": "Xolonium, Microsoft JHengHei UI, Consolas",
     "editor.fontWeight": "normal",
     "terminal.integrated.fontFamily": "Consolas",
+    "terminal.integrated.fontSize": 16,
     "git.confirmSync": false,
     "git.autofetch": true,
     "git.enableSmartCommit": true,
@@ -166,6 +168,25 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
             "path": ["C:/cygwin64//bin/bash.exe"],
             "args": ["--login", "-i"],
             "icon": "console"
+        }
+    },
+    "terminal.integrated.profiles.osx": {
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
         }
     }
 }
