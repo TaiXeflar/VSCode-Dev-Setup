@@ -222,7 +222,7 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
                 cmd.exe /E:ON /C VsDevCmd.bat && ...........
                 ```
 
-      - `type`: `shell`(因為該C/C++編譯命令從cmd.exe殼層啟動)。
+      - `type`: `shell`(因為該C/C++編譯命令從`cmd.exe`殼層啟動)。
       - `label`: 標籤。你可以叫一個喜歡的名字。
       - `command`:編譯器的檔案名。舉例MSVC就是`cl.exe`.
       - `args`: 傳遞至編譯器內的引數。不同編譯器在`args`JSON清單物件中有不同引數及排列順序:
@@ -304,7 +304,8 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
     ```
     當中，第一列是`test.c`建置的命令列，由`preLaunchTask`呼叫並執行。第二列才是執行建置後目標執行檔(test.exe)的偵錯。
 
-本範例再執行一個Python的偵錯設定(執行`test.py`):
+本範例再執行一個Python的執行偵錯設定(執行`test.py`):
+
 
 ```
 {
@@ -336,8 +337,6 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
 ## 以JSON自定義VSCode的C/C++特性設定(Properties)
 
 C/C++的特性設定由`c_cpp_properties.json`配置完成自定義的程式庫訊息。該`c_cpp_properties.json`路徑在專案資料夾底下的`.vscode`資料夾內。
-
-執行程式即為對程式執行偵錯。編譯程式可額外設定透過建置後執行偵錯，直譯程式則直接執行。
 
 本範例執行MSVC的C++特性設定。
 
