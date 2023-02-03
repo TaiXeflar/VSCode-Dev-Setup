@@ -53,7 +53,7 @@ Visual Studio可謂開發程式套件寶庫。但也因為容量龐大，所以�
     ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(3)_py.png)
 
  - JavaScript開發: Visual Studio提供Node.js環境以執行非同步事件的JavaScript驅動:
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(2)_dotNET.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInst2(4)_nodejs.png)
 
 若有特殊程式庫跟工具的需求，有可自由選擇可擴充的個別元件:
 
