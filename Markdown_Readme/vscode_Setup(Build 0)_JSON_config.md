@@ -39,10 +39,10 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
 
 以下是一個JSON檔案範例:
 ```
-{
-    "Units": 
-    [
-        {
+{                                       // JSON 註釋就是加上//形成單行註釋
+    "Units":                        // 加上這行註釋就是違反JSON語法了
+    [                                   // 參考"VSCode的個人化設定"以設定將json關聯至jsonc的方法
+        {                              // 這樣才可以光明正大地寫註釋而不會被告知違反語法
             "name": "user1",
             "id": 1,
             "boss": true
@@ -91,14 +91,32 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
       這段程式碼的含意是，允許VSCode將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋。
 
  - `"terminal.integrated.profiles.windows"`: 在Windows底下自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
- - `"terminal.integrated.profiles.osx"`: 在macOS底下自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
+    
+        以下是Windows環境下的VSCode整合式終端機的預設值:
+        ```
+        "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}/Sysnative/cmd.exe",
+                "${env:windir}/System32/cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+        ```
 
-      預設會有`PowerShell`, `Command Prompt`兩個JSON物件。事實上，JSON物件可以是你隨意指定的內容。若是在VSCode安裝後再安裝Git，則會自動建立可呼叫Git的終端設定檔。
+        預設會有`PowerShell`, `Command Prompt`兩個JSON物件。事實上，JSON物件可以是你隨意指定的內容。若是在VSCode安裝後再安裝Git，則會自動建立可呼叫Git的終端設定檔。
 
       下列以**手動建立**設定檔為範例。
       
       - 建立Cygwin環境Bash，並啟動目錄位置在`/home/USER/`為例: (`USER`是你的使用者名稱)
-
         ```
             "Cygwin Bash": 
             {            
@@ -114,6 +132,48 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
         - `"args"` 為要傳遞到該殼層內的參數或引數(flags)，使用JSON清單包含所有要被傳遞的引數。
         - `"icon"`為顯示於下拉式清單的圖示。
 
+     - 建立Visual Studio 2022的開發人員命令提示字元:
+        ```
+            "VS2022 CMD": 
+            {            
+                "path": ["C:/Program Files/Microsoft Visual Studio/2022/Common7/Tools/VsDevCmd.bat"],
+                "args": [""]
+                "icon": "console"
+            }
+        ```
+
+
+ - `"terminal.integrated.profiles.osx"`: 在macOS底下自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
+
+    以下是macOS環境下的VSCode整合式終端機的預設值:
+    ```
+    "terminal.integrated.profiles.osx":{
+        "bash": {
+            "path": "bash",
+            "args": ["-l"],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": ["-l"]
+        },
+        "fish": {
+            "path": "fish",
+            "args": ["-l"]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    }
+    ```
+
+    預設會有`BASH`(Borune Again Shell), `ZSH`(Z Shell), `FISH`(Friendly Interactive Shell), `tmux`等4個JSON物件。
+      
  - `"files.autoSave"`: 設定自動存檔的觸發時機，共有4個選項可以選擇。
   
      - `"off"`: 關閉自動存檔的功能。若`"files.autoSave"`選項不存在則亦視為不自動存檔。
@@ -157,7 +217,7 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
                 "${env:windir}/Sysnative/cmd.exe",
                 "${env:windir}/System32/cmd.exe"
             ],
-            "args": [],
+            "args": ["/E:ON"],
             "icon": "terminal-cmd"
         },
         "Git Bash": {
@@ -171,24 +231,21 @@ JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式�
         }
     },
     "terminal.integrated.profiles.osx": {
-        "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
-        },
+
         "bash": {
             "path": "bash",
-            "args": [
-                "-l"
-            ],
+            "args": ["-l"],
             "icon": "terminal-bash"
         },
         "zsh": {
             "path": "zsh",
-            "args": [
-                "-l"
-            ]
-        }
-    }
+            "args": ["-l"]
+        },        
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+    }   
 }
 ```
 
