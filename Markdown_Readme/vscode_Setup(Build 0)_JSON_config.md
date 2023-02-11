@@ -335,7 +335,7 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 執行程式即為對程式執行偵錯。編譯程式可額外設定透過建置後執行偵錯，直譯程式則直接執行。
 
 本範例執行MSVC的偵錯設定:
-```
+``` 
 {
     "version": "0.2.0",
     "configurations": [
