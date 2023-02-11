@@ -3,7 +3,7 @@
 ## Cygwin 在線安裝
 本章節將詳細說明Cygwin的套件整合部署及安裝。
 
-Cygwin為一整合式開發套件管理的部署工具，其內部包含符合GNU v3.0協議開源且免費使用的工具可以使用。
+Cygwin為一整合式開發套件管理的部署工具，其內部包含符合GNU GPLv3.0協議開源且免費使用的工具可以使用。
  - 下載網址: https://www.cygwin.com/
 
 Cygwin安裝程式為`setup-x86_64.exe`。
