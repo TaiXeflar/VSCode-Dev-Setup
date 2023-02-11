@@ -20,9 +20,19 @@
 
   - 本存放庫以Windows執行Intel oneAPI Fortran編譯器:  
 
-     - Intel Fortran需要以Intel oneAPI套件安裝，該套件需要Visual C++的工具(VS2022 C++桌面開發)。
+     - Intel Fortran需要以Intel oneAPI套件安裝。整合至Visual Studio需要Visual C++的工具(VS2022 C++桌面開發)。
 
-     - 如果你要使用Intel的編譯器, 專案內編譯環境需要以`setvars.bat`啟動.
+        該Intel oneAPI Fortran整合至Visual Studio所要求Visual C++的具備先行工作負載是：
+          - MSVC v143
+          - MSVC v143 ALT
+          - Windows 11 SDK (latest)
+          - Windows 10 SDK (x3)
+          - C++ AddressSanitizer
+          - Clang for Windows
+          - CMake for Windows C++ 
+          - Windows SDK C++
+
+    
 
   - 本存放庫以Windows執行GNU Fortran編譯器:
      - 本GFortran透過Cygwin MinGW64安裝。
@@ -85,6 +95,8 @@
  - test.f90 (Fortran 來源底稿)
 
 ## .vscode資料夾設定
+
+ - 如果你要使用Intel的編譯器, 專案內編譯環境需要以`setvars.bat`啟動.
 
   - 請注意，在VSCode中編輯路徑的時候，使用`/`或`\\`替代`\`.
   - JSON檔案: 你需要2個JSON檔案完成Fortran的編譯環境設定。
