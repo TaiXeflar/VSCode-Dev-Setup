@@ -2,7 +2,7 @@
 
 ## JSON語法
 
-JSON全名JavaScript Option Notation，為一種訊息及交換的半結構式的程式語言。
+JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的程式語言。
 
 由於結構容易理解，因此是繼XML結構後新的後繼者。從VSCode的設定，到Jupyter筆記本的訊息紀錄，再到Minecraft的資料包訊息設置均由JSON格式設定完成。
 
