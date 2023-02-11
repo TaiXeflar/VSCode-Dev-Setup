@@ -138,6 +138,7 @@ Visual Studio 2022的離線安裝檔需要在網路環境下完成檔案快取�
 之後靜待元件下載安裝，時長約30分鐘至1小時(等待時間真的很久，你可以打一場5v5的LOL或是一場R6排位)。
 
 下載完之後會出現一個`packages`的資料夾，所有元件和工具都會以安裝檔(.msi)、封包檔(.cab)、確認信息(.json)，延伸套件(.vsix)整合在裡面。
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vsInstOff_3.png)
 
 將這個包含元件資料夾及啟動載入器的安裝包資料夾部署至任何一台欲離線安裝的電腦上，開啟終端機並切換至安裝包位置(`packages`)後執行該指令:
