@@ -117,7 +117,7 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 
       下列以**手動建立**設定檔為範例。
       
-      - 建立Cygwin環境Bash，並啟動目錄位置在`/home/USER/`為例: (`USER`是你的使用者名稱)
+      - 建立Cygwin環境Bash，並啟動目錄位置在`/home/USER/`為例(`USER`是你的使用者名稱): {**請務必確認你的路徑到底在哪裡。**}
         ```
             "Cygwin Bash": 
             {            
@@ -252,7 +252,7 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 
 ## 以JSON自定義VSCode的建置工作(Build Task)
 
-對於需要建置的程式語言，其執行程式語言前的作業極為建置工作。
+對於需要建置的程式語言，其執行程式語言前的作業即為建置工作。
  - 例如需要編譯的語言: C/C++，Obj-C/C++，Fortran，VB，C#，F# 等。
 
 執行程式的建置由`tasks.json`內的訊息配置完成自定義的建置流程。該`tasks.json`路徑在專案資料夾底下的`.vscode`資料夾內。
