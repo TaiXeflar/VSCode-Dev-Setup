@@ -1,6 +1,6 @@
 # VSCode Build Sample Repos
 
-## Ver1.0 (closed)
+## Ver1.0 - 2022/10/9 ~ 2023/1/31(closed) 
 
 For this repository comes of VSCode environment with:
  - C/C++ Build
@@ -16,7 +16,7 @@ We build this repos with:
 
 
 
-## Ver 2.0 (Present)
+## Ver 2.0 - 2023/2/9 ~ (Present)
 
 For this repository of VSCode environment we changed:
 
