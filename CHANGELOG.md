@@ -94,3 +94,6 @@ We may update with Following language Support:
  - CSS
  - HTML
  - JAVA
+ - CMake
+ - Clang-LLVM
+ - Julia
