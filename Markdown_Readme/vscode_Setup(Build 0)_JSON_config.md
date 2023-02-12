@@ -110,6 +110,7 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
             "Git Bash": {
                 "source": "Git Bash"
             }
+        }
     ```
 
     預設會有`PowerShell`, `Command Prompt`兩個JSON物件。事實上，JSON物件可以是你隨意指定的內容。若是在VSCode安裝後再安裝Git，則會自動建立可呼叫Git的終端設定檔。
