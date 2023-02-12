@@ -35,7 +35,7 @@
     - Intel oneAPI Fortran 2023.0
     - Intel oneAPI Distrubution for Python* 3.9.15
     - NVIDIA CUDA 11.7, 12.0
-    - MatLab R2022a
+    - MATLAB R2022a
     - GMT 6.4.0 (Generic Mapping Tools)
 
     - Gsudo (by gerardog)
@@ -103,13 +103,18 @@ We played these BGM while we contributors build this repository:
     - The Crucible - Danne Cocke, 2020 Siege Invitational Live Performance.
     - Rainbow Six Invitational 2022 Music Video - Danne Cocke, 2022 Siege Invitational theme MV.
     - Siege Invitational theme - Danne Cocke, 2018 Siege Invitational theme.
-    - Vector Glare - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Y7S2 Main theme.
-    - Neon Dawn - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Y5S4 Main theme.
-    - The Shepherd - Danny Cocke, Paul Haslinger, Rainbow Six Siege Y5S2 Main theme.
-    - The Crucible - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 4 OST.
-    - The Program - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 4 OST.
-    - Measures of Time (Medley) - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 6 OST.
-    - 1v5 - Jon Opstad, Danny Cocke, Paul Haslinger, Rainbow Six Siege Year 3 OST.
+    - Solar Raid - Jon Opstad, Danny Cocke, Rainbow Six Siege Y7S4 Main theme.
+    - Vector Glare - Jon Opstad, Danny Cocke, Rainbow Six Siege Y7S2 Main theme.
+    - Demon Veil - Jon Opstad, Danny Cocke, Rainbow Six Siege Y7S1 Main theme.
+    - Highland Corral - Jon Opstad, Danny Cocke, Rainbow Six Siege Y6S4 Main theme.
+    - Welcome to Snow Brawl - Jon Opstad, Danny Cocke, Rainbow Six Siege Snow Brawl Event theme.
+    - New Height - Jon Opstad, Danny Cocke, Rainbow Six Siege Y6S2 Main theme.
+    - Neon Dawn - Jon Opstad, Danny Cocke, Rainbow Six Siege Y5S4 Main theme.
+    - The Shepherd - Danny Cocke, Rainbow Six Siege Y5S2 Main theme.
+    - The Crucible - Jon Opstad, Danny Cocke, Rainbow Six Siege Year 4 OST.
+    - The Program - Jon Opstad, Danny Cocke, Rainbow Six Siege Year 4 OST.
+    - Measures of Time (Medley) - Jon Opstad, Danny Cocke, Rainbow Six Siege Year 6 OST.
+    - 1v5 - Jon Opstad, Danny Cocke, Rainbow Six Siege Year 3 OST.
     - Focused Force - Paul Haslinger, Rainbow Six Siege OST.
     - Industry of Design - Kill Miami, Rainbow Six Siege POSTMATCH Lo-Fi music.
  
