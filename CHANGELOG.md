@@ -16,7 +16,7 @@ We build this repos with:
 
 
 
-## Ver 2.0
+## Ver 2.0 (Present)
 
 For this repository of VSCode environment we changed:
 
