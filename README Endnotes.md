@@ -4,7 +4,7 @@
  - TaiXeflar.  National Taiwan Ocean University Marine Environment Informatics Department Bachelor 4A
  - Ian Chang.  National Chiayi University Electrophysics Department Bachelor 3A
 
-## Repository Test - Windows Enviroment
+## Repository Test - Windows Environment
 
  - ROG Zephyrus S15 (2020)
     - CPU: Intel Core i7-10875H @2.3GHz 8C16T
@@ -42,12 +42,14 @@
     - Everything 1.4.1.1020 (by voidtools)
 
  - Test Logs:
-   - Tested Done by TaiXeflar in Windows 10 21H2 enviroment at 2022/9/25.
-   - Tested Done by TaiXeflar in Windows 11 22H2 enviroment at 2022/9/27.
-   - Tested Done by TaiXeflar on various platform (ASUS TUF A15 2022) in Windows 11 21H1 enviroment at 2022/10/1.
-   - Tested Done by TaiXeflar in Windows 11 22H2 enviroment at 2023/1/18 (Visual Studio offline deployment).
+   - Tested Done by TaiXeflar in Windows 10 21H2 environment at 2022/9/25.
+   - Tested Done by TaiXeflar in Windows 11 22H2 environment at 2022/9/27.
+   - Tested Done by TaiXeflar on various platform (ASUS TUF A15 2022) in Windows 11 21H1 environment at 2022/10/1.
+   - Tested Done by TaiXeflar in Windows 11 22H2 environment at 2023/1/18 (Visual Studio offline deployment).
+   - Tested Done by TaiXeflar on various platform (ASUS Vivobook 15 2022) in Windows 11 22H2 environment at 2023/1/13.
+   - Tested Done by TaiXeflar in Windows 11 22H2 environment at 2023/1/23 (MATLAB R2022a).
 
-## Repository Test - macOS Enviroment
+## Repository Test - macOS Environment
 
  - Apple Macbook Pro 16 (2019)
     - CPU: Intel Core i7-9750H 6C12T
