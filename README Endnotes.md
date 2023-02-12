@@ -1,7 +1,7 @@
 # Endnotes
 
 ## Repository Contributors: 
- - TaiXeflar.  National Taiwan Ocean University MEI Bachelor 4A
+ - TaiXeflar.  National Taiwan Ocean University Marine Environment Informatics Department Bachelor 4A
  - Ian Chang.  National Chiayi University Electrophysics Department Bachelor 3A
 
 ## Repository Test - Windows Enviroment
