@@ -36,7 +36,7 @@ MATLAB在線安裝需要你登入已註冊的Mathworks帳號，並同意你的�
  - Python
      - Python 3.8/3.9/3.10
  - MATLAB
- - VSCode Extentions
+ - VSCode Extentions (VSCode 延伸模組)
      - Matlab Interactive Terminal (Aurélien Pommel)
 
 MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完成實現。因此，我們需要執行PyPl的pip指令:
@@ -47,7 +47,7 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
 
 若是執行失敗，則會顯示子程序出現問題，而不是pip指令的問題。此時，你有多個除錯方向:
  - Python版本。
- - pip執行安裝的matlabengine版本。
+ - pip執行安裝的matlabengine版本(會需要對應的MATLAB版本)。
  - Visual Studio 2022是否正確安裝桌面開發C++套件。
  - MATLAB是否正確安裝。
 
