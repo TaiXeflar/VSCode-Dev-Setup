@@ -25,7 +25,7 @@ For this repository of VSCode environment we changed:
  - .NET Support
  - Fortran
 
-We've added these Developer toolkits' installation guide as Readme file:
+We've added full Traditional Chinese (ZH-TW) and Images to these Developer toolkits' installation guide as Readme file:
 
  - Microsoft Visual Studio Code (VSCode) [Text Editor]
  - Microsoft Visual Studio 2022 Community [ IDE ]
