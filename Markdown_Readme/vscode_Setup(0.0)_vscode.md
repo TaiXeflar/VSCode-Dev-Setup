@@ -123,3 +123,4 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
   - `Ctrl + F`: 尋找目標。
   - `Ctrl + H`: 尋找及取代目標。
   - `Shift + Enter`: 在Jupyter Notebook內執行單一個cell的直譯式偵錯或執行Markdown的編輯儲存。
+
