@@ -92,27 +92,27 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 
  - `"terminal.integrated.profiles.windows"`: 在Windows底下自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
     
-        以下是Windows環境下的VSCode整合式終端機的預設值:
-         ```
-            "terminal.integrated.profiles.windows": {
-            "PowerShell": {
-                "source": "PowerShell",
-                "icon": "terminal-powershell"
-            },
-            "Command Prompt": {
-                "path": [
-                    "${env:windir}/Sysnative/cmd.exe",
-                    "${env:windir}/System32/cmd.exe"
-                ],
-                "args": [],
-                "icon": "terminal-cmd"
-            },
-            "Git Bash": {
-                "source": "Git Bash"
-            }
-         ```
+    以下是Windows環境下的VSCode整合式終端機的預設值:
+    ```
+        "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}/Sysnative/cmd.exe",
+                "${env:windir}/System32/cmd.exe"
+            ],
+            "args": [],
+             "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+           }
+    ```
 
-        預設會有`PowerShell`, `Command Prompt`兩個JSON物件。事實上，JSON物件可以是你隨意指定的內容。若是在VSCode安裝後再安裝Git，則會自動建立可呼叫Git的終端設定檔。
+    預設會有`PowerShell`, `Command Prompt`兩個JSON物件。事實上，JSON物件可以是你隨意指定的內容。若是在VSCode安裝後再安裝Git，則會自動建立可呼叫Git的終端設定檔。
 
       下列以**手動建立**設定檔為範例。
       
