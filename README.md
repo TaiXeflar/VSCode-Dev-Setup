@@ -48,3 +48,14 @@ Happy Coding!
  - C/C++ : Clang/LLVM
  - CMake (Cross Make)
  - PowerShell
+
+## Shell
+
+當說明文件提示Shell的命令列時，該指令是以終端機操作。Windows底下預設使用PowerShell做為預設命令列殼層。
+ - 在Windows 10中，請開啟`Windows PowerShell`或`命令提示字元`開啟Windows主控台並輸入命令。
+ - 在Windows 11中，請開啟`Windows終端機`並在PowerShell中直接輸入命令。
+ - 在VSCode中，以`Ctrl`+`Shift`+`‵`執行內建終端機。
+
+請注意，當說明文件內的命令列有`sudo`或`su`的命令時，該命令需要提升權限的終端機執行。你有兩種解決方法：
+ - 重新以系統管理員身份運行`Windows PowerShell`/`命令提示字元`/`Windows終端機`。
+ - 使用`gsudo`套件提升系統權限。
