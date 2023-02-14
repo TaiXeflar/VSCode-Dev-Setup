@@ -104,11 +104,20 @@
 
 ## 設定PATH變數
 
-  - 請把編譯器路徑所在路徑添加至使用者/系統環境變數中。可能需要重新開機。以MSVC的`VsDevCmd.bat`為例:
+  - 請把編譯器/環境變數設定批次檔(`VsDevCmd.bat`，`setvars.bat`)路徑所在路徑添加至使用者/系統環境變數中。可能需要重新開機。以MSVC的`VsDevCmd.bat`為例:
     - `C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/`
 
-  - 添加`PATH`變數之後以終端機呼叫該編譯器。以MSVC的cl.exe(VS2022 v143)為例: 
-    - PS> cl
+    添加`PATH`變數之後以終端機呼叫該編譯器做為測試。本範例示範由CMD啟動VS2022開發人員命令提示字元，調用PowerShell後呼叫cl。
+     - Shell 
+      ```
+      cmd.exe /E:ON /K VsDevCmd.bat && powershell.exe -noexit
+      ```
+
+    呼叫編譯器。以MSVC的cl.exe(VS2022 v143)為例: 
+     - Shell
+      ```
+      cl
+      ```
 
     若成功的話會在終端機看到以下內容:
     ```
@@ -143,89 +152,89 @@
   
  1. c_cpp_properties.json : 
 
- - 以下是MSVC的C/C++ properties示範:
+    - 以下是MSVC的C/C++ properties示範:
 
-  ```
-    {
-        "version": 4,
-        "configurations": [
-            {
-                "name": "Win32",
-                "includePath": [
-                    "${workspaceFolder}/**"
-                ],
-                "defines": 
-                [
-                    "_DEBUG",
-                    "UNICODE",
-                    "_UNICODE"
-                ],
-                "windowsSdkVersion": "10.0.22000.0",
-                "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/cl.exe",
-                "cStandard": "c17",
-                "cppStandard": "c++17",
-                "intelliSenseMode": "windows-msvc-x64"
-            }
-        ]
-    }
-  ```
+     ```
+       {
+           "version": 4,
+           "configurations": [
+               {
+                   "name": "Win32",
+                   "includePath": [
+                       "${workspaceFolder}/**"
+                   ],
+                   "defines": 
+                   [
+                       "_DEBUG",
+                       "UNICODE",
+                       "_UNICODE"
+                   ],
+                   "windowsSdkVersion": "10.0.22000.0",
+                   "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/cl.exe",
+                   "cStandard": "c17",
+                   "cppStandard": "c++17",
+                   "intelliSenseMode": "windows-msvc-x64"
+               }
+           ]
+       }
+     ```
   
  2. tasks.json:
 
- - 以下是MSVC的build tasks示範:
-  ```
-  {
-    "version": "2.0.0",
-    "tasks": 
-    [
-      {
-        "windows":{
-          "options": {
-            "shell": {
-              "executable": "cmd.exe",
-              "args": ["/C", "VsDevCmd.bat", "&&"]
-              }
-            }
-          },
-          "type": "shell",
-          "label": "cl.exe",
-          "command": "cl.exe",
-          "args": [
-                    "/Fe:", 
-                    "${fileDirname}\\${fileBasenameNoExtension}.exe", 
-                    "${file}"
-          ],
-          "problemMatcher": ["$msCompile"],
-          "group": {
-            "kind": "build",
-            "isDefault": true
-          }
-      }
-    ]
-  }
-  ```
+    - 以下是MSVC的build tasks示範:
+     ```
+     {
+       "version": "2.0.0",
+       "tasks": 
+       [
+         {
+           "windows":{
+             "options": {
+               "shell": {
+                 "executable": "cmd.exe",
+                 "args": ["/C", "VsDevCmd.bat", "&&"]
+                 }
+               }
+             },
+             "type": "shell",
+             "label": "cl.exe",
+             "command": "cl.exe",
+             "args": [
+                       "/Fe:", 
+                       "${fileDirname}\\${fileBasenameNoExtension}.exe", 
+                       "${file}"
+             ],
+             "problemMatcher": ["$msCompile"],
+             "group": {
+               "kind": "build",
+               "isDefault": true
+             }
+         }
+       ]
+     }
+     ```
  3. launch.json:
 
-  - 以下是MSVC的launch tasks示範:
-    ```
-    {
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "name": "cl.exe",
-                "type": "cppvsdbg",
-                "request": "launch",
-                "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "args": [],
-                "stopAtEntry": false,
-                "cwd": "${workspaceFolder}",
-                "environment": [],
-                "console": "integratedTerminal",
-                "preLaunchTask": "cl.exe"
-            }
-        ]
-    }
-    ```
+     - 以下是MSVC的launch tasks示範:
+      ```
+       {
+           "version": "0.2.0",
+           "configurations": [
+               {
+                   "name": "cl.exe",
+                   "type": "cppvsdbg",
+                   "request": "launch",
+                   "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                   "args": [],
+                   "stopAtEntry": false,
+                   "cwd": "${workspaceFolder}",
+                   "environment": [],
+                   "console": "integratedTerminal",
+                   "preLaunchTask": "cl.exe"
+               }
+           ]
+       }
+      ```
 
 ## C/C++ 注意事項
 
@@ -247,21 +256,21 @@
 
   - 先在 "開始>所有應用程式" 中找到`Developer Command Prompt for Visual Studio 2022`。
   - 接著在該終端中輸入以下指令 (請將TaiXeflar替換你的使用者名稱):
-  - CMD
+    - CMD
     ```
-    cd C:\Users\TaiXeflar\Desktop
-    mkdir ctest
-    cd ctest
-    mkdir .vscode
-    code .
+      cd C:\Users\TaiXeflar\Desktop
+      mkdir ctest
+      cd ctest
+      mkdir .vscode
+      code .
     ```
  - 每欲以`VsDevCmd.bat`環境開啟新專案時，必須依照此類指令建置新專案資料夾。
  - 在VsDevCmd.bat環境底下開啟ctest時亦需要以`Developer Command Prompt for Visual Studio 2022`開啟 (請將TaiXeflar替換你的使用者名稱):
-  - CMD
-    ```
-    cd C:\Users\TaiXeflar\Desktop\ctest
-    code .
-    ``` 
+    - CMD
+      ```
+      cd C:\Users\TaiXeflar\Desktop\ctest
+      code .
+      ``` 
   - 因此，我們在tasks中呼叫`"windows"`中的`"options"`的`"shell"`項時，可以直接在VSCode內呼叫`VsDevCmd.bat`初始化，而不用必須手動開啟外部終端初始化後再呼叫VSCode。
 
 
