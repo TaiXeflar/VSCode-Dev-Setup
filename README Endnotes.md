@@ -197,7 +197,7 @@ We played these BGM while we contributors build this repository:
 ## Contributors.Workspace.Share - Game
 We joined these Games in progress when we build this repository:
    - Tom Clancy's Rainbow Six Siege (2015) - Ubisoft Montreal, Ubisoft Entertainment.
-     - Rainbow Six Siege (PC - Uplay/Ubisoft Connect) _Vulkan
+     - Rainbow Six Siege [ Y7S4.2 R6S/R6S_Vulkan ] (PC - Uplay/Ubisoft Connect)
    - EA Star Wars Battlefront 2 (2017) - Electronic Arts.
    - Honkai Impact 3 (2016) - miHoYo Limited.
      - Honkai Impact 3 [Ver. 6.3] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
