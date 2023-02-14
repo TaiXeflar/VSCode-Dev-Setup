@@ -200,12 +200,12 @@ We joined these Games in progress when we build this repository:
      - Rainbow Six Siege (PC - Uplay/Ubisoft Connect) _Vulkan
    - EA Star Wars Battlefront 2 (2017) - Electronic Arts.
    - Honkai Impact 3 (2016) - miHoYo Limited.
-     - Honkai Impact 3 [Ver. 6.3] (PC - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
+     - Honkai Impact 3 [Ver. 6.3] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
    - Genshin Impact (2020) - miHoYo Limited.
-     -  Genshin Impact [Ver. 3.3] (PC - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
+     -  Genshin Impact [Ver. 3.3] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
    - Umamusume: Pretty Derby (2021) - Cygames.
-     - Umamusume: Pretty Derby [Ver. 1.26.5] (Android - Google Play - JP_Cygames)
+     - Umamusume: Pretty Derby [Ver. 1.26.5] (Android - JP_Cygames)
    - Princess Connect Re:Dive (2018) - Cygames.
      - Priconnect Re:Dive (Android - TW_So-Net Entertainment/Cygames)
    - Minecraft - Mojang Studios.
-     - Minecraft (PC - Java 1.19.3, Bedrock)
+     - Minecraft (PC - Java 1.19.3, Bedrock 1.19)
