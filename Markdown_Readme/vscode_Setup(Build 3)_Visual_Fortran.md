@@ -39,46 +39,29 @@
 
 ## PATH 路徑確認
 
-  - 範例提及的所有編譯器可在預設安裝的路徑下找到。請把列出的環境初始化執行檔/編譯器路徑的資料夾添加至環境變數中(PATH)。
+  - Intel Visual Fortran Compiler:
 
-  - Intel Fortran Compiler:
+    由於開發人員命令提示字元`setvars.bat`會自動配置環境變數(例如`INCLUDE`，`LIB`等)，在`setvars.bat`初始化後的殼層環境會加入編譯器/標頭檔/程式庫等路徑。
 
-      `PATH`:
+    Intel Fortran(`ifort.exe`)可直接透過`setvars.bat`傳遞呼叫，因此，我們直接把`setvars.bat`的路徑加入至PATH中即可。
 
-      - setvars.bat: "C:/Program Files (x86)/Intel/oneAPI/setvars.bat"
-      - ifort.exe: "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/intel64/ifort.exe"
-      - ifx.exe: "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/ifx.exe"
+    `PATH`:
+
+    - setvars.bat: "C:/Program Files (x86)/Intel/oneAPI/setvars.bat"
 
 ## 設定PATH變數
 
   - 請把編譯器路徑所在路徑添加至使用者/系統環境變數中。可能需要重新開機。
-  - `PATH` = 
+     - `C:/Program Files (x86)/Intel/oneAPI/`
 
-        - "C:/Program Files (x86)/Intel/oneAPI/"
-        - "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/intel64/"
 
-  - 添加`PATH`變數之後以終端機呼叫該編譯器做為測試。以下是分別呼叫`setvars.bat`和`ifort.exe`的結果: 
+  - 添加`PATH`變數之後以終端機呼叫該編譯器做為測試。本範例示範由CMD啟動Intel 64開發人員命令提示字元，調用PowerShell後呼叫ifort。
+     ```
+     cmd.exe /E:ON /K setvars.bat && powershell.exe -noexit
+     ```
 
-    ```
-    Windows PowerShell
-    Copyright (C) Microsoft Corporation. 著作權所有，並保留一切權利。
+    在PowerShell中呼叫`setvars.bat`和`ifort.exe`的結果: 
 
-    請嘗試新的跨平台 PowerShell https://aka.ms/pscore6
-
-    PS C:\Users\TaiXeflar> setvars
-    :: initializing oneAPI environment...
-    Initializing Visual Studio command-line environment...
-    Visual Studio version 17.3.4 environment configured.
-    "C:\Program Files\Microsoft Visual Studio\2022\Community\"
-    Visual Studio command-line environment initialized for: 'x64'
-    :  compiler -- latest
-    :  debugger -- latest
-    :  dev-utilities -- latest
-    :  mpi -- latest
-    :  tbb -- latest
-    :: oneAPI environment initialized ::
-    PS C:\Users\TaiXeflar>
-    ```
     ```
     PS C:\Users\TaiXeflar> ifort
     Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.6.0 Build 20220226_000000
