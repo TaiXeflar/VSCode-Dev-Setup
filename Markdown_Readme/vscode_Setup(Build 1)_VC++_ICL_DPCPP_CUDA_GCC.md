@@ -71,26 +71,23 @@
 
   - Microsoft Visual C/C++ compiler:
 
+    由於開發人員命令提示字元`VsDecCmd.bat`會自動配置環境變數(例如`INCLUDE`，`LIB`等)，在VsDevCmd.bat初始化後的殼層環境會加入編譯器/標頭檔/程式庫等路徑。
+
+    MSVC(`cl.exe`)可直接透過`VsDevCmd.bat`傳遞呼叫，因此，我們直接把`VsDevCmd.bat`的路徑加入至PATH中即可。
+
     `PATH`:
 
     - VsDevCmd.bat : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/VsDevCmd.bat"
-    - cl.exe : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/`Version Number`/bin/HostX64/x64/cl.exe"
-    - clang.exe : "C:/Program Files/Microsoft Visual Studio/2022/VC/Tools/Llvm/bin/clang.exe"
-
-      在 cl.exe 的路徑中，將`Version Number`換成你想要的編譯器版本號。
-
-      - VS2022: `14.33.31629`
-      - VS2019: `14.29.30133`
-      - VS2017: `14.16.27023`.
 
   - Intel DPC++/C++ and Intel classic C/C++ Compiler:
+
+    由於開發人員命令提示字元`setvars.bat`會自動配置環境變數(例如`INCLUDE`，`LIB`等)，在`setvars.bat`初始化後的殼層環境會加入編譯器/標頭檔/程式庫等路徑。
+
+    Intel C++(`icl.exe`)可直接透過`setvars.bat`傳遞呼叫，因此，我們直接把`setvars.bat`的路徑加入至PATH中即可。
 
     `PATH`:
 
     - setvars.bat: "C:/Program Files (x86)/Intel/oneAPI/setvars.bat"
-    - dpcpp.exe: "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/dpcpp.exe"
-    - icl.exe: "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/intel64/icl.exe"
-    - icx.exe: "C:/Program Files (x86)/Intel/oneAPI/compiler/latest/windows/bin/icx.exe"
 
   - NVIDIA CUDA C/C++ compiler:
 
@@ -107,8 +104,8 @@
 
 ## 設定PATH變數
 
-  - 請把編譯器路徑所在路徑添加至使用者/系統環境變數中。可能需要重新開機。以MSVC的cl.exe(VS2022 v143)為例:
-    - `PATH` = "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/`Version Number`/bin/HostX64/x64/"
+  - 請把編譯器路徑所在路徑添加至使用者/系統環境變數中。可能需要重新開機。以MSVC的`VsDevCmd.bat`為例:
+    - `C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/`
 
   - 添加`PATH`變數之後以終端機呼叫該編譯器。以MSVC的cl.exe(VS2022 v143)為例: 
     - PS> cl
