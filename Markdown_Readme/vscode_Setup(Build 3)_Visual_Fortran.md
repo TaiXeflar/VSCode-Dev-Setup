@@ -60,7 +60,7 @@
      cmd.exe /E:ON /K setvars.bat && powershell.exe -noexit
      ```
 
-    在PowerShell中呼叫`setvars.bat`和`ifort.exe`的結果: 
+    開啟殼層後呼叫`ifort.exe`的結果: 
 
     ```
     PS C:\Users\TaiXeflar> ifort
