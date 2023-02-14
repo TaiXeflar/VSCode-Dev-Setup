@@ -405,12 +405,12 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 
 - `version`: 值預設是`0.2.0`.
 - `configurations`: JSON清單物件，且包含一個或多個JSON物件。內部的鍵值為:
-      - `"name"`: `"Python: Current"`。
-      - `"type"`: 偵錯類型。這裡選擇`"python"`。
-      - `"request"`: 因為是執行，所以選擇`"launch"`。
-      - `"program"`: `"${file}"`. 該鍵值`"${file}"`對應至欲偵錯的Python底稿(對應至本存放庫即為`test.py`)。
-      - ` "console"`: `"integratedTerminal"`或`externalTerminal`。
-      - `"justMyCode"`: 限偵錯由vscode使用者所寫的程式碼。這裡選擇`true`。
+     - `"name"`: `"Python: Current"`。
+     - `"type"`: 偵錯類型。這裡選擇`"python"`。
+     - `"request"`: 因為是執行，所以選擇`"launch"`。
+     - `"program"`: `"${file}"`. 該鍵值`"${file}"`對應至欲偵錯的Python底稿(對應至本存放庫即為`test.py`)。
+     - ` "console"`: `"integratedTerminal"`或`externalTerminal`。
+     - `"justMyCode"`: 限偵錯由vscode使用者所寫的程式碼。這裡選擇`true`。
 
 
 ## 以JSON自定義VSCode的C/C++特性設定(Properties)
