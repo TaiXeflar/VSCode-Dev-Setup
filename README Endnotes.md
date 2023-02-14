@@ -31,14 +31,39 @@
     - OpenJDK 1.19
     - Python 3.9.7
     - Julia 1.8.2
-    - Intel oneAPI DPCPP/CPP and Intel C/C++ 2023.0
-    - Intel oneAPI Fortran 2023.0
-    - Intel oneAPI Distrubution for Python* 3.9.15
-    - NVIDIA CUDA 11.7, 12.0
-    - MATLAB R2022a
+    - Intel oneAPI 2023.0
+        - Intel DPCPP/CPP and Intel Classic C/C++ Compiler
+        - Intel DPC++/C++ Compiler Runtime
+        - Intel DPC++ Library (oneDPL)
+        - Intel DPC++ Compatibility Tool
+        - Intel Visual Fortran 2023.0
+        - Intel Visual Fortran Compiler Runtime
+        - Intel CPU Runtime for OpenCL Applications
+        - Intel Distrubution for Python* 3.9.15
+        - Intel Math Kernel Library (oneMKL)
+        - Intel Thread Building Blocks (oneTBB) 2023.0
+        - Intel Deep Neural Network Library (oneDNNL)
+        - Intel Video Processing Library (oneVPL)
+        - Intel Video Processing Library Runtime
+    - NVIDIA Developer Toolkit
+        - NVIDIA CUDA 11.7, 12.0
+        - NVIDIA cuDNN
+        - NVIDIA cuTensor
+        - NVIDIA TensorRT
+    - MATLAB 
+        - R2022b
+        - R2022a
     - GMT 6.4.0 (Generic Mapping Tools)
+    - Cygwin
+        - BASH
+        - ZSH
+        - vi/vim text editor
+        - NANO pico text editor
+        - GCC/G++
+        - gfortran
+        - LLVM
 
-    - Gsudo (by gerardog)
+    - Gsudo 2.0.5 (by gerardog)
     - Everything 1.4.1.1020 (by voidtools)
 
  - Test Logs:
@@ -62,10 +87,17 @@
 
  - Development Application:
     - Microsoft Visual Studio Code for macOS
+    - Microsoft Visual Studio for macOS
+    - Intel oneAPI 2023.0
+        - Intel DPCPP/CPP and Intel Classic C/C++ Compiler
+        - Intel Visual Fortran 2023.0
+    - XCode
     - Python 3.9.7
 
  - Test Logs:
     - Testing in progress by Ian Chang on macOS Monterey
+
+
 
 ## Contributors.Workspace.Share - OST
 We played these BGM while we contributors build this repository:
@@ -163,11 +195,17 @@ We played these BGM while we contributors build this repository:
 
 
 ## Contributors.Workspace.Share - Game
-We joined these Games before/after/in progress when we build this repository:
+We joined these Games in progress when we build this repository:
    - Tom Clancy's Rainbow Six Siege (2015) - Ubisoft Montreal, Ubisoft Entertainment.
+     - Rainbow Six Siege (PC - Uplay/Ubisoft Connect) _Vulkan
    - EA Star Wars Battlefront 2 (2017) - Electronic Arts.
    - Honkai Impact 3 (2016) - miHoYo Limited.
+     - Honkai Impact 3 [Ver. 6.3] (PC - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
    - Genshin Impact (2020) - miHoYo Limited.
+     -  Genshin Impact [Ver. 3.3] (PC - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
    - Umamusume: Pretty Derby (2021) - Cygames.
+     - Umamusume: Pretty Derby [Ver. 1.26.5] (Android - Google Play - JP_Cygames)
    - Princess Connect Re:Dive (2018) - Cygames.
+     - Priconnect Re:Dive (Android - TW_So-Net Entertainment/Cygames)
    - Minecraft - Mojang Studios.
+     - Minecraft (PC - Java 1.19.3, Bedrock)
