@@ -22,14 +22,33 @@
     - Windows Terminal 1.15.2712.0
     - Git 2.36.1
     - Microsoft Visual Studio Code 1.74
-    - Microsoft Visual Studio 2022 Community
     - Microsoft Visual Studio 2022 Build Tools
-       - MSVC v143
-       - Clang for Windows
-       - CMake
-       - .NET C#, VB, F#
+    - Microsoft Visual Studio 2022 Community
+        - C++ Desktop Development
+          - MSVC v143, v142, v141 ,v140
+          - C++ AddressSanitizer
+          - C++ Diagnose Tool
+          - Clang for Windows
+          - CMake for Windows C++
+          - Windows 11 SDK
+          - Windows 10 SDK
+        - .NET Desktop Development
+          - VB, C#, F# Roslyn Compiler
+          - VB, C#, F# REPL Interpreter
+          - .NET 4.7.2, 4.8
+        - Windows Platform Development
+          - DirectX GPU Debug Tool
+          - Blend for Visual Studio
     - OpenJDK 1.19
     - Python 3.9.7
+        - pip
+        - Jupyter
+        - Matlabengine
+        - Tensorflow-gpu, Keras
+        - Torch, Torchvision, Torchaudio
+        - Pandas, NumPy
+        - Matplotlib
+        - Scikit-Learn
     - Julia 1.8.2
     - Intel oneAPI 2023.0
         - Intel DPCPP/CPP and Intel Classic C/C++ Compiler
@@ -54,6 +73,7 @@
         - R2022b
         - R2022a
     - GMT 6.4.0 (Generic Mapping Tools)
+    - Node.js
     - Cygwin
         - BASH
         - ZSH
