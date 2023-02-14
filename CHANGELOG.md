@@ -58,7 +58,7 @@ We've added full Traditional Chinese (ZH-TW) and Images to these Developer toolk
      - Jupyter (Jupyter Notebook)
  - Git for Windows 2.36.1
 
-We deleted all English Readme files and translate to Traditional Chinese(ZH-TW):
+We removed all English Readme files and translate to Traditional Chinese(ZH-TW):
 
  - C/C++ and Python PPTX
  - C/C++ [en-us]
