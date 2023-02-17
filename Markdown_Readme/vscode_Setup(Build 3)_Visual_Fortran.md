@@ -90,106 +90,110 @@
   
  1. tasks.json:
 
- - 以下是Intel Fortran的build tasks示範:
-    ```
-    {
-        "version": "2.0.0",
-        "tasks": [
-            {
-                "windows":{
-                    "options": {
-                        "shell": {
-                            "executable": "cmd.exe",
-                            "args": ["/C", "setvars.bat", "&&"]
+    以下是Intel Fortran的build tasks示範:
+    - JSON
+        ```
+        {
+            "version": "2.0.0",
+            "tasks": [
+                {
+                    "windows":{
+                        "options": {
+                            "shell": {
+                                "executable": "cmd.exe",
+                                "args": ["/C", "setvars.bat", "&&"]
+                            }
                         }
+                    },
+                    "type": "shell",
+                    "label": "ifort.exe",
+                    "command": "ifort.exe",
+                    "args": 
+                    [
+                        "${file}", 
+                    ],
+                    "problemMatcher": ["$msCompile"],
+                    "group": {
+                        "kind": "build",
+                        "isDefault": true
                     }
-                },
-                "type": "shell",
-                "label": "ifort.exe",
-                "command": "ifort.exe",
-                "args": 
-                [
-                    "${file}", 
-                ],
-                "problemMatcher": ["$msCompile"],
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
                 }
-            }
-        ]
-    }
-    ```
+            ]
+        }
+        ```
 
- - 以下是gfortran的build tasks示範:
-    ```
-    {
-        "version": "2.0.0",
-        "tasks": [
-            {
-                "type": "shell",
-                "label": "gfort.exe",
-                "command": "gfortran.exe",
-                "args": 
-                [
-                    "-O",
-                    "-o",
-                    "${fileBasenameNoExtension}.exe",
-                    "${file}"
-                ],
-                "problemMatcher": ["$gcc"],
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
+    以下是gfortran的build tasks示範:
+     - JSON
+        ```
+        {
+            "version": "2.0.0",
+            "tasks": [
+                {
+                    "type": "shell",
+                    "label": "gfort.exe",
+                    "command": "gfortran.exe",
+                    "args": 
+                    [
+                        "-O",
+                        "-o",
+                        "${fileBasenameNoExtension}.exe",
+                        "${file}"
+                    ],
+                    "problemMatcher": ["$gcc"],
+                    "group": {
+                        "kind": "build",
+                        "isDefault": true
+                    }
                 }
-            }
-        ]
-    }
-    ```
+            ]
+        }
+        ```
 
  2. launch.json:
 
-  - 以下是Intel Fortran的launch tasks示範:
-  ```
-    {
-        "version": "0.2.0",
-        "configurations": [
+    以下是Intel Fortran的launch tasks示範:
+    - JSON
+        ```
             {
-                "name": "ifort.exe",
-                "type": "cppvsdbg",
-                "request": "launch",
-                "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
-                "args": [],
-                "stopAtEntry": false,
-                "cwd": "${workspaceFolder}",
-                "environment": [],
-                "console": "integratedTerminal",
-                "preLaunchTask": "ifort.exe"
+                "version": "0.2.0",
+                "configurations": [
+                    {
+                        "name": "ifort.exe",
+                        "type": "cppvsdbg",
+                        "request": "launch",
+                        "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+                        "args": [],
+                        "stopAtEntry": false,
+                        "cwd": "${workspaceFolder}",
+                        "environment": [],
+                        "console": "integratedTerminal",
+                        "preLaunchTask": "ifort.exe"
+                    }
+                ]
             }
-        ]
-    }
-  ```
+        ```
 
-  - 以下是GFortran的launch tasks示範:
-    ```
-    {
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "name": "gfort.exe",
-                "type": "cppvsdbg",
-                "request": "launch",
-                "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
-                "args": [],
-                "stopAtEntry": false,
-                "cwd": "${workspaceFolder}",
-                "environment": [],
-                "console": "integratedTerminal",
-                "preLaunchTask": "gfort.exe"
-            }
-        ]
-    }
-    ``` 
+    以下是GFortran的launch tasks示範:
+    - JSON
+        ```
+        {
+            "version": "0.2.0",
+            "configurations": [
+                {
+                    "name": "gfort.exe",
+                    "type": "cppvsdbg",
+                    "request": "launch",
+                    "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+                    "args": [],
+                    "stopAtEntry": false,
+                    "cwd": "${workspaceFolder}",
+                    "environment": [],
+                    "console": "integratedTerminal",
+                    "preLaunchTask": "gfort.exe"
+                }
+            ]
+        }
+        ``` 
 
 ## Fortran 注意事項
 
