@@ -188,67 +188,69 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
  - `"security.workspace.trust.untrustedFiles"`: 是否信任工作區內未受信任的檔案。
 
 筆者以自用的VSCode範例提供完整的settings.json參考 :
- 
-```
-{
-    "editor.mouseWheelZoom": true,
-    "editor.fontFamily": "Xolonium, Microsoft JHengHei UI, Consolas",
-    "editor.fontWeight": "normal",
-    "terminal.integrated.fontFamily": "Consolas",
-    "terminal.integrated.fontSize": 16,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "workbench.startupEditor": "none",
-    "security.workspace.trust.untrustedFiles": "open",
-    "explorer.confirmDelete": true,
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 100,
-    "files.associations": {
-        "*.json": "jsonc"
-    },
-    "workbench.colorTheme": "Visual Studio Dark",
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}/Sysnative/cmd.exe",
-                "${env:windir}/System32/cmd.exe"
-            ],
-            "args": ["/E:ON"],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
-        "Cygwin Bash": 
-        {            
-            "path": ["C:/cygwin64//bin/bash.exe"],
-            "args": ["--login", "-i"],
-            "icon": "console"
-        }
-    },
-    "terminal.integrated.profiles.osx": {
 
-        "bash": {
-            "path": "bash",
-            "args": ["-l"],
-            "icon": "terminal-bash"
+ - JSON
+ 
+    ```
+    {
+        "editor.mouseWheelZoom": true,
+        "editor.fontFamily": "Xolonium, Microsoft JHengHei UI, Consolas",
+        "editor.fontWeight": "normal",
+        "terminal.integrated.fontFamily": "Consolas",
+        "terminal.integrated.fontSize": 16,
+        "git.confirmSync": false,
+        "git.autofetch": true,
+        "git.enableSmartCommit": true,
+        "workbench.startupEditor": "none",
+        "security.workspace.trust.untrustedFiles": "open",
+        "explorer.confirmDelete": true,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 100,
+        "files.associations": {
+            "*.json": "jsonc"
         },
-        "zsh": {
-            "path": "zsh",
-            "args": ["-l"]
-        },        
-        "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
+        "workbench.colorTheme": "Visual Studio Dark",
+        "terminal.integrated.profiles.windows": {
+            "PowerShell": {
+                "source": "PowerShell",
+                "icon": "terminal-powershell"
+            },
+            "Command Prompt": {
+                "path": [
+                    "${env:windir}/Sysnative/cmd.exe",
+                    "${env:windir}/System32/cmd.exe"
+                ],
+                "args": ["/E:ON"],
+                "icon": "terminal-cmd"
+            },
+            "Git Bash": {
+                "source": "Git Bash"
+            },
+            "Cygwin Bash": 
+            {            
+                "path": ["C:/cygwin64//bin/bash.exe"],
+                "args": ["--login", "-i"],
+                "icon": "console"
+            }
         },
-    }   
-}
-```
+        "terminal.integrated.profiles.osx": {
+
+            "bash": {
+                "path": "bash",
+                "args": ["-l"],
+                "icon": "terminal-bash"
+            },
+            "zsh": {
+                "path": "zsh",
+                "args": ["-l"]
+            },        
+            "pwsh": {
+                "path": "pwsh",
+                "icon": "terminal-powershell"
+            },
+        }   
+    }
+    ```
 
 ## 以JSON自定義VSCode的建置工作(Build Task)
 
@@ -258,31 +260,31 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 執行程式的建置由`tasks.json`內的訊息配置完成自定義的建置流程。該`tasks.json`路徑在專案資料夾底下的`.vscode`資料夾內。
 
 本範例執行MSVC的建置`test.c`偵錯:
-```
-{
-    "version": "2.0.0",
-    "tasks": 
-    [
-      {
-        "windows":
-        {
-          "options": {
-            "shell": {
-              "executable": "cmd.exe",
-              "args": ["/E:ON", "/C", "VsDevCmd.bat", "&&"]
-              }
+ - JSON
+    ```
+    {
+        "version": "2.0.0",
+        "tasks": 
+        [
+            {
+                "windows":{
+                    "options": {
+                        "shell": {
+                        "executable": "cmd.exe",
+                        "args": ["/E:ON", "/C", "VsDevCmd.bat", "&&"]
+                        }
+                    }
+                },
+                "type": "shell",
+                "label": "cl.exe",
+                "command": "cl.exe",
+                "args": ["/Fe:", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"],
+                "problemMatcher": ["$msCompile"],
+                "group": {"kind": "build", "isDefault": true}
             }
-          },
-          "type": "shell",
-          "label": "cl.exe",
-          "command": "cl.exe",
-          "args": ["/Fe:", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"],
-          "problemMatcher": ["$msCompile"],
-          "group": {"kind": "build", "isDefault": true}
-      }
-    ]
-}
-```
+        ]
+    }
+    ```
 當中:
   - `version`:  值預設是`"2.0.0"`。
   - `tasks`: ，JSON陣列物件，且包含一個或多個JSON物件。
@@ -336,25 +338,26 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 執行程式即為對程式執行偵錯。編譯程式可額外設定透過建置後執行偵錯，直譯程式則直接執行。
 
 本範例執行MSVC的偵錯設定:
-``` 
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "cl.exe",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "console": "integratedTerminal",
-            "preLaunchTask": "cl.exe"
-        }
-    ]
-}
-```
+ - JSON
+    ``` 
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "cl.exe",
+                "type": "cppvsdbg",
+                "request": "launch",
+                "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "args": [],
+                "stopAtEntry": false,
+                "cwd": "${workspaceFolder}",
+                "environment": [],
+                "console": "integratedTerminal",
+                "preLaunchTask": "cl.exe"
+            }
+        ]
+    }
+    ```
 
 當中:
 
@@ -384,23 +387,22 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
     當中，第一列是`test.c`建置的命令列，由`preLaunchTask`呼叫並執行。第二列才是執行建置後目標執行檔(test.exe)的偵錯。
 
 本範例再執行一個Python的執行偵錯設定(執行`test.py`):
-
-
-```
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true
-        }
-    ]
-}
-```
+ - JSON
+    ```
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "justMyCode": true
+            }
+        ]
+    }
+    ```
 當中:
 
 - `version`: 值預設是`0.2.0`.
@@ -420,16 +422,14 @@ C/C++的特性設定由`c_cpp_properties.json`配置完成自定義的程式庫�
 本範例執行MSVC的C++特性設定。
 
 以下是MSVC的C/C++ properties示範:
-
-  ```
+ - JSON
+   ```
     {
         "version": 4,
         "configurations": [
             {
                 "name": "Win32",
-                "includePath": [
-                    "${workspaceFolder}/**"
-                ],
+                "includePath": ["${workspaceFolder}/**"],
                 "defines": 
                 [
                     "_DEBUG",
@@ -444,7 +444,7 @@ C/C++的特性設定由`c_cpp_properties.json`配置完成自定義的程式庫�
             }
         ]
     }
-  ```
+   ```
 
 當中:
   - `version`: 值預設是`4`。
