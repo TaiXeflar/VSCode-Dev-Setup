@@ -52,14 +52,15 @@
 
 ## 設定PATH變數
 
-  - 請把環境變數設定批次檔(`setvars.bat`)的路徑所在路徑添加至使用者/系統環境變數中。可能需要重新開機。
-     - `C:/Program Files (x86)/Intel/oneAPI/`
+請把環境變數設定批次檔(`setvars.bat`)的路徑所在路徑添加至使用者/系統環境變數中。可能需要重新開機。
+  - `C:/Program Files (x86)/Intel/oneAPI/`
 
 
-  - 添加`PATH`變數之後以終端機呼叫該編譯器做為測試。本範例示範由CMD啟動Intel 64開發人員命令提示字元，調用PowerShell後呼叫ifort。
-     ```
-     cmd.exe /E:ON /K setvars.bat && powershell.exe -noexit
-     ```
+添加`PATH`變數之後以終端機呼叫該編譯器做為測試。本範例示範由CMD啟動Intel 64開發人員命令提示字元，調用PowerShell後呼叫ifort。
+  - Shell
+    ```
+    cmd.exe /E:ON /K setvars.bat && powershell.exe -noexit
+    ```
 
     開啟殼層後呼叫`ifort.exe`的結果: 
 
