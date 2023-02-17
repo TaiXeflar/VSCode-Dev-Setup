@@ -21,6 +21,7 @@
   - 本存放庫以Windows執行Intel oneAPI Fortran編譯器:  
 
      - Intel Fortran需要以Intel oneAPI套件安裝。整合至Visual Studio需要Visual C++的工具(VS2022 C++桌面開發)。
+         - 整合至Visual Studio之前，Visual Studio必須在安裝後初始化。 
 
         該Intel oneAPI Fortran整合至Visual Studio所要求Visual C++的具備先行工作負載是：
           - MSVC v143
