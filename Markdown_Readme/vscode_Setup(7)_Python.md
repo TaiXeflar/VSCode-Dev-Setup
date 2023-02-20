@@ -188,39 +188,9 @@
 
     該專案底稿下建立一個.vscode資料夾並建立一個launch.json檔案，以`F5`一鍵偵錯。
 
-  - Jupyter筆記本
-
-    VSCode建立筆記本的優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心、以及在未存檔筆記本的情況下執行筆記本。
-
-    `Ctrl + Shift + P`組合鍵開啟設定搜尋，鍵入Jupyter，找到`Create: New Jupyter Notebook`選項並點選，建立一個新的筆記本。
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note1.png)
-
-    開啟新的筆記本後，會自動轉化成Web模擬的筆記本格式，並預設開啟第一個執行格(cell)為Python程式碼。
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note2.png)
-
-    你可以選擇不同的核心。VSCode會依據電腦上實際存在的Python核心選擇哪一種Python環境。可以看到有出現多個不同且包含Conda環境的核心。
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note3.png)
-
-    在鍵入程式碼的時候，會依照`IntelliCode`延伸模組而給予自動智慧選字。出現下拉式選單時，使用方向鍵`←`, `→`, `↑`, `↓`進行選擇，以`Tab`鍵選字。
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note4.png)
-
-  - Julia語言
-
-    Julia核心是基於Python演變而來，因此可以套用前述方法執行Julia語言偵錯。
-    同樣的，Julia核心可以被筆記本視為可執行核心，在選擇核心的地方選擇指定的Julia核心即可。
 
 ## Python Module 注意事項
 
   - 請注意，在某些特定的情況下，會有Module間不相容導致程式執行中出現不可預期的錯誤。
   - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制在本機執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。
   
-## Jupyter Notebook 注意事項
-
- - Jupyter筆記本可以執行Python核心或Julia核心。請妥善選擇執行的本地端核心(Kernel)以避免出現程式執行錯誤。
- - Jupyter筆記本可以選擇具有Conda環境的Python。若有Conda環境選擇需求請改選base的Conda Python。
- - 每一個可執行Python/Julia或是註記(Markdown)的儲存格被稱為cell。執行cell的熱鍵是`Shift + Enter`。
- - 請注意該筆記本內每一個cell的執行時間序。若有被刪除的cell影響到後續cell的執行，請在該時間序之後的cell重新執行。
- - 當遇到不可預期的錯誤時(例如程式報錯不符合預期內的錯誤)，試試看重新啟動核心(kernel)並全部重新執行一次。
- - 使用VSCode開啟的Jupyter不需要以終端機掛載ipykernel就能正常執行筆記本的Python互動式偵錯。
- - ipynb是Jupyter筆記本的副檔名，內容為json格式。
- - 請注意，在VSCode內以SSH連線執行遠端Google Colabatory的Python偵錯有可能會被視為違反Google Colabatory使用條款。
