@@ -35,16 +35,16 @@ Jupyter會以終端機掛載核心執行。終端內會出現執行於本地端(
    ```
 
 `Ctrl + Shift + P`組合鍵開啟設定搜尋，鍵入Jupyter，找到`Create: New Jupyter Notebook`選項並點選，建立一個新的筆記本。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note1.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter1.png)
 
 開啟新的筆記本後，會自動轉化成模擬Web的筆記本格式，並預設開啟第一個執行格(cell)為Python程式碼。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note2.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter2.png)
 
 你可以選擇不同的核心。VSCode會依據電腦上實際存在的Python核心選擇哪一種Python環境。可以看到有出現多個不同且包含Conda環境的核心。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note3.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter3.png)
 
 在鍵入程式碼的時候，會依照Intellisense而給予智慧選字。出現下拉式選單時，使用方向鍵`←`, `→`, `↑`, `↓`進行選擇，以`Tab`鍵選字。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_python_note4.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
  
 Jupyter可執行的直譯式偵錯核心如下:
  - Python
@@ -54,26 +54,40 @@ Jupyter可執行的直譯式偵錯核心如下:
 
  - 其他直譯式語言的互動式核心
 
+對於Python程式語言，可偵測原Python版本或具備Conda環境的Python發行版本。
+
+此處範例為設為Global Env的Python Software Foundation Python 3.9.7及Conda Env的Intel Distribution of Python 3.9.15。
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_python.png)
+
 對於Julia程式語言，同樣可以調用Julia核心並應用在VSCode上。該目標透過VSCode的延伸模組解決。
  - VSCode Extentions
    ```
    Julia (julialang)
    ```
 
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_julia.png)
+
 對於MATLAB而言，MATLAB已有對Jupyter的內嵌式模組支援。MATLAB官方文件說明，該MATLAB核心需在Jupyter Web版開啟調用，但該功能同樣能在VSCode上執行。
 
-需要額外的Python模組支援:
+需要額外的Python模組安裝，並重新啟動VSCode:
  - Shell
    ```
    pip install matlab-kernel, jupyter-matlab-proxy
    ```
 
-對於.NET環境支援的語言有直譯器支援(可能需要安裝VS2022的.NET桌面開發):
+選擇MATLAB(Connection)的Jupyter Kernel。
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_matlab.png)
+
+對於.NET環境支援的語言有直譯器支援(需要安裝VS2022的.NET桌面開發):
  - VSCode Extentions
    ```
    .NET Extention Pack
    .NET Install Tool for Extention Authors
+   .NET Education Bundle SDK Install Tool
    ```
+
+選擇具備REPL直譯式核心的.NET解譯器。
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_.net.png)
 
 ## Jupyter Notebook 注意事項
  - 每一個可執行區塊或是註記(Markdown)的儲存格被稱為cell。執行cell的熱鍵是`Shift + Enter`。
