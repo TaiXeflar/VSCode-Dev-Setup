@@ -1,4 +1,4 @@
-# VSCode 建置及作業應用 v2.0
+# VSCode 建置及作業應用 v2.0.1
 
 
 ## 歡迎使用VSCode !
@@ -40,6 +40,9 @@ Happy Coding!
  - MATLAB
  - GMT
  - JSON (JavaScript Option Notation)
+
+我們提交了Jupyter筆記本的應用:
+ - Jupyter Notebook
 
 未來可能會加入以下程式語言/開發套件支援:
  - Julia
