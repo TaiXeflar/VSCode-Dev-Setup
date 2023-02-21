@@ -24,7 +24,7 @@ Jupyter會以終端機掛載核心執行。終端內會出現執行於本地端(
 
 ## 以VSCode執行Jupyter筆記本
 
-在VSCode中，Microsoft也有基於VSCode提供Jupyter筆記本的延伸模組支援，優點是能快速建立Markdown及無須開啟終端機掛載ipykernel核心、以及在未存檔筆記本的情況下執行筆記本。
+在VSCode中，Microsoft也有基於VSCode提供Jupyter筆記本的延伸模組支援，優點是能快速建立Code/Markdown及無須開啟終端機掛載ipykernel核心、以及在未存檔筆記本的情況下執行筆記本。
 
 請在VSCode中安裝以下延伸模組:
  - VSCode Extentions
@@ -57,7 +57,9 @@ Jupyter可執行的直譯式偵錯核心如下:
 ### Python
 對於Python程式語言，可偵測原Python版本或具備Conda環境的Python發行版本。
 
-此處範例為設為Global Env的Python Software Foundation Python 3.9.7及Conda Env的Intel Distribution of Python 3.9.15。
+此處範例為:
+  - Global Env: Python Software Foundation Python 3.9.7
+  - Conda Env: Intel Distribution of Python 3.9.15。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_python.png)
 
 ### Julia
