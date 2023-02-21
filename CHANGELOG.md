@@ -74,6 +74,10 @@ We've add these Language Support:
  - Matlab
  - GMT
 
+## Ver 2.0.1
+We upgraded Jupyter Notebook support:
+ - Jupyter
+
 ## Ver2.1
 
 We may update or wait until Ver 3.0 with macOS support files:
