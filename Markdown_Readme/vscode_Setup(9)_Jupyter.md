@@ -64,7 +64,6 @@ Jupyter可執行的直譯式偵錯核心如下:
    ```
    Julia (julialang)
    ```
-
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_julia.png)
 
 對於MATLAB而言，MATLAB已有對Jupyter的內嵌式模組支援。MATLAB官方文件說明，該MATLAB核心需在Jupyter Web版開啟調用，但該功能同樣能在VSCode上執行。
@@ -74,7 +73,6 @@ Jupyter可執行的直譯式偵錯核心如下:
    ```
    pip install matlab-kernel, jupyter-matlab-proxy
    ```
-
 選擇MATLAB(Connection)的Jupyter Kernel。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_matlab.png)
 
@@ -85,7 +83,6 @@ Jupyter可執行的直譯式偵錯核心如下:
    .NET Install Tool for Extention Authors
    .NET Education Bundle SDK Install Tool
    ```
-
 選擇具備REPL直譯式核心的.NET解譯器。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_.net.png)
 
