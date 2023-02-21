@@ -25,7 +25,7 @@ Intel有提供以下開發工具:
 
 ※ 請注意，Intel oneAPI各套件皆有提供在線/離線安裝版本。請依照您是否需要連線至網路選擇部署模式。
 
-這裡以執行Intel oneAPI Math Kernel Library的Standalone Installer為例。
+這裡以執行Intel oneAPI Fortran及Math Kernel Library的Standalone Installer為例。
 
 Intel oneAPI預設會安裝在以下路徑: `C:\Program Files (x86)\Intel\oneAPI\`
 
