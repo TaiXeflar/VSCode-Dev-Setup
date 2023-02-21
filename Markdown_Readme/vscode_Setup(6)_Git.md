@@ -28,7 +28,7 @@ Git for Windows套件為開源免費軟體。安裝時須同意GNU授權條款:
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_git_inst5.png)
 
 接著是SSH連線的SSH可執行檔的設定。
- - `Use eundled OpenSSH`: 使用安裝檔自帶解壓縮後的SSH。
+ - `Use bundled OpenSSH`: 使用安裝檔自帶解壓縮後的SSH。
  - `Use external OpenSSH`: 使用其他的SSH。
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_git_inst6.png)
