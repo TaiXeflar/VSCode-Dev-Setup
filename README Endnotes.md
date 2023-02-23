@@ -93,6 +93,7 @@
    - Tested Done by TaiXeflar in Windows 11 22H2 environment at 2023/1/18 (Visual Studio offline deployment).
    - Tested Done by TaiXeflar on various platform (ASUS Vivobook 15 2022) in Windows 11 22H2 environment at 2023/1/13.
    - Tested Done by TaiXeflar in Windows 11 22H2 environment at 2023/1/23 (MATLAB R2022a).
+   - Tested Doen by TaiXeflar in Windows 10/11 enviroment at 2023/2/5 (Intel oneAPI Fortran, DPCPP/CPP, MKL, e.t.c.)
 
 ## Repository Test - macOS Environment
 
@@ -116,6 +117,7 @@
 
  - Test Logs:
     - Testing in progress by Ian Chang on macOS Monterey
+    - Testing in progress by TaiXeflar on macOS Monterey (2023/2/10 ~)
 
 
 
