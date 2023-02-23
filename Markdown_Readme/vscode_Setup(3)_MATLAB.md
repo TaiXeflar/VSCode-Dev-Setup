@@ -23,9 +23,9 @@ MATLAB在線安裝需要你登入已註冊的Mathworks帳號，並同意你的�
 選擇你要安裝的MATLAB元件，接著執行安裝即可。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_7.png)
 
-## VSCode調用Matlab互動式命令列
+## VSCode調用Matlab互動式命令列(MATLAB Interactive / MATLAB Command Window)
 
-本章節將說明如何在VSCode中調用MATLAB以及互動式命令列。
+本章節將說明如何在VSCode中調用MATLAB互動式命令列。
 
 欲實現MATLAB互動式命令列的先行條件:
  - Visual C++ Toolkit (Visual Studio)
@@ -79,6 +79,20 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
             "matlab.mlintpath": "C:/Program Files/MATLAB/R2022a/bin/win64/mlint.exe",
             "matlab.linterEncoding": "gb2312"
          ```
+
+    在加入的JSON鍵值當中:
+    
+     - `matlab.matlabpath`: MATLAB延伸模組所指定的`matlab.exe`的路徑。
+     - `matlab.mlintpath`: MATLAB延伸模組所指定的`mlint.exe`的路徑。
+     - `matlab.linterEncoding`: MATLAB延伸模組所指定該專案的編碼形式。若為萬國碼則選`utf8`。若為中文可選`gb2312`或`big5`等。
+
+     - `code-runner.executorMap`: Code Runner延伸模組所指定程式偵錯指令的廣域設定。該JSON鍵值可指定任意受支援的程式語言。
+         - `"matlab"`為MATLAB程式語言的偵錯設定內容，由字串值傳遞命令列。
+         - `cd`為切換目錄至指定路徑(資料夾)，由`$dir`傳遞目前路徑(即`cd`的目標路徑)。
+         - `&&`為繼`cd`命令之後傳遞一個子命令(即後續欲執行的`matlab`命令列)。
+         - `matlab.exe`為MATLAB主程式可執行檔。
+         - `-batch`引數為在MATLAB啟動時不顯示MATLAB圖標，且讓MATLAB在背景執行。
+         - `$fileNameWithoutExt`:該目標MATLAB底稿。因為MATLAB命令列是呼叫執行底稿時不加入副檔名(Without Extention)，故傳遞至該命令列的是該底稿的主檔名。
 
     接著回到欲偵錯的Matlab底稿，以熱鍵 "`Ctrl`+`Alt`+`N`"偵錯，此時會出現輸出視窗，由Code Runner執行matlab底稿內全部程式。
 
