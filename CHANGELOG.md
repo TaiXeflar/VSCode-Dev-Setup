@@ -78,6 +78,9 @@ We've add these Language Support:
 We upgraded Jupyter Notebook support:
  - Jupyter
 
+We've changed the repo name.
+ - From: `vscode_build_sample_repos`    To: `VSCode-Dev-Setup`
+
 ## Ver2.1
 
 We may update or wait until Ver 3.0 with macOS support files:
