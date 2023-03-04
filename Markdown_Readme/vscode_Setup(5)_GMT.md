@@ -96,3 +96,29 @@ GMT有兩種寫法:
         ```
         
     該命令列執行結束後會輸出可攜式文件檔案(.pdf)，需要以Adobe Acrobat開啟。
+
+## 以VSCode建置GMT作業
+
+我們將以GMT現代語法在VSCode中使用batch腳本執行GMT繪圖，並以PDF預覽繪圖成果。
+
+首先，我們需要VSCode的兩個延伸模組(Extensions):
+ - VSCode Extensions
+     ```
+     Batch Runner (Nils Soderman)
+     PDF Preview (Analytic Signal Limited)
+     ```
+
+以VSCode開啟欲繪製GMT的資料夾:
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex1.png)
+
+接著新增一個Windows批次檔(Batch File)，在該批次檔中存入gmt指令(**請注意這裡使用的是gmt現代語法**)。
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex2.png)
+
+存檔後選擇右上角，選擇`Run Code`。
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex3.png)
+
+底下的輸出會列印程式執行結果。執行成功則會有PDF檔案出現。
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex4.png)
+
+對檔案總管的pdf檔案雙擊，即會在工作區自動出現:
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex5.png)
