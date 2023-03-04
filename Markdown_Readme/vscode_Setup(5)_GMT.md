@@ -111,8 +111,17 @@ GMT有兩種寫法:
 以VSCode開啟欲繪製GMT的資料夾:
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex1.png)
 
-接著新增一個Windows批次檔(Batch File)，在該批次檔中存入gmt指令(**請注意這裡使用的是gmt現代語法**)。
+接著新增一個Windows批次檔(Batch File)，在該批次檔中存入gmt指令(**請注意這裡使用的是gmt現代語法**)。本範例的程式碼如下:
+ - Shell
+     ```
+     gmtset PS_CHAR_ENCODING         = Standard+
+
+     gmt begin out1
+     gmt coast  -R116/134/23/41 -JM6i -B -G#7dc500 -S#5199dd -W0.5p,black -N1	   
+     gmt end 
+     ```
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex2.png)
+
 
 存檔後選擇右上角，選擇`Run Code`。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex3.png)
