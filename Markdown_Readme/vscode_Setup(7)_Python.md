@@ -75,12 +75,19 @@
 底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
  - Shell
     ```
-    pip install `Mod`                                                   # 安裝名為Mod的模組。
-    pip install `Mod1`, `Mod2`, `Mod3`                    # 安裝多個模組。
-    pip install `Mod` --upgrade                                  # 安裝該指定模組的新版。
-    pip install `Mod`==XX.XX.X                                 # 安裝該模組的指定版本。
-    pip uninstall `Mod`                                               # 解除安裝該模組。
+    pip install Mod                                                   # 安裝名為Mod的模組。
+    pip install Mod1, `Mod2`, `Mod3`                    # 安裝多個模組。
+    pip install Mod --upgrade                                  # 安裝該指定模組的新版。
+    pip install Mod==XX.XX.X                                 # 安裝該模組的指定版本。
+    pip uninstall Mod                                               # 解除安裝該模組。
     ```
+
+若你的Python是具備Conda環境的套件管理，則將`pip`換成`conda`:
+ - Shell
+   ```
+   Conda install Mod
+   ```
+
 
 以下是常用於資料科學的模組:
 
