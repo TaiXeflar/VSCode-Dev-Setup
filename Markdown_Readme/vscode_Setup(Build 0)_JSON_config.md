@@ -40,9 +40,9 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 以下是一個JSON檔案範例:
 ```
 {                                       // JSON 註釋就是加上//形成單行註釋
-    "Units":                        // 加上這行註釋就是違反JSON語法了
+    "Units":                            // 加上這行註釋就是違反JSON語法了
     [                                   // 參考"VSCode的個人化設定"以設定將json關聯至jsonc的方法
-        {                              // 這樣才可以光明正大地寫註釋而不會被告知違反語法
+        {                               // 這樣才可以光明正大地寫註釋而不會被告知違反語法
             "name": "user1",
             "id": 1,
             "boss": true
@@ -86,9 +86,14 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
  - `"files.associations"`: 設定檔案關聯性。可覆寫預設關聯設定。以下提供一段範例:
 
       ```
-      "files.associations": {"*.json": "jsonc"}
+      "files.associations": {
+        "*.json": "jsonc",
+        "*.m": "matlab"
+        }
       ```
-      這段程式碼的含意是，允許VSCode將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋。
+      這段程式碼的含意是:
+        1. 允許VSCode將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋。
+        2. 允許VSCode將m檔案
 
  - `"terminal.integrated.profiles.windows"`: 在Windows底下自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
     
