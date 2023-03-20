@@ -238,7 +238,6 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
             "files.associations": {
                 "*.m": "matlab",
                 "*.json": "jsonc",
-                "*.ipynb": "jsonc"
             },
             "workbench.colorTheme": "Visual Studio Dark",
             "terminal.integrated.profiles.windows": {
@@ -278,11 +277,6 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
                     "icon": "console"
                 },
                 "Git Bash": null,
-                "MATLAB Interactive":
-                {
-                    "path": ["py.exe"],
-                    "args": ["${env:pyRoot}\\Scripts\\ml_terminal.py"]
-                }
             },
             "terminal.integrated.profiles.osx": {
 
@@ -536,7 +530,7 @@ C/C++的特性設定由`c_cpp_properties.json`配置完成自定義的程式庫�
   - `compilerPath`: 編譯器的絕對路徑。 
   - `cStandard`: 編譯器的C標準。若是不知道則以`${Default}`替代。該設定值可依據該編譯器的標準提供更準確的Intellisense。
   - `cppStandard`: 編譯器的C++標準。若是不知道則以`${Default}`替代。該設定值可依據該編譯器的標準提供更準確的Intellisense。
-  - `"intelliSenseMode"`: 依照你的編譯器選擇Intellisensea模式。該範例為Windows x64下執行MSVC。
+  - `"intelliSenseMode"`: 依照你的編譯器選擇Intellisense模式。該範例為Windows x64下執行MSVC。
       - 作業系統: 例如`Windows`/`macOS`/`Linux`。
       - 編譯器: 例如`msvc`/`clang`/`gcc`。
       - 處理器架構: 例如 `x86`(32位元x86)/`x64`(64位元x86，AMD64或Intel 64)/`ARM64`(ARM架構64位元處理器)。
