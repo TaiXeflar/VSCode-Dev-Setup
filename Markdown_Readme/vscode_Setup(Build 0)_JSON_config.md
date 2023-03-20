@@ -67,13 +67,36 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 
 常見的設定項:
  - `"editor.mouseWheelZoom"`: 布林值(`true` / `false`)。允許透過`Ctrl+滑鼠滾輪`放大/縮小工作區字體大小。
- - `"editor.fontFamily"`: 工作區的字體家族。此處範例為"Xolonium"字體(ROG官方字體)。
+ - `"editor.fontFamily"`: 工作區的字體家族。
+
+     - JSON
+     ```
+        "editor.fontFamily": "Font1, Font2, 'Font 3', 'Font 4'"
+     ```
+    該鍵值可由逗號傳遞一組以上的字體設定；字體名稱有空格則以單引號括住傳遞。若第一順位的字體找不到實則由第二順位遞補。
+
+    此處範例為"Xolonium"字體(ROG官方字體)。
       ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_Fonts.png)
 
       你可以使用`銀河標準字母`惡整別人的電腦成 **"被附魔台附魔過"** 的樣子:
       ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_Fonts_Enchanted.png)
 
-      請注意這個JSON鍵值不具有Intellisense自動選字，因此需自行手動確認該字體名稱是否輸入正確。
+    請注意這個JSON鍵值不具有Intellisense自動選字，因此需自行手動確認該字體名稱是否輸入正確。
+    以下是特殊字體樣式參考:
+     - Xolonium: ROG官方字體(RTX 30系以前主題)。
+     - ROG Fonts: ROG官方標頭/萬國碼字體。
+     - GeForce: NVIDIA GeForce GTX/RTX字體(RTX 30系以前主題)。
+     - IntelOne Display: Intel新版主題格式(Intel Core 11代以後)。
+     - Klavika: AMD官網標準字體。
+     - Helvetica: Apple官網及Apple產品的標準字體。
+     - Minecraft: Minecraft遊戲內標準字體。
+     - Minecraft Enchantment: Minecraft遊戲內附魔字體。該字體為銀河標準字母。
+     - Aurebesh: 星際大戰(Star Wars)世界觀字體。
+     - Rainbow: 虹彩六號圍攻行動(Rainbow Six Siege)的主題字體。
+     - HYWenHei 85: 原神(Genshin Impact)官方主題字體。
+     - Microsoft JHengHei UI: 微軟正黑體。
+     - Consolas: VSCode內標準字體(第一順位)。
+
  - `"editor.fontWeight"`: 字體粗細程度，允許**一般**及**粗體**字體，不允許**斜體**。
  - `"terminal.integrated.fontFamily"`: VSCode內鍵終端機的字體。請注意**僅能使用等寬字體**。
 
@@ -84,16 +107,16 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
  - `"workbench.startupEditor"`: 控制在啟動時顯示哪個編輯器，若沒有(`"none"`)，則從上個工作階段還原。這意味著VSCode會開啟你上次最後一個工作狀態。
  - `"workbench.colorTheme"`: 主題色彩。
  - `"files.associations"`: 設定檔案關聯性。可覆寫預設關聯設定。以下提供一段範例:
-
-      ```
-      "files.associations": {
-        "*.json": "jsonc",
-        "*.m": "matlab"
-        }
-      ```
-      這段程式碼的含意是:
-        1. 允許VSCode將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋。
-        2. 允許VSCode將m檔案
+     - JSON
+     ```
+         "files.associations": {
+            "*.json": "jsonc",
+            "*.m": "matlab"
+         }
+     ```
+    這段程式碼的含意是:
+    1. 允許VSCode將json檔案關聯至jsonc檔案，從而允許在json檔案內以`//`撰寫註釋。
+    2. 允許VSCode將m檔案關聯至Matlab M-Files。 (原`.m`檔案關聯至Objective-C來源檔案。)
 
  - `"terminal.integrated.profiles.windows"`: 在Windows底下自定義VSCode內終端機的下拉式選單，值為自定義且包含特定子鍵值的JSON物件。
     
@@ -197,64 +220,112 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
  - JSON
  
     ```
-    {
-        "editor.mouseWheelZoom": true,
-        "editor.fontFamily": "Xolonium, Microsoft JHengHei UI, Consolas",
-        "editor.fontWeight": "normal",
-        "terminal.integrated.fontFamily": "Consolas",
-        "terminal.integrated.fontSize": 16,
-        "git.confirmSync": false,
-        "git.autofetch": true,
-        "git.enableSmartCommit": true,
-        "workbench.startupEditor": "none",
-        "security.workspace.trust.untrustedFiles": "open",
-        "explorer.confirmDelete": true,
-        "files.autoSave": "afterDelay",
-        "files.autoSaveDelay": 100,
-        "files.associations": {
-            "*.json": "jsonc"
-        },
-        "workbench.colorTheme": "Visual Studio Dark",
-        "terminal.integrated.profiles.windows": {
-            "PowerShell": {
-                "source": "PowerShell",
-                "icon": "terminal-powershell"
+        {
+            "editor.mouseWheelZoom": true,
+            "editor.fontFamily": " '-Xolonium', 'HYWenHei 85W', Consolas, Microsoft JHengHei UI",
+            "editor.fontWeight": "normal",
+            "editor.fontSize": 18,
+            "terminal.integrated.fontFamily": "Consolas",
+            "terminal.integrated.fontSize": 18,
+            "git.confirmSync": false,
+            "git.autofetch": true,
+            "git.enableSmartCommit": true,
+            "workbench.startupEditor": "none",
+            "security.workspace.trust.untrustedFiles": "open",
+            "explorer.confirmDelete": true,
+            "files.autoSave": "afterDelay",
+            "files.autoSaveDelay": 100,
+            "files.associations": {
+                "*.m": "matlab",
+                "*.json": "jsonc",
+                "*.ipynb": "jsonc"
             },
-            "Command Prompt": {
-                "path": [
-                    "${env:windir}/Sysnative/cmd.exe",
-                    "${env:windir}/System32/cmd.exe"
-                ],
-                "args": ["/E:ON"],
-                "icon": "terminal-cmd"
+            "workbench.colorTheme": "Visual Studio Dark",
+            "terminal.integrated.profiles.windows": {
+                "PowerShell": {
+                    "source": "PowerShell",
+                    "icon": "terminal-powershell"
+                },
+                "PowerShell for VS2022": {
+                    "source": "PowerShell",
+                    "args": ["-NoExit", "-Command", "&{Import-Module 'C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll'; Enter-VsDevShell 8f5c46dc -SkipAutomaticLocation -DevCmdArguments '-arch=x64 -host_arch=x64'}"]
+                },
+                "PowerShell for intel oneAPI": {
+                    "path": [
+                        "${env:windir}/Sysnative/cmd.exe",
+                        "${env:windir}/System32/cmd.exe"
+                    ],
+                    "args": ["/E:ON", "/K", "setvars.bat", "intel64 VS2022", "&&", "powershell.exe", "-nologo"]
+                },
+                "Command Prompt": {
+                    "path": [
+                        "${env:windir}/Sysnative/cmd.exe",
+                        "${env:windir}/System32/cmd.exe"
+                    ],
+                    "args": ["/E:ON"],
+                    "icon": "terminal-cmd"
+                },
+                "Cygwin Bash": 
+                {            
+                    "path": ["C:/Program Files/Cygwin/bin/bash.exe"],
+                    "args": ["--login", "-i"],
+                    "icon": "console"
+                },
+                "Cygwin Zsh": 
+                {            
+                    "path": ["C:/Program Files/Cygwin/bin/zsh.exe"],
+                    "args": ["--login", "-i"],
+                    "icon": "console"
+                },
+                "Git Bash": null,
+                "MATLAB Interactive":
+                {
+                    "path": ["py.exe"],
+                    "args": ["${env:pyRoot}\\Scripts\\ml_terminal.py"]
+                }
             },
-            "Git Bash": {
-                "source": "Git Bash"
-            },
-            "Cygwin Bash": 
-            {            
-                "path": ["C:/cygwin64//bin/bash.exe"],
-                "args": ["--login", "-i"],
-                "icon": "console"
-            }
-        },
-        "terminal.integrated.profiles.osx": {
+            "terminal.integrated.profiles.osx": {
 
-            "bash": {
-                "path": "bash",
-                "args": ["-l"],
-                "icon": "terminal-bash"
+                "bash": {
+                    "path": "bash",
+                    "args": ["-l"],
+                    "icon": "terminal-bash"
+                },
+                "zsh": {
+                    "path": "zsh",
+                    "args": ["-l"]
+                },        
+                "pwsh": {
+                    "path": "pwsh", 
+                    "icon": "terminal-powershell"
+                },
             },
-            "zsh": {
-                "path": "zsh",
-                "args": ["-l"]
-            },        
-            "pwsh": {
-                "path": "pwsh",
-                "icon": "terminal-powershell"
+            "code-runner.executorMap": {
+                "matlab": "cd $dir && matlab.exe -batch $fileNameWithoutExt"
             },
-        }   
-    }
+            "matlab.matlabpath": "C:/Program Files/MATLAB/R2022a/bin/matlab.exe",
+            "matlab.mlintpath": "C:/Program Files/MATLAB/R2022a/bin/win64/mlint.exe",
+            "matlab.linterEncoding": "gb2312",
+            "remote.SSH.remotePlatform": {
+                "XXX.XXX.XXX.XXX": "linux"
+            },
+            "editor.accessibilitySupport": "off",
+            "terminal.integrated.commandsToSkipShell": [
+                "language-julia.interrupt"
+            ],
+            "julia.symbolCacheDownload": true,
+            "julia.cellDelimiters": [
+
+                "^##(?!#)",
+                "^#(\\s?)%%",
+                "^#-"
+            ],
+            "julia.enableTelemetry": true,
+            "python.languageServer": "Jedi",
+            "python.experiments.enabled": false,
+            "workbench.editor.enablePreview": false,
+            "editor.minimap.enabled": false,
+        }
     ```
 
 ## 以JSON自定義VSCode的建置工作(Build Task)
