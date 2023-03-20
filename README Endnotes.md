@@ -20,6 +20,7 @@
 
  - Development Application:
     - Windows Terminal 1.15.2712.0
+    - Windows PowerShell 7 (7.3.3)
     - Git 2.36.1
     - Microsoft Visual Studio Code 1.74
     - Microsoft Visual Studio 2022 Build Tools
