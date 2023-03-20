@@ -87,16 +87,16 @@ C:\Program Files (x86)\Gsudo 的目錄
 這是Gsudo的命令列說明:
 - Shell
    ```
-   gsudo                                # 立即提升至系統管理員權限
-   gsudo [選項]                         # 立即提升至指定權限
-   gsudo [選項] {命令} <命令參數>       # 以指定權限執行該命令
-   gsudo status                         # 回報你的權限狀態
-   gsudo -help                          # 顯示gsudo命令的說明
+   gsudo                                         # 立即提升至系統管理員權限
+   gsudo [option]                                # 立即提升至指定權限
+   gsudo [option] {command} <command_flags>      # 以指定權限執行該命令
+   gsudo status                                  # 回報你的權限狀態
+   gsudo -help                                   # 顯示gsudo命令的說明
    ```
 
 Gsudo的命令列參數提升至不同權限 (是的，你沒看錯，這玩意能提升至系統權限):
 
-| 原權限 | 命令 | -參數 {參數} | 新權限 | whoami 命令 |
+| 原權限 | 命令 | [option] | 新權限 | whoami 命令 |
 |  :----:  |  :----:  |  :----:  |  :----:  |  :----:  |
 | user1 | sudo | -u user2 | user2 | PC\user2 |
 | user1 | sudo | | Administrator | PC\user1 |
