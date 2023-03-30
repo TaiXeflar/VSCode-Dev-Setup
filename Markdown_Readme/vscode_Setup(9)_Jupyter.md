@@ -81,6 +81,8 @@ Jupyter可執行的直譯式偵錯核心如下:
 選擇MATLAB(Connection)的Jupyter Kernel。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_matlab.png)
 
+請注意，這個功能在1.76.版本中失效，可能是基於臭蟲原因導致無法偵測到MATLAB核心，建議安裝舊版VSCode(1.74.X)版本。
+
 ### .NET REPL
 對於.NET環境支援的語言有直譯器支援(需要安裝VS2022的.NET桌面開發):
  - VSCode Extentions
