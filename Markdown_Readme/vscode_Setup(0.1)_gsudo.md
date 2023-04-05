@@ -25,7 +25,7 @@ Gsudo工具固然好用，但請特別注意，握有越高的權限其風險越
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst1.png)
 
-接著確認安裝檔位置，預設會是`C:\Program Files (x86)\gsudo\`:
+確認安裝檔位置，固定會是`C:\Program Files (x86)\gsudo\`:
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst2.png)
 
@@ -71,7 +71,7 @@ C:\Program Files (x86)\Gsudo 的目錄
 ```
 
 由於Gsudo會加入至PATH變數，因此提升至系統管理員權限只需要這一段命令:
- - Shell
+ - PowerShell
      ```
      gsudo
      ``` 
@@ -85,7 +85,7 @@ C:\Program Files (x86)\Gsudo 的目錄
      ```
 
 這是Gsudo的命令列說明:
-- Shell
+- PowerShell
    ```
    gsudo                                         # 立即提升至系統管理員權限
    gsudo [option]                                # 立即提升至指定權限
@@ -112,14 +112,14 @@ Gsudo的立即提升權限可以直接提供獲取權限的命令執行。例如
 
  - 以系統管理員權限，將pip通道的Python模組安裝在`C:\Program Files\Python39\scripts\`底下:
   
-     - Shell
+     - PowerShell
        ```
        sudo pip install __pythonModule__
        ```
 
  - 以系統管理員權限，在`C:\Windows\System32\`路徑下開啟VSCode編輯器修改系統文件:
   
-     - Shell
+     - PowerShell
        ```
        sudo code "C:\Windows\System32\"
        ```
