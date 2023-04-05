@@ -42,7 +42,8 @@
         ```
     -   GNU C/C++ : `gcc.exe`, `g++.exe`
         ```
-            "C:/Program Files (x86)/Dev-Cpp/MinGW64/bin"
+            "C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/"
+            "C:/cygwin64/bin/"
         ```
 2. Fortran
 
