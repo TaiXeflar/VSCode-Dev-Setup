@@ -23,9 +23,24 @@ MATLAB在線安裝需要你登入已註冊的Mathworks帳號，並同意你的�
 選擇你要安裝的MATLAB元件，接著執行安裝即可。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_7.png)
 
-## VSCode調用Matlab互動式命令列(MATLAB Interactive / MATLAB Command Window)
+## VSCode調用Matlab互動式命令列(MATLAB Command Window) [OS= macOS]
+在macOS內，可以用終端機執行MATLAB引擎:
+ - Z Shell(ZSH)
+ ```
+ matlab -nodisplay
+ ```
 
-本章節將說明如何在VSCode中調用MATLAB互動式命令列。
+我們可以根據這個特性，在使用者設定的終端機選項(鍵值`"terminal.integrated.profiles.osx"`)內加入這組鍵值:
+ - JSON
+ ```
+ "MATLAB Interactive":{
+    "path": "matlab",
+    "args": ["-nodisplay"]
+ }
+ ```
+
+## VSCode調用Matlab互動式命令列(MATLAB Command Window) [OS= Windows]
+由於MATLAB不支援在Windows上執行終端模式(`-nodisplay`)，因此我們以`Matlab Interactive Terminal (Aurélien Pommel)`實現。
 
 欲實現MATLAB互動式命令列的先行條件:
  - Visual C++ Toolkit (Visual Studio)
@@ -59,6 +74,7 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
 
 接著回到VSCode中開啟終端機，應該會出現MATLAB選項。這是成功呼叫命令列的樣子:
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_extention_terminal.png)
+
 
 ## VSCode建置Matlab手稿偵錯
 
