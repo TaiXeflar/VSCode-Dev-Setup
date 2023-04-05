@@ -135,14 +135,24 @@ We played these BGM while we contributors build this repository:
      - Moon Halo - ft. 茶理理, TetraCalyx, Hanser, Honkai Impact 3rd "Everlasting Flames" - "Herrscher of Flamescion" Animation OST.
      - Befall - 尚雯婕, 蔡進翰, 尹純青, 鄭宇界, Honkai Impact 3rd "Herrscher of Void" Animation OST.
      - Rubia - 蔡進翰, TetraCalyx, 宮奇, 楊啟翔, 徐威, Honkai Impact 3rd "Shattered Samsara" Animation OST.
-     - 崩壊世界の歌姫 - 小林未郁 · Zoe · Sya · YuTA P, Honkai Impact 3rd "Lament of the fallen" - "Herrscher of Thunder" Animation OST.
      - CyberAngel - HANSER, 蔡進翰, 尹純青, 宮奇, 李昀昇, Honkai Impact 3rd "ZERO Exception" - "Herrscher of Reason" Animation OST.
      - TruE - 黃齡 · 文驰 · TetraCalyx, Honkai Impact 3rd "Because of You" - "Elysia" Animation OST.
      - ReOracle - Xioyun Huang, Honkai Impact 3rd, A Post-Honkai Odyssey 2 OST.
-     - Nihilism - HOYO-MiX, A Post-Honkai Odyssey OST.
-     - Arnb Car - HOYO-MiX, A Post-Honkai Odyssey OST.
 
-- Battle Girl High School
+ - Genshin Impact
+     - 解決之道 - 陳致逸, HoYo-Mix, Genshin Impact "City of Wind and Idylls" Album OST.
+     - 激流逐浪 - 陳致逸, HoYo-Mix, Genshin Impact "Jade Moon Upon a Sea of Clouds" OST.
+     - 急如猛火 - 陳致逸, HoYo-Mix, Genshin Impact "Jade Moon Upon a Sea of Clouds" OST.
+     - 鮮衣遊俠 - 陳致逸, HoYo-Mix, Genshin Impact "Jade Moon Upon a Sea of Clouds" OST.
+     - 勢若風雷 - 陳致逸, HoYo-Mix, Genshin Impact "Millelith's Watch" OST.
+     - 難逃之陣 - 陳致逸, HoYo-Mix, Genshin Impact "Realm of Tranquil Enternity" OST.
+     - 空行不羈 - 陳致逸, HoYo-Mix, Genshin Impact "Realm of Tranquil Enternity" OST.
+     - 堙谷的饒歌 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
+     - 洄映的漩流 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
+     - 餘燼的頑抗 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
+     - 沉重的惡意 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
+
+ - Battle Girl High School
      - Believe - 星月美紀 CV: 洲崎綾, Battle Girl High School OST.
      - Decision - 煌上花音&國枝詩穗 CV: 本渡楓・下地紫野, Battle Girl High School OST.
      - Desire Link - 煌上花音&國枝詩穗 CV: 本渡楓・下地紫野, Battle Girl High School OST.
