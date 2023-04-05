@@ -18,7 +18,7 @@ Jupyter會一次性安裝多個Python模組，以提供基於Web的支援。
    jupyter notebook
    ```
 
-Jupyter會以終端機掛載核心執行。終端內會出現執行於本地端(或127.0.0.1:8080)的一串Token，由HTML表示。點擊連結後會開啟瀏覽器，重新導向至Jupyter的本地端網頁。
+Jupyter會以終端機掛載核心執行。終端內會出現執行於本地端(或127.0.0.1:8888)的一串Token，由HTML表示。點擊連結後會開啟瀏覽器，重新導向至Jupyter的本地端網頁。
 
 開啟Jupyter時，Jupyter會根據你在的終端位置為根目錄執行筆記本。
 
