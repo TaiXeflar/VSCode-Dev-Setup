@@ -90,6 +90,7 @@ Jupyter可執行的直譯式偵錯核心如下:
    .NET Extention Pack
    .NET Install Tool for Extention Authors
    .NET Education Bundle SDK Install Tool
+   Polyglot Notebooks
    ```
 選擇具備REPL直譯式核心的.NET解譯器。
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_.net.png)
