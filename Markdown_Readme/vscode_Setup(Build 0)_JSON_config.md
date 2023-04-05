@@ -177,26 +177,21 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
     以下是macOS環境下的VSCode整合式終端機的預設值:
     ```
     "terminal.integrated.profiles.osx":{
+        "zsh": {
+            "path": "zsh",
+            "args": ["-l"]
+        },
         "bash": {
             "path": "bash",
             "args": ["-l"],
             "icon": "terminal-bash"
         },
-        "zsh": {
-            "path": "zsh",
+        "fish":{
+            "path": "fish"
             "args": ["-l"]
         },
-        "fish": {
-            "path": "fish",
-            "args": ["-l"]
-        },
-        "tmux": {
+        "tmux":{
             "path": "tmux",
-            "icon": "terminal-tmux"
-        },
-        "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
         }
     }
     ```
@@ -279,7 +274,6 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
                 "Git Bash": null,
             },
             "terminal.integrated.profiles.osx": {
-
                 "bash": {
                     "path": "bash",
                     "args": ["-l"],
@@ -293,6 +287,10 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
                     "path": "pwsh", 
                     "icon": "terminal-powershell"
                 },
+                "MATLAB Interactive":{
+                    "path": "matlab"
+                    "args": ["-nodisplay"]
+                }
             },
             "code-runner.executorMap": {
                 "matlab": "cd $dir && matlab.exe -batch $fileNameWithoutExt"
