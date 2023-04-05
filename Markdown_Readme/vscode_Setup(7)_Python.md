@@ -61,31 +61,31 @@
 依照你的Python安裝路徑不同，則需要不同等級權限執行pip安裝指令。
 
 若你的Python安裝在`C:/Users/USER/AppData/Local/Python/Python39/`，則可以直接安裝。
- - Shell
+ - PowerShell
     ```
-    pip install `Mod`
+    pip install <Mod>
     ```
     
 若你的Python安裝在`C:/Program Files/Python39`，則需要以系統管理員`Administrator`身份安裝。(可使用gsudo套件提升權限)
- - Shell
+ - PowerShell
     ```
-    sudo pip install `Mod`
+    sudo pip install <Mod>
     ```
 
 底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
- - Shell
+ - PowerShell
     ```
-    pip install Mod                                                   # 安裝名為Mod的模組。
-    pip install Mod1, `Mod2`, `Mod3`                    # 安裝多個模組。
-    pip install Mod --upgrade                                  # 安裝該指定模組的新版。
-    pip install Mod==XX.XX.X                                 # 安裝該模組的指定版本。
-    pip uninstall Mod                                               # 解除安裝該模組。
+    pip install <Mod>                                                   # 安裝名為Mod的模組。
+    pip install <Mod>, <<Mod>2>, <<Mod>3>                  # 安裝多個模組。
+    pip install <Mod> --upgrade                                  # 安裝該指定模組的新版。
+    pip install <Mod>==XX.XX.X                                 # 安裝該模組的指定版本。
+    pip uninstall <Mod>                                               # 解除安裝該模組。
     ```
 
 若你的Python是具備Conda環境的套件管理，則將`pip`換成`conda`:
- - Shell
+ - PowerShell
    ```
-   Conda install Mod
+   Conda install <Mod>
    ```
 
 
