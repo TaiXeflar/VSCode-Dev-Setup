@@ -19,9 +19,7 @@
 通常而言，SH/BASH等類UNIX殼層底稿(.sh檔案)或單一命令均相容于類UNIX殼層並可執行。
 
 ## 啟動殼層
- - Windows 10作業系統底下: 啟動殼層由Windows傳統主控台實現。
-
- - Windows 11作業系統底下，啟動殼層由Windows Terminal實現(`wt.exe`)。Windows Terminal會自動整合PowerShell，CMD等Windows殼層，用於替代傳統的Windows傳統主控台程式。若是有指定呼叫的命令終端/殼層，可以手動添加至Windows Terminal及VSCode個人設定檔`settings.json`中，實現個人化的設定。
+ - VSCode內預設由PowerShell為主要殼層，CMD為第二預設殼層，其他設定檔依照其他安裝元件的整合或透過修改使用者自定義檔`settings.json`加入其他殼層。
 
 ## 命令列
 
@@ -37,7 +35,7 @@
 cd: 切換目錄(Change Directory)指令。以下是範例命令列。
  - PowerShell 
     ```
-    cd/.vscode                                   #在目前目錄下進入.vscode資料夾
+    cd /.vscode                                  #在目前目錄下進入.vscode資料夾
     cd /FOLDER/SUBFOLDER                         #在目前目錄下進入FOLDER資料夾後，再進入SUBFOLDER資料夾
     cd ..                                        #上一頁
     cd ../..                                     #上一頁後再上一頁       
