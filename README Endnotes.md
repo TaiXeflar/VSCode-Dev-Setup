@@ -146,11 +146,25 @@ We played these BGM while we contributors build this repository:
      - 鮮衣遊俠 - 陳致逸, HoYo-Mix, Genshin Impact "Jade Moon Upon a Sea of Clouds" OST.
      - 勢若風雷 - 陳致逸, HoYo-Mix, Genshin Impact "Millelith's Watch" OST.
      - 難逃之陣 - 陳致逸, HoYo-Mix, Genshin Impact "Realm of Tranquil Enternity" OST.
+     - 斬霧破竹 - 陳致逸, HoYo-Mix, Genshin Impact "Realm of Tranquil Enternity" OST.
      - 空行不羈 - 陳致逸, HoYo-Mix, Genshin Impact "Realm of Tranquil Enternity" OST.
+     - 寒光裂濤 - 陳致逸, HoYo-Mix, Genshin Impact "Islands of the Lost and Forgotten" OST.
+     - 鯨波鼉浪 - 陳致逸, HoYo-Mix, Genshin Impact "Islands of the Lost and Forgotten" OST.
      - 堙谷的饒歌 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
      - 洄映的漩流 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
      - 餘燼的頑抗 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
      - 沉重的惡意 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
+     - 星滅光離 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
+     - 六輪一露狂詩曲 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
+     - 三千娑世御詠歌 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
+     - 三千娑世御詠歌 - [Live Vesion] Music Video
+          - Composer: 陳致逸 @ HoYo-Mix
+          - Opera Singer: Paolo Andrea Di Pietro
+          - Choir: Time-Office
+          - Orchestra: Tokyo Philharmonic Orchestra
+          - ShakuHachi (尺八): 川村葵山
+     - 塵世閒遊 - 陳致逸, HoYo-Mix, Genshin Impact "The Stellar Moments" [Zhongli] OST.
+
 
  - Battle Girl High School
      - Believe - 星月美紀 CV: 洲崎綾, Battle Girl High School OST.
@@ -200,7 +214,9 @@ We played these BGM while we contributors build this repository:
 
  - Original/Remix and other Music
     - ツバメ - YOASOBI, Ayase & Ikura(vocal).
-    - Remember the Name - Fort Miner. 
+    - 三原色 - YOASOBI, Ayase & Ikura(vocal).
+    - Remember the Name [Explicit Ver] - Fort Miner. 
+    - The Next Episode [Explicit Ver] - Dr.Dre ft.Snoop Dogg.
     - Mortals - Warrios ft.Laura Brehm, NCS Release.
     - Prelude - TheFatRat & JJD, VIP Remix.
     - Monody - TheFatRat & Alexa.
@@ -231,15 +247,12 @@ We played these BGM while we contributors build this repository:
 ## Contributors.Workspace.Share - Game
 We joined these Games in progress when we build this repository:
    - Tom Clancy's Rainbow Six Siege (2015) - Ubisoft Montreal, Ubisoft Entertainment.
-     - Rainbow Six Siege [ Y7S4.2 R6S/R6S_Vulkan ] (PC - Uplay/Ubisoft Connect)
+     - Rainbow Six Siege [ Y8S1 R6S/R6S_Vulkan ] (PC - Uplay/Ubisoft Connect)
    - EA Star Wars Battlefront 2 (2017) - Electronic Arts.
    - Honkai Impact 3 (2016) - miHoYo Limited.
-     - Honkai Impact 3 [Ver. 6.3] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
+     - Honkai Impact 3 [Ver. 6.5] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
    - Genshin Impact (2020) - miHoYo Limited.
-     -  Genshin Impact [Ver. 3.3] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
-   - Umamusume: Pretty Derby (2021) - Cygames.
-     - Umamusume: Pretty Derby [Ver. 1.26.5] (Android - JP_Cygames)
-   - Princess Connect Re:Dive (2018) - Cygames.
-     - Priconnect Re:Dive (Android - TW_So-Net Entertainment/Cygames)
+     -  Genshin Impact [Ver. 3.6] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
+   - Honkai: Star Rail [Ver. 1.0.5] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
    - Minecraft - Mojang Studios.
      - Minecraft (PC - Java 1.19.3, Bedrock 1.19)
