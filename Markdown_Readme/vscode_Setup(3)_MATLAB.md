@@ -133,8 +133,8 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
                     "label": "matlab.exe",
                     "command": "matlab.exe",
                     "args": [ "-batch", "${fileBasenameNoExtension};exit" ],
-                        "problemMatcher": ["$msCompile"],
-                        "group": { "kind": "build", "isDefault": true }
+                    "problemMatcher": ["$msCompile"],
+                    "group": { "kind": "build", "isDefault": true }
                 }
             ]
         }
