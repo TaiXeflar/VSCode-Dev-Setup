@@ -150,10 +150,10 @@ We played these BGM while we contributors build this repository:
      - 空行不羈 - 陳致逸, HoYo-Mix, Genshin Impact "Realm of Tranquil Enternity" OST.
      - 寒光裂濤 - 陳致逸, HoYo-Mix, Genshin Impact "Islands of the Lost and Forgotten" OST.
      - 鯨波鼉浪 - 陳致逸, HoYo-Mix, Genshin Impact "Islands of the Lost and Forgotten" OST.
-     - 堙谷的饒歌 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
-     - 洄映的漩流 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
      - 餘燼的頑抗 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
      - 沉重的惡意 - 陳致逸, HoYo-Mix, Genshin Impact "Forest of Jnana and Vidya" OST.
+     - 獅尾之舞 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
+     - 赭泉酩旋 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
      - 星滅光離 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
      - 六輪一露狂詩曲 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
      - 三千娑世御詠歌 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
@@ -253,6 +253,3 @@ We joined these Games in progress when we build this repository:
      - Honkai Impact 3 [Ver. 6.5] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
    - Genshin Impact (2020) - miHoYo Limited.
      -  Genshin Impact [Ver. 3.6] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
-   - Honkai: Star Rail [Ver. 1.0.5] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
-   - Minecraft - Mojang Studios.
-     - Minecraft (PC - Java 1.19.3, Bedrock 1.19)
