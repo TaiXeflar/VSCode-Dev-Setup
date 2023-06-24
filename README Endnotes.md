@@ -155,6 +155,8 @@ We played these BGM while we contributors build this repository:
      - 獅尾之舞 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
      - 赭泉酩旋 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
      - 星滅光離 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
+     - 終天的閉幕曲 - 陳致逸, HoYo-Mix, Genshin Impact "La Vent et les Enfants des etoiles" OST.
+     - 岩壑之崩 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
      - 六輪一露狂詩曲 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
      - 三千娑世御詠歌 - 陳致逸, HoYo-Mix, Genshin Impact "The Unfathomable Sand Dunes" OST.
      - 三千娑世御詠歌 - [Live Vesion] Music Video
