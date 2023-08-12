@@ -22,7 +22,7 @@ Jupyter會以終端機掛載核心執行。終端內會出現執行於本地端(
 
 開啟Jupyter時，Jupyter會根據你在的終端位置為根目錄執行筆記本。
 
-## 以VSCode執行Jupyter筆記本
+## 以VSCode開啟Jupyter筆記本
 
 在VSCode中，Microsoft也有基於VSCode提供Jupyter筆記本的延伸模組支援，優點是能快速建立Code/Markdown及無須開啟終端機掛載ipykernel核心、以及在未存檔筆記本的情況下執行筆記本。
 
@@ -54,21 +54,32 @@ Jupyter可執行的直譯式偵錯核心如下:
 
  - 其他直譯式語言的互動式核心
 
-### Python
-對於Python程式語言，可偵測原Python版本或具備Conda環境的Python發行版本。
+### Jupyter筆記本執行Python
+對於Python程式語言，可執行的Python直譯器包含本地端安裝的Python直譯器，虛擬環境的Python直譯器(venv Python)，以及Conda環境基底的Python。
 
-此處範例為:
-  - Global Env: Python Software Foundation Python 3.9.7
-  - Conda Env: Intel Distribution of Python 3.9.15。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_python.png)
+選擇本地端的原生安裝Python或原生安裝Conda Python:
 
-### Julia
-對於Julia程式語言，同樣可以調用Julia核心並應用在VSCode上。該目標透過VSCode的延伸模組解決。
- - VSCode Extentions
-   ```
-   Julia (julialang)
-   ```
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_julia.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter1.png)
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter2.png)
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter3.png)
+
+根據該路徑建立自定義venv Python:
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter5.png)
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter6.png)
+
+根據該路徑建立自定義Conda Python:
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter7.png)
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter8.png)
 
 ### MATLAB
 對於MATLAB而言，MATLAB已有對Jupyter的內嵌式模組支援。MATLAB官方文件說明，該MATLAB核心需在Jupyter Web版開啟調用，但該功能同樣能在VSCode上執行。
@@ -79,21 +90,43 @@ Jupyter可執行的直譯式偵錯核心如下:
    pip install matlab-kernel, jupyter-matlab-proxy
    ```
 選擇MATLAB(Connection)的Jupyter Kernel。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_matlab.png)
 
-請注意，這個功能在1.76.版本中失效，可能是基於臭蟲原因導致無法偵測到MATLAB核心，建議安裝舊版VSCode(1.74.X)版本。
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter9.png)
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter10.png)
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter11.png)
+
+### Jupyter筆記本執行Julia
+對於Julia程式語言，同樣可以調用Julia核心並應用在VSCode上。該目標透過VSCode的延伸模組解決。
+ - VSCode Extentions
+   ```
+   Julia (julialang)
+   ```
+選擇其他核心。Julia核心會獨立於Python選項。
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter12.png)
+
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter13.png)
 
 ### .NET REPL
 對於.NET環境支援的語言有直譯器支援(需要安裝VS2022的.NET桌面開發):
  - VSCode Extentions
    ```
    .NET Extention Pack
-   .NET Install Tool for Extention Authors
-   .NET Education Bundle SDK Install Tool
    Polyglot Notebooks
    ```
+
+ - Visual Studio Installer:
+  ```
+   .NET 桌面開發        #註記: 自動安裝於獨立於.NET開發套件的Roslyn編譯器組件 
+  ```
 選擇具備REPL直譯式核心的.NET解譯器。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter_.net.png)
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter14.png)
+
+選擇.NET框架的語言。 請注意，.NET框架程式語言中，Visual Basic並沒有REPL的支援。
+![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter15.png)
+
 
 ## Jupyter Notebook 注意事項
  - 每一個可執行區塊或是註記(Markdown)的儲存格被稱為cell。執行cell的熱鍵是`Shift + Enter`。
@@ -102,5 +135,5 @@ Jupyter可執行的直譯式偵錯核心如下:
  - 使用VSCode開啟的Jupyter不需要以終端機掛載ipykernel就能正常執行筆記本的Python互動式偵錯。
  - ipynb是Jupyter筆記本的副檔名，內容為json格式。
 
-  - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制在本機執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。
+ - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制在本機執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。
  - 請注意，在VSCode內以SSH連線執行遠端Google Colabatory的Python偵錯有可能會被視為違反Google Colabatory使用條款。
