@@ -79,9 +79,9 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
 ## VSCode建置Matlab手稿偵錯
 
 偵錯方式有兩種:
- - 第一種，需要額外的2個延伸模組:
+ - 第一種: 以延伸模組(Extensions)執行偵錯。
      - Code Runner (Jun Han)
-     - Matlab (Xavier Hahn)
+     - Matlab (Mathworks)
 
     以熱鍵 "`Ctrl`+`Shift`+`P`" 啟動命令選擇區，找到 `喜好設定: 開啟使用者設定(JSON)` 並按 `Enter` 確認進入`settings.json`。
 
@@ -91,16 +91,12 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
             "code-runner.executorMap": {
                 "matlab": "cd $dir && matlab.exe -batch $fileNameWithoutExt"
             },
-            "matlab.matlabpath": "C:/Program Files/MATLAB/R2022a/bin/matlab.exe",
-            "matlab.mlintpath": "C:/Program Files/MATLAB/R2022a/bin/win64/mlint.exe",
-            "matlab.linterEncoding": "gb2312"
+            "MATLAB.installPath": "C:/Program Files/MATLAB/R2022b"
          ```
 
     在加入的JSON鍵值當中:
     
-     - `matlab.matlabpath`: MATLAB延伸模組所指定的`matlab.exe`的路徑。
-     - `matlab.mlintpath`: MATLAB延伸模組所指定的`mlint.exe`的路徑。
-     - `matlab.linterEncoding`: MATLAB延伸模組所指定該專案的編碼形式。若為萬國碼則選`utf8`。若為中文可選`gb2312`或`big5`等。
+     - `MATLAB.installPath`: MATLAB延伸模組所指定MATLAB的安裝根路徑。
 
      - `code-runner.executorMap`: Code Runner延伸模組所指定程式偵錯指令的廣域設定。該JSON鍵值可指定任意受支援的程式語言。
          - `"matlab"`為MATLAB程式語言的偵錯設定內容，由字串值傳遞命令列。
@@ -112,7 +108,7 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
 
     接著回到欲偵錯的Matlab底稿，以熱鍵 "`Ctrl`+`Alt`+`N`"偵錯，此時會出現輸出視窗，由Code Runner執行matlab底稿內全部程式。
 
- - 第二種，需要以建置工作(Build Tasks)的方式實現執行MATLAB底稿:
+ - 第二種: 以建置工作(Build Tasks)的方式執行MATLAB底稿。
     
     在該底稿同路徑下建立`.vscode`資料夾後，在內部建立一個`tasks.json`檔案。
 
