@@ -36,19 +36,9 @@ Jupyter會以終端機掛載核心執行。終端內會出現執行於本地端(
 
 `Ctrl + Shift + P`組合鍵開啟設定搜尋，鍵入Jupyter，找到`Create: New Jupyter Notebook`選項並點選，建立一個新的筆記本。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter1.png)
+  ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter1.png)
 
-開啟新的筆記本後，會自動轉化成模擬Web的筆記本格式，並預設開啟第一個執行格(cell)為Python程式碼。
-
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter2.png)
-
-你可以選擇不同的核心。VSCode會依據電腦上實際存在的Python核心選擇哪一種Python環境。可以看到有出現多個不同且包含Conda環境的核心。
-
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter3.png)
-
-在鍵入程式碼的時候，會依照Intellisense而給予智慧選字。出現下拉式選單時，使用方向鍵`←`, `→`, `↑`, `↓`進行選擇，以`Tab`鍵選字。
-
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
+開啟新的筆記本後，會自動轉化成模擬Web的筆記本格式，並預設開啟第一個執行格(cell)為Python程式碼。在鍵入程式碼的時候，會依照IntelliSense而給予智慧選字。出現下拉式選單時，使用方向鍵`←`, `→`, `↑`, `↓`進行選擇，以`Tab`鍵選字。
  
 Jupyter可執行的直譯式偵錯核心如下:
  - Python
@@ -62,8 +52,6 @@ Jupyter可執行的直譯式偵錯核心如下:
 對於Python程式語言，可執行的Python直譯器包含本地端安裝的Python直譯器，虛擬環境的Python直譯器(venv Python)，以及Conda環境基底的Python。
 
 選擇本地端的原生安裝Python或原生安裝Conda Python:
-
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter1.png)
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter2.png)
 
