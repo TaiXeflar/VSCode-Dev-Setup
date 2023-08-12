@@ -41,12 +41,14 @@ Jupyter會以終端機掛載核心執行。終端內會出現執行於本地端(
 開啟新的筆記本後，會自動轉化成模擬Web的筆記本格式，並預設開啟第一個執行格(cell)為Python程式碼。在鍵入程式碼的時候，會依照IntelliSense而給予智慧選字。出現下拉式選單時，使用方向鍵`←`, `→`, `↑`, `↓`進行選擇，以`Tab`鍵選字。
  
 Jupyter可執行的直譯式偵錯核心如下:
- - Python
- - Julia
- - .NET 互動式
- - MATLAB (Python基底)
+  ```
+  - Python
+  - Julia
+  - .NET 互動式
+  - MATLAB (Python基底)
 
- - 其他直譯式語言的互動式核心
+  - 其他直譯式語言的互動式核心
+  ```
 
 ### Jupyter筆記本執行Python
 對於Python程式語言，可執行的Python直譯器包含本地端安裝的Python直譯器，虛擬環境的Python直譯器(venv Python)，以及Conda環境基底的Python。
