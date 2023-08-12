@@ -35,15 +35,19 @@ Jupyter會以終端機掛載核心執行。終端內會出現執行於本地端(
    ```
 
 `Ctrl + Shift + P`組合鍵開啟設定搜尋，鍵入Jupyter，找到`Create: New Jupyter Notebook`選項並點選，建立一個新的筆記本。
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter1.png)
 
 開啟新的筆記本後，會自動轉化成模擬Web的筆記本格式，並預設開啟第一個執行格(cell)為Python程式碼。
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter2.png)
 
 你可以選擇不同的核心。VSCode會依據電腦上實際存在的Python核心選擇哪一種Python環境。可以看到有出現多個不同且包含Conda環境的核心。
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter3.png)
 
 在鍵入程式碼的時候，會依照Intellisense而給予智慧選字。出現下拉式選單時，使用方向鍵`←`, `→`, `↑`, `↓`進行選擇，以`Tab`鍵選字。
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
  
 Jupyter可執行的直譯式偵錯核心如下:
@@ -122,9 +126,11 @@ Jupyter可執行的直譯式偵錯核心如下:
    .NET 桌面開發        #註記: 自動安裝於獨立於.NET開發套件的Roslyn編譯器組件 
   ```
 選擇具備REPL直譯式核心的.NET解譯器。
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter14.png)
 
 選擇.NET框架的語言。 請注意，.NET框架程式語言中，Visual Basic並沒有REPL的支援。
+
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter15.png)
 
 
