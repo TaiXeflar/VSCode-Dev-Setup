@@ -109,7 +109,7 @@ Jupyter可執行的直譯式偵錯核心如下:
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter13.png)
 
-### .NET REPL
+### Jupyter筆記本執行.NET REPL
 對於.NET環境支援的語言有直譯器支援(需要安裝VS2022的.NET桌面開發):
  - VSCode Extentions
    ```
