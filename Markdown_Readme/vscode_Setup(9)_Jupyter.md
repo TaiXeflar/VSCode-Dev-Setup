@@ -98,11 +98,11 @@ Jupyter可執行的直譯式偵錯核心如下:
    ```
    Julia (julialang)
    ```
-選擇其他核心。Julia核心會獨立於Python選項。
+   選擇其他核心。Julia核心會獨立於Python選項。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter12.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter12.png)
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter13.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter13.png)
 
 ### Jupyter筆記本執行.NET REPL
 對於.NET環境支援的語言有直譯器支援(需要安裝VS2022的.NET桌面開發):
@@ -116,13 +116,13 @@ Jupyter可執行的直譯式偵錯核心如下:
    ```
     .NET 桌面開發        #註記: 自動安裝獨立於.NET開發套件的Roslyn編譯器組件 
    ```
-選擇具備REPL直譯式核心的.NET解譯器。
+  選擇具備REPL直譯式核心的.NET解譯器。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter14.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter14.png)
 
-選擇.NET框架的語言。 請注意，.NET框架程式語言中，Visual Basic並沒有REPL的支援。
+  選擇.NET框架的語言。 請注意，.NET框架程式語言中，Visual Basic並沒有REPL的支援。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter15.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter15.png)
 
 
 ## Jupyter Notebook 注意事項
