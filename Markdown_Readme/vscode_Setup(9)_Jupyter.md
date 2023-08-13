@@ -116,13 +116,13 @@ Jupyter可執行的直譯式偵錯核心如下:
    ```
     .NET 桌面開發        #註記: 自動安裝獨立於.NET開發套件的Roslyn編譯器組件 
    ```
-  選擇具備REPL直譯式核心的.NET解譯器。
+   選擇具備REPL直譯式核心的.NET解譯器。
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter14.png)
+   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter14.png)
 
-  選擇.NET框架的語言。 請注意，.NET框架程式語言中，Visual Basic並沒有REPL的支援。
+   選擇.NET框架的語言。 請注意，.NET框架程式語言中，Visual Basic並沒有REPL的支援。
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter15.png)
+   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter15.png)
 
 
 ## Jupyter Notebook 注意事項
