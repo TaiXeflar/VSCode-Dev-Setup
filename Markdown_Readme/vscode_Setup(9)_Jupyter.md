@@ -53,45 +53,46 @@ Jupyter可執行的直譯式偵錯核心如下:
 ### Jupyter筆記本執行Python
 對於Python程式語言，可執行的Python直譯器包含本地端安裝的Python直譯器，虛擬環境的Python直譯器(venv Python)，以及Conda環境基底的Python。
 
-選擇本地端的原生安裝Python或原生安裝Conda Python:
+1. 選擇本地端的原生安裝Python或原生安裝Conda Python:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter2.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter2.png)
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter3.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter3.png)
 
-根據該路徑建立自定義venv Python:
+2. 根據該路徑建立自定義venv Python:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter5.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter5.png)
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter6.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter6.png)
 
-根據該路徑建立自定義Conda Python:
+3. 根據該路徑建立自定義Conda Python:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter7.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter7.png)
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter8.png)
+    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter8.png)
 
-### MATLAB
+### Jupyter筆記本執行MATLAB
 對於MATLAB而言，MATLAB已有對Jupyter的內嵌式模組支援。MATLAB官方文件說明，該MATLAB核心需在Jupyter Web版開啟調用，但該功能同樣能在VSCode上執行。
 
-需要額外的Python模組安裝，並重新啟動VSCode:
- - Shell
+1. 安裝需要額外的Python模組，並重新啟動VSCode:
+ - PowerShell
    ```
    pip install matlab-kernel, jupyter-matlab-proxy
    ```
-選擇MATLAB(Connection)的Jupyter Kernel。
+2. 選擇MATLAB(Connection)的Jupyter Kernel。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter9.png)
+   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter9.png)
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter10.png)
+   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter10.png)
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter11.png)
+   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter11.png)
 
 ### Jupyter筆記本執行Julia
+
 對於Julia程式語言，同樣可以調用Julia核心並應用在VSCode上。該目標透過VSCode的延伸模組解決。
  - VSCode Extentions
    ```
@@ -112,9 +113,9 @@ Jupyter可執行的直譯式偵錯核心如下:
    ```
 
  - Visual Studio Installer:
-  ```
-   .NET 桌面開發        #註記: 自動安裝於獨立於.NET開發套件的Roslyn編譯器組件 
-  ```
+   ```
+    .NET 桌面開發        #註記: 自動安裝獨立於.NET開發套件的Roslyn編譯器組件 
+   ```
 選擇具備REPL直譯式核心的.NET解譯器。
 
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter14.png)
