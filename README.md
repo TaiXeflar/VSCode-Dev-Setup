@@ -27,7 +27,6 @@ Happy Coding!
  - NVIDIA CUDA (CUDA 11.7/12.0)
  - MATLAB (R2022a)
  - Python (Python 3.9.7)
- - Cygwin
  - Generic Mapping Tools (6.4.0)
  - Git for Windows (2.36.1)
  - Gsudo (Administrator Privilege Tools)
@@ -45,6 +44,7 @@ Happy Coding!
  - Jupyter Notebook
 
 未來可能會加入以下程式語言/開發套件支援:
+ - Cygwin [Re-Making]
  - Julia
  - Java
  - JavaScript/TypeScript
