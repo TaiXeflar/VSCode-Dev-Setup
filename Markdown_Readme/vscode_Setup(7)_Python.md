@@ -75,11 +75,11 @@
 底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
  - PowerShell
     ```
-    pip install <Mod>                                                   # 安裝名為Mod的模組。
-    pip install <Mod>, <<Mod>2>, <<Mod>3>                  # 安裝多個模組。
-    pip install <Mod> --upgrade                                  # 安裝該指定模組的新版。
-    pip install <Mod>==XX.XX.X                                 # 安裝該模組的指定版本。
-    pip uninstall <Mod>                                               # 解除安裝該模組。
+    pip install <Mod>                                      # 安裝名為Mod的模組。
+    pip install <Mod> <Mod2> <Mod3>                        # 安裝多個模組。
+    pip install <Mod> --upgrade                            # 安裝該指定模組的新版。
+    pip install <Mod>==XX.XX.X                             # 安裝該模組的指定版本。
+    pip uninstall <Mod>                                    # 解除安裝該模組。
     ```
 
 若你的Python是具備Conda環境的套件管理，則將`pip`換成`conda`:
@@ -90,29 +90,24 @@
 
 
 以下是常用於資料科學的模組:
-
-- Matplotlib
-- Pandas
-- NumPy
+  - Matplotlib
+  - Pandas
+  - NumPy
 
 以下是常用於機器學習/深度學習的模組:
-
-- Scikit-Learn
-- TensorFlow
-- Torch
+  - Scikit-Learn
+  - TensorFlow
+  - Torch
 
 以下是常用於微網站架構的模組:
-
-- Flask
-- Bottle
+  - Flask
+  - Bottle
 
 以下是Web架構互動式偵錯:
+  - Jupyter
 
-- Jupyter
-
-以下是Python模組調用MatLab引擎:
-
-- MatlabEngine
+以下是Python調用MatLab引擎模組:
+  - MatlabEngine
 
 這裡舉例一個使用終端機安裝`py2exe`套件的實際過程(pip 22.3.1):
 
