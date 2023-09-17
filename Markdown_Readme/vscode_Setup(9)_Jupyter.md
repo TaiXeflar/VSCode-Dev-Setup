@@ -134,3 +134,10 @@ Jupyter可執行的直譯式偵錯核心如下:
 
  - google.colab及drive套件為限定在Google Colabatory提供，特殊Linux基底的Python容器的雲端環境使用。因此，`drive.mount("__LOCATION__")`指令僅限在Colab上執行。若強制在本機執行指令安裝則會出現非基於pip指令導致的不可預期錯誤。
  - 請注意，在VSCode內以SSH連線執行遠端Google Colabatory的Python偵錯有可能會被視為違反Google Colabatory使用條款。
+
+ ## Future Targets
+ - Adding ROOT-Project Cling C++ Interpreter support: 
+    ```
+     Resolving Jupyter-Cling-Kernel 403 ENOENT Error
+    ```
+ - Adding LFortran Support
