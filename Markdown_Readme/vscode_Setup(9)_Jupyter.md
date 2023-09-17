@@ -44,7 +44,7 @@ Jupyter可執行的直譯式偵錯核心如下:
   ```
   - Python
   - Julia
-  - .NET 互動式
+  - .NET 互動式(限VSCode Polygon Notebooks)
   - MATLAB (Python基底)
 
   - 其他直譯式語言的互動式核心
