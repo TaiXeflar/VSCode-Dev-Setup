@@ -32,6 +32,8 @@ WSL2以虛擬化技術執行實體Linux核心，使得Windows可基於本機訪�
    
    passwd           # 更換密碼
 
+   exit             # 退出Super User
+
    su               # 切換至Super User
 
 ## WSL 部署開發套件
