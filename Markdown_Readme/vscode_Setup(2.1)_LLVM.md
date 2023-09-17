@@ -17,9 +17,11 @@ LLVM的Windows發行版本可在以下地方找到:
  - MSYS環境的套件管理員`pacman`所託管的LLVM發行版。透過`pacman`套件管理員執行llvm/clang的安裝。
  - etc.
 
+ - LLVM原始碼在Windows平臺的建置。
+
 ## LLVM原始碼建置LLVM及LLVM架構C/C++語言前端Clang
 
-本專案目標為建置LLVM架構的C/C++語言前端Clang。
+本專案目標為建置LLVM架構的C/C++語言前端Clang。Clang的C語言前端支援編譯C/C++，Objective-C/C++(物件導向C/C++)。
 
 ### Visual Studio的前置準備
 
