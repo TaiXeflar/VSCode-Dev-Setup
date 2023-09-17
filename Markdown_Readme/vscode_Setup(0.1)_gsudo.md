@@ -125,4 +125,5 @@ Gsudo的立即提升權限可以直接提供獲取權限的命令執行。例如
        ```
 
 
-
+## References
+Gearadog Gsudo: https://github.com/gerardog/gsudo
