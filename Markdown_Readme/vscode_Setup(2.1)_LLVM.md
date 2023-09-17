@@ -5,7 +5,7 @@ LLVM架構原全名為「低階虛擬機器」"Low Level Virtual Machine"，後�
 
 現如今LLVM已有以下應用: LLVM專案(The LLVM Project)、LLVM/Clang(LLVM C language Frontend)、Swift等一系列程式語言編譯器、編譯式程式語言編譯器、直譯式語言解釋器、編譯式語言的可直譯化解釋器(Root-Project Cling、LFortran等)、特定架構晶片執行代碼編譯器/轉譯器架構(Intel LLVM DPCPP-sycl(oneAPI DPC++/C++)、AMD Optimized C/C++(AOCC)、NVIDIA CUDA: NVC/C++ NVFortran)等全自定義化語言編譯架構。
 
-LLVM說明，LLVM工具組中具備一個組譯器(Assembler)，一個反組譯器(disassembler)，一個中間代碼分析器(bitcode-analyzer)即一個中間代碼優化器(bitcode-optimizer)。LLVM工具作為中間代碼(Intermediate Representation, IR)的優化器所優化目標即為Bitcode。
+LLVM說明，LLVM工具組中具備一個組譯器(Assembler)，一個反組譯器(disassembler)，一個中間代碼分析器(bitcode-analyzer)及一個中間代碼優化器(bitcode-optimizer)。LLVM工具作為中間代碼(Intermediate Representation, IR)的優化器所優化目標即為Bitcode。
 
 ### Windows平台的LLVM
 LLVM緣起於UNIX/Linux平臺，因此相對於Windows平臺，可能有部分程式庫提供的發行版本未提供支援(例如`llvm-config.exe`)；或是編譯LLVM專案時可能缺少部分程式標頭檔等問題；但LLVM在Windows平台的建置是可以單靠Cygwin/MSYS2/MinGW64等GNU工具列或使用VS20XX的MSVC工具列完成LLVM套件或LLVM/Clang的全部建置。
@@ -18,6 +18,8 @@ LLVM的Windows發行版本可在以下地方找到:
  - etc.
 
 ## LLVM原始碼建置LLVM及LLVM架構C/C++語言前端Clang
+
+本專案目標為建置LLVM架構的C/C++語言前端Clang。
 
 ### Visual Studio的前置準備
 
