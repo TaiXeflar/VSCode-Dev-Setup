@@ -81,10 +81,24 @@ We upgraded Jupyter Notebook support:
 We've changed the repo name.
  - From: `vscode_build_sample_repos`    To: `VSCode-Dev-Setup`
 
-## Ver2.1
 
-We may update or wait until Ver 3.0 with macOS support files:
+## Ver 2.0.2
+We've added new features:
+ - LLVM/Clang Build for VSCode
+ - Cling
+ - WSL2(Ubuntu)
 
+We changed license:
+  - From: `GNU GPL v3.0`    To: `MIT License`
+
+
+## Future Support
+ - JavaScript
+ - CSS
+ - HTML
+ - JAVA
+
+We may add with macOS support files:
  - VSCode
  - VS2022
  - Intel oneAPI
@@ -92,15 +106,3 @@ We may update or wait until Ver 3.0 with macOS support files:
  - Matlab
  - XCode
 
-
-## Ver 3.0
-
-We may update with Following language Support:
-
- - JavaScript
- - CSS
- - HTML
- - JAVA
- - CMake
- - Clang-LLVM
- - Julia
