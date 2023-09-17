@@ -230,7 +230,9 @@ CMake會依據`CMakeLists.txt`規定專案編譯架構、可用參數或覆寫�
  - `--parallel`: 指定CMake執行多重執行緒編譯。若生成器為`Ninja`則預設啟用(即不加入`--parallel`仍生效)。
 
 ## 後言及參考出處
-本LLVm建置為偏向理論及純命令介紹性質，該敘述內容可參閱LLVM官網https://www.llvm.org詳細介紹(英文)。專案建置實作可參考Cling專案的介紹[Cling.md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/CMAKE_Projects/Cling.md)。
+本LLVm建置為偏向理論及純命令介紹性質，該敘述內容可參閱LLVM官網https://www.llvm.org詳細介紹(英文)。
+
+專案建置實作可參考實作Cling專案的介紹[Cling.md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/CMAKE_Projects/Cling.md)。
 
 - LLVM Website:         [llvm.org](https://llvm.org/)
 - LLVM GitHub Repo:     https://github.com/llvm/llvm-project
