@@ -12,8 +12,8 @@ VSCode的下載地址: https://code.visualstudio.com/#alt-downloads
 ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_download_select.png)
 
 首先，安裝檔案會是這個檔名: 
- - User: `VSCodeUserSetup-x64-1.74.3.exe`
- - System: `VSCodeSetup-x64-1.74.3.exe`
+ - User: `VSCodeUserSetup-x64-1.XX.X.exe`
+ - System: `VSCodeSetup-x64-1.XX.X.exe`
 
 開始安裝VSCode。首先，需要同意使用條款:
 
@@ -74,8 +74,12 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - C/C++ Extention Pack
 
 以下是支援VSCode編輯Python的延伸套件:
+ - Julia
+
+以下是支援VSCode編輯Python的延伸套件:
  - Python
  - Pylance
+ - iSort
 
 以下是支援VSCode編輯基於Jupyter Notebook支援的延伸套件:
  - Jupyter
@@ -83,6 +87,12 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - Jupyter Cell Tags
  - Jupyter Slide Show
  - Jupyter Notebook Renders
+
+以下是基於.NET框架語言的延伸套件:
+ - Polyglot Notebooks                         # .NET REPL Kernel Notebooks
+ - .NET Extension Pack
+ - C#
+ - C# Dev Kit
 
 以下是支援VSCode編輯基於Java支援的延伸套件:
  - Debugger for Java
@@ -93,7 +103,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - Test Runner for Java
 
 以下是支援MATLAB偵錯的延伸套件:
- - Matlab (Xavier Hahn)
+ - Matlab (Mathworks)
  - Matlab Interactive Terminal (Aurelien Pommel)
  - Code Runner (Jun Han)
 
