@@ -160,10 +160,9 @@ Cling可單獨建立，但通常包含在LLVM內與Clang一起編譯生成。我
 
 筆者的Cling建置執行命令範本如下(專案建置執行時間: `Ninja`約為57分鐘，`NMake`約為3小時46分鐘):
 
-- PowerShell 
+- Developer Command Prompt for Visual Studio 2022(x64) 
   ```
-    & "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Launch-VsDevShell.ps1"
-    cd ~/Desktop; mkdir CLING; cd cling
+    cd C:/Users/TaiXeflar/Desktop; mkdir CLING; cd cling
 
     git clone --branch=cling-patches --depth=1 --config core.autocrlf=false http://root.cern.ch/git/llvm.git src
     git checkout cling-patches
