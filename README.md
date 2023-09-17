@@ -34,11 +34,7 @@ Happy Coding!
 有關本範例建置的程式語言支援包含:
  - [C/C++](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%201)_VC%2B%2B_ICL_DPCPP_CUDA_GCC.md) (MSVC, Intel Classic C/C++ & DPCPP/CPP, NVIDIA CUDA C/C++, GCC/G++)
  - [Fortran](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%203)_Visual_Fortran.md) (Intel Visual Fortran, GFortran)
-<<<<<<< HEAD
  - [.NET](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%202)_Visual_dotNET_Basic_C%23_F%23.md) Based Language (Visual Basic, Visual C#, Visual F#)
-=======
- - [.NET](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%202)_Visual_Basic_C%23_F%23.md) Based Language (Visual Basic, Visual C#, Visual F#)
->>>>>>> 30ffe4ead074c93be1a3a0f43f2a5f1881a502d9
  - [Python3](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(7)_Python.md) (Python 3.9.7)
  - [MATLAB](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(3)_MATLAB.md)
  - [GMT](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(5)_GMT.md)
