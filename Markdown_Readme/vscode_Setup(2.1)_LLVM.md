@@ -109,10 +109,8 @@ CMake會開始檢查編譯器設定、尋找引用的標頭檔、生成建置規
          {
             "type": "shell",
             "label": "C/C++: clang++ build active file",
-            "command": "/usr/bin/clang++",
+            "command": "clang++",
             "args": [
-               "-std=c++17",
-               "-stdlib=libc++",
                "-g",
                "${file}",
                "-o",
@@ -184,7 +182,7 @@ CMake會依據`CMakeLists.txt`規定專案編譯架構、可用參數或覆寫�
         g++:        GNU Compiler Collection C++ Frontend。
         as:         GNU Compiler Collection Assembler。
     ```
- - `LLVM_ENABLE_PROJECTS`: LLVM專案中選用哪些工具連同LLVM建置生成。請注意，共同建立的工具將依據`src/CMakeLists.txt`內`LLVM_ALL_PROJECTS`及`LLVM_EXTRA_PROJECTS`變數規定的工具選項提供可用選擇。下列LLVM工具的選擇範例是依據`src/CMakeLists.txt`當中的`LLVM_ENABLE_PROJECTS`變數定義規定逕行選擇。
+ - `LLVM_ENABLE_PROJECTS`: LLVM專案中選用哪些工具連同LLVM建置生成。請注意，共同建立的工具將依據`src/llvm/CMakeLists.txt`內`LLVM_ALL_PROJECTS`及`LLVM_EXTRA_PROJECTS`變數規定的工具選項提供可用選擇。下列LLVM工具的選擇範例是依據`src/llvm/CMakeLists.txt`當中的`LLVM_ENABLE_PROJECTS`變數定義規定逕行選擇。
    ```
    -DLLVM_ENABLE_PROJECTS="<Tools1;Tools2;Tools3;...>"
 
@@ -225,7 +223,7 @@ CMake會依據`CMakeLists.txt`規定專案編譯架構、可用參數或覆寫�
 
       etc.
     ```
- - `LLVM_HOST_TRIPLE`: LLVM專案建置的平台架構。若`src/cmake/config-ix.cmake`仍然報錯至無法判斷建置的本地架構時，添加該變數的指定架構。
+ - `LLVM_HOST_TRIPLE`: LLVM專案建置的平台架構。若`src/llvm/cmake/config-ix.cmake`仍然報錯至無法判斷建置的本地架構時，添加該變數的指定架構。
 
  - `-S`: Source File Path，指定的源代碼根路徑。
  - `-B`: Build File Path，指定的專案建置生成檔案的存放路徑。因為終端機路徑已經在`build`內，在該處執行camke建置時不加入此參數。
