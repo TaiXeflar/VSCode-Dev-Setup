@@ -100,7 +100,37 @@ CMake會開始檢查編譯器設定、尋找引用的標頭檔、生成建置規
 建置完成後，會將所生成的應用程式及可執行檔(\*.exe)、動態連結程式庫(\*.dll)、靜態程式庫(\*.lib)、標頭檔程式庫(\*.h;\*hpp)等工具鏈安裝至指定位置(範例指定至`C:/LLVM`)。最後手動設定把LLVM加入至PATH即完成LLVM的建置部署。
 
 ## VSCode調用LLVM/Clang
-參照[vscode_Setup(Build 1)_VC++_ICL_DPCPP_CUDA_GCC.md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%201)_VC%2B%2B_ICL_DPCPP_CUDA_GCC.md)實作，並以clang替換成欲使用的C/C++編譯器前端調用。若有Clang C/C++執行偵錯器則須有lldb(LLVM Debugger)。
+參照[vscode_Setup(Build 1)_VC++_ICL_DPCPP_CUDA_GCC.md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%201)_VC%2B%2B_ICL_DPCPP_CUDA_GCC.md)實作，並以clang替換成欲使用的C/C++編譯器前端調用。執行監測(Watchdog)或偵錯(Debug)可調用gdb(GNU Debugger)或lldb(LLVM Debugger)。
+ - tasks.json
+   ```
+    {
+      "version": "2.0.0",
+      "tasks": [
+         {
+            "type": "shell",
+            "label": "C/C++: clang++ build active file",
+            "command": "/usr/bin/clang++",
+            "args": [
+               "-std=c++17",
+               "-stdlib=libc++",
+               "-g",
+               "${file}",
+               "-o",
+               "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+               "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+               "kind": "build",
+               "isDefault": true
+            }
+         }
+      ]
+         
+    }
+   ```
 
 ## 註釋
 
@@ -133,8 +163,6 @@ CMake會開始檢查編譯器設定、尋找引用的標頭檔、生成建置規
 
 ### CMAKE指令參數
 CMake會依據`CMakeLists.txt`規定專案編譯架構、可用參數或覆寫參數設定範圍、引用的原始碼或本地程式庫(未在原始碼內但在本機上其他路徑下的程式庫等)、CMake通用參數設定等決定專案建置的編譯行為。由於本次LLVM/Clang建置是由LLVM開始建置，此處列出在LLVM專案下`LLVM/src/llvm/CMakeLists.txt`所規範可用的`cmake`參數。
-
-
 
 以下講述CMake後接述的引數`-DVARIABLE=<VALUE>`。當中`VARIABLE`可有以下常見的覆寫引數:
  - `CMAKE_INSTALL_PREFIX`: CMake專案建置後安裝路徑。
