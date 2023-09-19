@@ -245,10 +245,9 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
     - `"cwd"`: `"${workspaceFolder}"`
     - `"environment"`: 開啟偵錯時的環境變數設定，例如臨時附加的變數等。由於沒有引數要傳遞所以為JSON空陣列(`[]`)。
     - `"console"`: 取決於你要用VSCode內鍵終端機或是跳出一個主控台視窗。有以下的值:
-          - `"integratedTerminal"`: 整合式終端機。偵錯結果將在vscode內的終端列印。
-          - `externalTerminal`: 外部的終端機。該偵錯透過Windows終端機或Windows傳統主控台輸出偵錯。
-    - `"preLaunchTask"`: 執行該目標執行檔的偵錯前建置作業。該值必須和tasks.json內的`label`名稱一致或其中一個相符。
-          - 若有這項設定，則該目標底稿(此處為`test.c`)會在執行偵錯時，自動先進行建置(依照`tasks.json`)作業。
+      - `"integratedTerminal"`: 整合式終端機。偵錯結果將在vscode內的終端列印。
+      - `"externalTerminal"`: 外部的終端機。該偵錯透過Windows終端機或Windows傳統主控台輸出偵錯。
+    - `"preLaunchTask"`: 執行該目標執行檔的偵錯前建置作業。該值必須和tasks.json內的`label`名稱一致或其中一個相符。若有這項設定，則該目標底稿(此處為`test.c`)會在執行偵錯時，自動先進行建置(依照`tasks.json`)作業。
 
 整體而言，執行對`test.c`偵錯的流程如下:
  - Shell
