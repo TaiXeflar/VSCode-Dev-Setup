@@ -2,7 +2,8 @@
 
 ## Repository Contributors: 
  - TaiXeflar.  National Taiwan Ocean University Marine Environment Informatics Department Bachelor 4A
- - Ian Chang.  National Chiayi University Electrophysics Department Bachelor 3A
+               National Taiwan Ocean University Marine Environment Informatics Institute Master 1A
+ - Ian Chang.  National Chiayi University Electrophysics Department Bachelor 4A
 
 ## Repository Test - Windows Environment
 
@@ -248,10 +249,7 @@ We played these BGM while we contributors build this repository:
 
 ## Contributors.Workspace.Share - Game
 We joined these Games in progress when we build this repository:
-   - Tom Clancy's Rainbow Six Siege (2015) - Ubisoft Montreal, Ubisoft Entertainment.
-     - Rainbow Six Siege [ Y8S2 R6S/R6S_Vulkan ] (PC - Uplay/Ubisoft Connect)
-   - EA Star Wars Battlefront 2 (2017) - Electronic Arts.
-   - Honkai Impact 3 (2016) - miHoYo Limited.
-     - Honkai Impact 3 [Ver. 6.5] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
    - Genshin Impact (2020) - miHoYo Limited.
      -  Genshin Impact [Ver. 4.0] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
+   - Tom Clancy's Rainbow Six Siege (2015) - Ubisoft Montreal, Ubisoft Entertainment.
+     - Rainbow Six Siege [ Y8S2 R6S/R6S_Vulkan ] (PC - Uplay/Ubisoft Connect)
