@@ -77,8 +77,6 @@
 VSCode延伸模組`ext:C/C++`決定由`c_cpp_properties.json`配置完成自定義的程式庫訊息。該`c_cpp_properties.json`路徑在專案資料夾底下的`.vscode`資料夾內。
 
 以下是基於使用MSVC編譯的C/C++特性設定:
-
-以下是MSVC的C/C++ properties示範:
  - JSON
    ```
     {
