@@ -166,7 +166,7 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
             "VS2022 CMD": 
             {            
                 "path": ["C:/Program Files/Microsoft Visual Studio/2022/Common7/Tools/VsDevCmd.bat"],
-                "args": [""]
+                "args": ["host_arch=x64", "arch=x64"]
                 "icon": "console"
             }
         ```
