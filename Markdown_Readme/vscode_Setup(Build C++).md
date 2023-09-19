@@ -158,7 +158,7 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
     ```
 我們逐步介紹`tasks.json`內所有鍵值的傳遞訊息:
   - `version`:  值預設是`"2.0.0"`。
-  - `tasks`: ，JSON陣列物件，且包含一個或多個JSON物件。
+  - `tasks`: JSON陣列物件，且包含一個或多個JSON物件。
 
       - `windows`: 特殊的鍵值設定。該鍵值透過`"options"`的JSON鍵值建立用來呼叫一個殼層`"shell"`執行環境，此處呼叫Visual Studio環境初始化(`VsDevCmd.bat`)。
           - `executable`: 殼層可執行檔。建議使用`cmd.exe`(例如Intel oneAPI沒有PowerShell的支援)。
@@ -182,13 +182,14 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
       - `command`:編譯器的檔案名。舉例MSVC就是`cl.exe`.
       - `args`: 傳遞至編譯器內的引數。不同編譯器在`args`JSON清單物件中可有不同引數及排列順序:
         ```
-         MSVC cl.exe: ["/Fe:", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
-         Intel dpcpp.exe: ["-o", "${fileDirname}/${fileBasenameNoExtension}.exe","/Zi","/EHsc", "${file}"]
-         Intel icl.exe: ["-o", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
-         Intel icx.exe: ["-o", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
-         CUDA nvcc.exe: ["-g", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}"]
-         GNU gcc.exe: ["-g", "-o", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
-         LLVM clang.exe: ["-g","${file}","-o", "${fileDirname}/${fileBasenameNoExtension}.exe"]
+         MSVC     cl.exe:        ["/Fe:", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
+                                 ["/Zi", "/EHsc", "/Fe:", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
+         Intel    dpcpp.exe:     ["-o", "${fileDirname}/${fileBasenameNoExtension}.exe","/Zi","/EHsc", "${file}"]
+         Intel    icl.exe:       ["-o", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
+         Intel    icx.exe:       ["-o", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
+         CUDA     nvcc.exe:      ["-g", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}"]
+         GNU      gcc.exe:       ["-g", "-o", "${fileDirname}/${fileBasenameNoExtension}.exe", "${file}"]
+         LLVM     clang.exe:     ["-g","${file}","-o", "${fileDirname}/${fileBasenameNoExtension}.exe"]
         ```
 
         調用MSVC的命令列為:
