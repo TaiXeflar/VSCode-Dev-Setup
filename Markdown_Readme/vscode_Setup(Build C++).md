@@ -62,15 +62,15 @@
  - Folder
  ```
   |
-  |__  test.c(C/C++語言來源)
+  ├─> test.c(C/C++語言來源)
   |
-  |__ .vscode(資料夾)
+  └─> .vscode(資料夾)
          |
-         |__    c_cpp_properties.json
+         ├─> c_cpp_properties.json
          |
-         |__    tasks.json
+         ├─> tasks.json
          |
-         |__    launch.json
+         └─> launch.json
  ```
 
 ### VSCode C/C++特性設定 - c_cpp_properties.json
