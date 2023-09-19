@@ -252,7 +252,7 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
 整體而言，執行對`test.c`偵錯的流程如下:
  - Shell
     ```
-    cmd.exe /E:ON /C VsDevCmd.bat && cl.exe /Fe: test.exe test.c
+    cmd.exe /E:ON /C VsDevCmd.bat -host_arch=x64 -arch=x64 && cl.exe /Fe: test.exe test.c
     .\test.exe                                                                                      
     ```
     當中，第一列是`test.c`建置的命令列，由`preLaunchTask`呼叫並執行。第二列才是執行建置後目標執行檔(test.exe)的偵錯。
