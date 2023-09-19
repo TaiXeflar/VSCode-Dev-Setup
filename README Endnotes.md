@@ -21,8 +21,8 @@
  - Development Application:
     - Windows Terminal 1.15.2712.0
     - Windows PowerShell 7 (7.3.3)
-    - Git 2.36.1
-    - Microsoft Visual Studio Code 1.74
+    - Git 2.42.1
+    - Microsoft Visual Studio Code 1.82.0(System Setup)
     - Microsoft Visual Studio 2022 Build Tools
     - Microsoft Visual Studio 2022 Community
         - C++ Desktop Development
@@ -64,7 +64,7 @@
         - Intel Thread Building Blocks (oneTBB) 2023.0
         - Intel Deep Neural Network Library (oneDNNL)
         - Intel Video Processing Library (oneVPL)
-        - Intel Video Processing Library Runtime
+        - Intel Video Processing Library Runtime (oneVPL)
     - NVIDIA Developer Toolkit
         - NVIDIA CUDA 11.7, 12.0
         - NVIDIA cuDNN
@@ -83,7 +83,6 @@
         - GCC/G++
         - gfortran
         - LLVM
-
     - Gsudo 2.0.5 (by gerardog)
     - Everything 1.4.1.1020 (by voidtools)
 
