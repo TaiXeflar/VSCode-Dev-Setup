@@ -219,31 +219,6 @@ We played these BGM while we contributors build this repository:
     - Remember the Name [Explicit Ver] - Fort Miner. 
     - The Next Episode [Explicit Ver] - Dr.Dre ft.Snoop Dogg.
     - Mortals - Warrios ft.Laura Brehm, NCS Release.
-    - Prelude - TheFatRat & JJD, VIP Remix.
-    - Monody - TheFatRat & Alexa.
-    - Rule the World - TheFatRat, ft.Laura Brehm.
-    - Unity - TheFatRat.
-    - Monody - TheFatRat.
-    - Windfall - TheFatRat.
-    - Retro Funky - Perséphone, SUNDANCE Remix.
-    - M.O.O.N. - 'Paris' - S G.
-    - Hotline Miami 2: Wrong Number Soundtrack - Divide
-    - Ice Cream - OMFG.
-    - OK - OMFG.
-    - Wonderful - OMFG.
-    - Pizza - OMFG
-    - Bob - OMFG.
-    - I love You - OMFG.
-    - Train Rush - Pascal Michael Stiefel, A Hat in Time OST.
-    - The Battle of Award 42 - Pascal Michael Stiefel, A Hat in Time OST.
-    - Trainwreck Of Electro Swing - A Hat in Time OST, Plasma3Music remix.
-    - Train Rush - A Hat in Time OST, Qumu remix.
-    - Mario Kart Wii - Toad's Factory, Qumu remix.
-    - Cuphead - Die House, Qumu remix.
-    - King Dedede's Theme, Qumu remix.
-    - Luigi's Mansion, Qumu remix.
-    - Super Mario 3D World - World Bowser, Qumu remix.
-
 
 ## Contributors.Workspace.Share - Game
 We joined these Games in progress when we build this repository:
