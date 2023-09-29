@@ -120,7 +120,7 @@ VSCode延伸模組`ext:C/C++`決定由`c_cpp_properties.json`配置完成自定�
         - 編譯器: 例如`msvc`/`clang`/`gcc`。
         - 處理器架構: 例如 `x86`(32位元x86)/`x64`(64位元x86，AMD64或Intel 64)/`ARM64`(ARM架構64位元處理器)。
 
-### VSCode 建置作業 - tasks.json
+### VSCode 建置C/C++作業 - tasks.json
 VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條件(包含Include引用標頭檔、LIB引用靜態程式庫等)執行預處理(pre-processing)->編譯(compilation)->彙編->(assembly)->鏈接(linking)程序。該建置作業由`tasks.json`引導vscode設定原始碼建置編譯信息傳遞作業。
 
 以下是基於使用MSVC編譯的設定:
@@ -165,11 +165,11 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
           - `args`: 傳遞至該殼層的引數。因為呼叫該殼層並執行建置後需要直接關閉，因此需要`"/E:ON"`、`"/C"`、`"VsDevCmd.bat"`、`"VsDevCmd.bat"`、`"arch"`和`"&&"`引數。當中，各引數意義如下:
              - `"/E:ON"`: `cmd.exe`啟用延伸模組。
              - `"/C"`:  執行該殼層所有命令後關閉該`cmd.exe`殼層。
-             - `"VsDevCmd.bat"`: 呼叫Visual Studio環境初始化。`"VsDevCmd.bat"`及`"arch"`引數傳遞給`VsDevCmd.bat`。
+             - `"VsDevCmd.bat"`: 呼叫Visual Studio環境初始化。`"host_arch"`及`"arch"`引數傳遞給`VsDevCmd.bat`。
               
-               `VsDevCmd.bat`會設定環境變數並遞迴搜尋所安裝的開發人員工具、SDK、程式庫、1搖頭程式庫等開發必要元件。透過`VsDevCmd.bat`配置的環境變數可一定程度省略`sysdm.cpl`所設定系統變數或在`c_cpp_properties.json`所手動設定鍵入的程式庫引用路徑。(例如UCRT程式庫位置、include、lib等)
+               `VsDevCmd.bat`會設定環境變數並遞迴搜尋所安裝的開發人員工具、SDK、程式庫、標頭程式庫等開發必要元件。透過`VsDevCmd.bat`配置的環境變數可一定程度省略`sysdm.cpl`所設定系統變數或在`c_cpp_properties.json`所手動設定鍵入的程式庫引用路徑。(例如UCRT程式庫位置、include、lib等)
              - `"host_arch"`: 設定本機架構所決定執行的編譯器。因本機架構是x64(Intel 64/AMD64)，故選擇`x64`。
-             - `"arch"`: 設定建置目標架構所決定執行的編譯器。因目標是本機架構，故選擇`x64`。
+             - `"arch"`: 設定建置目標架構所決定執行的編譯器。因目標是本機架構(建置在本機上執行)，故選擇`x64`。
              - `"&&"`: 傳遞一個後接的命令。
 
             該殼層的起動命令是:
@@ -207,7 +207,7 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
     cmd.exe /E:ON /C VsDevCmd.bat -host_arch=x64 -arch=x64 && cl.exe /Fe: test.exe test.c
     ```
 
-### VSCode 偵錯執行 - launch.json
+### VSCode 執行C/C++偵錯 - launch.json
 執行程式的偵錯由`launch.json`內的訊息配置完成自定義的偵錯測試。執行程式即為對程式執行偵錯。編譯程式可額外設定透過建置後執行偵錯，直譯程式則直接執行。
 
 本範例執行MSVC的偵錯設定:
