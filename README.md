@@ -32,7 +32,7 @@ Happy Coding!
  - [Gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(0.1)_gsudo.md) (Administrator Privilege Tools)
 
 有關本範例建置的程式語言支援包含:
- - [C/C++](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%201)_VC%2B%2B_ICL_DPCPP_CUDA_GCC.md) (MSVC, Intel Classic C/C++ & DPCPP/CPP, NVIDIA CUDA C/C++, GCC/G++)
+ - [C/C++](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%20C%2B%2B).md) (MSVC, Intel Classic C/C++ & DPCPP/CPP, NVIDIA CUDA C/C++, GCC/G++)
  - [Fortran](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%203)_Visual_Fortran.md) (Intel Visual Fortran, GFortran)
  - [.NET](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%202)_Visual_dotNET_Basic_C%23_F%23.md) Based Language (Visual Basic, Visual C#, Visual F#)
  - [Python3](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(7)_Python.md) (Python 3.9.7)
@@ -61,3 +61,4 @@ Happy Coding!
 請注意，當說明文件內的命令列有`sudo`或`su`的命令時，該命令需要提升權限的終端機執行。你有兩種解決方法：
  - 重新以系統管理員身份運行`Windows PowerShell`/`命令提示字元`/`Windows終端機`。
  - 使用[gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(0.1)_gsudo.md)套件提升權限(提升至系統管理員權限)。
+
