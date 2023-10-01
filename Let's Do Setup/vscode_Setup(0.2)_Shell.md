@@ -13,8 +13,8 @@
   |  Windows  |  PowerShell  |  CMD  |  ----  |
 
 由此可見，Windows作業系統內是不帶有符合POSIX規範的UNIX殼層(BASH, ZSH等)。但在Windows上調用這些殼層，有幾種方法:
- - 透過安裝適用於Windows的且符合POSIX規範的UNIX殼層可執行檔實現。例如`Git for Windows`或是`Cygwin`等安裝套件會自解`BASH`。
- - 透過`Windows Subsystem for Linux`(適用於Windows的Linux子系統)呼叫Ubuntu/Debian/Fedora等。
+ - 透過安裝適用於Windows的且符合POSIX規範的UNIX殼層可執行檔實現。例如[Git for Windows](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(6)_Git.md)或是[Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md)等安裝套件會自解`BASH`。
+ - 透過[Windows Subsystem for Linux](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(10)_WSL.md)(適用於Windows的Linux子系統)呼叫Ubuntu/Debian/Fedora等。
 
 通常而言，SH/BASH等類UNIX殼層底稿(.sh檔案)或單一命令均相容于類UNIX殼層並可執行。
 
