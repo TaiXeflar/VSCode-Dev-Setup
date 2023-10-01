@@ -2,7 +2,7 @@
 
 ## VSCode調用編譯器確認
 在眾多C/C++編譯器發行版本之下，你可以有多種常用選擇:(標註`<# Targeted Compiler #>`為編譯C/C++來源時所用到的編譯器名稱。標註`symlink`為符號連結。)
- - [GNU Compiler Collection(GCC)](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md): GNU作業系統的C/C++語言前端，由GNU組織指導並發行至跨平臺。GCC以GNU GPL v3.0條款授權公開免費使用。
+ - [GNU Compiler Collection(GCC)](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md): GNU作業系統的C/C++語言編譯器前端集合，由GNU組織指導並發行至跨平臺。GCC以GNU GPL v3.0條款授權公開免費使用。可在GNU體系應用程式環境[Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md)、MSYS2 pacman等程式管理套件找到，或是使用Dev-C++、Code::Blocks等C/C++程式IDE。
     ```
      as              # GNU Binary Utils Assembler
      cpp
@@ -31,7 +31,7 @@
      ml64.exe        # Microsoft Macro Assembler
      nmake.exe       # Microsoft Program Maintainence Utility
     ```
- - [LLVM/Clang](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2.1)_LLVM.md): LLVM編譯器架構體系的C/C++語言前端Clang。可有獨立發行版以及Visual Studio、Xcode或Cygwin、MSYS2 pacman等程式管理套件找到。
+ - [LLVM/Clang](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2.1)_LLVM.md): LLVM編譯器架構體系的C/C++語言前端Clang。可有獨立發行版[LLVM](https://github.com/llvm/llvm-project/releases)以及[Visual Studio](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(1)_VS2022.md)、Xcode或[Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md)、MSYS2 pacman等程式管理套件找到。
     ```
      clang.exe       # LLVM Compiler Infastructure  C  language frontend    <# Targeted Compiler #>
      clang++.exe     # LLVM Compiler Infastructure C++ language frontend     :: symlink ==> clang.exe                     
@@ -74,7 +74,7 @@
  ```
 
 ### VSCode C/C++特性設定 - c_cpp_properties.json
-VSCode延伸模組`ext:C/C++`決定由`c_cpp_properties.json`配置完成自定義的程式庫訊息。該`c_cpp_properties.json`路徑在專案資料夾底下的`.vscode`資料夾內。
+VSCode延伸模組[ext:C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)決定由`c_cpp_properties.json`配置完成自定義的程式庫訊息。該`c_cpp_properties.json`路徑在專案資料夾底下的`.vscode`資料夾內。
 
 以下是基於使用MSVC編譯的C/C++特性設定:
  - JSON
@@ -257,3 +257,6 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
     .\test.exe                                                                                      
     ```
     當中，第一列是`test.c`建置的命令列，由`preLaunchTask`呼叫並執行。第二列才是執行建置後目標執行檔(test.exe)的偵錯。
+
+### 解釋
+ - Incremental Linker: 累加式連結器，可對連接器(Linker)指定連結模式是否為累加模式，若非累加模式則對各項編譯的前置作業執行獨立連結；若為累加模式則逕行直接連接。依用途而有不同的鏈接表現。
