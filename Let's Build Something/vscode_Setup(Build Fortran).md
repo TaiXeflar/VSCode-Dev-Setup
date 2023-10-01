@@ -3,12 +3,12 @@
 ## VSCode調用編譯器確認
 在Windows平臺較少有Fortran編譯器選擇(大多相容於Linux)，因此我們選擇較為常見的Fortran編譯器:(標註`<# Targeted Compiler #>`為編譯Fortran來源時所用到的編譯器名稱。標註`symlink`為符號連結。)
 
- - [Intel oneAPI Visual Fortran Compiler](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md): Intel的開發者工具oneAPI發佈的Intel C/C++版本。Intel DPCPP為CUDA平臺移植sycl工具。
+ - [Intel oneAPI Visual Fortran Compiler](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md):前身為Microsoft Visual Fortran，後由Intel接手，並於Intel的開發者工具oneAPI發佈的免費版本。
     ```
      ifort.exe       # Intel Classic C/C++ Compiler                          <# Targeted Compiler #>
      ifx.exe         # Intel DPCPP C/C++ Language Frontend                   <# Targeted Compiler #>
     ```
- - [GNU Compiler Collection(GCC)](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md): GNU作業系統的C/C++語言前端，由GNU組織指導並發行至跨平臺。GCC以GNU GPL v3.0條款授權公開免費使用。
+ - [GNU Compiler Collection(GCC)](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md): GNU作業系統的C/C++語言前端，由GNU組織指導並發行至跨平臺，GFortran為GC編譯器集合之一。GCC以GNU GPL v3.0條款授權公開免費使用。
     ```
      gfortran        # GNU Fortran Compiler                                  <# Targeted Compiler #>
 
@@ -20,7 +20,7 @@
      ld              # Linker
      make            # GNU Makefile Utility
     ```
- - [LLVM/Clang](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2.1)_LLVM.md): 原PGI編譯器集合適用於LLVM架構的Fortran編譯器前端，與LLVM官方的Flang相同專案名稱但來源不同。
+ - [LLVM/Clang](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2.1)_LLVM.md): 原PGI編譯器集合以LLVM架構基底的Fortran編譯器前端，與LLVM官方的Flang相同專案名稱但來源不同。
     ```
      flang.exe       # PGI Open-Sourced LLVM Fortran language frontend       <# Targeted Compiler #>
 
@@ -40,7 +40,7 @@
      pgf95
      pgc++
     ```
- - AMD ROCm for Windows: AMD ROCm框架開發工具的Windows發行版本。由LLVM基底建構而成，支援HIP API執行AMD GPU偵錯。
+ - AMD ROCm: AMD ROCm框架開發工具，Flang僅支援Linux系統。由LLVM基底建構而成，支援HIP API執行AMD GPU偵錯。
 
 ## VSCode建置簡單Fortran專案偵錯
 
