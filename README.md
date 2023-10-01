@@ -18,40 +18,42 @@ VSCode為一種輕量化架構(約352MB)的文字編輯器。藉由延伸套件(
 
 Happy Coding!
 
-## Markdown_Readme
+## Markdown(*.md) Readme Files
 
-有關程式開發的說明讀我檔均以Markdown寫成，並有圖片以及全中譯編寫。本存放庫內有提供以下工具的建置:
- - [VSCode](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(0.0)_vscode.md) (Microsoft Visual Studio Code)
- - [VS2022](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(1)_VS2022.md) (Microsoft Visual Studio 2022)
- - [oneAPI](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md) (Intel oneAPI 2023.0)
- - [CUDA](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md) (NVIDIA CUDA 11.7/12.0)
- - [MATLAB](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(3)_MATLAB.md) (R2022a)
- - [Python](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(7)_Python.md) (Python 3.9.7)
- - [GMT](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(5)_GMT.md) (Generic Mapping Tools 6.4.0)
- - [Git](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(6)_Git.md) (2.36.1)
- - [Gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(0.1)_gsudo.md) (Administrator Privilege Tools)
+有關開發應用程式/命令列執行的應用程式安裝說明讀我檔均以Markdown寫成，並有圖片以及全中譯編寫。本存放庫內有提供以下工具的建置:
+ - [VSCode](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.0)_vscode.md) (Microsoft Visual Studio Code)
+ - [VS2022](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(1)_VS2022.md) (Microsoft Visual Studio 2022)
+ - [oneAPI](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md#intel-oneapi-%E5%AE%89%E8%A3%9D) (Intel oneAPI 2023.0)
+ - [CUDA](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md#nvidia-cuda%E5%AE%89%E8%A3%9D) (NVIDIA CUDA 11.7/12.0)
+ - [MATLAB](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md#nvidia-cuda%E5%AE%89%E8%A3%9D) (R2022a)
+ - [Python](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md#nvidia-cuda%E5%AE%89%E8%A3%9D) (Python 3.9.7)
+ - [GMT](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(5)_GMT.md) (Generic Mapping Tools 6.4.0)
+ - [Git](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(6)_Git.md) (2.36.1)
+ - [Gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.1)_gsudo.md) (Administrator Privilege Tools)
+
+ - [Office](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/InstallOffice.md) (Microsoft Office Deployment Tool)
 
 有關本範例建置的程式語言支援包含:
- - [C/C++](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%20C%2B%2B).md) (MSVC, Intel Classic C/C++ & DPCPP/CPP, NVIDIA CUDA C/C++, GCC/G++)
- - [Fortran](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%203)_Visual_Fortran.md) (Intel Visual Fortran, GFortran)
- - [.NET](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%202)_Visual_dotNET_Basic_C%23_F%23.md) Based Language (Visual Basic, Visual C#, Visual F#)
- - [Python3](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(7)_Python.md) (Python 3.9.7)
- - [MATLAB](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(3)_MATLAB.md)
- - [GMT](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(5)_GMT.md)
- - [JSON](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%200)_JSON_config.md) (JavaScript Option Notation)
+ - [C/C++]() (MSVC, Intel Classic C/C++ & DPCPP/CPP, NVIDIA CUDA C/C++, GCC/G++)
+ - [Fortran]() (Intel Visual Fortran, GFortran)
+ - [.NET]() Based Language (Visual Basic, Visual C#, Visual F#)
+ - [Python3]() (Python 3.9.7)
+ - [MATLAB]()
+ - [GMT]()
+ - [JSON]() (JavaScript Option Notation)
 
 我們提交了Jupyter筆記本的應用:
- - [Jupyter](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(9)_Jupyter.md) Notebook
+ - [Jupyter]() Notebook
 
 未來可能會加入以下程式語言/開發套件支援:
- - [Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md) (Re-Making)
+ - [Cygwin]() (Re-Making)
  - Julia
  - Java
  - JavaScript/TypeScript
  - CMake (CrossMake)
  - PowerShell
 
-## [Shell](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(0.2)_Shell.md)
+## [Shell]()
 
 當說明文件提示Shell的命令列時，該指令是以終端機操作。Windows底下預設使用PowerShell做為預設命令列殼層。
  - 在Windows 10中，請開啟`Windows PowerShell`或`命令提示字元`開啟Windows主控台並輸入命令。
