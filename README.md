@@ -53,7 +53,7 @@ Happy Coding!
  - CMake (CrossMake)
  - PowerShell
 
-## [Shell]()
+## [Shell](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.2)_Shell.md)
 
 當說明文件提示Shell的命令列時，該指令是以終端機操作。Windows底下預設使用PowerShell做為預設命令列殼層。
  - 在Windows 10中，請開啟`Windows PowerShell`或`命令提示字元`開啟Windows主控台並輸入命令。
