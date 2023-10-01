@@ -4,7 +4,7 @@
 
 本讀我檔闡述以命令列形式執行Microsoft Office的線上安裝。本範例將透過命令下載連結取得Office的部署工具。
 
-指定在桌面上，開啟一個新的資料夾`officetool`，並且存放後會下載的Office部署工具。開啟終端機(PowerShell/CMD)執行以下命令:
+指定在桌面上，開啟一個新的資料夾`officetool`，並且存放後會下載的Office部署工具。開啟[終端機](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.2)_Shell.md)(PowerShell/CMD)執行以下命令:
  - PowerShell
     ```
      cd ~/Desktop
