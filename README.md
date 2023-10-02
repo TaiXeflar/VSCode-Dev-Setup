@@ -34,19 +34,19 @@ Happy Coding!
  - [Office](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/InstallOffice.md) (Microsoft Office Deployment Tool)
 
 有關本範例建置的程式語言支援包含:
- - [C/C++]() (MSVC, Intel Classic C/C++ & DPCPP/CPP, NVIDIA CUDA C/C++, GCC/G++)
- - [Fortran]() (Intel Visual Fortran, GFortran)
- - [.NET]() Based Language (Visual Basic, Visual C#, Visual F#)
- - [Python3]() (Python 3.9.7)
- - [MATLAB]()
- - [GMT]()
- - [JSON]() (JavaScript Option Notation)
+ - [C/C++](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Build%20Something/vscode_Setup(Build%20C%2B%2B).md) (MSVC, Intel Classic C/C++ & DPCPP/CPP, NVIDIA CUDA C/C++, GCC/G++)
+ - [Fortran](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Build%20Something/vscode_Setup(Build%20Fortran).md) (Intel Visual Fortran, GFortran)
+ - [.NET](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Build%20Something/vscode_Setup(Build%202)_Visual_dotNET_Basic_C%23_F%23.md) Based Language (Visual Basic, Visual C#, Visual F#)
+ - [Python3](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(7)_Python.md) (Python 3.9.7)
+ - [MATLAB](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(3)_MATLAB.md)
+ - [GMT](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(5)_GMT.md)
+ - [JSON](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(Config)_JSON.md) (JavaScript Option Notation)
 
 我們提交了Jupyter筆記本的應用:
- - [Jupyter]() Notebook
+ - [Jupyter](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(9)_Jupyter.md) Notebook
 
 未來可能會加入以下程式語言/開發套件支援:
- - [Cygwin]() (Re-Making)
+ - [Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md) (Re-Making)
  - Julia
  - Java
  - JavaScript/TypeScript
