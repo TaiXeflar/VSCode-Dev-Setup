@@ -183,7 +183,7 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
        - `"externalTerminal"`: 外部的終端機。該偵錯透過Windows終端機或Windows傳統主控台輸出偵錯。
     - `"preLaunchTask"`: 執行該目標執行檔的偵錯前建置作業。該值必須和tasks.json內的`label`名稱一致或其中一個相符。若有這項設定，則該目標底稿(此處為`test.f90`)會在執行偵錯時，自動先進行建置(依照`tasks.json`)作業。
 
-整體而言，執行對`test.c`偵錯的流程如下:
+整體而言，執行對`test.f90`偵錯的流程如下:
  - Shell
     ```
     cmd.exe /E:ON /C setvars.bat "intel64 VS2022" && ifort.exe test.f90
