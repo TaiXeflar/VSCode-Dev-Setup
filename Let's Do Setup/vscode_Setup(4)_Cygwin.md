@@ -1,5 +1,14 @@
 # VSCode的Cygwin環境部署
 
+Cygwin由Red Hat的Cygnus Solution主持及維護，全名為Cygnus on Windows。Cygwin為在Windows平台上執行完整POSIX標準的類UNIX執行環境，並具備標準GNU工具提供適用於Window x86-64平台的Unix平臺開發。
+
+標準適用於Windows的GNU工具庫有以下比較:
+| GNU環境 | Cygwin | MSYS2 | MinGW |
+| :----: |  :----: |  :----: | :----: | 
+| 硬碟容量需求 | 較高 | 較低 | 較低 |
+| POSIX相容性 | 完全 | 標準 | -- |
+| 套件管理員 | GUI/apt-cyg | pacman | GUI |
+
 ## Cygwin 在線安裝
 本章節將詳細說明Cygwin的套件整合部署及安裝。
 
@@ -79,9 +88,27 @@ UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell
     $
     ```
 
+## Cygwin套件管理員apt-cyg
+
+Cygwin套件管理是以Cygwin發行的`setup-x86_64.exe`執行圖形介面的安裝/移除作業。在GitHub上有[第三方開發者](https://github.com/transcode-open/apt-cyg/)提交了可作用於Cygwin的套件管理員`apt-cyg`，以命令列形式模擬Linux系統Debian/Ubuntu的套件管理員`apt`執行命令列控制安裝程式套現的下載及安裝。
+
+在Cygwin的BASH中執行命令:
+ - BASH
+    ```
+     wget https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg /bin
+     chmod +x /bin/apt-cyg
+    ```
+
+指定你的Cygwin映像託管後用`apt-cyg`執行安裝:
+ - BASH
+    ```
+     apt-cyg mirror https://ftp.ntu.edu.tw/pub/cygwin/
+     apt-cyg install <TOOLS_YOU_WANT_TO_INSTALL>
+    ```
+
 ### Cygwin BASH
 在Cygwin的Shell中，會有一個類UNIX的資料樹系統:
- - Bash
+ - Bash(Output)
     ```
     TaiXeflar@TaiXeflar ~
     $ cd ../..
@@ -91,7 +118,7 @@ UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell
     bin  cygdrive  Cygwin.bat  Cygwin.ico  Cygwin-Terminal.ico  dev  etc  home  lib  proc  sbin  tmp  usr  var
     ```
 當中，`cygdrive`即是實際當前Windows所擁有的硬碟槽。
- - Bash
+ - Bash(Output)
     ```
     TaiXeflar@TaiXeflar /
     $ cd cygdrive
