@@ -60,7 +60,7 @@
 ### VSCode 建置作業 - tasks.json
 VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條件(包含Include引用標頭檔、LIB引用靜態程式庫等)執行預處理(pre-processing)->編譯(compilation)->彙編->(assembly)->鏈接(linking)程序。該建置作業由`tasks.json`引導vscode設定原始碼建置編譯信息傳遞作業。
 
-以下是基於使用MSVC編譯的設定:
+以下是基於使用ifort編譯的設定:
  - JSON
     ```
     {
