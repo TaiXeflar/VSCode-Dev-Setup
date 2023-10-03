@@ -11,9 +11,9 @@ LLVM說明，LLVM工具組中具備一個組譯器(Assembler)，一個反組譯�
 LLVM緣起於UNIX/Linux平臺，因此相對於Windows平臺，可能有部分程式庫提供的發行版本未提供支援(例如`llvm-config.exe`)；或是編譯LLVM專案時可能缺少部分程式標頭檔等問題；但LLVM在Windows平台的建置是可以單靠Cygwin/MSYS2/MinGW64等GNU工具列或使用VS20XX的MSVC工具列完成LLVM套件或LLVM/Clang的全部建置。
 
 LLVM的Windows發行版本可在以下地方找到:
- - LLVM的GitHub官網發佈版本，以Windows安裝程式執行安裝。
- - Visual Studio Installer所提供"適用於Windows的Clang C++"。該C++工具為包含LLVM/Clang的發行版本，與LLVM在GitHub發佈的安裝包內容一致。
- - Cygwin環境的Cygwin下載程式`setup-x86_64.exe`所發佈線上下載的LLVM發行版。透過Cygwin安裝程式選擇clang及llvm等開發者程式及程式庫。
+ - LLVM的GitHub[官網發佈版本](https://github.com/llvm/llvm-project/releases)，以Windows安裝程式執行安裝。
+ - Visual Studio Installer所提供[適用於Windows的Clang C++](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(1)_VS2022.md)。該C++工具為包含LLVM/Clang的發行版本，與LLVM在GitHub發佈的安裝包內容一致。
+ - Cygwin環境的[Cygwin下載程式](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md)`setup-x86_64.exe`所發佈線上下載的LLVM發行版。透過Cygwin安裝程式選擇clang及llvm等開發者程式及程式庫。
  - MSYS環境的套件管理員`pacman`所託管的LLVM發行版。透過`pacman`套件管理員執行llvm/clang的安裝。
  - etc.
 
@@ -28,7 +28,7 @@ LLVM的Windows發行版本可在以下地方找到:
 以下會基於本機所擁有安裝Visual Studio 2022環境進行LLVM建置說明。
 
 首先，你的電腦需要以下開發套件:
- - Visual Studio Installer
+ - [Visual Studio Installer](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(1)_VS2022.md)
     ```
      C++桌面開發
      
@@ -36,8 +36,8 @@ LLVM的Windows發行版本可在以下地方找到:
      適用於Windows的C++ CMake工具
      Windows 11/10 SDK
     ```
- - Git for Windows
- - Python 3 (Python 3.X >= 3.6)
+ - [Git for Windows](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(6)_Git.md)
+ - [Python 3](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(7)_Python.md) (Python 3.X >= 3.6)
 
 我們解釋以下開發套件的必要原因:
  - Visual Studio: C++開發環境是以MSVC為C/C++來源編譯，依照VS2022版本選擇`MSVC v143`為LLVM建置時所選定的編譯器。
