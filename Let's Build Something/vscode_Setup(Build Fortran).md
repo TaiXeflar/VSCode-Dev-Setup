@@ -29,7 +29,7 @@
      llvm-as         # LLVM Compiler Infastructure Assembler
     ```
 
- - [NVIDIA HPC SDK](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(10)_WSL.md#wsl-%E9%83%A8%E7%BD%B2-nvidia-hpc-sdk): NVIDIA發佈的HPC開發套件，包含GPU加速程式庫、GPU運算科學工具函式庫、以及包含原PGI編譯器集合的NVIDIA C/C++編譯器、NVFortran編譯器執行環境。
+ - [NVIDIA HPC SDK](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(10)_WSL.md#wsl-%E9%83%A8%E7%BD%B2-nvidia-hpc-sdk): NVIDIA發佈的HPC開發套件，包含GPU加速程式庫、GPU運算科學工具函式庫、以及包含原PGI編譯器集合的NVIDIA C/C++編譯器、NVFortran編譯器執行環境。
     ```
      nvcc            # NVIDIA CUDA Compiler Driver                          
      nvc             # NVIDIA CUDA C Language Frontend                             
