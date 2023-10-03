@@ -2,7 +2,7 @@
 
 ## VSCode調用編譯器確認
 在眾多C/C++編譯器發行版本之下，你可以有多種常用選擇:(標註`<# Targeted Compiler #>`為編譯C/C++來源時所用到的編譯器名稱。標註`symlink`為符號連結。)
- - [GNU Compiler Collection(GCC)](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md): GNU作業系統的C/C++語言編譯器前端集合，由GNU組織指導並發行至跨平臺。GCC以GNU GPL v3.0條款授權公開免費使用。可在GNU體系應用程式環境[Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md)、MSYS2 pacman等程式管理套件找到，或是使用Dev-C++、Code::Blocks等C/C++程式IDE。
+ - GNU Compiler Collection(GCC): GNU作業系統的C/C++語言編譯器前端集合，由GNU組織指導並發行至跨平臺。GCC以GNU GPL v3.0條款授權公開免費使用。可在GNU體系應用程式環境[Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md)、MSYS2 pacman等程式管理套件找到，或是使用Dev-C++、Code::Blocks等C/C++程式IDE。
     ```
      as              # GNU Binary Utils Assembler
      cpp
@@ -17,7 +17,7 @@
      bcc32.exe       # Borland C/C++ Compiler                               <# Targeted Compiler #>
      ilink32.exe     # Turbo Incremental Linker
     ```
- - [Microsoft Visual C++(MSVC)](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(1)_VS2022.md): 微軟的開發者工具[Visual Studio](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(1)_VS2022.md)選用的C/C++開發工具。限定Windows 10/11 Intel64/AMD64/ARM64平臺。
+ - [Microsoft Visual C++(MSVC)](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(1)_VS2022.md): 微軟的開發者工具[Visual Studio](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(1)_VS2022.md)選用的C/C++開發工具。限定Windows 10/11 Intel64/AMD64/ARM64平臺。
     ```
      cl.exe          # Microsoft Visual C/C++ Compiler Driver                <# Targeted Compiler #>
 
@@ -31,7 +31,7 @@
      ml64.exe        # Microsoft Macro Assembler
      nmake.exe       # Microsoft Program Maintainence Utility
     ```
- - [LLVM/Clang](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2.1)_LLVM.md): LLVM編譯器架構體系的C/C++語言前端Clang。可有獨立發行版[LLVM](https://github.com/llvm/llvm-project/releases)以及[Visual Studio](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(1)_VS2022.md)、Xcode或[Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md)、MSYS2 pacman等程式管理套件找到。
+ - [LLVM/Clang](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/LLVM.md): LLVM編譯器架構體系的C/C++語言前端Clang。可有獨立發行版[LLVM](https://github.com/llvm/llvm-project/releases)以及[Visual Studio](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(1)_VS2022.md)、Xcode或[Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md)、MSYS2 pacman等程式管理套件找到。
     ```
      clang.exe       # LLVM Compiler Infastructure  C  language frontend    <# Targeted Compiler #>
      clang++.exe     # LLVM Compiler Infastructure C++ language frontend     :: symlink ==> clang.exe                     
