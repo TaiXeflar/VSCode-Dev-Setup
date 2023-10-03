@@ -46,7 +46,7 @@ Happy Coding!
  - [Jupyter](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(9)_Jupyter.md) Notebook
 
 未來可能會加入以下程式語言/開發套件支援:
- - [Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md) (Re-Making)
+ - [Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md) (Re-Master in Progress)
  - Julia
  - Java
  - JavaScript/TypeScript
