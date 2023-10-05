@@ -1,4 +1,4 @@
-# VSCode 建置及作業應用 v2.0.2
+# VSCode 建置及作業應用 v2.0.3
 
 
 ## 歡迎使用VSCode !
@@ -11,12 +11,12 @@ VSCode為一種輕量化架構(約352MB)的文字編輯器。藉由延伸套件(
 
 本VSCode建置說明有程式庫環境配置以及VSCode調用程式開發套件，以及範例配置程式。
 
- - 程式環境配置: 請參照`vscode_setup`1~7的說明檔。
+ - 程式環境配置/安裝: 請參照`vscode_setup`1~7的說明檔。
  - 範例配置程式: 
-     - 自定義配置: VSCode的客製化均以JSON信息配置。請參閱[vscode_setup(Config)_JSON.md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Config)_JSON.md)。
-     - 編譯式程式(C/C++，Fortran，VB/C#/F#)請參照`vscode_setup(build)`1~3。
-
+     - 自定義配置: VSCode的客製化均以JSON信息配置。請參閱JSON語法及VSCode`settings.json`配置說明[vscode_setup(Config)_JSON.md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(Config)_JSON.md)。
+     - 編譯式/解釋型程式: 參閱[Let's Build Something](https://github.com/TaiXeflar/VSCode-Dev-Setup/tree/main/Let's%20Build%20Something)路徑底下的檔案。
 Happy Coding!
+ - 程式自生成建置: 以專案原始碼生成檔案並逕行安裝。參閱[Let's CMake Something](https://github.com/TaiXeflar/VSCode-Dev-Setup/tree/main/Let's%20CMake%20Something)。
 
 ## Markdown(*.md) Readme Files
 
@@ -30,7 +30,7 @@ Happy Coding!
  - [GMT](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(5)_GMT.md) (Generic Mapping Tools 6.4.0)
  - [Git](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(6)_Git.md) (2.36.1)
  - [Gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.1)_gsudo.md) (Administrator Privilege Tools)
-
+ - [Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md) (Re-Master in Progress)
  - [Office](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/InstallOffice.md) (Microsoft Office Deployment Tool)
 
 有關本範例建置的程式語言支援包含:
@@ -46,7 +46,7 @@ Happy Coding!
  - [Jupyter](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(9)_Jupyter.md) Notebook
 
 未來可能會加入以下程式語言/開發套件支援:
- - [Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md) (Re-Master in Progress)
+ - SH/BASH(Shell Script)
  - Julia
  - Java
  - JavaScript/TypeScript
@@ -62,5 +62,5 @@ Happy Coding!
 
 請注意，當說明文件內的命令列有`sudo`或`su`的命令時，該命令需要提升權限的終端機執行。你有兩種解決方法：
  - 重新以系統管理員身份運行`Windows PowerShell`/`命令提示字元`/`Windows終端機`。
- - 使用[gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(0.1)_gsudo.md)套件提升權限(提升至系統管理員權限)。
+ - 使用[gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.1)_gsudo.md)套件提升權限(提升至系統管理員權限)。
 
