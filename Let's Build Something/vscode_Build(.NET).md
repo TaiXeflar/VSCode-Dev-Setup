@@ -19,7 +19,7 @@
     ```
      vbc.exe
     ```
- - [Visual C#(C Sharp)](): 微軟基於.NET Framework以C/C++相似語法設計的新型物件導向程式語言。適合建立C#主控台，C#視窗型應用程式，MSIX封包Windows應用程式安裝程式，Web應用程式，Blazor，Razor類型應用，WebAssembly部署，Unity遊戲引擎C#編程等通用型應用程式。
+ - [Visual C#(C Sharp)](): 微軟基於.NET Framework以C/C++相似語法設計新型的物件導向程式語言。適合建立C#主控台，C#視窗型應用程式，MSIX封包Windows應用程式安裝程式，Web應用程式，Blazor，Razor類型應用，WebAssembly部署，Unity遊戲引擎C#編程等通用型應用程式。請注意C#的名稱是"C Sharp"而不是"C Hashtag"(笑)。
     ```
      csc.exe
      csi.exe
