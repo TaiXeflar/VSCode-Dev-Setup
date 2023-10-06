@@ -1,4 +1,4 @@
-# 以VSCode配置Jupyter筆記本環境
+# 以VSCode配置Jupyter筆記本偵錯環境
 
 ## Jupyter筆記本介紹
 
