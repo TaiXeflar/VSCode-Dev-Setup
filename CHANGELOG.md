@@ -56,7 +56,7 @@ We've added full Traditional Chinese (ZH-TW) and Images to these Developer toolk
  - Python 3.9.7 [Python Software Foundation]
      - pip
      - Jupyter (Jupyter Notebook)
- - Git for Windows 2.36.1
+ - Git for Windows 2.42.1
 
 We removed all English Readme files and translate to Traditional Chinese(ZH-TW):
 
@@ -91,12 +91,26 @@ We've added new features:
 We changed license:
   - From: `GNU GPL v3.0`    To: `MIT License`
 
+## Ver 2.0.3
+We've Re-Mastered Build tutorials:
+ - C/C++
+ - Fortran
+ - VB.NET/PowerShell
+ - Python
+ - Jupyter Notebook
+
+Updated Cygwin Project with `apt-cyg` Support:
+ - Cygwin
 
 ## Future Support
+We may add support comes with these languages:
+ - JAVA
  - JavaScript
  - CSS
  - HTML
- - JAVA
+ - VBScript
+ - Form (Symbolic Form)
+
 
 We may add with macOS support files:
  - VSCode
