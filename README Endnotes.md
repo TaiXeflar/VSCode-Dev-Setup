@@ -81,7 +81,10 @@
         - vi/vim text editor
         - NANO pico text editor
         - GCC/G++
-        - gfortran
+        - GCC/GFortran
+        - GNU Make
+        - CMake
+        - 
         - LLVM
     - Gsudo 2.0.5 (by gerardog)
     - Everything 1.4.1.1020 (by voidtools)
@@ -221,8 +224,8 @@ We played these BGM while we contributors build this repository:
     - Mortals - Warrios ft.Laura Brehm, NCS Release.
 
 ## Contributors.Workspace.Share - Game
-We joined these Games in progress when we build this repository:
-   - Genshin Impact (2020) - miHoYo Limited.
-     -  Genshin Impact [Ver. 4.0] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
-   - Tom Clancy's Rainbow Six Siege (2015) - Ubisoft Montreal, Ubisoft Entertainment.
-     - Rainbow Six Siege [ Y8S2 R6S/R6S_Vulkan ] (PC - Uplay/Ubisoft Connect)
+We joined these Games on rest when we build this repo:
+   - [Genshin Impact]() (2020) - miHoYo Limited.
+     -  Genshin Impact [Ver. 4.1] (PC, Android - TW_Cognosphere/Nijigen, HoYoverse_miHoYo)
+   - [Tom Clancy's Rainbow Six Siege]() (2015) - Ubisoft Montreal, Ubisoft Entertainment.
+     - Rainbow Six Siege [ Y8S3 R6S/R6S_Vulkan ] (PC - Uplay/Ubisoft Connect)
