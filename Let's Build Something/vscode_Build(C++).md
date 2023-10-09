@@ -23,7 +23,7 @@
 
      c1.dll          # Microsoft Visual  C  Language Frontend
      c1xx.dll        # Microsoft Visual C++ Language Frontend 
-     c2.dll          # Microsoft Visual C Language Backend
+     c2.dll          # Microsoft Visual  C  Language Backend
 
      link.exe        # Microsoft Incremental Linker
      lib.exe         # Microsoft Library Stub
