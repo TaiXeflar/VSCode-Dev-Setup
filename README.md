@@ -11,9 +11,9 @@ VSCode為一種輕量化架構(約352MB)的文字編輯器。藉由延伸套件(
 
 本VSCode建置說明有程式庫環境配置以及VSCode調用程式開發套件，以及範例配置程式。
 
- - 程式環境配置/安裝: 請參照[vscode_setup]()的說明檔。
+ - 程式環境配置/安裝: 請參照[vscode_setup](https://github.com/TaiXeflar/VSCode-Dev-Setup/tree/main/Let's%20Do%20Setup)的說明檔。
  - 範例配置程式: 
-     - 自定義配置: VSCode的客製化均以JSON信息配置。請參閱JSON語法及VSCode`settings.json`配置說明[vscode_setup(Config)_JSON.md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(Config)_JSON.md)。
+     - [自定義配置](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(VSCode_2_Config).md): VSCode的客製化均以JSON信息配置。請參閱[JSON語法](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(VSCode_2_Config).md#json%E8%AA%9E%E6%B3%95)及VSCode`settings.json`[配置說明](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(VSCode_2_Config).md#%E4%BB%A5json%E7%B7%A8%E8%BC%AFvscode%E7%9A%84%E5%80%8B%E4%BA%BA%E5%8C%96%E8%A8%AD%E5%AE%9A)。
      - 編譯式/解釋型程式: 參閱[Let's Build Something](https://github.com/TaiXeflar/VSCode-Dev-Setup/tree/main/Let's%20Build%20Something)路徑底下的檔案。
 Happy Coding!
  - 程式自生成建置: 以專案原始碼生成檔案並逕行安裝。參閱[Let's CMake Something](https://github.com/TaiXeflar/VSCode-Dev-Setup/tree/main/Let's%20CMake%20Something)。
@@ -52,8 +52,9 @@ Happy Coding!
  - JavaScript/TypeScript
  - CMake (CrossMake)
  - PowerShell
+ - CMD Batch
 
-## [Shell](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.2)_Shell.md)
+## Shell
 
 當說明文件提示Shell的命令列時，該指令是以終端機操作。Windows底下預設使用PowerShell做為預設命令列殼層。
  - 在Windows 10中，請開啟`Windows PowerShell`或`命令提示字元`開啟Windows主控台並輸入命令。
