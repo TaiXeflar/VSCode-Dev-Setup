@@ -1,4 +1,4 @@
-# VSCode的JSON檔配置個人化及程式碼建置和執行
+# VSCode的JSON檔配置個人化及程式碼建置和執行 
 
 ## JSON語法
 
