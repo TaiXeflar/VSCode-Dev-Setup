@@ -90,3 +90,7 @@ NVIDIA CUDA會安裝在以下路徑: `C:\Program Files\NVIDIA GPU Computing Tool
 
 這是可以建立NVIDIA CUDA Runtime看起來的樣子:
    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vs_cuda_VS2022.png)
+
+## Todo List
+
+ - Adding AMD ROCm for Windows
