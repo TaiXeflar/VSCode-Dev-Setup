@@ -1,4 +1,4 @@
-# VSCode安裝及入門個人化事項
+# VSCode安裝及入門個人化事項 
 
 ## VSCode安裝
 
