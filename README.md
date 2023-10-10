@@ -21,7 +21,7 @@ Happy Coding!
 ## Markdown(*.md) Readme Files
 
 有關開發應用程式/命令列執行的應用程式安裝說明讀我檔均以Markdown寫成，並有圖片以及全中譯編寫。本存放庫內有提供以下工具的建置:
- - [VSCode](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.0)_vscode.md) (Microsoft Visual Studio Code)
+ - [VSCode](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(VSCode_1_Setup).md) (Microsoft Visual Studio Code)
  - [VS2022](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(VS2022).md) (Microsoft Visual Studio 2022)
  - [oneAPI](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(OneAPI_CUDA).md#intel-oneapi-%E5%AE%89%E8%A3%9D) (Intel oneAPI 2023.0)
  - [CUDA](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(OneAPI_CUDA).md#nvidia-cuda%E5%AE%89%E8%A3%9D) (NVIDIA CUDA 11.7/12.0)
