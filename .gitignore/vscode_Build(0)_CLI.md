@@ -131,7 +131,6 @@ CMD即為Windows命令提示字元(Windows 命令提示符)，由原本的COMMAN
  - CMD
     ```
     cd "C:\Program Files\Powershell\7\"               ::切換至PowerShell 7的安裝目錄下
-    cmd.exe /C  mklink powershell.exe pwsh.exe        ::調用CMD呼叫mklink， 建立符號"powershell.exe"與可執行檔"pwsh.exe"的關係
     ```   
  - CMD
     ```
