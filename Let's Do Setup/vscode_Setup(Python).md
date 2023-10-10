@@ -1,5 +1,5 @@
 # 安裝Python(PyPI)環境
-
+ 
 ## 直譯器確認及安裝:  
 
   - 本存放庫範例以Windows執行Python 3.9.7直譯器:  Python Software Foundation. Python 3.9.7
