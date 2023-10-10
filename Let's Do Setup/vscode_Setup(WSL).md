@@ -1,6 +1,6 @@
 # VSCode建置WSL偵錯環境
 
-本文會對Windows平台的Linux子系統平台建置開發環境。
+本文會對Windows平台的Linux子系統(Windows Subsystem for Linux)平台建置開發環境。
 
 ## WSL部署
 WSL2以虛擬化技術執行實體Linux核心，使得Windows可基於本機訪問並執行基於Linux系統的二進位可執行檔案。
