@@ -11,7 +11,7 @@ VSCode為一種輕量化架構(約352MB)的文字編輯器。藉由延伸套件(
 
 本VSCode建置說明有程式庫環境配置以及VSCode調用程式開發套件，以及範例配置程式。
 
- - 程式環境配置/安裝: 請參照`vscode_setup`1~7的說明檔。
+ - 程式環境配置/安裝: 請參照[vscode_setup]()的說明檔。
  - 範例配置程式: 
      - 自定義配置: VSCode的客製化均以JSON信息配置。請參閱JSON語法及VSCode`settings.json`配置說明[vscode_setup(Config)_JSON.md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(Config)_JSON.md)。
      - 編譯式/解釋型程式: 參閱[Let's Build Something](https://github.com/TaiXeflar/VSCode-Dev-Setup/tree/main/Let's%20Build%20Something)路徑底下的檔案。
