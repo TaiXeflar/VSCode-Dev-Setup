@@ -33,7 +33,7 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
      - 空物件 `null`
 
  - JSON註解: 該註解形式限在`.jsonc`上才能以`//`標記註解。在`.json`中加入註解是違法的。
-     - 參考[以JSON編輯VSCode的個人化設定](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(Config)_JSON.md#%E4%BB%A5json%E7%B7%A8%E8%BC%AFvscode%E7%9A%84%E5%80%8B%E4%BA%BA%E5%8C%96%E8%A8%AD%E5%AE%9A)以設定將json關聯至jsonc的方法。
+     - 參考[以JSON編輯VSCode的個人化設定](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(VSCode_2_Config).md#%E4%BB%A5json%E7%B7%A8%E8%BC%AFvscode%E7%9A%84%E5%80%8B%E4%BA%BA%E5%8C%96%E8%A8%AD%E5%AE%9A)的`"files.associations"`選項以設定將json關聯至jsonc的方法。
 
 無論任何被包含在內物件，均需以逗號分隔(最後一個物件不能有逗號)，鍵值的鍵或是字串需要以雙引號`""`為合法。
 
