@@ -22,15 +22,15 @@ Happy Coding!
 
 有關開發應用程式/命令列執行的應用程式安裝說明讀我檔均以Markdown寫成，並有圖片以及全中譯編寫。本存放庫內有提供以下工具的建置:
  - [VSCode](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.0)_vscode.md) (Microsoft Visual Studio Code)
- - [VS2022](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(1)_VS2022.md) (Microsoft Visual Studio 2022)
- - [oneAPI](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md#intel-oneapi-%E5%AE%89%E8%A3%9D) (Intel oneAPI 2023.0)
- - [CUDA](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md#nvidia-cuda%E5%AE%89%E8%A3%9D) (NVIDIA CUDA 11.7/12.0)
- - [MATLAB](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md#nvidia-cuda%E5%AE%89%E8%A3%9D) (R2022a)
- - [Python](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md#nvidia-cuda%E5%AE%89%E8%A3%9D) (Python 3.9.7)
- - [GMT](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(5)_GMT.md) (Generic Mapping Tools 6.4.0)
- - [Git](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(6)_Git.md) (2.36.1)
- - [Gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.1)_gsudo.md) (Administrator Privilege Tools)
- - [Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md) (Re-Master in Progress)
+ - [VS2022](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(VS2022).md) (Microsoft Visual Studio 2022)
+ - [oneAPI](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(OneAPI_CUDA).md#intel-oneapi-%E5%AE%89%E8%A3%9D) (Intel oneAPI 2023.0)
+ - [CUDA](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(OneAPI_CUDA).md#nvidia-cuda%E5%AE%89%E8%A3%9D) (NVIDIA CUDA 11.7/12.0)
+ - [MATLAB](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(MATLAB).md) (R2022a)
+ - [Python](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(Python).md) (Python 3.9.7)
+ - [GMT](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(GMT).md) (Generic Mapping Tools 6.4.0)
+ - [Git](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(Git).md) (2.36.1)
+ - [Gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(Gsudo).md) (Administrator Privilege Tools)
+ - [Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(Cygwin).md) (Re-Master in Progress)
  - [Office](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/InstallOffice.md) (Microsoft Office Deployment Tool)
 
 有關本範例建置的程式語言支援包含:
