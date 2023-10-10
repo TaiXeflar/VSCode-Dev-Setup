@@ -100,7 +100,7 @@ CMake會開始檢查編譯器設定、尋找引用的標頭檔、生成建置規
 建置完成後，會將所生成的應用程式及可執行檔(\*.exe)、動態連結程式庫(\*.dll)、靜態程式庫(\*.lib)、標頭檔程式庫(\*.h;\*hpp)等工具鏈安裝至指定位置(範例指定至`C:/LLVM`)。最後手動設定把LLVM加入至PATH即完成LLVM的建置部署。
 
 ## VSCode調用LLVM/Clang
-參照[vscode_Setup(Build 1)_VC++_ICL_DPCPP_CUDA_GCC.md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(Build%201)_VC%2B%2B_ICL_DPCPP_CUDA_GCC.md)實作，並以clang替換成欲使用的C/C++編譯器前端調用。執行監測(Watchdog)或偵錯(Debug)可調用gdb(GNU Debugger)或lldb(LLVM Debugger)。
+參照[vscode_Build(C++).md](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Build%20Something/vscode_Build(C%2B%2B).md)實作，並以clang替換成欲使用的C/C++編譯器前端調用。執行監測(Watchdog)或偵錯(Debug)可調用gdb(GNU Debugger)或lldb(LLVM Debugger)。
  - tasks.json
    ```
     {
