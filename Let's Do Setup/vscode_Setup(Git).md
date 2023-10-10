@@ -1,6 +1,6 @@
 # VSCode Git套件設定
 
-## Git套件安裝
+## Git for Windows套件安裝
 
 Git for Windows套件為開源免費軟體。安裝時須同意GNU授權條款:
 
