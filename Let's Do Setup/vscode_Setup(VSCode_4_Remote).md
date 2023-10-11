@@ -82,3 +82,25 @@ SSH主機連線設定已完成。若登入時使用者有帳密則依提示輸�
 若欲更改SSH主機選項，則開啟`~/.ssh/config`檔案。該`config`檔案以YAML格式儲存SSH主機信息:
 
 ![Image](../Markdown%20Image/vscode_remote(5).png)
+
+## VSCode的SSH連線指令
+
+VSCode執行SSH遠端連線工作階段指令:
+ - PowerShell
+    ```
+     ssh <USER_NAME>@<IPv4>
+    ```
+
+若SSH遠端連線工作階段有指定監聽埠，有以下2種輸入法:
+ - PowerShell
+    ```
+     ssh <USER_NAME>@<IPv4> -p <PORT>
+     ssh <USER_NAME>@<IPv4>:<PORT>
+    ```
+
+若以示範呈現則會是像這樣的SSH指令:
+ - PowerShell
+   ```
+    ssh userLinux@XXX.XXX.XXX.XXX -p 54088
+    ssh userLinux@XXX.XXX.XXX.XXX:54088
+   ```
