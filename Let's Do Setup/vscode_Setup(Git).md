@@ -94,41 +94,41 @@ Git可以做為GitHub控制套件，並有自帶BASH做為UNIX Shell執行bash�
 - Git Clone
 
     若是你要複製存放庫，請在目的地資料夾以終端執行git:
- - Shell
-    ```
-    git clone __URL__
-    ```
-     - `__URL__`為該git存放庫的URL網址。
+     - Shell
+        ```
+         git clone __URL__
+        ```
+       `__URL__`為該git存放庫的URL網址。
     
-    以終端機執行在桌面上git複製 **`vscode_build_sample_repos`** 的結果如下:
+    以終端機執行在桌面上git複製 **`VSCode-Dev-Setup`** 的結果如下:
 
-    ```
-    PS C:\Users\TaiXeflar> cd Desktop
-    PS C:\Users\TaiXeflar\Desktop> git clone https://github.com/TaiXeflar/vscode_build_sample_repos.git
-    Cloning into 'vscode_build_sample_repos'...
-    remote: Enumerating objects: 601, done.
-    remote: Counting objects: 100% (26/26), done.
-    remote: Compressing objects: 100% (21/21), done.
-    remote: Total 601 (delta 12), reused 19 (delta 5), pack-reused 575
-    /s
-    Receiving objects: 100% (601/601), 4.67 MiB | 2.28 MiB/s, done.
-    Resolving deltas: 100% (331/331), done.
-    PS C:\Users\TaiXeflar\Desktop>
-    ```
+     - PowerShell(Output)
+        ```
+         PS C:\Users\TaiXeflar> cd Desktop
+         PS C:\Users\TaiXeflar\Desktop> git clone https://github.com/TaiXeflar/VSCode-Dev-Setup.git
+         Cloning into 'VSCode-Dev-Setup'...
+         remote: Enumerating objects: 601, done.
+         remote: Counting objects: 100% (26/26), done.
+         remote: Compressing objects: 100% (21/21), done.
+         remote: Total 601 (delta 12), reused 19 (delta 5), pack-reused 575
+         /s
+         Receiving objects: 100% (601/601), 4.67 MiB | 2.28 MiB/s, done.
+         Resolving deltas: 100% (331/331), done.
+         PS C:\Users\TaiXeflar\Desktop>
+        ```
     桌面上將會出現一個vscode_build_sample_repos的資料夾。其中，該存放庫的所有檔案都在該資料夾內，並有一個隱藏的.git資料夾存放該存放庫的git基本訊息。
 
-- 初始化推送你的專案
+## 初始化推送你的專案
 
  1. 首先以檔案總管開啟專案資料夾，選擇以VSCode開啟。
- 2. 開啟VSCode後，在原始檔控制功能標籤中選擇"將存放庫初始化"。
-     - 請注意，這相當於在專案資料夾底下執行指令:
-       - Shell
-            ```
-            git init
-            ```
- 3. 初始化完成後，你可以提交推送版本信息，VSCode會跳出一個名為"**COMMIT_EDITMSG**"的視窗，請在開頭不含#字號的字行上輸入你的提交信息。
+ 2. 開啟VSCode後，在原始檔控制功能標籤中選擇"將存放庫初始化"。請注意，這相當於在專案資料夾底下執行指令:
+     - Shell
+        ```
+         git init
+        ```
+ - 初始化完成後，你可以提交推送版本信息，VSCode會跳出一個名為"**COMMIT_EDITMSG**"的視窗，請在開頭不含#字號的字行上輸入你的提交信息。
      - 每執行更新存檔/刪檔/更改/改名而存檔進行提交時，不能提交空白的信息。
- 4. 因為你尚未發佈Branch在GitHub上，在推送同步處理之後會跳出提示視窗，選擇你要Private或Public推送至GitHub上。
+ - 因為你尚未發佈Branch在GitHub上，在推送同步處理之後會跳出提示視窗，選擇你要Private或Public推送至GitHub上。
      - 你發佈的Branch是main的主要版本。
- 5. 你可以在專案資料夾的根目錄下新增一個名為`LICENSE`且**不含副檔名**的文字內容，並在該檔案中加入授權條款的信息。
+ - 你可以在專案資料夾的根目錄下新增一個名為`LICENSE`且**不含副檔名**的文字內容，並在該檔案中加入授權條款的信息。
      - 授權條款可以從GitHub提供的參考網頁選擇你想要發佈的的授權條款: https://choosealicense.com/
