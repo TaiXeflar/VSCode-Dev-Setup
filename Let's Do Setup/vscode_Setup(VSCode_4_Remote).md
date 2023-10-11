@@ -1,7 +1,5 @@
 # VSCode執行遠端工作階段
 
-## Working in progress
-
 ## VPN連線
 
 若你的連線主機為私人網域並設有防火牆，請設定本地端電腦的連線已連線至私人網域內的VPN伺服器(VPN Server)再轉連接至遠端主機。
@@ -11,7 +9,6 @@
     ```
      rasdial <VPN_NAME> <USER_NAME>
     ```
-
 
 ## OpenSSH連線指令
 現今大多數支援遠端通訊協議的伺服器/遠端主機均支援OpenSSH(Open Secure Shell)加密通訊協議，因此透過一行指令即可連線至指定遠端主機。OpenSSH協議已包含在[Git for Windows]()的安裝套件中(因為Git推送連線至GitHub伺服器允許OpenSSH連線協議)並已加入至PATH中，基於此預設設定可直接呼叫SSH。
