@@ -11,7 +11,7 @@
     ```
 
 ## OpenSSH連線指令
-現今大多數支援遠端通訊協議的伺服器/遠端主機均支援OpenSSH(Open Secure Shell)加密通訊協議，因此透過一行指令即可連線至指定遠端主機。OpenSSH協議已包含在[Git for Windows]()的安裝套件中(因為Git推送連線至GitHub伺服器允許OpenSSH連線協議)並已加入至PATH中，基於此預設設定可直接呼叫SSH。
+現今大多數支援遠端通訊協議的伺服器/遠端主機均支援OpenSSH(Open Secure Shell)加密通訊協議，因此透過一行指令即可連線至指定遠端主機。OpenSSH協議已包含在[Git for Windows](vscode_Setup(Git).md)的安裝套件中(因為Git推送連線至GitHub伺服器允許OpenSSH連線協議)並已加入至PATH中，基於此預設設定可直接呼叫SSH。
 
 請務必確認你是否有遠端桌面的操作帳號可供登入；以及目標遠端主機是否需要透過VPN逕行內網連接。
 
