@@ -5,8 +5,8 @@
 
  - [Intel oneAPI Visual Fortran Compiler](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md):前身為Microsoft Visual Fortran，後由Intel接手，並於Intel的開發者工具oneAPI發佈的免費版本。
     ```
-     ifort.exe       # Intel Classic C/C++ Compiler                          <# Targeted Compiler #>
-     ifx.exe         # Intel DPCPP C/C++ Language Frontend                   <# Targeted Compiler #>
+     ifort.exe       # Intel Visual Fortran Compiler                          <# Targeted Compiler #>
+     ifx.exe         # Intel Visual Fortran Compiler                  <# Targeted Compiler #>
     ```
  - [GNU Compiler Collection(GCC)](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md): GNU作業系統的C/C++語言前端，由GNU組織指導並發行至跨平臺，GFortran為GC編譯器集合之一。GCC以GNU GPL v3.0條款授權公開免費使用。
     ```
@@ -36,9 +36,9 @@
      nvc++           # NVIDIA CUDA C++ Language Frontend                    
      nvfortran       # NVIDIA Fortran Language Frontend                      <# Targeted Compiler #>
 
-     pgfortran
-     pgf95
-     pgc++
+     pgfortran       # PGI Compiler Collection Fortran Language Frontend
+     pgf95           # PGI Compiler Collection Fortran Language Frontend
+     pgc++           # PGI Compiler Collection C++ Language Frontend
     ```
  - AMD ROCm: AMD ROCm框架開發工具，Flang僅支援Linux系統。由LLVM基底建構而成，支援HIP API執行AMD GPU偵錯。
 
