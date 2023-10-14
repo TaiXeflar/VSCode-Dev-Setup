@@ -2,6 +2,9 @@
 # VSCode執行PowerShell偵錯階段
 本範例以PowerShell 7為偵錯執行環境。
 
+## PowerShell的VSCode偵錯環境
+安裝[PowerShell延伸模組](vscode:extension/ms-vscode.PowerShell)後以`F5`鍵偵錯即可解決(一勞永逸)。筆記本形式Polyglot執行PowerShell段落式偵錯參閱[這裡](vscode_Play(NB).md#jupyter筆記本執行net-repl)。
+
 ## PowerShell Script定義
 Script在此說明的中譯為:「手稿」、「底稿」、「腳本」；在程式語言中通常解釋為具備人類可閱讀性的直譯式可執行程式。例如:
  - 可在Shell(BASH/ZSH/tcsh)執行的Shell Script(`*.sh`/`*.bash`/`*.csh`):
