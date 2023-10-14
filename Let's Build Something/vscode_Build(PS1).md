@@ -109,7 +109,7 @@ PowerShell Cmdlet常見對應的Alias如下:
 | Write-Host | echo | echo |
 | Read-Host | read | set | -p(bash); /p(CMD) |
 | Set-Variable | export | set | /A(CMD) |
-| Invoke-WebRequest(iwr) | wget | curl | | | 
+| Invoke-WebRequest(iwr) | wget | curl | -o(CMD) | -OutFile | 
 
 舉例一個從本機磁碟D複製指定資料夾及其子資料夾內容至本機磁碟C的目前使用者桌面路徑下。由BASH語法轉譯成PowerShell像這樣:
  - Bash
@@ -186,7 +186,7 @@ PowerShell可透過Cmdlet`Invoke-WebRequest`執行HTTP/HTTPS網路請求，並�
    ```
 
 ## PowerShell執行原則`ExecutionPolicy`
-PowerShell殼層可設定執行的安全原則，以是否啟用經受信任的數位簽署的PowerShell手稿。(當你知道VBScript沒有執行的安全原則時就知道有多危險......)
+PowerShell殼層可設定執行的安全原則，以是否啟用未經受信任的數位簽署的PowerShell手稿。(當你知道VBScript沒有執行的安全原則時就知道有多危險......)
 
 PowerShell有以下的本機執行原則`<POLICY>`: (若本機執行原則為`Default`，則代表該類型電腦套用Windows預設原則。)
 | Windows預設原則 | 本機執行原則 | 個別命令 | 本地腳本(未簽署) | 本地腳本(已簽署) | 遠端腳本(未簽署) | 遠端腳本(已簽署) |
