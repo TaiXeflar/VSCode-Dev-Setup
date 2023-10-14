@@ -69,7 +69,7 @@ PowerShell有以下特性:
     & "D:/Games/miHoYo/Genshin Impact/GenshinImpact.exe"
    ```
 
-欲在PowerShell殼層中傳遞一個可執行程式時，可同樣使用呼叫運算子`&`:
+欲在PowerShell殼層中傳遞一個已在`${env:PATH}`變數中的可執行程式時，可同樣使用呼叫運算子`&`:
  - PowerShell
    ```
     & cmd /E:ON /C setvars "intel64 VS2022" && ifort ifx_test.f90 
