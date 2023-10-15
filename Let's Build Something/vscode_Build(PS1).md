@@ -33,10 +33,12 @@ PowerShell的可執行手稿副檔名是`*.ps1`，PowerShell模組是`*.psm1`及
 
 ## PowerShell的特性
 PowerShell有以下特性:
- - PowerShell 不檢查大小寫。(這很重要! 因為BASH或CMD都要檢查大小寫；這可以增加程式碼的容錯率)
- - PowerShell 7支援基於Intellisense的`TAB`鍵快速鍵入，以及程式執行歷程紀錄的Intellisense功能。(這很重要! 因為這是懶人Coding的必備之一)
- - PowerShell 7支援色彩設定檔。配合支援的終端機時，可以在例如`Get-ChildItem`(Alias:`ls`/`dir`)等命令執行時回傳檔案類型標示等色彩辨識功能。
+ - PowerShell 支援不檢查大小寫。(這很重要! 因為BASH或CMD都要檢查大小寫；這可以增加程式碼的容錯率)
+ - PowerShell 支援路徑符號`/`及`\`的通用性。(這很重要! 因為BASH規定使用`/`；CMD規定`\`。這可以增加程式碼的容錯率)
+ - PowerShell 7 支援基於智慧鍵入Intellisense的`TAB`鍵快速鍵入，以及「程式執行歷程紀錄」的Intellisense功能。(這很重要! 因為這是懶人Coding的必備之一)
+ - PowerShell 7 支援色彩設定檔。配合支援的終端機時，可以在例如`Get-ChildItem`(Alias:`ls`/`dir`)等命令執行時回傳檔案類型標示等色彩辨識功能。
  - PowerShell 是以管道"Pipeline"的形式傳遞子命令/接續命令或參數。這很適合試錯。
+ - etc.
 
 ## PowerShell執行程式及手稿
 在PowerShell殼層中，直接執行PowerShell手稿時以呼叫運算子`&`傳遞:
@@ -82,7 +84,7 @@ PowerShell有以下特性:
 
 
 ## PowerShell 註解
-PowerShell手稿撰寫註解(Comments)時有2種方法。當PowerShell程式碼被標註為註解時，PowerShell解釋器不會執行註解內容並直接忽略(Ignore)，不會回傳為字串列印。
+PowerShell手稿撰寫註解(Comments)時有2種方法。當標註PowerShell程式碼為註解時，PowerShell解釋器不會執行註解內容並直接忽略(Ignore)，不會回傳為字串列印。
 
 第一種是行註解，在該行開頭以`#`符號開頭。
  - PowerShell
@@ -187,6 +189,8 @@ PowerShell可透過Cmdlet`Invoke-WebRequest`執行HTTP/HTTPS網路請求，並�
          Invoke-WebRequest -Uri $url[$i] -OutFile $save[$i]
     }
    ```
+該範例執行下載下列應用程式: 華碩虛擬桌面寵物天選系列天選姬；華碩虛擬桌面寵物ROG系列Omni；以及華碩筆電控制中心應用程式Armoury Crate。
+
 
 ## PowerShell執行原則`ExecutionPolicy`
 PowerShell殼層可設定執行的安全原則，以是否啟用未經受信任的數位簽署的PowerShell手稿。(當你知道VBScript沒有執行的安全原則時就知道有多危險......)
@@ -194,7 +198,7 @@ PowerShell殼層可設定執行的安全原則，以是否啟用未經受信任�
 PowerShell有以下的本機執行原則`<POLICY>`: (若本機執行原則為`Default`，則代表該類型電腦套用Windows預設原則。)
 | Windows預設原則 | 本機執行原則 | 個別命令 | 本地腳本(未簽署) | 本地腳本(已簽署) | 遠端腳本(未簽署) | 遠端腳本(已簽署) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| ᗜ ˰ ᗜ | Default ||||||
+| ᗜ ˰ ᗜ | Default | ᗜ ˰ ᗜ | ᗜ ˰ ᗜ | ᗜ ˰ ᗜ | ᗜ ˰ ᗜ | ᗜ ˰ ᗜ |
 | Windows 用戶端 | Restricted | V | X | X | X | X |
 || AllSigned | V | X | V | X | V |
 | Windows 伺服端 | RemoteSigned | V | V | V | X | V |
@@ -226,6 +230,8 @@ PowerShell有以下的本機執行原則`<POLICY>`: (若本機執行原則為`De
     Set-ExecutionPolicy -ExecutionPolicy <POLICY> -Scope <GROUP>
    ```
 這會變更指定群組`<GROUP>`的執行原則為新的`<POLICY>`。若未傳遞`-Scope`參數，則受到變更執行原則的群組為`CurrentUser`(即目前使用者)。
+
+若是要移除指定的`<POLICY>`，則指派`<POLICY>`為`Undefined`。
 
 ## References
 
