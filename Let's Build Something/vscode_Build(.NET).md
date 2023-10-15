@@ -102,7 +102,7 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
                 ```
                 cmd.exe /E:ON /C VsDevCmd.bat -host_arch=x64 -arch=x64 && ...........
                 ```
-      - `type`: `shell`(因為該C/C++編譯命令從`cmd.exe`殼層啟動)。
+      - `type`: `shell`(因為該VB編譯命令從`cmd.exe`殼層啟動)。
       - `label`: 標籤。你可以叫一個喜歡的名字。
       - `command`:編譯器的檔案名。舉例MSVC就是`cl.exe`.
       - `args`: 傳遞至編譯器內的引數。不同編譯器在`args`JSON清單物件中可有不同引數及排列順序。
