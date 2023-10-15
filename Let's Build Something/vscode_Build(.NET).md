@@ -3,7 +3,7 @@
 ## VSCode調用編譯器確認
 .NET(Dot NET)為Microsoft的應用程式框架，由Basic開始至Visual Basic，發展.NET框架後VB列入.NET CORE核心一部分，相繼有C#，F#，Q#，PowerShell等.NET框架體系語言。備註:標註`<Target REPL>`為執行REPL直譯互動式的執行器，`<Target Compiler>`為執行編譯之目標編譯器。
 
- - [PowerShell(pwsh)](): Microsoft基於.NET Core核心的跨平臺語法相容性自動化管理殼層應用程式，基本語法相容[CMD](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.2)_Shell.md#cmd-windows-command-prompt)/BASH。PowerShell的跨平臺支援可安裝於macOS(UNIX-Like)/Linux(UNIX-Like)/FreeBSD(UNIX-Like)/ReactOS(DOS-Like)/Windows(DOS)等多種作業系統。PowerShell執行殼層，意味著PowerShell是以REPL模式執行互動式，可使用Cmdlet(Command-Let)命令執行PowerShell指令或以PowerShell手稿執行程式。PowerShell核心可以在VSCode內以Polyglot Notebooks延伸模組支援下以Jupyter筆記本形式執行PowerShell程式碼。
+ - [PowerShell(pwsh)](vscode_Build(PS1).md): Microsoft基於.NET Core核心的跨平臺語法相容性自動化管理殼層應用程式，基本語法相容CMD/BASH。PowerShell的跨平臺支援可安裝於macOS(UNIX-Like)/Linux(UNIX-Like)/FreeBSD(UNIX-Like)/ReactOS(DOS-Like)/Windows(DOS)等多種作業系統。PowerShell執行殼層，意味著PowerShell是以REPL模式執行互動式，可使用Cmdlet(Command-Let)命令執行PowerShell指令或以PowerShell手稿執行程式。PowerShell核心可以在VSCode內以Polyglot Notebooks延伸模組支援下以Jupyter筆記本形式執行PowerShell程式碼。
 
     - Unix-Like系統中並不包含PowerShell，但Microsoft有提供[PowerShell跨平臺支援](https://github.com/PowerShell/PowerShell)(PowerShell亦有開放原始碼)，Linux/macOS可透過`apt`，`yum`，`dnf`，`pacman`，`brew`等套件管理員執行套件下載安裝；或由GitHub頁面釋出的發行安裝檔`*.deb`，`*.rpm`，`*.pkg`等由套件管理員執行安裝；或利用`tar`解壓縮`*.tar.gz`的tarball並直接部署原生二進位制檔案。透過該PowerShell安裝位置路徑確認後加入至`PATH`變數以直接調用PowerShell殼層。
 
@@ -15,17 +15,17 @@
 
          pwsh.exe               <PATH> "C:\Program Files\PowerShell\X\pwsh.exe"                     <VER>   6.X/7.X
         ```
- - [Visual Basic(VB)](): 即為原Basic語法，後以可視覺化發展編程，現如今仍有大多數Windows傳統形式窗應用程式以Visual Basic逕行開發和發佈。現在的Visual Basic為Visual Basic 6世代且不迭代更新，並以長期維護形式透過原Windows本機.NET Core執行環境或以Visual Studio開發人員應用程式發行VB編譯器；一部分.NET框架的新式語法(例如C# ASP.NET Razor)亦相容於/可以Visual Basic語法執行。
+ - [Visual Basic(VB)](vscode_Build(.NET).md): 即為原Basic語法，後以可視覺化發展編程，現如今仍有大多數Windows傳統形式窗應用程式以Visual Basic逕行開發和發佈。現在的Visual Basic為Visual Basic 6世代且不迭代更新，並以長期維護形式透過原Windows本機.NET Core執行環境或以Visual Studio開發人員應用程式發行VB編譯器；一部分.NET框架的新式語法(例如C# ASP.NET Razor)亦相容於/可以Visual Basic語法執行。
     ```
      vbc.exe
     ```
- - [Visual C#(C Sharp)](): 微軟基於.NET Framework以C/C++相似語法設計新型的物件導向程式語言。適合建立C#主控台，C#視窗型應用程式，MSIX封包Windows應用程式安裝程式，Web應用程式，Blazor，Razor類型應用，WebAssembly部署，Unity遊戲引擎C#編程等通用型應用程式。請注意C#的名稱是"C Sharp"而不是"C Hashtag"(笑)。
+ - [Visual C#(C Sharp)](vscode_Build(.NET).md): 微軟基於.NET Framework以C/C++相似語法設計新型的物件導向程式語言。適合建立C#主控台，C#視窗型應用程式，MSIX封包Windows應用程式安裝程式，Web應用程式，Blazor，Razor類型應用，WebAssembly部署，Unity遊戲引擎C#編程等通用型應用程式。請注意C#的名稱是"C Sharp"而不是"C Hashtag"(笑)。
     ```
      csc.exe
      csi.exe
     ```
 
- - [Visual F#(F Sharp)](): 微軟基於.NET Framework框架全新設計適用於科學計算、數值/函數運算全新設計的程式語言F#。
+ - [Visual F#(F Sharp)](vscode_Build(.NET).md): 微軟基於.NET Framework框架全新設計適用於科學計算、數值/函數運算全新設計的程式語言F#。
     ```
      fsc.exe
      fsi.exe
@@ -179,7 +179,7 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
 ## VSCode建置PowerShell偵錯
 VSCode內透過延伸模組[ext:PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)提供PowerShell底稿的`F5`一鍵偵錯。
 
-若欲利用PowerShell執行筆記本段落式樣偵錯，請參閱[Jupyter的.NET支援方式](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(9)_Jupyter.md#jupyter%E7%AD%86%E8%A8%98%E6%9C%AC%E5%9F%B7%E8%A1%8Cnet-repl)。
+若欲利用PowerShell執行筆記本段落式樣偵錯，請參閱[Jupyter的.NET支援方式](vscode_Play(NB).md)。
 
 ### 備註
  - VB vs. VBScript(VBS): Visual Basic與VB Script(VBS)並沒有直接關聯，VBS也並非VB的直譯器；VBS為相容於Visual Basic語法的Visual Basic簡單語法解釋型可執行手稿(類似於Python Script)透過Windows本機元件的`cscript.exe`及`wscript.exe`Console直接執行VBS手稿。由於VBS可視為可執行檔，因此VBS執行時系統不會對VBS進行掃毒或威脅隔離。若是需要執行VBS可使用Windows Sandbox執行虛擬機器。
