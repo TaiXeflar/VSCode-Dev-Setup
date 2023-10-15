@@ -18,16 +18,16 @@ Gsudo工具固然好用，但請特別注意，握有越高的權限其風險越
 
 安裝gsudo，至GitHub官網上搜尋 **gerardog/gsudo** ，找到Release後尋找msi檔案的安裝檔下載。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst0_1.png)
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst0_2.png)
+![image](../Markdown%20Image/vscode_gsudo_inst0_1.png)
+![image](../Markdown%20Image/vscode_gsudo_inst0_2.png)
 
 打開安裝檔會長這個樣子:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst1.png)
+![image](../Markdown%20Image/vscode_gsudo_inst1.png)
 
 確認安裝檔位置，固定會是`C:\Program Files (x86)\gsudo\`:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gsudo_inst2.png)
+![image](../Markdown%20Image/vscode_gsudo_inst2.png)
 
 ## Gsudo介紹
 
@@ -39,7 +39,7 @@ Gsudo為一透過命令列立即提升權限的套件。透過該套件，可以
 | Linux | User | sudo | Root |
 | Windows | User | gsudo | Administrator |
 
-由於Gsudo會自動建立`gsudo.exe`的連結符號`sudo.exe`，因此，在終端機內的`sudo`的呼叫會啟動`gsudo.exe`。
+由於Gsudo會自動建立`gsudo.exe`的連結符號`sudo.exe`，因此，在終端機內`sudo`的呼叫會連結至`gsudo.exe`。
 
 該符號連結在CMD的手動建立命令如下:
  - CMD
@@ -56,33 +56,34 @@ Gsudo為一透過命令列立即提升權限的套件。透過該套件，可以
 
 使用`dir`指令，可以看到`su`與`sudo`對應至`gsudo.exe`的符號連結關係(`.symlink`):
 
-```
-C:\Program Files (x86)\Gsudo 的目錄
+  - CMD
+    ```
+     C:\Program Files (x86)\Gsudo 的目錄
 
-2023/01/31  下午 01:56    <DIR>          .
-2023/01/30  上午 01:32    <DIR>          ..
-2022/11/21  下午 03:39               695 gsudo
-2022/11/21  下午 03:39         5,842,896 gsudo.exe
-2022/11/21  下午 03:39            20,105 gsudoModule.psd1
-2022/11/21  下午 03:39            16,975 gsudoModule.psm1
-2022/11/21  下午 03:39            22,814 invoke-gsudo.ps1
-2023/01/31  下午 01:47    <SYMLINK>      su.exe [gsudo.exe]
-2023/01/31  下午 01:56    <SYMLINK>      sudo.exe [gsudo.exe]
-```
+     2023/01/31  下午 01:56    <DIR>          .
+     2023/01/30  上午 01:32    <DIR>          ..
+     2022/11/21  下午 03:39               695 gsudo
+     2022/11/21  下午 03:39         5,842,896 gsudo.exe
+     2022/11/21  下午 03:39            20,105 gsudoModule.psd1
+     2022/11/21  下午 03:39            16,975 gsudoModule.psm1
+     2022/11/21  下午 03:39            22,814 invoke-gsudo.ps1
+     2023/01/31  下午 01:47    <SYMLINK>      su.exe [gsudo.exe]
+     2023/01/31  下午 01:56    <SYMLINK>      sudo.exe [gsudo.exe]
+    ```
 
 由於Gsudo會加入至PATH變數，因此提升至系統管理員權限只需要這一段命令:
  - PowerShell
-     ```
+    ```
      gsudo
-     ``` 
+    ``` 
      或
-     ```
+    ```
      sudo
-     ```
+    ```
      或
-     ```
+    ```
      su
-     ```
+    ```
 
 這是Gsudo的命令列說明:
 - PowerShell
@@ -110,20 +111,17 @@ Gsudo的命令列參數提升至不同權限 (是的，你沒看錯，這玩意�
 
 Gsudo的立即提升權限可以直接提供獲取權限的命令執行。例如:
 
- - 以系統管理員權限，將pip通道的Python模組安裝在`C:\Program Files\Python39\scripts\`底下:
-  
-     - PowerShell
-       ```
-       sudo pip install __pythonModule__
-       ```
+以系統管理員權限，將pip通道的Python模組安裝在`C:\Program Files\Python39\scripts\`底下:
+ - PowerShell
+    ```
+     sudo pip install __pythonModule__
+    ```
 
- - 以系統管理員權限，在`C:\Windows\System32\`路徑下開啟VSCode編輯器修改系統文件:
-  
-     - PowerShell
-       ```
-       sudo code "C:\Windows\System32\"
-       ```
-
+以系統管理員權限，在`C:\Windows\System32\`路徑下開啟VSCode編輯器修改系統文件:
+ - PowerShell
+    ```
+     sudo code "C:\Windows\System32\"
+    ```
 
 ## References
 Gearadog Gsudo: https://github.com/gerardog/gsudo
