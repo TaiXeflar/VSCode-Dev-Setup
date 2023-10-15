@@ -7,7 +7,7 @@ Cling是CERN的ROOT統計及資料分析框架底下的一個C++直譯器，由L
 Cling有macOS及Linux的發行版本(即安裝可用的二進位制檔)，Windows平臺則需要自行使用原始碼建置。以下會基於Windows平臺建置逐步說明。
 
 Cling可單獨建立，但通常包含在LLVM內與Clang一起編譯生成。我們以Microsoft Visual Studio 2022 Community作為開發工具:
- - [C++桌面開發選項](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(1)_VS2022.md)
+ - [C++桌面開發選項](../Let's%20Do%20Setup/vscode_Setup(VS2022).md)
     ```
      MSVC v143 - VS2022 x64/x86 Build Tools       (必選)
      MSVC v143 ATL                                (可選)
@@ -99,7 +99,7 @@ Cling可單獨建立，但通常包含在LLVM內與Clang一起編譯生成。我
     cmake -DCMAKE_INSTALL_PREFIX="<INSTALL_DIR>" -DLLVM_TARGETS_TO_BUILD="<TARGET_PLATFORM_ARCH>" -G "Visual Studio 17" -S ../src -Thost=x64 -A x64
     cmake --build . --target "<TARGET>" --config "<VERSION>" --parallel
    ```
-若有自定義依據需求提升權限者，可在命令列開頭以`sudo`提權([gsudo](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(0.1)_gsudo.md)套件)執行`cmake`命令。舉例將Cling建置並安裝到`C:/Program Files/Cling`底下:
+若有自定義依據需求提升權限者，可在命令列開頭以`sudo`提權([gsudo](../Let's%20Do%20Setup/vscode_Setup(Gsudo).md)套件)執行`cmake`命令。舉例將Cling建置並安裝到`C:/Program Files/Cling`底下:
  - CMD
    ```
     cd build
