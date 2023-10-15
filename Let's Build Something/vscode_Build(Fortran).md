@@ -3,12 +3,12 @@
 ## VSCode調用編譯器確認
 在Windows平臺較少有Fortran編譯器選擇(大多相容於Linux)，因此我們選擇較為常見的Fortran編譯器:(標註`<# Targeted Compiler #>`為編譯Fortran來源時所用到的編譯器名稱。標註`symlink`為符號連結。)
 
- - [Intel oneAPI Visual Fortran Compiler](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2)_VS2022%2BoneAPI_CUDA.md):前身為Microsoft Visual Fortran，後由Intel接手，並於Intel的開發者工具oneAPI發佈的免費版本。
+ - [Intel oneAPI Visual Fortran Compiler](../Let's%20Do%20Setup/vscode_Setup(OneAPI_CUDA).md):前身為Microsoft Visual Fortran，後由Intel接手，並於Intel的開發者工具oneAPI發佈的免費版本。
     ```
      ifort.exe       # Intel Visual Fortran Compiler                          <# Targeted Compiler #>
      ifx.exe         # Intel Visual Fortran Compiler                  <# Targeted Compiler #>
     ```
- - [GNU Compiler Collection(GCC)](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(4)_Cygwin.md): GNU作業系統的C/C++語言前端，由GNU組織指導並發行至跨平臺，GFortran為GC編譯器集合之一。GCC以GNU GPL v3.0條款授權公開免費使用。
+ - [GNU Compiler Collection(GCC)](../Let's%20Do%20Setup/vscode_Setup(Cygwin).md): GNU作業系統的C/C++語言前端，由GNU組織指導並發行至跨平臺，GFortran為GC編譯器集合之一。GCC以GNU GPL v3.0條款授權公開免費使用。
     ```
      gfortran        # GNU Fortran Compiler                                  <# Targeted Compiler #>
 
@@ -20,7 +20,7 @@
      ld              # Linker
      make            # GNU Makefile Utility
     ```
- - [LLVM/Clang](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Markdown_Readme/vscode_Setup(2.1)_LLVM.md): 原PGI編譯器集合以LLVM架構基底的Fortran編譯器前端，與LLVM官方的Flang相同專案名稱但來源不同。
+ - [LLVM/Clang](../Let's%20CMake%20Something/LLVM.md): 原PGI編譯器集合以LLVM架構基底的Fortran編譯器前端，與LLVM官方的Flang相同專案名稱但來源不同。
     ```
      flang.exe       # PGI Open-Sourced LLVM Fortran language frontend       <# Targeted Compiler #>
 
@@ -29,7 +29,7 @@
      llvm-as         # LLVM Compiler Infastructure Assembler
     ```
 
- - [NVIDIA HPC SDK](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(10)_WSL.md#wsl-%E9%83%A8%E7%BD%B2-nvidia-hpc-sdk): NVIDIA發佈的HPC開發套件，包含GPU加速程式庫、GPU運算科學工具函式庫、以及包含原PGI編譯器集合的NVIDIA C/C++編譯器、NVFortran編譯器執行環境。
+ - [NVIDIA HPC SDK](../Let's%20Do%20Setup/vscode_Setup(WSL).md#wsl-%E9%83%A8%E7%BD%B2-nvidia-hpc-sdk): NVIDIA發佈的HPC開發套件，包含GPU加速程式庫、GPU運算科學工具函式庫、以及包含原PGI編譯器集合的NVIDIA C/C++編譯器、NVFortran編譯器執行環境。
     ```
      nvcc            # NVIDIA CUDA Compiler Driver                          
      nvc             # NVIDIA CUDA C Language Frontend                             
@@ -110,7 +110,7 @@ VSCode對編譯類型程式進行建置(Build Task)，並會根據所引用條�
                 ```
                 cmd.exe /E:ON /C setvars.bat "intel64 VS2022" && ...........
                 ```
-      - `type`: `shell`(因為該C/C++編譯命令從`cmd.exe`殼層啟動)。
+      - `type`: `shell`(因為該Fortran編譯命令從`cmd.exe`殼層啟動)。
       - `label`: 標籤。你可以叫一個喜歡的名字。
       - `command`:編譯器的檔案名。舉例MSVC就是`cl.exe`.
       - `args`: 傳遞至編譯器內的引數。不同編譯器在`args`JSON清單物件中可有不同引數及排列順序:
