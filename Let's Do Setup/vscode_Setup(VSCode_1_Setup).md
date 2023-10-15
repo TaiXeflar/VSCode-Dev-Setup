@@ -9,7 +9,7 @@ VSCode的下載地址: https://code.visualstudio.com/#alt-downloads
      - Windows 7(Service Pack 1, 2, 3)
      - 比Windows XP更早的Windows x86 (32-bit)作業系統
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_download_select.png)
+![image](../Markdown%20Image/vscode_download_select.png)
 
 首先，安裝檔案會是這個檔名: 
  - User: `VSCodeUserSetup-x64-1.XX.X.exe`
@@ -17,35 +17,35 @@ VSCode的下載地址: https://code.visualstudio.com/#alt-downloads
 
 開始安裝VSCode。首先，需要同意使用條款:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscodeInst1.png)
+![image](../Markdown%20Image/vscodeInst1.png)
 
 接著是安裝位置: (請將TaiXeflar換成你/妳自己的使用者名稱)
  - User安裝版本。安裝路徑會在: `C:\Users\TaiXeflar\AppData\Local\Programs\Microsoft VS Code`
  - System安裝版本。安裝路徑會在: `C:\Program Files\Microsoft VS Code`
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscodeInst2.png)
+![image](../Markdown%20Image/vscodeInst2.png)
 
 接著設定加入VSCode捷徑至開始功能表的資料夾位置:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscodeInst3.png)
+![image](../Markdown%20Image/vscodeInst3.png)
 
 接著是附加工作，例如加入至右鍵選單或加入PATH變數(這個強烈建議添加)。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscodeInst4.png)
+![image](../Markdown%20Image/vscodeInst4.png)
 
 最後是產品安裝的確認信息。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscodeInst5.png)
+![image](../Markdown%20Image/vscodeInst5.png)
 
 ## 終端機呼叫VSCode
 
 VSCode可以作為文字編輯器開啟，並且可以系統管理員身分運行(這可以做到使用VSCode修改系統文件等)。
 
  - 在終端中以一般使用者身分(User)呼叫VSCode的樣子:
-     ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_invoke_user.png)
+     ![image](../Markdown%20Image/vscode_invoke_user.png)
 
  - 在終端中以系統管理員身分(Administrator)呼叫VSCode的樣子: (此處透過gsudo套件實現權限提升)
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_invoke_sudo.png)
+    ![image](../Markdown%20Image/vscode_invoke_sudo.png)
 
 ## VSCode延伸套件
 
@@ -53,7 +53,7 @@ VSCode在未擴充功能的情況下只是單純的文字編輯器(Text Editor)�
 
 VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)實現功能擴充或改變。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscodeExt_search.png)
+![image](../Markdown%20Image/vscodeExt_search.png)
 
 以下是改變VSCode系統內語言延伸套件:
  - Chinese (Traditional) Language Pack for Visual Studio Code (繁體中文套件)
