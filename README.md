@@ -37,13 +37,13 @@ Happy Coding!
  - [C/C++](Let's%20Build%20Something/vscode_Setup(Build%20C%2B%2B).md) (MSVC, Intel Classic C/C++ & DPCPP/CPP, NVIDIA CUDA C/C++, GCC/G++)
  - [Fortran](Let's%20Build%20Something/vscode_Setup(Build%20Fortran).md) (Intel Visual Fortran, GFortran)
  - [.NET](Let's%20Build%20Something/vscode_Build(.NET).md) Based Language (Visual Basic, Visual C#, Visual F#)
- - [Python3](Let's%20Do%20Setup/vscode_Build(Python).md) (Python 3.9.7)
- - [MATLAB](Let's%20Do%20Setup/vscode_Build(MATLAB).md)
- - [GMT](Let's%20Do%20Setup/vscode_Build(GMT).md)
+ - [Python3](Let's%20Build%20Something/vscode_Build(Python).md) (Python 3.9.7)
+ - [MATLAB](Let's%20Build%20Something/vscode_Build(MATLAB).md)
+ - [GMT](Let's%20Build%20Something/vscode_Build(GMT).md)
  - [JSON](Let's%20Do%20Setup/vscode_Setup_(VSCode_2_Config).md) (JavaScript Option Notation)
 
 我們提交了Jupyter筆記本的應用:
- - [Jupyter](Let's%20Do%20Setup/vscode_Play(NB).md) Notebook
+ - [Jupyter](Let's%20Build%20Something/vscode_Play(NB).md) Notebook
 
 未來可能會加入以下程式語言/開發套件支援:
  - SH/BASH(Shell Script)
