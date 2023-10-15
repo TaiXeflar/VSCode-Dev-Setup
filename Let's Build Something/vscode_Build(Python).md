@@ -64,4 +64,4 @@
     ```
 
 ## VSCode執行Jupyter筆記本偵錯
-參閱[vscode_Play(NB).md]()的VSCode Framework形式Jupyter筆記本建立及偵錯方式。
+參閱[vscode_Play(NB).md](vscode_Play(NB).md)的VSCode Framework形式Jupyter筆記本建立及偵錯方式。
