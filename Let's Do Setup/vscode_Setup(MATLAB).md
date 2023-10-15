@@ -7,21 +7,21 @@
 MATLAB有分在線安裝及離線安裝兩種部署方式，這裡我們選擇在線安裝。
 
 MATLAB的安裝版本號會以檔名形式標註。其有安裝啟動器快取資料夾在同路徑下。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_1.png)
+![image](../Markdown%20Image/vscode_matlab_1.png)
 
 MATLAB在線安裝需要你登入已註冊的Mathworks帳號，並同意你的使用條款。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_2.png)
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_3.png)
+![image](../Markdown%20Image/vscode_matlab_2.png)
+![image](../Markdown%20Image/vscode_matlab_3.png)
 
 接著選擇你擁有的MATLAB授權憑證，並確定你的使用者身分。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_4.png)
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_5.png)
+![image](../Markdown%20Image/vscode_matlab_4.png)
+![image](../Markdown%20Image/vscode_matlab_5.png)
 
 確認你安裝MATLAB的根目錄。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_6.png)
+![image](../Markdown%20Image/vscode_matlab_6.png)
 
 選擇你要安裝的MATLAB元件，接著執行安裝即可。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_7.png)
+![image](../Markdown%20Image/vscode_matlab_7.png)
 
 ## VSCode調用Matlab互動式命令列(MATLAB Command Window) [OS= macOS]
 在macOS內，可以用終端機執行MATLAB引擎:
@@ -66,14 +66,14 @@ MATLAB調用至VSCode的互動式命令列需要以Python的MATLAB Engine API完
  - Visual Studio 2022是否正確安裝桌面開發C++套件。
  - MATLAB是否正確安裝。
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_engineAPI_py_debug.png)
+![image](../Markdown%20Image/vscode_matlab_engineAPI_py_debug.png)
 
 若是執行成功，則會顯示成功畫面:
 
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_engineAPI_py_0.png)
+![image](../Markdown%20Image/vscode_matlab_engineAPI_py_0.png)
 
 接著回到VSCode中開啟終端機，應該會出現MATLAB選項。這是成功呼叫命令列的樣子:
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_matlab_extention_terminal.png)
+![image](../Markdown%20Image/vscode_matlab_extention_terminal.png)
 
 
 ## VSCode建置Matlab手稿偵錯
