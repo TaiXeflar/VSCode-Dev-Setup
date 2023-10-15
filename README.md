@@ -65,3 +65,47 @@ Happy Coding!
  - 重新以系統管理員身份運行`Windows PowerShell`/`命令提示字元`/`Windows終端機`。
  - 使用[gsudo](Let's%20Do%20Setup/vscode_Setup(Gsudo).md)套件提升權限(提升至系統管理員權限)。
 
+## 環境變數`PATH`
+
+本存放庫所提示的`PATH`、`%PATH%`、`${env:PATH}`均指示為Windows的PATH變數。
+
+Windows會根據在`PATH`變數下內的所有路徑作遞迴搜尋所有可執行的程式和可執行手稿。例如:
+ - 可執行應用程式`*.exe`；
+ - 可執行手稿`*.cmd`/`*.bat`；
+ - VBS手稿`*.vbs`；
+ - PowerShell手稿`*.ps1`(限在PowerShell殼層內執行)。
+
+### Windows作業系統添加使用者PATH變數
+若欲手動添加應用程式至`PATH`清單內，使用`⊞`+`R`熱鍵執行`sysdm.cpl`程式選擇進階的系統變數。
+    
+![image](Markdown%20Image/sysdm_cpl(1).png)
+
+Windows的PATH變數字串定義是以`;`符號連結存入的路徑；以圖形介面定義則是以各行分開表示。
+ - 以字串傳遞: 
+  
+![image](Markdown%20Image/sysdm_cpl(2).png)
+ - 以字行傳遞:
+  
+![image](Markdown%20Image/sysdm_cpl(3).png)
+
+新增的PATH有2種傳遞方式:
+ 1. 直接加入到PATH內。這種做法省事，但可能會超出PATH字元上限。
+     - PATH
+        ```
+         ......;PATH_0;PATH_1;NEW_PATH;......
+        ```
+ 2. 新建變數並存入添加路徑，再將該新添加的變數添加至PATH內(以CMD形式的變數`%__myVAR__%`傳遞)。這做法費事但易於管理，且能縮短字元數量。
+     - PATH
+        ```
+         ......;PATH_0;PATH_1;%VAR_0%;%VAR_1%;......
+        ```
+     - VAR_0
+        ```
+         D:/miHoYo/Games/Genshin Impact/
+        ```
+     - VAR_1
+        ```
+         C:/programs/gmt6/bin
+        ```
+
+
