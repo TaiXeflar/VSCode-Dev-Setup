@@ -108,4 +108,17 @@ Windows的PATH變數字串定義是以`;`符號連結存入的路徑；以圖形
          C:/programs/gmt6/bin
         ```
 
+## macOS/Linux作業系統添加使用者PATH變數
+使用者變數增加PATH的方法是透過修改Shell rc實現。若預設殼層是Bash則修改`~/.bashrc`；ZSH修改`~/.zshrc`；以此類推。`$PATH`變數是以字串傳遞，並以`:`符號分隔。
+
+這裡設定一個情境: 部署適用於Linux/macOS的PowerShell可執行檔案不逕行安裝，而是解壓縮至`/home/USERNAME/PS7/bin`下，並透過使用者殼層設定把PowerShell加入PATH當中。
+
+則`~/.bashrc`的修改如下:
+ - `~/.bashrc`
+   ```
+    # .bashrc檔案的最後面
+
+    export PS7="/home/USERNAME/PS7/"
+    export PATH="$PATH:$PS7/bin"
+   ```
 
