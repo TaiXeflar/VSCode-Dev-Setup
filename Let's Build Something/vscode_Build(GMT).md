@@ -1,19 +1,19 @@
 # VSCode執行GMT工具列 
 GMT為一款以繪製地圖的命令列工具，因其專案遵守GNU LGPL協議而為自由軟體供所有使用者開放。GMT團隊亦將其開源在[GitHub](https://github.com/GenericMappingTools/gmt)上。GMT的主流使用形式有[命令列形式的GMT工具](https://github.com/GenericMappingTools/gmt)以及適用於Python作為模組(module)的[PyGMT專案](https://github.com/GenericMappingTools/pygmt)。
 
-## [GMT命令列工具安裝](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(5)_GMT.md)
+## [GMT命令列工具安裝](../Let's%20Do%20Setup/vscode_Setup(GMT).md)
 
 ## GMT命令列工具調用
 GMT工具為命令列工具，因此需要CLI執行程式(即以終端機執行gmt命令)。
 
-官方文件建議使用BASH([Cygwin](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(4)_Cygwin.md)環境的BASH)來執行。但因為gmt的可執行程式在PATH環境變數內，所以任何殼層都能呼叫:
- - Shell
+官方文件建議使用BASH([Cygwin](../Let's%20Do%20Setup/vscode_Setup(Cygwin).md)環境的BASH)來執行。但因為gmt的可執行程式在PATH環境變數內，所以任何殼層都能呼叫:
+ - PowerShell
     ```
-        gmt
+     gmt
     ```
 
-若出現下列結果即代表有成功加入PATH:
- - Shell
+若出現下列結果即代表有成功加入`PATH`:
+ - Output
     ```
 
             GMT - The Generic Mapping Tools, Version 6.4.0 [64-bit] [MP] [16 cores]
@@ -58,36 +58,33 @@ GMT工具為命令列工具，因此需要CLI執行程式(即以終端機執行g
 
 GMT有兩種寫法:
 
- - 經典模式。以直接呼叫gmt工具執行GMT繪圖，例如:
-     - Shell
-        ```
-        psxy 1a.txt -R0/12/0/8 -JM15c -Ba -BWSne -Sb24p -Gblue -W1 > set1.ps
-        ```
-    該命令列執行結束後會輸出PostScript檔案(\*.ps)，需要以GhostView開啟。
+第一種是經典模式。以直接呼叫gmt工具執行GMT繪圖，例如:
+ - PowerShell
+    ```
+     psxy 1a.txt -R0/12/0/8 -JM15c -Ba -BWSne -Sb24p -Gblue -W1 > set1.ps
+    ```
+該命令列執行結束後會輸出PostScript檔案(\*.ps)，需要支援PostScript的閱覽器(例如GhostView)開啟。
 
- - 現代模式。這種呼叫方式需要全部以`gmt`開頭呼叫gmt工具列，例如:
-     - Shell
-        ```
-        gmt begin set1
-        gmt psxy 1a.txt -R0/12/0/8 -JM15c -Ba -BWSne -Sb24p -Gblue -W1
-        gmt end
-        ```
-        
-    該命令列執行結束後會輸出可攜式文件檔案(\*.pdf)，需要以Adobe Acrobat開啟。
+第二種是現代模式。這種呼叫方式需要全部以`gmt`開頭呼叫gmt工具列，例如:
+ - PowerShell
+    ```
+     gmt begin set1
+     gmt psxy 1a.txt -R0/12/0/8 -JM15c -Ba -BWSne -Sb24p -Gblue -W1
+     gmt end
+    ```
+該命令列執行結束後會輸出可攜式文件檔案(\*.pdf)，需要支援PDF的閱覽器(例如Adobe Acrobat; Google Chrome; Microsoft Edge)開啟。
 
 ## 以VSCode建置GMT作業
 
 我們將以GMT現代語法在VSCode中使用batch腳本執行GMT繪圖，並以PDF預覽繪圖成果。
 
 首先，我們需要VSCode的兩個延伸模組(Extensions):
- - VSCode Extensions
-     ```
-     Batch Runner (Nils Soderman)
-     PDF Preview (Analytic Signal Limited)
-     ```
+ - Batch Runner (Nils Soderman)
+ - PDF Preview (Analytic Signal Limited)
 
 以VSCode開啟欲繪製GMT的資料夾:
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex1.png)
+
+![image](../Markdown%20Image/vscode_gmt_ex1.png)
 
 接著新增一個Windows批次檔(Batch File `*.bat`)或一個PowerShell手稿(`*.ps1`)，在手稿中存入gmt指令(**請注意這裡使用的是gmt現代語法**)。本範例的程式碼如下:
  - Batch/PowerShell Script
@@ -98,14 +95,17 @@ GMT有兩種寫法:
      gmt coast  -R116/134/23/41 -JM6i -B -G#7dc500 -S#5199dd -W0.5p,black -N1	   
      gmt end 
      ```
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex2.png)
+![image](../Markdown%20Image/vscode_gmt_ex2.png)
 
 
 存檔後選擇右上角，選擇`Run Code`。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex3.png)
 
-底下的輸出會列印程式執行結果。執行成功則會有PDF檔案出現。
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex4.png)
+![image](../Markdown%20Image/vscode_gmt_ex3.png)
+
+底下的輸出會列印程式執行結果。執行成功則會有PDF檔案`out1.pdf`出現。
+
+![image](../Markdown%20Image/vscode_gmt_ex4.png)
 
 對檔案總管的pdf檔案雙擊，即會在工作區自動出現:
-![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_gmt_ex5.png)
+
+![image](../Markdown%20Image/vscode_gmt_ex5.png)
