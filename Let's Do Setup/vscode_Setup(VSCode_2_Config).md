@@ -33,33 +33,34 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
      - 空物件 `null`
 
  - JSON註解: 該註解形式限在`.jsonc`上才能以`//`標記註解。在`.json`中加入註解是違法的。
-     - 參考[以JSON編輯VSCode的個人化設定](https://github.com/TaiXeflar/VSCode-Dev-Setup/blob/main/Let's%20Do%20Setup/vscode_Setup(VSCode_2_Config).md#%E4%BB%A5json%E7%B7%A8%E8%BC%AFvscode%E7%9A%84%E5%80%8B%E4%BA%BA%E5%8C%96%E8%A8%AD%E5%AE%9A)的`"files.associations"`選項以設定將json關聯至jsonc的方法。
+     - 參考[以JSON編輯VSCode的個人化設定](vscode_Setup(VSCode_2_Config).md#%E4%BB%A5json%E7%B7%A8%E8%BC%AFvscode%E7%9A%84%E5%80%8B%E4%BA%BA%E5%8C%96%E8%A8%AD%E5%AE%9A)的`"files.associations"`選項以設定將json關聯至jsonc的方法。
 
 無論任何被包含在內物件，均需以逗號分隔(最後一個物件不能有逗號)，鍵值的鍵或是字串需要以雙引號`""`為合法。
 
 以下是一個JSON檔案範例:
-```
-{                                       // JSON 註釋就是加上//形成單行註釋
-    "Units":                            // 加上這行註釋就是違反JSON語法了
-    [                                   // 參考"VSCode的個人化設定"以設定將json關聯至jsonc的方法
-        {                               // 這樣才可以光明正大地寫註釋而不會被告知違反語法
-            "name": "user1",
-            "id": 1,
-            "boss": true
-        },
-        {
-            "name": "user2",
-            "id": 2,
-            "boss": false
-        },
-        {
-            "name": "user3",
-            "id": 3,
-            "boss": false
-        },
-    ]
-}
-```
+ - JSON
+    ```
+     {                                       // JSON 註釋就是加上//形成單行註釋
+        "Units":                            // 加上這行註釋就是違反JSON語法了
+        [                                   // 參考"VSCode的個人化設定"以設定將json關聯至jsonc的方法
+            {                               // 這樣才可以光明正大地寫註釋而不會被告知違反語法
+                "name": "user1",
+                "id": 1,
+                "boss": true
+            },
+            {
+                "name": "user2",
+                "id": 2,
+                "boss": false
+            },
+            {
+                "name": "user3",
+                "id": 3,
+                "boss": false
+            },
+        ]
+     }
+    ```
 
 ## 以JSON編輯VSCode的個人化設定
 
@@ -70,16 +71,16 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
  - `"editor.fontFamily"`: 工作區的字體家族。
 
      - JSON
-     ```
-        "editor.fontFamily": "Font1, Font2, 'Font 3', 'Font 4'"
-     ```
+        ```
+         "editor.fontFamily": "Font1, Font2, 'Font3', 'Font4'"
+        ```
     該鍵值可由逗號傳遞一組以上的字體設定；字體名稱有空格則以單引號括住傳遞。若第一順位的字體找不到實則由第二順位遞補。
 
     此處範例為"Xolonium"字體(ROG官方字體)。
-      ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_Fonts.png)
+      ![image](../Markdown%20Image/vscode_Fonts.png)
 
       你可以使用`銀河標準字母`惡整別人的電腦成 **"被附魔台附魔過"** 的樣子:
-      ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_Fonts_Enchanted.png)
+      ![image](../Markdown%20Image/vscode_Fonts_Enchanted.png)
 
     請注意這個JSON鍵值不具有Intellisense自動選字，因此需自行手動確認該字體名稱是否輸入正確。
     以下是特殊字體樣式參考:
@@ -101,8 +102,8 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
  - `"terminal.integrated.fontFamily"`: VSCode內鍵終端機的字體。請注意**僅能使用等寬字體**。
 
       若使用非等寬字體則會讓終端機看起來像被撇開的bug出現。
-         ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_integratedTerminal_Fonts_cracked1.png)
-         ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_integratedTerminal_Fonts_cracked.png)
+         ![image](../Markdown%20Image/vscode_integratedTerminal_Fonts_cracked1.png)
+         ![image](../Markdown%20Image/vscode_integratedTerminal_Fonts_cracked.png)
 
  - `"workbench.startupEditor"`: 控制在啟動時顯示哪個編輯器，若沒有(`"none"`)，則從上個工作階段還原。這意味著VSCode會開啟你上次最後一個工作狀態。
  - `"workbench.colorTheme"`: 主題色彩。
@@ -213,109 +214,105 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 筆者以自用的VSCode範例提供完整的settings.json參考 :
 
  - JSON
- 
     ```
-        {
-            "editor.mouseWheelZoom": true,
-            "editor.fontFamily": " '-Xolonium', 'HYWenHei 85W', Consolas, Microsoft JHengHei UI",
-            "editor.fontWeight": "normal",
-            "editor.fontSize": 18,
-            "terminal.integrated.fontFamily": "Consolas",
-            "terminal.integrated.fontSize": 18,
-            "git.confirmSync": false,
-            "git.autofetch": true,
-            "git.enableSmartCommit": true,
-            "workbench.startupEditor": "none",
-            "security.workspace.trust.untrustedFiles": "open",
-            "explorer.confirmDelete": true,
-            "files.autoSave": "afterDelay",
-            "files.autoSaveDelay": 100,
-            "files.associations": {
-                "*.m": "matlab",
-                "*.json": "jsonc",
+     {
+        "editor.mouseWheelZoom": true,
+        "editor.fontFamily": " '-Xolonium', 'HYWenHei 85W', Consolas, Microsoft JHengHei UI",
+        "editor.fontWeight": "normal",
+        "editor.fontSize": 18,
+        "terminal.integrated.fontFamily": "Consolas",
+        "terminal.integrated.fontSize": 18,
+        "git.confirmSync": false,
+        "git.autofetch": true,
+        "git.enableSmartCommit": true,
+        "workbench.startupEditor": "none",
+        "security.workspace.trust.untrustedFiles": "open",
+        "explorer.confirmDelete": true,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 100,
+        "files.associations": {
+            "*.m": "matlab",
+            "*.json": "jsonc",
+        },
+        "workbench.colorTheme": "Visual Studio Dark",
+        "terminal.integrated.profiles.windows": {
+            "PowerShell": {
+                "source": "PowerShell",
+                "icon": "terminal-powershell"
             },
-            "workbench.colorTheme": "Visual Studio Dark",
-            "terminal.integrated.profiles.windows": {
-                "PowerShell": {
-                    "source": "PowerShell",
-                    "icon": "terminal-powershell"
-                },
-                "PowerShell for VS2022": {
-                    "source": "PowerShell",
-                    "args": ["-NoExit", "-Command", "&{Import-Module 'C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll'; Enter-VsDevShell 8f5c46dc -SkipAutomaticLocation -DevCmdArguments '-arch=x64 -host_arch=x64'}"]
-                },
-                "PowerShell for intel oneAPI": {
-                    "path": [
-                        "${env:windir}/Sysnative/cmd.exe",
-                        "${env:windir}/System32/cmd.exe"
+            "PowerShell for VS2022": {
+                "source": "PowerShell",
+                "args": ["-NoExit", "-Command", "&{Import-Module 'C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll'; Enter-VsDevShell 8f5c46dc -SkipAutomaticLocation -DevCmdArguments '-arch=x64 -host_arch=x64'}"]
+            },
+            "PowerShell for intel oneAPI": {
+                "path": [
+                    "${env:windir}/Sysnative/cmd.exe",
+                    "${env:windir}/System32/cmd.exe"
                     ],
-                    "args": ["/E:ON", "/K", "setvars.bat", "intel64 VS2022", "&&", "powershell.exe", "-nologo"]
-                },
-                "Command Prompt": {
-                    "path": [
-                        "${env:windir}/Sysnative/cmd.exe",
-                        "${env:windir}/System32/cmd.exe"
+                "args": ["/E:ON", "/K", "setvars.bat", "intel64 VS2022", "&&", "powershell.exe", "-nologo"]
+            },
+            "Command Prompt": {
+                "path": [
+                    "${env:windir}/Sysnative/cmd.exe",
+                    "${env:windir}/System32/cmd.exe"
                     ],
-                    "args": ["/E:ON"],
-                    "icon": "terminal-cmd"
-                },
-                "Cygwin Bash": 
-                {            
-                    "path": ["C:/Program Files/Cygwin/bin/bash.exe"],
-                    "args": ["--login", "-i"],
-                    "icon": "console"
-                },
-                "Cygwin Zsh": 
-                {            
-                    "path": ["C:/Program Files/Cygwin/bin/zsh.exe"],
-                    "args": ["--login", "-i"],
-                    "icon": "console"
-                },
+                "args": ["/E:ON"],
+                "icon": "terminal-cmd"
+            },
+            "Cygwin Bash": {            
+                "path": ["C:/Program Files/Cygwin/bin/bash.exe"],
+                "args": ["--login", "-i"],
+                "icon": "console"
+            },
+            "Cygwin Zsh": {            
+                "path": ["C:/Program Files/Cygwin/bin/zsh.exe"],
+                "args": ["--login", "-i"],
+                "icon": "console"
+            },
                 "Git Bash": null,
+        },
+        "terminal.integrated.profiles.osx": {
+            "bash": {
+                "path": "bash",
+                "args": ["-l"],
+                "icon": "terminal-bash"
             },
-            "terminal.integrated.profiles.osx": {
-                "bash": {
-                    "path": "bash",
-                    "args": ["-l"],
-                    "icon": "terminal-bash"
-                },
-                "zsh": {
-                    "path": "zsh",
-                    "args": ["-l"]
-                },        
-                "pwsh": {
-                    "path": "pwsh", 
-                    "icon": "terminal-powershell"
-                },
-                "MATLAB Interactive":{
-                    "path": "matlab"
-                    "args": ["-nodisplay"]
-                }
+            "zsh": {
+                "path": "zsh",
+                "args": ["-l"]
+            },        
+            "pwsh": {
+                "path": "pwsh", 
+                "icon": "terminal-powershell"
             },
-            "code-runner.executorMap": {
-                "matlab": "cd $dir && matlab.exe -batch $fileNameWithoutExt"
-            },
-            "matlab.matlabpath": "C:/Program Files/MATLAB/R2022a/bin/matlab.exe",
-            "matlab.mlintpath": "C:/Program Files/MATLAB/R2022a/bin/win64/mlint.exe",
-            "matlab.linterEncoding": "gb2312",
-            "remote.SSH.remotePlatform": {
-                "XXX.XXX.XXX.XXX": "linux"
-            },
-            "editor.accessibilitySupport": "off",
-            "terminal.integrated.commandsToSkipShell": [
-                "language-julia.interrupt"
+            "MATLAB Interactive":{
+                "path": "matlab"
+                "args": ["-nodisplay"]
+            }
+        },
+        "code-runner.executorMap": {
+            "matlab": "cd $dir && matlab.exe -batch $fileNameWithoutExt"
+        },
+        "matlab.matlabpath": "C:/Program Files/MATLAB/R2022a/bin/matlab.exe",
+        "matlab.mlintpath": "C:/Program Files/MATLAB/R2022a/bin/win64/mlint.exe",
+        "matlab.linterEncoding": "gb2312",
+        "remote.SSH.remotePlatform": {
+            "XXX.XXX.XXX.XXX": "linux"
+        },
+        "editor.accessibilitySupport": "off",
+        "terminal.integrated.commandsToSkipShell": [
+            "language-julia.interrupt"
+        ],
+        "julia.symbolCacheDownload": true,
+        "julia.cellDelimiters": [
+            "^##(?!#)",
+            "^#(\\s?)%%",
+            "^#-"
             ],
-            "julia.symbolCacheDownload": true,
-            "julia.cellDelimiters": [
-
-                "^##(?!#)",
-                "^#(\\s?)%%",
-                "^#-"
-            ],
-            "julia.enableTelemetry": true,
-            "python.languageServer": "Jedi",
-            "python.experiments.enabled": false,
-            "workbench.editor.enablePreview": false,
-            "editor.minimap.enabled": false,
-        }
+        "julia.enableTelemetry": true,
+        "python.languageServer": "Jedi",
+        "python.experiments.enabled": false,
+        "workbench.editor.enablePreview": false,
+        "editor.minimap.enabled": false,
+     }
     ```
