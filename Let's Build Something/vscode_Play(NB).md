@@ -36,7 +36,7 @@ Jupyter本地伺服器需要終端機掛載核心執行在本機`localhost`或�
 
 `Ctrl + Shift + P`組合鍵開啟設定搜尋，鍵入Jupyter，找到`Create: New Jupyter Notebook`選項並點選，建立一個新的筆記本。
 
-  ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter1.png)
+  ![image](../Markdown%20Image/vscode_jupyter1.png)
 
 開啟新的筆記本後，會自動轉化成模擬Web的筆記本格式，並預設開啟第一個執行格(cell)為Python程式碼。在鍵入程式碼的時候，會依照IntelliSense而給予智慧選字。出現下拉式選單時，使用方向鍵`←`, `→`, `↑`, `↓`進行選擇，以`Tab`鍵選字。
  
@@ -53,25 +53,25 @@ Jupyter可執行的直譯式偵錯核心如下:
 
 1. 選擇本地端的原生安裝Python或原生安裝Conda Python:
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter2.png)
+    ![image](../Markdown%20Image/vscode_jupyter2.png)
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter3.png)
+    ![image](../Markdown%20Image/vscode_jupyter3.png)
 
 2. 根據該路徑建立自定義venv Python:
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
+    ![image](../Markdown%20Image/vscode_jupyter4.png)
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter5.png)
+    ![image](../Markdown%20Image/vscode_jupyter5.png)
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter6.png)
+    ![image](../Markdown%20Image/vscode_jupyter6.png)
 
 3. 根據該路徑建立自定義Conda Python:
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter4.png)
+    ![image](../Markdown%20Image/vscode_jupyter4.png)
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter7.png)
+    ![image](../Markdown%20Image/vscode_jupyter7.png)
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter8.png)
+    ![image](../Markdown%20Image/vscode_jupyter8.png)
 
 ### Jupyter筆記本執行MATLAB
 對於MATLAB而言，MATLAB已有對Jupyter的內嵌式模組支援。MATLAB官方文件說明，該MATLAB核心需在Jupyter Web版開啟調用，但該功能同樣能在VSCode上執行。
@@ -83,11 +83,11 @@ Jupyter可執行的直譯式偵錯核心如下:
    ```
 2. 選擇MATLAB(Connection)的Jupyter Kernel。
 
-   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter9.png)
+   ![image](../Markdown%20Image/vscode_jupyter9.png)
 
-   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter10.png)
+   ![image](../Markdown%20Image/vscode_jupyter10.png)
 
-   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter11.png)
+   ![image](../Markdown%20Image/vscode_jupyter11.png)
 
 ### Jupyter筆記本執行Julia
 
@@ -98,9 +98,9 @@ Jupyter可執行的直譯式偵錯核心如下:
    ```
    選擇其他核心。Julia核心會獨立於Python選項。
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter12.png)
+    ![image](../Markdown%20Image/vscode_jupyter12.png)
 
-    ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter13.png)
+    ![image](../Markdown%20Image/vscode_jupyter13.png)
 
 ### Jupyter筆記本執行.NET REPL
 對於.NET環境支援的語言有直譯器支援(需要安裝VS2022的.NET桌面開發):
@@ -116,11 +116,11 @@ Jupyter可執行的直譯式偵錯核心如下:
    ```
    選擇具備REPL直譯式核心的.NET解譯器。
 
-   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter14.png)
+   ![image](../Markdown%20Image/vscode_jupyter14.png)
 
    選擇.NET框架的語言。 請注意，.NET框架程式語言中，Visual Basic並沒有REPL的支援。
 
-   ![image](https://github.com/TaiXeflar/vscode_build_sample_repos/blob/main/Markdown%20Image/vscode_jupyter15.png)
+   ![image](../Markdown%20Image/vscode_jupyter15.png)
 
 
 ## Jupyter Notebook 注意事項
