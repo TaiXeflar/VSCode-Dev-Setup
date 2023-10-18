@@ -203,8 +203,9 @@ PowerShell可透過Cmdlet`Invoke-WebRequest`執行HTTP/HTTPS網路請求，並�
 該範例執行下載下列應用程式: 華碩虛擬桌面寵物天選系列天選姬；華碩虛擬桌面寵物ROG系列Omni；以及華碩筆電控制中心應用程式Armoury Crate。
 
 
-## PowerShell執行原則`ExecutionPolicy`
-PowerShell殼層可設定執行的安全原則，以是否啟用**未經受信任的數位簽署**的PowerShell手稿。(當你知道VBScript沒有執行的安全原則時就知道有多危險......)
+## PowerShell執行原則[`ExecutionPolicy`](https://learn.microsoft.com/zh-tw/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.3)
+PowerShell殼層可設定執行的安全原則，以是否啟用**未經受信任的數位簽署**的PowerShell手稿。
+ - 當你知道**VBScript沒有執行的安全原則**時就知道有多危險......
 
 PowerShell有以下的本機執行原則`<POLICY>`: (若本機執行原則為`Default`，則代表該類型電腦套用Windows預設原則。)
 | Windows預設原則 | 本機執行原則 | 個別命令 | 本地腳本(未簽署) | 本地腳本(已簽署) | 遠端腳本(未簽署) | 遠端腳本(已簽署) |
@@ -243,8 +244,6 @@ PowerShell有以下的本機執行原則`<POLICY>`: (若本機執行原則為`De
 這會變更指定群組`<GROUP>`的執行原則為新的`<POLICY>`。若未傳遞`-Scope`參數，則受到變更執行原則的群組為`CurrentUser`(即目前使用者)。
 
 若是要移除指定的`<POLICY>`，則指派`<POLICY>`為`Undefined`。
-
-## PowerShell指派Alias給Cmdlet
 
 ## PowerShell殼層環境的磁碟機空間
 
