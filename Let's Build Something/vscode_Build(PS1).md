@@ -69,6 +69,8 @@ PowerShell有以下特性:
 ## PowerShell 傳遞可執行程式
 
 若欲在PowerShell殼層中傳遞一個可執行程式不在`${env:PATH}`變數中，呼叫運算子`&`傳遞該程式時以完全路徑傳遞。
+
+舉例「原神 啟動」:
  - PowerShell
    ```
     & "D:/Games/miHoYo/Genshin Impact/GenshinImpact.exe"
@@ -113,6 +115,7 @@ PowerShell Cmdlet常見對應的Alias如下:
 | Get-ChildItem | ls | dir |
 | Write-Host | echo | echo |
 | Read-Host | read | set | -p(bash); /p(CMD) |
+| Clear-Host | clear | cls | | |
 | Set-Variable | export | set | /A(CMD) |
 | Invoke-WebRequest(iwr) | wget | curl | -o(CMD) | -OutFile | 
 
@@ -125,7 +128,6 @@ PowerShell Cmdlet常見對應的Alias如下:
    ```
     Copy-Item -Path "D:\NHENTAI\BlueArchive" -Destination "~/Desktop" -Recurse
    ```
-
 ## PowerShell變數
 PowerShell以`$VAR`傳遞本地變數，`${env:VAR}`傳遞環境變數。
 | Variable | PowerShell | Bash | CMD |
@@ -143,6 +145,15 @@ PowerShell以`$VAR`傳遞本地變數，`${env:VAR}`傳遞環境變數。
  - PowerShell
    ```
     Write-Host ${env:PATH}
+   ```
+
+建立包含路徑的字串變數並執行遞迴複製:
+ - PowerShell
+   ```
+    $sauce= "D:/NHENTAI/BlueArchive/"                    # 複製路徑來源
+    $share= "~/Desktop/R18/Share"                        # 複製貼上目標
+
+    Copy-Item -Path $sauce -Destination $share -Recurse 
    ```
 
 使用`Foreach`函數，對`$myPath`路徑內所有內容遞迴呼叫成`$item`變數並執行傾印:
@@ -164,7 +175,7 @@ PowerShell可透過Cmdlet`Invoke-WebRequest`執行HTTP/HTTPS網路請求，並�
     Invoke-WebRequest -Uri <URL> -Outfile <FILE>   # 執行網址的下載請求並存檔為<FILE>
    ```
 
-這裡舉一個例子。執行`Invoke-WebRequest`請求下載多個華碩應用程式至桌面下`asusAPP`資料夾:
+這裡舉一個例子。執行`Invoke-WebRequest`請求下載多個資源至桌面下`asusAPP`資料夾:
  - PowerShell
    ```
     Clear-Host                #清空終端機
@@ -193,7 +204,7 @@ PowerShell可透過Cmdlet`Invoke-WebRequest`執行HTTP/HTTPS網路請求，並�
 
 
 ## PowerShell執行原則`ExecutionPolicy`
-PowerShell殼層可設定執行的安全原則，以是否啟用未經受信任的數位簽署的PowerShell手稿。(當你知道VBScript沒有執行的安全原則時就知道有多危險......)
+PowerShell殼層可設定執行的安全原則，以是否啟用**未經受信任的數位簽署**的PowerShell手稿。(當你知道VBScript沒有執行的安全原則時就知道有多危險......)
 
 PowerShell有以下的本機執行原則`<POLICY>`: (若本機執行原則為`Default`，則代表該類型電腦套用Windows預設原則。)
 | Windows預設原則 | 本機執行原則 | 個別命令 | 本地腳本(未簽署) | 本地腳本(已簽署) | 遠端腳本(未簽署) | 遠端腳本(已簽署) |
@@ -233,15 +244,114 @@ PowerShell有以下的本機執行原則`<POLICY>`: (若本機執行原則為`De
 
 若是要移除指定的`<POLICY>`，則指派`<POLICY>`為`Undefined`。
 
+## PowerShell指派Alias給Cmdlet
+
+## PowerShell殼層環境的磁碟機空間
+
+PowerShell會創立虛擬硬碟機名稱提供登錄機碼存取。(延續MS-DOS體系的磁碟管理系統，這很Windows)
+
+使用`Get-PSDrive`以獲取PowerShell殼層空間的磁碟機路徑:
+ - PowerShell
+   ```
+    Get-PSDrive
+   ```
+ - Output
+   ```
+
+    Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+    ----           ---------     --------- --------      ----                                               ---------------
+    Alias                                  Alias
+    C                 389.62       1472.57 FileSystem    C:\                                                Users\TaiXeflar
+    Cert                                   Certificate   \
+    D                 501.62       1361.40 FileSystem    D:\
+    Env                                    Environment
+    Function                               Function
+    HKCU                                   Registry      HKEY_CURRENT_USER
+    HKLM                                   Registry      HKEY_LOCAL_MACHINE
+    Temp              389.62       1472.57 FileSystem    C:\Users\TaiXeflar\AppData\Local\T…
+    Variable                               Variable
+    WSMan                                  WSMan
+   ```
+整理PowerShell殼層空間的磁碟機根目錄及對應意義如下:
+- PowerShell Drive
+   | 磁碟機名稱 | 根目錄 | 實際意義 |
+   | :----    | :---- | :---- |
+   | C         | C:\    | 本機磁碟C |
+   | D         | D:\    | 本機磁碟D |
+   | HKCU      | HKEY_CURRENT_USER | 登錄機碼: 電腦\HKEY_CURRENT_USER |
+   | HKLM      | HKEY_LOCAL_MACHINE | 登錄機碼: 電腦\HKEY_LOCAL_MACHINE |
+   | Env       | ---- | 系統環境變數 |
+   | Variable  | ---- | PowerShell殼層信息 |
+   | Alias     | ---- | Cmdlet別稱 |
+   | Cert      | \home    | 使用者根目錄定義 |
+
+## PowerShell執行登錄機碼操作階段
+
+**警告**: 請注意，執行登錄機碼的操作存在風險。若執行試驗性的登錄機碼請務必備份原始且正確的登錄機碼(至少有原始正確機碼的備份可用)；並應在隔離環境或虛擬機器內執行試驗性的登錄機碼修改操作；或是經認證的數位授權簽署執行PowerShell指令手稿執行修改登錄機碼。
+
+我們在這裡舉例2個實作階段。
+
+以PowerShell指令移除Cygwin套件:
+ - PowerShell
+   ```
+    <# 取得Cygwin在本機安裝的根目錄 #>
+    $CYG_Dir= Get-ItemPropertyValue -Path HKLM:SOFTWARE\Cygwin\setup\ -Name "rootdir"
+
+    <# 移除Cygwin根目錄 #>
+    Remove-Item -Path $CYG_Dir -Recurse
+
+    <# 清除 #>
+    Remove-Item HKCU:\Software\Cygwin -Recurse
+    Remove-Item HKLM:\Software\Cygwin -Recurse
+   ```
+Cygwin安裝程式會進行登錄機碼操作，登錄於`HKCU:\Software\Cygwin`和`HKLM:\Software\Cygwin`機碼中。透過PowerShell殼層空間的磁碟機路徑操作，遞迴刪除Cygwin的本機安裝路徑以及登錄機碼以完成Cygwin套件的完全刪除。該PowerShell指令當中，子機碼`HKLM:SOFTWARE\Cygwin\setup\rootdir`為字串，紀錄Cygwin在本機的安裝路徑。
+
+以PowerShell指令修改「崩壞:星穹鐵道」的螢幕更新率數值(強制設定為120幀):
+ - PowerShell
+   ```
+
+    <# 取得 崩壞:星穹鐵道的畫質設定登錄機碼: 16進位二進制機碼 #>
+    $src= Get-ItemPropertyValue -Path "HKCU:Software\Cognosphere\Star Rail" -Name "GraphicsSettings_Model_h2986158309"
+
+    <# 轉換位元陣列至16進位字元 #>
+    $src16=""
+    foreach ($val in $src){
+      $hex= [System.Convert]::ToHexString($val)
+      $src16= $src16+ $hex + " ";
+    }
+
+    <# 轉換16進位字元至ASCII字元 #>
+    $asciiChars = $src16 -split ' ' | ForEach-Object {[char][byte]"0x$_"}
+    $srctxt = $asciiChars -join '';
+
+    <# 修改JSON語法的幀率規定鍵值: 設定120FPS #>
+    $new_set='"FPS":'+'120'
+    if ($srctxt -match '"FPS":(\d+)'){
+        $newtxt=$srctxt -Replace '"FPS":(\d+)', $new_set
+        Write-Output "FPS Value: $fpsValue"
+    }
+    <# 轉換ASCII字元至位元陣列 #>
+    $new_bytes = [System.Text.Encoding]::UTF8.GetBytes($newtxt)
+
+    <# 寫入登錄機碼 #>
+    Set-ItemProperty -Path "HKCU:Software\Cognosphere\Star Rail" -Name "GraphicsSettings_Model_h2986158309" -Value $new_bytes -Type "Binary"
+   ```
+崩壞:星穹鐵道的圖像設定儲存信息為JSON格式(非巢狀格式的無換行連續信息)，並以16進位(Hexadecimal)位元組形式二進制機碼(REG_Binary)儲存你的圖像設定。取得機碼數值之後會獲得一個連續的位元組陣列(Byte Array)，我們逐步個別將每個位元組轉換成16進位制字串並以空格符號分開，再將轉換出來的16進位制字串逐步個別轉換成為ASCII編碼(文字)，此時就會得到包含連續內容的JSON物件(就像你在登錄編輯程式`regedit.exe`所看到的翻譯對照內容)。
+
+接著我們鎖定`"FPS"`這個JSON鍵值，以字串處理形式修改FPS上限。找到符合的字串`'"FPS":(\d+)'`(`(\d+)`是指符合整數條件，剛好FPS鍵值是整數)後以`$new_set`替換字串。最後將全部的字串內容(ASCII編碼)直接打包成位元組陣列`$new_bytes`後以二進位形式寫入機碼。
+
+
 ## References
 
  Updating References...
 
- - `ExecutionPolicy`:
-    - https://learn.microsoft.com/zh-tw/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.3
-    - https://learn.microsoft.com/zh-tw/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.3
-  
+`Invoke-WebRequest`:
+ - [Invoke-WebRequest](https://learn.microsoft.com/zh-tw/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.3)
 
+`ExecutionPolicy`:
+ - [About Execution Policy](https://learn.microsoft.com/zh-tw/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.3)
+ - [Set-ExecutionPolicy](https://learn.microsoft.com/zh-tw/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.3)
+  
 
 ## Stay Tuned
 Continue Uploading New things
