@@ -335,9 +335,11 @@ Cygwin安裝程式會進行登錄機碼操作，登錄於`HKCU:\Software\Cygwin`
     <# 寫入登錄機碼 #>
     Set-ItemProperty -Path "HKCU:Software\Cognosphere\Star Rail" -Name "GraphicsSettings_Model_h2986158309" -Value $new_bytes -Type "Binary"
    ```
+請注意為求遊戲品質穩定者請勿隨意更動機碼，並有極低機率可能造成遊戲不穩定(Unstable)/遊戲崩潰(Game Crash)或是有可能被誤判封禁帳號(Account Ban)。
+
 崩壞:星穹鐵道的圖像設定儲存信息為JSON格式(非巢狀格式的無換行連續信息)，並以16進位(Hexadecimal)位元組形式二進制機碼(REG_Binary)儲存你的圖像設定。取得機碼數值之後會獲得一個連續的位元組陣列(Byte Array)，我們逐步個別將每個位元組轉換成16進位制字串並以空格符號分開，再將轉換出來的16進位制字串逐步個別轉換成為ASCII編碼(文字)，此時就會得到包含連續內容的JSON物件(就像你在登錄編輯程式`regedit.exe`所看到的翻譯對照內容)。
 
-接著我們鎖定`"FPS"`這個JSON鍵值，以字串處理形式修改FPS上限。找到符合的字串`'"FPS":(\d+)'`(`(\d+)`是指符合整數條件，剛好FPS鍵值是整數)後以`$new_set`替換字串。最後將全部的字串內容(ASCII編碼)直接打包成位元組陣列`$new_bytes`後以二進位形式寫入機碼。
+接著我們鎖定`"FPS"`這個JSON鍵值，以字串處理形式修改FPS上限。找到符合的字串`'"FPS":(\d+)'`(`(\d+)`是指符合整數條件，剛好FPS鍵值是整數)後以`$new_set`替換字串。最後將全部的字串內容(ASCII編碼)直接打包成位元組陣列`$new_bytes`後以二進位形式寫入機碼。請注意`"FPS"`鍵值建議為`30`/`60`/`120`，若是更高更新率則可能會出現不穩定。
 
 
 ## References
