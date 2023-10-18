@@ -290,7 +290,7 @@ PowerShell會創立虛擬硬碟機名稱提供登錄機碼存取。(延續MS-DOS
 
 我們在這裡舉例2個實作階段。
 
-以PowerShell指令移除Cygwin套件:
+`1.` 以PowerShell指令移除Cygwin套件:
  - PowerShell
    ```
     <# 取得Cygwin在本機安裝的根目錄 #>
@@ -305,7 +305,7 @@ PowerShell會創立虛擬硬碟機名稱提供登錄機碼存取。(延續MS-DOS
    ```
 Cygwin安裝程式會進行登錄機碼操作，登錄於`HKCU:\Software\Cygwin`和`HKLM:\Software\Cygwin`機碼中。透過PowerShell殼層空間的磁碟機路徑操作，遞迴刪除Cygwin的本機安裝路徑以及登錄機碼以完成Cygwin套件的完全刪除。該PowerShell指令當中，子機碼`HKLM:SOFTWARE\Cygwin\setup\rootdir`為字串，紀錄Cygwin在本機的安裝路徑。
 
-以PowerShell指令修改「崩壞:星穹鐵道」的螢幕更新率數值(強制設定為120幀):
+`2.` 以PowerShell指令修改「崩壞:星穹鐵道」的螢幕更新率數值(強制設定為120幀):
  - PowerShell
    ```
 
