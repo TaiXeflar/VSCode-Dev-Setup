@@ -2,7 +2,9 @@
 
 ## Git for Windows套件安裝
 
-Git for Windows套件為開源免費軟體。安裝時須同意GNU授權條款:
+Git for Windows套件包含Git版本控制套件`git`、BASH殼層(Bourne-Again Shell)`bash`、以及OpenSSH通訊協議套件`ssh`的一個最簡化MSYS2系統，GNU授權條款開源的免費軟體。
+
+安裝時須同意GNU GPL授權條款:
 
 ![image](../Markdown%20Image/vscode_git_inst1.png)
 
@@ -62,7 +64,7 @@ Git for Windows套件為開源免費軟體。安裝時須同意GNU授權條款:
 
 ## Git Bash套件使用
 
-Git可以做為GitHub控制套件，並有自帶BASH做為UNIX Shell執行bash檔。
+Git可以做為GitHub控制套件，並有自帶BASH做為UNIX-Like Shell執行bash檔。
 
 若在終端機內執行`git`則會出現git的說明檔。要調用或呼叫Bash請在添加環境變數後以命令列`bash`(可以加附帶引數`-i`,  `-l`)呼叫bash。成功畫面如下:
  - Shell
