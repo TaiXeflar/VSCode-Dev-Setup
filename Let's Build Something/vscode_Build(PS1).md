@@ -31,9 +31,8 @@ PowerShell在Windows XP時加入為Windows元件，現已為Windows 10/11的第�
 
 PowerShell的可執行手稿副檔名是`*.ps1`，PowerShell模組是`*.psm1`及`*.psd1`。執行PowerShell手稿需在PowerShell殼層內執行；或執行PowerShell時傳遞欲執行手稿。
 
-## PowerShell的特性
 PowerShell有以下特性:
- - PowerShell 支援不檢查大小寫。(這很重要! 因為BASH或CMD都要檢查大小寫；這可以增加程式碼的容錯率)
+ - PowerShell 支援「不檢查」大小寫。(這很重要! 因為BASH或CMD都檢查大小寫；這可以一定程度增加程式碼的容錯率)
  - PowerShell 支援路徑符號`/`及`\`的通用性。(這很重要! 因為BASH規定使用`/`；CMD規定`\`。這可以增加程式碼的容錯率)
  - PowerShell 7 支援基於智慧鍵入Intellisense的`TAB`鍵快速鍵入，以及「程式執行歷程紀錄」的Intellisense功能。(這很重要! 因為這是懶人Coding的必備之一)
  - PowerShell 7 支援色彩設定檔。配合支援的終端機時，可以在例如`Get-ChildItem`(Alias:`ls`/`dir`)等命令執行時回傳檔案類型標示等色彩辨識功能。
@@ -52,7 +51,7 @@ PowerShell有以下特性:
     & "X:\PS1\FILE\ABSOLUTE\PATH\NAME.ps1"
    ```
 
-在其他殼層中，PowerShell手稿不是殼層可執行程式。解決方案是透過執行PowerShell程式並傳遞手稿執行。(就像你不一定會在Python Shell執行Script一樣。)
+在其他殼層中，PowerShell手稿不是殼層可執行程式。解決方案是透過執行PowerShell程式並傳遞手稿執行。(就像你不一定會在Python Shell執行`*.py`一樣。)
  - CMD
     ```
      && pwsh.exe "PS1_File_Name"
@@ -68,7 +67,7 @@ PowerShell有以下特性:
 
 ## PowerShell 傳遞可執行程式
 
-若欲在PowerShell殼層中傳遞一個可執行程式不在`${env:PATH}`變數中，呼叫運算子`&`傳遞該程式時以完全路徑傳遞。
+若欲在PowerShell殼層中傳遞一個可執行程式不在`${env:PATH}`變數中，呼叫運算子`&`傳遞該程式時以**完全路徑**傳遞。
 
 舉例「原神 啟動」:
  - PowerShell
