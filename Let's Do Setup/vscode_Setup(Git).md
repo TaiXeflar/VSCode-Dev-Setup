@@ -64,17 +64,17 @@ Git for Windows套件包含Git版本控制套件`git`、BASH殼層(Bourne-Again 
 
 ## Git Bash套件使用
 
-Git可以做為GitHub控制套件，並有自帶BASH做為UNIX-Like Shell執行bash檔。
+Git可以做為GitHub控制套件，並有自帶BASH做為UNIX-Like Shell執行bash殼層。
 
-若在終端機內執行`git`則會出現git的說明檔。要調用或呼叫Bash請在添加環境變數後以命令列`bash`(可以加附帶引數`-i`,  `-l`)呼叫bash。成功畫面如下:
- - Shell
+若在終端機內執行`git`則會出現git的說明。要調用或呼叫Bash請在添加環境變數後以命令列`bash`(可以加附帶引數`-i`,  `-l`)呼叫bash。成功畫面如下:
+ - PowerShell
     ```
     PS C:\Users\TaiXeflar> bash -i -l
 
     TaiXeflar@TaiXeflar MINGW64 ~
     $ 
     ```
-進入bash以後，請以UNIX語法/Linux語法與BASH互動。(e.g: `cd`, `ls`等。)
+進入bash以後，請以Shell語法與BASH互動。
 
 ## Git 控制套件使用
 
@@ -85,11 +85,11 @@ Git可以做為GitHub控制套件，並有自帶BASH做為UNIX-Like Shell執行b
     在創建完GitHub帳號後，在本VSCode上開啟終端機(任何殼層都可以)，並輸入git命令列:
     - PowerShell
         ```
-        git config --global user.name USERNAME
-        git config --global user.email USER@mail.com
+        git config --global user.name <USERNAME>
+        git config --global user.email <USER@mail.com>
         ```
      - `--global`引數會廣域設定，這代表僅這一次的設定即啟用git控制套件的個人信息預設綁定。
-     - `USERNAME`及`USER@mail.com`為你在GitHub上的使用者名稱及電子信箱。
+     - `<USERNAME>`及`<USER@mail.com>`為你在GitHub上的使用者名稱及電子信箱。
 
     待完成GitHub帳號綁定後，在VSCode內左下角完成GitHub帳號連動。
 
