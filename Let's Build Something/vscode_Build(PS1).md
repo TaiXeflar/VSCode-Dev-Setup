@@ -102,7 +102,7 @@ PowerShell手稿撰寫註解(Comments)時有2種方法。當標註PowerShell程�
        This is PowerShell Script Block Comments
     #>
    ```
-## PowerShell的Cmdlet
+## PowerShell的Cmdlet及指派Alias
 
 PowerShell Cmdlet常見對應的Alias如下:
 | Cmdlet | BASH Alias | CMD Alias | BASH/CMD params | Cmdlet Params |
@@ -110,7 +110,7 @@ PowerShell Cmdlet常見對應的Alias如下:
 | Set-Location | cd | cd |
 | Get-location | pwd | | | |
 | Move-Item | mv | move |
-| Copy-Item | cp | copy |
+| Copy-Item | cp | copy | -r | -Recurse |
 | Remove-Item | rm | del | -r | -Recurse |
 | Get-ChildItem | ls | dir |
 | Write-Host | echo | echo |
@@ -128,6 +128,15 @@ PowerShell Cmdlet常見對應的Alias如下:
    ```
     Copy-Item -Path "D:\NHENTAI\BlueArchive" -Destination "~/Desktop" -Recurse
    ```
+
+PowerShell的輕量化指令Cmdlet為語法相似於Bash/CMD，會指派Cmdlet的Alias(別名)作語法相容。
+
+手動指派Cmdlet別名的方式是使用`Set-Alias`:
+ - PowerShell
+   ```
+    Set-Alias -Name <ALIAS> -Value <TARGETED_CMDLET>
+   ```
+
 ## PowerShell變數
 PowerShell以`$VAR`傳遞本地變數，`${env:VAR}`傳遞環境變數。
 | Variable | PowerShell | Bash | CMD |
@@ -200,7 +209,10 @@ PowerShell可透過Cmdlet`Invoke-WebRequest`執行HTTP/HTTPS網路請求，並�
          Invoke-WebRequest -Uri $url[$i] -OutFile $save[$i]
     }
    ```
-該範例執行下載下列應用程式: 華碩虛擬桌面寵物天選系列天選姬；華碩虛擬桌面寵物ROG系列Omni；以及華碩筆電控制中心應用程式Armoury Crate。
+該範例執行下載下列應用程式: 
+ - TX Mascot: 華碩虛擬桌面寵物天選系列天選姬
+ - ROG Omni: 華碩虛擬桌面寵物ROG系列Omni
+ - Armoury Crate: 華碩筆電控制中心應用程式Armoury Crate(奧創中心)。
 
 
 ## PowerShell執行原則[`ExecutionPolicy`](https://learn.microsoft.com/zh-tw/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.3)
