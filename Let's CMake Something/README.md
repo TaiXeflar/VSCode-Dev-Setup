@@ -9,15 +9,15 @@ Low Level Vitural Machine (LLVM)Compiler Infastructure，一種強大的編譯�
 
 由CERN組織底下ROOT專案(統計及資料分析框架應用程式)的其中一個專案，LLVM/Clang基底的C++ REPL直譯器。
 
-- GMT(Generic Mapping Tools)(建置偵錯中)
+- [GMT(Generic Mapping Tools)](建置偵錯中)
 
 通用製圖工具，採GNU GPL v3.0公用自由授權條款免費釋出。
 
- - Swift(等候建置測試)
+ - [Swift](等候建置測試)
 
 由Apple開發基於LLVM/Clang基底建置，Objective-C/C++實現的Swift語言編譯器。
 
- - Form(建置偵錯中)
+ - [Form(Symbolic Form)](建置偵錯中)
 
 一種符號運算系統分析工具，透過運算符處理而能逕行超複雜微積分/工程數學/高能物理公式運算的工具。
 ## Stay tuned
