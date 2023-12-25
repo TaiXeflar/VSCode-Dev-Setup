@@ -165,9 +165,8 @@ Cygwin環境下安裝的MinGW64 C/C++開發套件如下。
     .
     .
     .
-    .
-    .
-  ::mklink [/h] <SYMLINK_NAME> <SYMLINK_TARGET>
+
+    :: mklink [/h] <SYMLINK_NAME> <SYMLINK_TARGET>
    ```
 PowerShell語法則是:
  - PowerShell 
