@@ -50,11 +50,8 @@ Cygwin並沒有一個官方代表的鏡像下載網站，而是由志願託管�
 UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell)或ZSH(Z Shell): (可選可不選)
 ![image](../Markdown%20Image/vscode_cygwin_7(1_shell).png)
 
-部署MinGW的GNU C compiler(gcc/g++)套件: (可選可不選)
+部署[MinGW](#Cygwin環境配置適用於windows-api的mingw64-gcc)的GNU C compiler(gcc/g++/gfortran)套件: (可選可不選)
 ![image](../Markdown%20Image/vscode_cygwin_7(2_gcc).png)
-
-部署MinGW的GNU Fortran compiler(gfortran)套件: (可選可不選)
-![image](../Markdown%20Image/vscode_cygwin_7(3_gfort).png)
 
 部署Clang-LLVM套件: (可選可不選)
 ![image](../Markdown%20Image/vscode_cygwin_7(4_clang).png)
@@ -127,7 +124,36 @@ Cygwin套件管理是以Cygwin發行的`setup-x86_64.exe`執行圖形介面的�
     $ ls
     c  d  e
     ```
-欲切換至實際的硬碟位置，皆在Cygwin根目錄(/)底下的`cygdrive`，接續實際的Windows絕對位置。
+欲切換至實際的硬碟下位置，皆在Cygwin根目錄(/)底下的`cygdrive`，接續實際的Windows絕對位置。
+ - BASH
+    ```
+     cd /cygdrive/<DRIVE_CODE>/<WIN_PATH>
+    ```
+
+## Cygwin環境配置適用於Windows API的MINGW64 GCC
+
+Cygwin環境下安裝的MinGW64 C/C++開發套件如下。 
+   ```
+    mingw64-x86_64-gcc-core      (GCC for Win64 Toolchain)
+    mingw64-x86_64-gcc-g++       (GCC for Win64 Toolchain)
+   ```
+請注意，若先前有任何gcc套件而非`mingw64`開頭的套件，則需要解除安裝。使用MinGW64 GCC套件的方式是以Windows API呼叫gcc/g++編譯專案，這可以擺脫Cygwin環境的POSIX相依性直接在Windows上運行； 
+
+
+啟動Cygwin環境Bash。為了繞過GCC編譯器檢查，我們需要以MinGW64的編譯器設為預設的C/C++編譯器:
+ - Bash(Cygwin) 
+   ```
+    cd /bin
+
+    ln -s x86_64-w64-mingw32-ar.exe ar.exe
+    ln -s x86_64-w64-mingw32-as.exe as.exe
+    ln -s x86_64-w64-mingw32-c++.exe c++.exe
+    ln -s x86_64-w64-mingw32-gcc.exe gcc.exe
+    ln -s ln -s x86_64-w64-mingw32-g++.exe g++.exe
+    ln -s x86_64-w64-mingw32-ld.exe ld.exe
+   ```
+
+
 
 ### VSCode 調用 Cygwin BASH
 在VSCode中，BASH不一定要執行WSL呼叫BASH，可以直接調用Cygwin的BASH。
