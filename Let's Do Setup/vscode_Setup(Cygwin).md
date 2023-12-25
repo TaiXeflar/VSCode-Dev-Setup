@@ -51,7 +51,7 @@ UNIX Like Shell並非只有BASH，你亦可選擇Fish(Friendly Interactive Shell
 ![image](../Markdown%20Image/vscode_cygwin_7(1_shell).png)
 
 部署[MinGW](#Cygwin環境配置適用於windows-api的mingw64-gcc)的GNU C compiler(gcc/g++/gfortran)套件: (可選可不選)
-![image](../Markdown%20Image/vscode_cygwin_7(2_gcc).png)
+![image](../Markdown%20Image/vscode_cygwin_7(2_gcc_gxx_gfort).png)
 
 部署Clang-LLVM套件: (可選可不選)
 ![image](../Markdown%20Image/vscode_cygwin_7(4_clang).png)
