@@ -137,7 +137,7 @@ Cygwin環境下安裝的MinGW64 C/C++開發套件如下。
     mingw64-x86_64-gcc-core      (GCC for Win64 Toolchain)
     mingw64-x86_64-gcc-g++       (GCC for Win64 Toolchain)
    ```
-請注意，若先前有任何gcc套件而非`mingw64`開頭的套件，則需要解除安裝。使用MinGW64 GCC套件的方式是以Windows API呼叫gcc/g++編譯專案，這可以擺脫Cygwin環境的POSIX相依性直接在Windows上運行； 
+請注意，若先前有任何gcc套件而非`mingw64`開頭的套件，則需要解除安裝。使用MinGW64 GCC套件的方式是以Windows API呼叫gcc/g++編譯專案，這可以擺脫Cygwin環境的POSIX相依性直接在Windows上運行。 
 
 
 啟動Cygwin環境Bash。為了繞過GCC編譯器檢查，我們需要以MinGW64的編譯器設為預設的C/C++編譯器:
@@ -151,8 +151,36 @@ Cygwin環境下安裝的MinGW64 C/C++開發套件如下。
     ln -s x86_64-w64-mingw32-gcc.exe gcc.exe
     ln -s ln -s x86_64-w64-mingw32-g++.exe g++.exe
     ln -s x86_64-w64-mingw32-ld.exe ld.exe
-   ```
 
+   #ln -s <LINK_TARGET> <LINK_NAME>
+   ```
+或是以CMD直接建立符號連結(Symbolic Link`*.symlink`)。若是需要硬式連結則傳遞`/h`參數:
+ - CMD
+   ```
+    sudo
+
+    cd %CYGWIN_ROOT%/bin
+
+    mklink ar.exe x86_64-w64-mingw32-ar.exe
+    .
+    .
+    .
+   #mklink [/h] <SYMLINK_NAME> <SYMLINK_TARGET>
+   ```
+PowerShell語法則是:
+ - PowerShell 
+   ```
+    sudo
+
+    cd ${env:Cygwin_Root}/bin
+
+    New-Item -ItemType SymbolicLink -Name ar.exe -Target x86_64-w64-mingw32-ar.exe
+    New-Item .....
+    .
+    .
+    .
+   #New-Item -ItemType SymbolicLink -Name <LINK_NAME> -Target <LINK_TARGET> 
+   ```
 
 
 ### VSCode 調用 Cygwin BASH
