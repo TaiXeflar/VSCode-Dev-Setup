@@ -15,21 +15,6 @@ Cygwin環境下安裝的套件如下。
     mingw64-x86_64-gcc-zlib          (for Win64 Toolchain)
     wget
    ```
-請注意，若先前有任何gcc套件而非`mingw64`開頭的套件，則需要解除安裝。使用MinGW64套件的方式是以Windows API建置`form`專案，這可以擺脫任何相依性直接在Windows上運行； 若是直接以gcc套件執行，則編譯出來的`form`需要在Cygwin環境下，且對`cygwin1.dll`有相依性。
-
-
-啟動Cygwin環境Bash。為了繞過GCC編譯器檢查，我們需要以MinGW64的編譯器設為預設的C/C++編譯器:
- - Bash(Cygwin) 
-   ```
-    cd /bin
-
-    ln -s x86_64-w64-mingw32-ar.exe ar.exe
-    ln -s x86_64-w64-mingw32-as.exe as.exe
-    ln -s x86_64-w64-mingw32-c++.exe c++.exe
-    ln -s x86_64-w64-mingw32-gcc.exe gcc.exe
-    ln -s ln -s x86_64-w64-mingw32-g++.exe g++.exe
-    ln -s x86_64-w64-mingw32-ld.exe ld.exe
-   ```
 
 接著從GitHub下載Form的釋出版本原始碼壓縮包並解壓縮:
 
