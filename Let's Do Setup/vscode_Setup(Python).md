@@ -48,7 +48,7 @@
 
 ## Python模組(Python Module)的pip指令安裝
 
-依照你的Python安裝路徑不同，則需要不同等級權限執行`pip`安裝指令。
+依照你的Python安裝路徑不同，則需要不同等級權限執行`pip`安裝指令。在VSCode中以快捷鍵`Ctrl + ‵`呼叫終端機(Terminal)。
 
 若你的Python安裝在`C:/Users/USER/AppData/Local/Python/Python39/`，則可以直接安裝。
  - PowerShell
