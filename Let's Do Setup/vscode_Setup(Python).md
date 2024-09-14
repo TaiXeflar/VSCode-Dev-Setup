@@ -2,11 +2,18 @@
  
 ## 直譯器確認及安裝:  
 
-  - 本存放庫範例以Windows執行Python 3.9.7直譯器:  Python Software Foundation. Python 3.9.7
+  - 本教學範例以Windows執行Python 3.9.7直譯器:  Python Software Foundation. Python 3.9.7
 
-  請選擇64位元的安裝檔:
+  
+  Python官網的下載連結[請點這裡](https://www.python.org/downloads/) 。
+   - 注意: Python 3.9.7版本已經不在官方的安全性支援列表內。建議下載Python 3.11.9或3.12.X以上版本。Python官方給予的Python版本支援生命週期[請點這裡](https://devguide.python.org/versions/)查看。
+
+  對於PC/NB使用者搭載Intel Core/AMD Ryzen處理器的Windows使用者，請選擇64位元的安裝檔:
 
    ![image](../Markdown%20Image/vscode_python_inst0.png)
+
+   - 注意: 若你是macOS使用者，請選擇適用於macOS的Universal2 Installer。
+   - 若你是搭載Qualcomm Snapdragon Elite X的Windows用戶，請選擇ARM64版本安裝程式。
   
   我們開始進行Python安裝。請務必把PATH選項打勾:
    
@@ -41,7 +48,7 @@
 
 ## Python模組(Python Module)的pip指令安裝
 
-依照你的Python安裝路徑不同，則需要不同等級權限執行pip安裝指令。
+依照你的Python安裝路徑不同，則需要不同等級權限執行`pip`安裝指令。
 
 若你的Python安裝在`C:/Users/USER/AppData/Local/Python/Python39/`，則可以直接安裝。
  - PowerShell
@@ -55,7 +62,7 @@
     sudo pip install <Mod>
     ```
 
-底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行pip指令安裝。
+底下列舉命令列範例。使用Windows終端機(Windows Terminal)進行`pip`指令安裝。
  - PowerShell
     ```
     pip install <Mod>                                      # 安裝名為Mod的模組。
@@ -91,35 +98,6 @@
 
 以下是Python調用MatLab引擎模組:
   - MatlabEngine
-
-這裡舉例一個使用終端機安裝`py2exe`套件的實際過程(pip 22.3.1):
-
- ```
-  PS C:\Users\TaiXeflar> pip install py2exe
-  Collecting py2exe
-    Downloading py2exe-0.12.0.1-cp39-cp39-win_amd64.whl (151 kB)
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.8/151.8 kB 3.0 MB/s eta 0:00:00
-  Requirement already satisfied: cachetools in c:\program files\python39\lib\site-packages (from py2exe) (5.2.0)
-  Collecting pefile
-    Downloading pefile-2022.5.30.tar.gz (72 kB)
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.9/72.9 kB ? eta 0:00:00
-    Preparing metadata (setup.py) ... done
-  Collecting future
-    Downloading future-0.18.2.tar.gz (829 kB)
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 829.2/829.2 kB 6.6 MB/s eta 0:00:00
-    Preparing metadata (setup.py) ... done
-  Building wheels for collected packages: pefile, future
-    Building wheel for pefile (setup.py) ... done
-    Created wheel for pefile: filename=pefile-2022.5.30-py3-none-any.whl size=69376 sha256=b1e373fb8e3622402e8b6b78916fe1841571421b8b8597e821ff0fb8ce1241f4
-    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\37\01\46\42ba844d09aad7cf28e9be9cc8f28a071e2fef8f1bfe51edac
-    Building wheel for future (setup.py) ... done
-    Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491070 sha256=8071dbb391b557ab5036d5c541e295d9e6c40a2adb3f96917e04f3877b6757bd
-    Stored in directory: c:\users\taixeflar\appdata\local\pip\cache\wheels\96\66\19\2de75120f5d0bc185e9d16cf0fd223d8471ed025de08e45867
-  Successfully built pefile future
-  Installing collected packages: future, pefile, py2exe
-  Successfully installed future-0.18.2 pefile-2022.5.30 py2exe-0.12.0.1
-  PS C:\Users\TaiXeflar> 
-  ```
 
 
 ## Python Module 注意事項

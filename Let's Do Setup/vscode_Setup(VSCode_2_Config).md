@@ -1,5 +1,7 @@
 # VSCode的JSON檔配置個人化及程式碼建置和執行 
 
+ 為避免JSON語法混亂，我們先簡易講述一下JSON語法規則。
+
 ## JSON語法
 
 JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的程式語言。
