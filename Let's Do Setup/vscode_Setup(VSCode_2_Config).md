@@ -69,6 +69,19 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
 在settings.json中，僅有一個空的JSON物件。我們會逐步添加下列解說的鍵值。
 
 常見的設定項:
+ - `"files.autosave"`: 檔案自動儲存設定。
+     - 值為`afterDelay`時: VSCode會以被設定的時間計算延遲後自動存檔。
+     - 值為`off`時: VSCode不會自動存檔。
+     - 值為`onFocusChange`時: VSCode會偵測該編輯的檔案是否失去焦點(例如切換到其他檔案編輯時)而自動儲存檔案。
+     - 值為`onWindowsChange`時: VSCode會根據VSCode視窗是否失焦(例如切換到Chrome時)而自動儲存檔案。
+ - `"files.autoSaveDelay"`: 設定VSCode自動存檔的延遲時間，單位以毫秒計算；預設是經過1秒未(即1000毫秒)有動作即自動存檔。該選項必須要`"files.autosave"`的值為`afterDelay`時才會生效。 
+ 
+    假設「以0.5秒的延遲自動存檔」:
+    - JSON
+        ```
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 500 
+        ```
  - `"editor.mouseWheelZoom"`: 布林值(`true` / `false`)。允許透過`Ctrl+滑鼠滾輪`放大/縮小工作區字體大小。
  - `"editor.fontFamily"`: 工作區的字體家族。
 
@@ -76,13 +89,18 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
         ```
          "editor.fontFamily": "Font1, Font2, 'Font3', 'Font4'"
         ```
-    該鍵值可由逗號傳遞一組以上的字體設定；字體名稱有空格則以單引號括住傳遞。若第一順位的字體找不到實則由第二順位遞補。
-
     此處範例為"Xolonium"字體(ROG官方字體)。
-      ![image](../Markdown%20Image/vscode_Fonts.png)
+    
+    ![image](../Markdown%20Image/vscode_Fonts.png)
 
-      你可以使用`銀河標準字母`惡整別人的電腦成 **"被附魔台附魔過"** 的樣子:
-      ![image](../Markdown%20Image/vscode_Fonts_Enchanted.png)
+    該鍵值可由逗號傳遞一組以上的字體設定；字體名稱有空格則以單引號括住傳遞。若第一順位的字體找不到實則由第二順位遞補。
+    
+    例如，以Consolas字體為英文字母主要呈現，以微軟正黑體為中文字體主要呈現，可以這樣設定:
+
+     - JSON
+        ```
+         "editor.fontFamily": "Consolas, 'Microsoft JHengHei UI', <Font3>, ....."
+        ```
 
     請注意這個JSON鍵值不具有Intellisense自動選字，因此需自行手動確認該字體名稱是否輸入正確。
     以下是特殊字體樣式參考:
@@ -98,7 +116,10 @@ JSON全名JavaScript Option Notation，為一種半結構式的訊息交換的�
      - Rainbow: 虹彩六號圍攻行動(Rainbow Six Siege)的主題字體。
      - HYWenHei 85: 原神(Genshin Impact)官方主題字體。
      - Microsoft JHengHei UI: 微軟正黑體。
-     - Consolas: VSCode內標準字體(第一順位)。
+     - Microsoft YaHei UI: 微軟雅黑體。
+     - Consolas: Consolas字體，VSCode內標準字體(第一順位)。
+    
+    
 
  - `"editor.fontWeight"`: 字體粗細程度，允許**一般**及**粗體**字體，不允許**斜體**。
  - `"terminal.integrated.fontFamily"`: VSCode內鍵終端機的字體。請注意**僅能使用等寬字體**。

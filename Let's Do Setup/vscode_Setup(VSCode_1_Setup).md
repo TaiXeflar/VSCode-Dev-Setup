@@ -60,6 +60,8 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - Chinese (Simplified) Language Pack for Visual Studio Code (簡體中文套件)
  - Japanese Language Pack for VS Code (日本語套件)
 
+若是想客製化VSCode編輯器的背景，參照[這裡](./vscode_Setup(VSCode_3_Theme).md)。
+
 以下是支援快速/自動選字(IntelliSense)的模組:
  - IntelliCode
  - IntelliCode API Usage Examples
@@ -81,7 +83,7 @@ VSCode的所有額外延伸功能皆透過安裝 **"延伸套件"** (Extentions)
  - Pylance
  - iSort
 
-以下是支援VSCode編輯基於Jupyter Notebook支援的延伸套件:
+以下是支援VSCode編輯基於[Jupyter Notebook](../Let's%20Build%20Something/vscode_Play(NB).md)支援的延伸套件:
  - Jupyter
  - Jupyter Keymap
  - Jupyter Cell Tags

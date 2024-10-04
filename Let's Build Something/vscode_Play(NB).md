@@ -4,7 +4,7 @@
 
 Jupyter筆記本是基於Web以Jupyter、PyZMQ、Jinja、iPython、iPyKernel等眾多Python模組實現。
 
-正如前言所述，Jupyter是Python模組。因此，安裝需要透過pip指令安裝:
+正如前言所述，Jupyter是Python模組。因此，安裝需要透過`pip`指令安裝:
  - PowerShell
    ```
     pip install jupyter
@@ -20,11 +20,11 @@ Jupyter會一次性安裝多個Python模組，以提供基於Web的支援。
 
 Jupyter本地伺服器需要終端機掛載核心執行在本機`localhost`或本機IP位址`127.0.0.1`，並預設以`8888`埠監聽筆記本(即`localhost:8888`或`127.0.0.1:8888`)執行伺服器。執行時Jupyter會提供1~2組包含token的URL連結至本機Jupyter，該WEB連結開啟會瀏覽器並重新導向至Jupyter的本地端網頁。
 
-開啟筆記本時，Jupyter會根據你在終端機執行Jupyter指令的路徑為根目錄執行筆記本(例如你在桌面路徑底下`~/Desktop`執行，則根目錄即為你的桌面資料夾`~/Desktop`)。
+開啟筆記本時，Jupyter會根據你在終端機執行Jupyter指令的路徑為根目錄執行筆記本(例如你在桌面路徑底下執行，則根目錄即為你的桌面資料夾`User\Desktop`)。
 
 ## 以VSCode開啟Jupyter筆記本
 
-在VSCode中，Microsoft也有基於VSCode提供Jupyter筆記本的延伸模組支援，優點是能快速建立Code/Markdown及無須開啟終端機掛載Jupyter伺服器核心、以及在未存檔筆記本的情況下執行筆記本。
+在VSCode中，Microsoft也有基於VSCode提供Jupyter筆記本的延伸模組支援，優點是能快速建立Code/Markdown及無須開啟終端機掛載Jupyter伺服器核心、以及在未建立/存檔筆記本的情況下執行Python互動式偵錯。
 
 請在VSCode中安裝以下延伸模組:
  - VSCode Extentions
@@ -43,7 +43,7 @@ Jupyter本地伺服器需要終端機掛載核心執行在本機`localhost`或�
 Jupyter可執行的直譯式偵錯核心如下:
   - Python
   - Julia
-  - .NET 互動式(限VSCode Polygon Notebooks)
+  - .NET 互動式(限VSCode Polyglot Notebooks)
   - MATLAB (Python基底)
   - 其他直譯式語言的互動式核心
 
@@ -51,7 +51,7 @@ Jupyter可執行的直譯式偵錯核心如下:
 ### Jupyter筆記本執行Python
 對於Python程式語言，可執行的Python直譯器包含本地端安裝的Python直譯器，虛擬環境的Python直譯器(venv Python)，以及Conda環境基底的Python。
 
-1. 選擇本地端的原生安裝Python或原生安裝Conda Python:
+1. 選擇本地端的原生安裝Python。你也可以選擇Conda基底的Python(例如Anaconda的釋出版本; 或是Intel oneAPI的Conda Python):
 
     ![image](../Markdown%20Image/vscode_jupyter2.png)
 
@@ -79,7 +79,7 @@ Jupyter可執行的直譯式偵錯核心如下:
 1. 安裝需要額外的Python模組，並重新啟動VSCode:
  - PowerShell
    ```
-   pip install matlab-kernel, jupyter-matlab-proxy
+   pip install matlabengine matlab-kernel
    ```
 2. 選擇MATLAB(Connection)的Jupyter Kernel。
 
@@ -103,7 +103,7 @@ Jupyter可執行的直譯式偵錯核心如下:
     ![image](../Markdown%20Image/vscode_jupyter13.png)
 
 ### Jupyter筆記本執行.NET REPL
-對於.NET環境支援的語言有直譯器支援(需要安裝VS2022的.NET桌面開發):
+對於.NET環境支援的語言有直譯器支援(需要有VS2022的.NET桌面開發或其他.NET安裝位置):
  - VSCode Extentions
    ```
    .NET Extention Pack
